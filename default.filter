@@ -289,8 +289,9 @@ ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (ktr OR wrb OR axf OR ces OR 9wb O
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) CL6 !(ob5 OR oba OR obf)]: //Ignore All Orbs That Can Not Have 3 Sockets
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Arrows / Bolts
-ItemDisplay[(MAG OR UNI) !ID aq2]: //Ignore Unique Arrows
-ItemDisplay[(MAG OR RARE OR UNI) !ID cq2]: //Ignore Bolts
+ItemDisplay[NMAG (cq2 OR aq2)]: //Ignore White Arrows and Bolts
+//ItemDisplay[(NMAG OR MAG OR UNI) !ID aq2]: //Ignore Unique Arrows
+//ItemDisplay[(MAG OR RARE OR UNI) !ID cq2]: //Ignore Bolts
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Shields - Ignore all Shield except Monarch (uit)
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (buc OR xuc OR uuc)]: //Ignore Buckler, Defender, and Heater [Light]
@@ -486,7 +487,7 @@ ItemDisplay[NMAG ETH]: %RED%ETH %ORANGE%%NAME%%CONTINUE%
 ItemDisplay[!NMAG SOCK>0]: %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%]%CONTINUE%
 
 //EQ1 - Helms
-ItemDisplay[EQ1 UNI !ID !(xh9 OR ELT) CLVL>79]: //Hide all unique helms except elite and vamp gaze after lvl79
+//ItemDisplay[EQ1 UNI !ID !(xh9 OR ELT) CLVL>79]: //Hide all unique helms except elite and vamp gaze after lvl79
 
 //Normal Helms
 ItemDisplay[cap UNI !ID !ETH]: %TAN%Biggin's Bonnet %ORANGE%[2os]
@@ -547,7 +548,7 @@ ItemDisplay[ci2 UNI !ID ETH]: %GRAY%ETH %TAN%Kira's Guardian %ORANGE%[70res]
 
 
 //EQ2 - Body Armor
-ItemDisplay[EQ2 UNI !ID !(xea OR xrs OR xhn OR xpl OR xlt OR ELT) CLVL>79]:
+//ItemDisplay[EQ2 UNI !ID !(xea OR xrs OR xhn OR xpl OR xlt OR ELT) CLVL>79]:
 
 //Normal Armors
 ItemDisplay[qui UNI !ID !ETH]: %TAN%Greyform %ORANGE%[2os]
@@ -628,7 +629,7 @@ ItemDisplay[uar UNI !ID !ETH]: %RED%### %TAN%Templar's or Tyrael's Might %ORANGE
 ItemDisplay[uar UNI !ID ETH]: %RED%# %GRAY%ETH %TAN%Templar's or Tyrael's Might %ORANGE%[Sell Green] %RED%#
 
 //EQ3 - Shields
-ItemDisplay[EQ3 UNI !ID !(gts OR xhs OR xts OR ELT) CLVL>79]:
+//ItemDisplay[EQ3 UNI !ID !(gts OR xhs OR xts OR ELT) CLVL>79]:
 
 //Normal Unique Shields
 ItemDisplay[buc UNI !ID !ETH]: %TAN%Pelta Lunata
@@ -680,7 +681,7 @@ ItemDisplay[ush UNI !ID ETH]: %GRAY%ETH %TAN%Head Hunter's Glory
 
 
 //EQ4 - Gloves
-ItemDisplay[EQ4 UNI !ID !(vgl OR mgl OR tgl OR hgl OR xmg OR ELT) CLVL>79]:
+//ItemDisplay[EQ4 UNI !ID !(vgl OR mgl OR tgl OR hgl OR xmg OR ELT) CLVL>79]:
 
 //Normal Unique Gloves
 ItemDisplay[lgl UNI !ID !ETH]: %TAN%The Hand of Broc %ORANGE%[20ed]
@@ -720,7 +721,7 @@ ItemDisplay[uhg UNI !ID ETH]: %GRAY%ETH %TAN%Steelrend %ORANGE%[210def 60ed 20st
 //+--------------+
 ////EQ6 BELTS
 //Hide all trash belts after 80
-ItemDisplay[EQ6 UNI !ID !(zlb OR zvb OR zhb OR ELT) CLVL>79]:
+//ItemDisplay[EQ6 UNI !ID !(zlb OR zvb OR zhb OR ELT) CLVL>79]:
 
 //Unique Normal Belts
 ItemDisplay[lbl UNI !ID !ETH]: %TAN%Lenymo %RED%#
@@ -759,7 +760,7 @@ ItemDisplay[umc UNI !ID ETH]: %GRAY%ETH %PURPLE%Verdungo's Hearty Cord %ORANGE%[
 //¦ Unique Boots ¦
 //+--------------+
 //EQ5 BOOTS
-ItemDisplay[EQ5 UNI !ID !(EXC OR ELT) CLVL>79]:
+//ItemDisplay[EQ5 UNI !ID !(EXC OR ELT) CLVL>79]:
 
 //Normal Unique Boots
 ItemDisplay[lbt UNI !ID !ETH]: %RED%Hotspur
@@ -798,7 +799,7 @@ ItemDisplay[uhb UNI !ID ETH]: %GRAY%ETH %TAN%Shadow Dancer %ORANGE%[100ed 2shad 
 //¦ Unique Weapons ¦
 //+----------------+
 //WP1 - Axes
-ItemDisplay[WP1 UNI !ID !ELT CLVL>79]:
+//ItemDisplay[WP1 UNI !ID !ELT CLVL>79]:
 
 //Normal Unique Axes
 ItemDisplay[hax UNI !ID !ETH]: %TAN%The Gnasher
@@ -863,7 +864,7 @@ ItemDisplay[7gi UNI !ID ETH]: %GRAY%ETH %TAN%Executioner's Justice
 
 
 //WP2 - MACES
-ItemDisplay[WP2 UNI !ID !ELT CLVL>79]:
+//ItemDisplay[WP2 UNI !ID !ELT CLVL>79]:
 
 //Normal Unique Maces and Mauls
 ItemDisplay[clb UNI !ID !ETH]: %TAN%Felloak
@@ -919,7 +920,7 @@ ItemDisplay[7gm UNI !ID ETH]: %RED%## %GRAY%ETH %PURPLE%Earth Shifter or %GRAY%E
 
 
 //WP3 - Swords
-ItemDisplay[WP3 UNI !ID !ELT CLVL>79 !9bs]:
+//ItemDisplay[WP3 UNI !ID !ELT CLVL>79 !9bs]:
 
 //Normal Unique Swords
 ItemDisplay[ssd UNI !ID !ETH]: %TAN%Rixot's Keen
@@ -995,7 +996,7 @@ ItemDisplay[7gd UNI !ID !ETH]: %RED%## The Grandfather ##
 ItemDisplay[7gd UNI !ID ETH]: %RED%# %GRAY%ETH %TAN%The Grandfather #
 
 //WP4 - Daggers
-ItemDisplay[WP4 UNI !ID !ELT CLVL>79]:
+//ItemDisplay[WP4 UNI !ID !ELT CLVL>79]:
 
 //Normal Unique Daggers
 ItemDisplay[dgr UNI !ID !ETH]: %TAN%# Gull #
@@ -1042,7 +1043,7 @@ ItemDisplay[7b8 UNI !ID ETH]: %GRAY%ETH %TAN%Lacerator
 
 
 //WP6 - Javelins
-ItemDisplay[WP5 UNI !ID !7bk CLVL>79]:
+//ItemDisplay[WP5 UNI !ID !7bk CLVL>79]:
 
 //Elite Unique Javelins
 ItemDisplay[7s7 UNI !ID !ETH]: %TAN%Demon's Arch
@@ -1052,7 +1053,7 @@ ItemDisplay[7ts UNI !ID !ETH]: %TAN%Gargoyle's Bite
 ItemDisplay[7ts UNI !ID ETH]: %GRAY%ETH %TAN%Gargoyle's Bite
 
 //WP7 - Spears
-ItemDisplay[WP7 UNI !ID CLVL>79 !9st]:
+//ItemDisplay[WP7 UNI !ID CLVL>79 !9st]:
 
 //Normal Unique Spears
 ItemDisplay[spr UNI !ID !ETH]: %TAN%The Dragon Chang
@@ -1088,7 +1089,7 @@ ItemDisplay[7p7 UNI !ID ETH]: %GRAY%ETH %TAN%Steel Pillar
 
 
 //WP8 - Polearms
-ItemDisplay[WP8 UNI !ID !ELT CLVL>79]:
+//ItemDisplay[WP8 UNI !ID !ELT CLVL>79]:
 
 //Normal Unique Polearms
 ItemDisplay[bar UNI !ID !ETH]: %TAN%Dimoak's Hew
@@ -1130,7 +1131,7 @@ ItemDisplay[7wc UNI !ID !ETH]: %TAN%Stormspire
 ItemDisplay[7wc UNI !ID ETH]: %GRAY%ETH %TAN%Stormspire
 
 //WP9 - Bows
-ItemDisplay[WP9 UNI !ID !ELT CLVL>79]:
+//ItemDisplay[WP9 UNI !ID !ELT CLVL>79]:
 
 //Normal Unique Bows
 ItemDisplay[sbw UNI !ID]: %TAN%Pluckeye
@@ -1158,7 +1159,7 @@ ItemDisplay[6sw UNI !ID]: %TAN%Widowmaker
 ItemDisplay[6lw UNI !ID]: %RED%###%WHITE%###%BLUE%### %TAN%Windforce
 
 //WP10 - Crossbows
-ItemDisplay[WP10 UNI !ID CLVL>79]:
+//ItemDisplay[WP10 UNI !ID CLVL>79]:
 
 //Normal Unique Crossbows
 ItemDisplay[lxb UNI !ID]: %TAN%Leadcrow
@@ -1177,7 +1178,7 @@ ItemDisplay[6hx UNI !ID]: %TAN%Hellrack
 ItemDisplay[6rx UNI !ID]: %TAN%Gut Siphon
 
 //WP11 - Staves
-ItemDisplay[WP11 UNI !ID !ELT CLVL>79]:
+//ItemDisplay[WP11 UNI !ID !ELT CLVL>79]:
 
 //Normal Unique Staves
 ItemDisplay[sst UNI !ID !ETH]: %TAN%Bane Ash
@@ -1210,7 +1211,7 @@ ItemDisplay[6ws UNI !ID !ETH]: %TAN%Mang Song's Lesson
 ItemDisplay[6ws UNI !ID ETH]: %GRAY%ETH %TAN%Mang Song's Lesson
 
 //WP12 - Wands
-ItemDisplay[WP12 UNI !ID !ELT CLVL>79]:
+//ItemDisplay[WP12 UNI !ID !ELT CLVL>79]:
 
 //Normal Unique Wands
 ItemDisplay[wnd UNI !ID !ETH]: %TAN%Torch of Iro
@@ -1239,7 +1240,7 @@ ItemDisplay[7gw UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %TAN%Death's Web
 ItemDisplay[7gw UNI !ID ETH]: %GRAY%ETH %TAN%Death's Web %RED%##
 
 //WP13 - Scepters
-ItemDisplay[WP13 UNI !ID !ELT CLVL>79]:
+//ItemDisplay[WP13 UNI !ID !ELT CLVL>79]:
 
 //Normal Unique Scepters
 ItemDisplay[scp UNI !ID !ETH]: %TAN%Knell Striker
@@ -1336,7 +1337,7 @@ ItemDisplay[UNI !ID amu]: %RED%###%WHITE%###%BLUE%### %TAN%Unique Amulet %BLUE%#
 ItemDisplay[UNI !ID jew]: %RED%##%ORANGE%##%YELLOW%##%GREEN%##%BLUE%##%PURPLE%## %TAN%FACET %PURPLE%##%BLUE%##%GREEN%##%YELLOW%##%ORANGE%##%RED%##
 ItemDisplay[UNI !ID cm3]: %RED%#### %TAN%Gheeds Charm %RED%####
 ItemDisplay[SET !ID amu]: %RED%###%WHITE%###%BLUE%### %GREEN%Set Amulet %BLUE%###%WHITE%###%RED%###
-ItemDisplay[SET !ID rin]: 
+ItemDisplay[SET !ID rin]: %GREEN%Set Ring 
 
 
 //+-----------+
@@ -1346,80 +1347,80 @@ ItemDisplay[SET !ID rin]:
 //║                 ▬▬▬▬▬ [Optional] Rules for Ignoring Specific Set Pieces ▬▬▬▬▬                 ║
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
 //Aldur's Watchtower (Druid)
-ItemDisplay[SET !ID (9mt OR uul OR dr8) CLVL>70]:
+//ItemDisplay[SET !ID (9mt OR uul OR dr8) CLVL>70]:
 ItemDisplay[SET !ID xtb]: %GREEN%Aldur's Boots
 ItemDisplay[SET !ID 9mt]: %GREEN%Aldur's Weapon
 ItemDisplay[SET !ID uul]: %GREEN%Aldur's Armor
 ItemDisplay[SET !ID dr8]: %GREEN%Aldur's Helm
 
 //Angelic Raiment
-ItemDisplay[SET !ID (rng OR sbr) CLVL>30]:
+//ItemDisplay[SET !ID (rng OR sbr) CLVL>30]:
 ItemDisplay[SET !ID rng]: %GREEN%Angelic Armor
 ItemDisplay[SET !ID sbr]: %GREEN%Angelic Weapon
 
 //Arcanna's Tricks
-ItemDisplay[SET !ID (skp OR ltp OR wst) CLVL>30]:
+//ItemDisplay[SET !ID (skp OR ltp OR wst) CLVL>30]:
 ItemDisplay[SET !ID skp]: %GREEN%Arcanna's Helm
 ItemDisplay[SET !ID ltp]: %GREEN%Arcanna's Armor
 ItemDisplay[SET !ID wst]: %GREEN%Arcanna's Weapon
 
 
 //Arctic Gear
-ItemDisplay[SET !ID (vbl OR qui OR swb) CLVL>30]:
+//ItemDisplay[SET !ID (vbl OR qui OR swb) CLVL>30]:
 ItemDisplay[SET !ID vbl]: %GREEN%Arctic Belt
 ItemDisplay[SET !ID qui]: %GREEN%Arctic Armor
 ItemDisplay[SET !ID swb]: %GREEN%Arctic Bow
 
 
 //Berserker's Arsenal
-ItemDisplay[SET !ID (hlm OR spl OR 2ax) CLVL>30]:
+//ItemDisplay[SET !ID (hlm OR spl OR 2ax) CLVL>30]:
 ItemDisplay[SET !ID hlm]: %GREEN%Berserker's Helm
 ItemDisplay[SET !ID spl]: %GREEN%Berserker's Armor
 ItemDisplay[SET !ID 2ax]: %GREEN%Berserker's Axe
 
 
 //Bul-Kathos' Children
-ItemDisplay[SET !ID (7gd OR 7wd) CLVL>70]:
+//ItemDisplay[SET !ID (7gd OR 7wd) CLVL>70]:
 ItemDisplay[SET !ID 7gd]: %GREEN%Bul-Kathos's 2H Sword
 ItemDisplay[SET !ID 7wd]: %GREEN%Bul-Kathos's 1H Sword
 
 
 //Cathan's Traps
-ItemDisplay[SET !ID (mdk OR chn OR bst) CLVL>30]:
+//ItemDisplay[SET !ID (mdk OR chn OR bst) CLVL>30]:
 ItemDisplay[SET !ID mdk]: %GREEN%Cathan's Helm
 ItemDisplay[SET !ID chn]: %GREEN%Cathan's Armor
 ItemDisplay[SET !ID bst]: %GREEN%Cathan's Weapon
 
 
 //Civerb's Vestments
-ItemDisplay[SET !ID (gsc OR lrg) CLVL>30]:
+//ItemDisplay[SET !ID (gsc OR lrg) CLVL>30]:
 ItemDisplay[SET !ID gsc]: %GREEN%Civerb's Weapon
 ItemDisplay[SET !ID lrg]: %GREEN%Civerb's Shield
 
 
 //Cleglaw's Brace
-ItemDisplay[SET !ID (lsd OR sml OR mgl) CLVL>30]:
+//ItemDisplay[SET !ID (lsd OR sml OR mgl) CLVL>30]:
 ItemDisplay[SET !ID lsd]: %GREEN%Cleglaw's Sword
 ItemDisplay[SET !ID sml]: %GREEN%Cleglaw's Shield
 ItemDisplay[SET !ID mgl]: %GREEN%Cleglaw's Gloves
 
 
 //Cow King's Leathers
-ItemDisplay[SET !ID (xap OR stu OR vbt) CLVL>50]:
+//ItemDisplay[SET !ID (xap OR stu OR vbt) CLVL>50]:
 ItemDisplay[SET !ID xap]: %GREEN%Cow King's Helm
 ItemDisplay[SET !ID stu]: %GREEN%Cow King's Armor
 ItemDisplay[SET !ID vbt]: %GREEN%Sander's or Cow King's Boots
 
 
 //Death's Disguise
-ItemDisplay[SET !ID (wsd OR lbl OR lgl) CLVL>30]:
+//ItemDisplay[SET !ID (wsd OR lbl OR lgl) CLVL>30]:
 ItemDisplay[SET !ID wsd]: %GREEN%Death's Sword
 ItemDisplay[SET !ID lbl]: %GREEN%Death's Belt
 ItemDisplay[SET !ID lgl]: %GREEN%Death's Gloves
 
 
 //Griswold's Legacy
-ItemDisplay[SET !ID (xar OR urn OR 7ws OR paf) CLVL>70]:
+//ItemDisplay[SET !ID (xar OR urn OR 7ws OR paf) CLVL>70]:
 ItemDisplay[SET !ID xar]: %GREEN%Griswold's Armor
 ItemDisplay[SET !ID urn]: %GREEN%Griswold's Helm
 ItemDisplay[SET !ID 7ws]: %GREEN%Griswold's Weapon
@@ -1427,7 +1428,7 @@ ItemDisplay[SET !ID paf]: %GREEN%Griswold's Shield
 
 
 //Heaven's Brethren
-ItemDisplay[SET !ID (xrs OR 7ma OR uts OR uhm) CLVL>85]:
+//ItemDisplay[SET !ID (xrs OR 7ma OR uts OR uhm) CLVL>85]:
 ItemDisplay[SET !ID xrs]: %GREEN%Heaven's Brethren Armor
 ItemDisplay[SET !ID 7ma]: %GREEN%Heaven's Brethren Mace
 ItemDisplay[SET !ID uts]: %GREEN%Heaven's Brethren Shield
@@ -1435,13 +1436,13 @@ ItemDisplay[SET !ID uhm]: %GREEN%Heaven's Brethren Helm
 
 
 //Hsaru's Defense
-ItemDisplay[SET !ID (buc OR mbt) CLVL>30]:
+//ItemDisplay[SET !ID (buc OR mbt) CLVL>30]:
 ItemDisplay[SET !ID buc]: %GREEN%Hsaru's Shield
 ItemDisplay[SET !ID mbt]: %GREEN%Hsaru's Boots
 
 
 //Hwanin's Majesty
-ItemDisplay[SET !ID (9vo OR xcl OR xrn OR mbl) CLVL>50]:
+//ItemDisplay[SET !ID (9vo OR xcl OR xrn OR mbl) CLVL>50]:
 ItemDisplay[SET !ID 9vo]: %GREEN%Hwanin's Polearm
 ItemDisplay[SET !ID xcl]: %GREEN%Hwanin's Armor
 ItemDisplay[SET !ID xrn]: %GREEN%Hwanin's Helm
@@ -1449,7 +1450,7 @@ ItemDisplay[SET !ID mbl]: %GREEN%Hwanin's or Hsaru's Belt
 
 
 //Immortal King
-ItemDisplay[SET !ID (ba5 OR 7m7 OR zhb OR xhg OR xhb) CLVL>80]:
+//ItemDisplay[SET !ID (ba5 OR 7m7 OR zhb OR xhg OR xhb) CLVL>80]:
 ItemDisplay[SET !ID ba5]: %GREEN%Immortal King's Helm
 ItemDisplay[SET !ID 7m7]: %GREEN%Immortal King's Maul
 ItemDisplay[SET !ID uar]: %RED%#%WHITE%#%BLUE%## %GREEN%Immortal King's Armor %RED%#%WHITE%#%BLUE%#
@@ -1458,20 +1459,20 @@ ItemDisplay[SET !ID xhg]: %GREEN%Immortal King's Gloves
 ItemDisplay[SET !ID xhb]: %GREEN%Immortal King's Boots
 
 //Infernal Tools
-ItemDisplay[SET !ID (gwn OR cap) CLVL>50]:
+//ItemDisplay[SET !ID (gwn OR cap) CLVL>50]:
 ItemDisplay[SET !ID gwn]: %GREEN%Infernal Torch Wand
 ItemDisplay[SET !ID cap]: %GREEN%Infernal or Sander's Cap
 
 
 //Iratha's Finery
-ItemDisplay[SET !ID (crn OR tbl OR tgl) CLVL>50]:
+//ItemDisplay[SET !ID (crn OR tbl OR tgl) CLVL>50]:
 ItemDisplay[SET !ID crn]: %GREEN%Iratha's or Milabrega's Helm
 ItemDisplay[SET !ID tbl]: %GREEN%Infernal or Iratha's Belt
 ItemDisplay[SET !ID tgl]: %GREEN%Iratha's or Arctic Gloves
 
 
 //Isenhart's Armory
-ItemDisplay[SET !ID (bsd OR brs OR fhl OR gts) CLVL>50]:
+//ItemDisplay[SET !ID (bsd OR brs OR fhl OR gts) CLVL>50]:
 ItemDisplay[SET !ID bsd]: %GREEN%Isenhart's Sword
 ItemDisplay[SET !ID brs]: %GREEN%Isenhart's Armor
 ItemDisplay[SET !ID fhl]: %GREEN%Isenhart's Helm
@@ -1479,7 +1480,7 @@ ItemDisplay[SET !ID gts]: %GREEN%Isenhart's Shield
 
 
 //M'avina's Battle Hymn (Amazon)
-ItemDisplay[SET !ID (ci3 OR amc OR uld OR xtg OR zvb) CLVL>70]:
+//ItemDisplay[SET !ID (ci3 OR amc OR uld OR xtg OR zvb) CLVL>70]:
 ItemDisplay[SET !ID ci3]: %GREEN%Mavina's Helm
 ItemDisplay[SET !ID amc]: %GREEN%Mavina's Bow
 ItemDisplay[SET !ID uld]: %GREEN%Mavina's Armor
@@ -1487,45 +1488,45 @@ ItemDisplay[SET !ID xtg]: %GREEN%Mavina's Gloves
 ItemDisplay[SET !ID zvb]: %GREEN%Mavina's Belt
 
 //Milabrega's Regalia
-ItemDisplay[SET !ID (wsp OR kit OR aar) CLVL>50]:
+//ItemDisplay[SET !ID (wsp OR kit OR aar) CLVL>50]:
 ItemDisplay[SET !ID wsp]: %GREEN%Iratha's or Milabrega's Weapon
 ItemDisplay[SET !ID kit]: %GREEN%Iratha's or Milabrega's Shield
 ItemDisplay[SET !ID aar]: %GREEN%Iratha's or Milabrega's Armor
 
 //Naj's Ancient Vestige
-ItemDisplay[SET !ID (ci0 OR 6cs) CLVL>80]:
+//ItemDisplay[SET !ID (ci0 OR 6cs) CLVL>80]:
 ItemDisplay[SET !ID ci0]: %GREEN%Naj's Helm
 ItemDisplay[SET !ID ult]: %RED%## %GREEN%Naj's Armor %RED%##
 ItemDisplay[SET !ID 6cs]: %GREEN%Naj's Tele Staff
 
 //Natalya's Odium (Assassin)
-ItemDisplay[SET !ID (xh9 OR ucl OR xmb) CLVL>80]:
+//ItemDisplay[SET !ID (xh9 OR ucl OR xmb) CLVL>80]:
 ItemDisplay[SET !ID xh9]: %GREEN%Natalya's Helm
 ItemDisplay[SET !ID 7qr]: %RED%##%WHITE%##%BLUE%## %GREEN%Natalya's Claws %RED%##%WHITE%##%BLUE%##
 ItemDisplay[SET !ID ucl]: %GREEN%Natalya's Armor
 ItemDisplay[SET !ID xmb]: %GREEN%Natalya's Boots
 
 //Orphan's Call
-ItemDisplay[SET !ID (xml OR xvg OR ztb) CLVL>50]:
+//ItemDisplay[SET !ID (xml OR xvg OR ztb) CLVL>50]:
 ItemDisplay[SET !ID xhm]: %RED%#%WHITE%#%BLUE%# %GREEN%GFace Helm %BLUE%#%WHITE%#%RED%#
 ItemDisplay[SET !ID xml]: %GREEN%Whitstan's Guard
 ItemDisplay[SET !ID xvg]: %GREEN%Magnus' Skin
 ItemDisplay[SET !ID ztb]: %GREEN%Wilhelm's Pride
 
 //Sander's Folly
-ItemDisplay[SET !ID (bwn OR vgl) CLVL>50]:
+//ItemDisplay[SET !ID (bwn OR vgl) CLVL>50]:
 ItemDisplay[SET !ID bwn]: %GREEN%Sander's Wand
 ItemDisplay[SET !ID vgl]: %GREEN%Sander's Gloves
 
 
 //Sazabi's Grand Tribute
-ItemDisplay[SET !ID (xhl OR 7ls OR upl) CLVL>70]:
+//ItemDisplay[SET !ID (xhl OR 7ls OR upl) CLVL>70]:
 ItemDisplay[SET !ID xhl]: %GREEN%Sazabi's Helm
 ItemDisplay[SET !ID 7ls]: %GREEN%Sazabi's Sword
 ItemDisplay[SET !ID upl]: %GREEN%Sazabi's Armor
 
 //Sigon's Complete Steel
-ItemDisplay[SET !ID (ghm OR gth OR hbt OR tow OR hbl OR hgl) CLVL>50]:
+//ItemDisplay[SET !ID (ghm OR gth OR hbt OR tow OR hbl OR hgl) CLVL>50]:
 ItemDisplay[SET !ID ghm]: %GREEN%Sigon's Helm %ORANGE%[3os]
 ItemDisplay[SET !ID gth]: %GREEN%Sigon's Armor %ORANGE%[4os]
 ItemDisplay[SET !ID hbt]: %GREEN%Sigon's Greaves
@@ -1534,20 +1535,20 @@ ItemDisplay[SET !ID hbl]: %GREEN%Sigon's Belt
 ItemDisplay[SET !ID hgl]: %GREEN%Sigon's Gloves
 
 //Tal Rasha's Wrappings (Sorceress)
-ItemDisplay[SET !ID oba]: %RED%# %GREEN%Tal's Weapon %ORANGE%[3os] %RED%#
+//ItemDisplay[SET !ID oba]: %RED%# %GREEN%Tal's Weapon %ORANGE%[3os] %RED%#
 ItemDisplay[SET !ID xsk]: %RED%# %GREEN%Tal's Helm %ORANGE%[3os] %RED%#
 ItemDisplay[SET !ID uth]: %RED%##%WHITE%##%BLUE%## %GREEN%Tal's Armor %ORANGE%[4os] %BLUE%##%WHITE%##%RED%##
 ItemDisplay[SET !ID zmb]: %RED%# %GREEN%Tal's Belt%RED%#
 
 //Tancred's Battlegear
-ItemDisplay[SET !ID (bhm OR lbt OR ful OR mpi) CLVL>30]:
+//ItemDisplay[SET !ID (bhm OR lbt OR ful OR mpi) CLVL>30]:
 ItemDisplay[SET !ID bhm]: %GREEN%Tancred's Helm
 ItemDisplay[SET !ID lbt]: %GREEN%Tancred's Boots
 ItemDisplay[SET !ID ful]: %GREEN%Tancred's Armor
 ItemDisplay[SET !ID mpi]: %GREEN%Tancred's Pick
 
 //The Disciple
-ItemDisplay[SET !ID (uui OR xlb OR umc) CLVL>70]:
+//ItemDisplay[SET !ID (uui OR xlb OR umc) CLVL>70]:
 ItemDisplay[SET !ID ulg]: %RED%### %GREEN%Laying of Hands Gloves %RED%###
 ItemDisplay[SET !ID uui]: %GREEN%The Disciple Armor
 ItemDisplay[SET !ID xlb]: %GREEN%The Disciple Boots
@@ -1561,7 +1562,7 @@ ItemDisplay[SET !ID utc]: %RED%# %GREEN%Trang-Oul's Belt %RED%#
 ItemDisplay[SET !ID xmg]: %RED%# %GREEN%Trang-Oul's Gloves %RED%#
 
 //Vidala's Rig - Only show boots to corrupt with pierce (for javazons)
-ItemDisplay[SET !ID (lea OR lbb) CLVL>30]:
+//ItemDisplay[SET !ID (lea OR lbb) CLVL>30]:
 ItemDisplay[SET !ID lea]: %GREEN%Vidala's Armor
 ItemDisplay[SET !ID tbt]: %GREEN%Vidala's Boots
 ItemDisplay[SET !ID lbb]: %GREEN%Vidala's Bow
