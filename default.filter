@@ -131,15 +131,18 @@ ItemDisplay[lbox]: %WHITE%# %GOLD%%NAME% %WHITE%#%MAP% //Larzuk's Box
 ItemDisplay[wss]: %GREEN%### %PURPLE%Orb of Corruption %GREEN%###%MAP% //Worldstone Shard	
 
 //Maps
-ItemDisplay[t11 !ID]: %PURPLE%### %RED%%NAME% %PURPLE%###%MAP% //T1 Map
-ItemDisplay[t12 !ID]: %PURPLE%### %RED%%NAME% %PURPLE%###%MAP% //T2 Map
-ItemDisplay[t13 !ID]: %PURPLE%### %RED%%NAME% %PURPLE%###%MAP% //T3 Map
-ItemDisplay[t14 !ID]: %PURPLE%### %RED%%NAME% %PURPLE%###%MAP% //T4 Map
-ItemDisplay[t15 !ID]: %PURPLE%### %RED%%NAME% %PURPLE%###%MAP% //T5 Map
-ItemDisplay[t16 !ID]: %PURPLE%### %RED%%NAME% %PURPLE%###%MAP% //T6 Ruins of Viz-jun
-ItemDisplay[t17 !ID]: %PURPLE%### %RED%%NAME% %PURPLE%###%MAP% //T7 River of Blood
-ItemDisplay[t18 !ID]: %PURPLE%### %RED%%NAME% %PURPLE%###%MAP% //T8 Lava Map
-ItemDisplay[t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t17 OR t18 (NMAG OR !RARE)]: %PURPLE%### %RED%%NAME% %PURPLE%###%MAP%
+ItemDisplay[t11 !ID]: %PURPLE%### %GREEN%%NAME% %PURPLE%###%MAP% //T1 Map
+ItemDisplay[t12 !ID]: %PURPLE%### %GREEN%%NAME% %PURPLE%###%MAP% //T2 Map
+ItemDisplay[t13 !ID]: %PURPLE%### %GREEN%%NAME% %PURPLE%###%MAP% //T3 Map
+ItemDisplay[t14 !ID]: %PURPLE%### %GREEN%%NAME% %PURPLE%###%MAP% //T4 Map
+ItemDisplay[t15 !ID]: %PURPLE%### %GREEN%%NAME% %PURPLE%###%MAP% //T5 Map
+ItemDisplay[t16 !ID]: %PURPLE%### %GREEN%%NAME% %PURPLE%###%MAP% //T6 Ruins of Viz-jun
+ItemDisplay[t17 !ID]: %PURPLE%### %GREEN%%NAME% %PURPLE%###%MAP% //T7 River of Blood
+ItemDisplay[t18 !ID]: %PURPLE%### %GREEN%%NAME% %PURPLE%###%MAP% //T8 Lava Map
+ItemDisplay[t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t17 OR t18 NMAG]: %PURPLE%### %GRAY%%NAME% %PURPLE%###%MAP%
+ItemDisplay[t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t17 OR t18 MAG]: %PURPLE%### %BLUE%%NAME% %PURPLE%###%MAP%
+ItemDisplay[t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t17 OR t18 RARE]: %PURPLE%### %YELLOW%%NAME% %PURPLE%###%MAP%
+
 
 // Hide White Arrows / Bolts
 ItemDisplay[(aqv OR cqv)]:
