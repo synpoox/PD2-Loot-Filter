@@ -147,6 +147,8 @@ ItemDisplay[dcso]: %RED%## %GREEN%%NAME% %RED%#%MAP% //Prime Evil Soul
 //| t17 - River of Blood Map      |
 //| t18 - Phlegethon/Lava         |
 //+-------------------------------+
+ItemDisplay[!ID t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t17 OR t18]: %NAME% %CODE%
+
 
 //t11 Sewers of Harrogath Map
 ItemDisplay[t11 !ID NMAG]: %WHITE%### Sewers of Harrogath %GRAY%T?? %RED%[Unid] %WHITE%###%MAP%
