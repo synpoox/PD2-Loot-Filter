@@ -127,7 +127,7 @@ ItemDisplay[imra]: %RED%## %GREEN%%NAME% %RED%#{%WHITE%This Item + %BLUE%Jewel %
 ItemDisplay[rera]: %RED%## %GREEN%%NAME% %RED%#{%WHITE%This Item + Perf Gem + %ORANGE%Rune>9%NL%%TAN%Note%WHITE%: Reroll %YELLOW%Rare %WHITE%Map:}%MAP% //Horadrim Orb
 ItemDisplay[scou]: %RED%## %GREEN%%NAME% %RED%#{%WHITE%This Item + %ORANGE%Hel%NL%%TAN%Note%WHITE%: Revert back to a White Map:}%MAP% //Orb of Destruction
 ItemDisplay[upma]: %RED%## %GREEN%%NAME% %RED%#{%WHITE%This Item + Perf %GRAY%O %WHITE%+ %ORANGE%Rune>9%NL%%TAN%Note%WHITE%: Upg %BLUE%Magic %WHITE%to %YELLOW%Rare%WHITE% Map:}%MAP% //Angelic Orb
-ItemDisplay[lbox]: %GREEN%### %PURPLE%%NAME% %GREEN%###{%WHITE%Two-Handed Weapon = 4 max%NL%One-Handed Weapon = 2 max%NL%Helmet, Chest, Shield = 2 max%NL%%TAN%Note%WHITE%: Use it to %TAN%Socket %WHITE%an Item}%MAP% //Larzuk's Box
+ItemDisplay[lbox]: %GREEN%### %PURPLE%%NAME% %GREEN%###%MAP%{%WHITE%Two-Handed Weapon = 4 max%NL%One-Handed Weapon = 2 max%NL%Helmet, Chest, Shield = 2 max%NL%%TAN%Note%WHITE%: Use it to %TAN%Socket %WHITE%an Item} //Larzuk's Box
 ItemDisplay[wss]: %GREEN%### %PURPLE%Orb of Corruption %GREEN%###%MAP% //Worldstone Shard	
 
 //PD2 Dclone Items
@@ -744,7 +744,7 @@ ItemDisplay[9gi UNI !ID]: %GOLD%The Minotaur
 ItemDisplay[7ha UNI !ID]: %GOLD%Razor's Edge
 ItemDisplay[72a UNI !ID]: %GOLD%Rune Master
 ItemDisplay[7mp UNI !ID]: %GOLD%Cranebeak
-ItemDisplay[7wa UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%%Death Cleaver %ORANGE%[280ed 6os] %BLUE%###%WHITE%###%RED%###
+ItemDisplay[7wa UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%Death Cleaver %ORANGE%[280ed 6os] %BLUE%###%WHITE%###%RED%###
 ItemDisplay[7bt UNI !ID]: %GOLD%Hellslayer
 ItemDisplay[7ga UNI !ID]: %GOLD%Messerschmidt's Reaver
 ItemDisplay[7gi UNI !ID]: %GOLD%Executioner's Justice
