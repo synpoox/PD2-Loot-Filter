@@ -410,10 +410,10 @@ ItemDisplay[INF ci3]: %RED%Diadem%WHITE%
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
 // The rules in this section will be ignored at level 80+.
 //─────────────────────────────────────────────────────────────────────────────────────────────────
-ItemDisplay[CLVL<80 NMAG SOCK=0 !ETH !INF !SUP (2ax OR fla) ILVL>40]: %WHITE%%NAME% %BLUE%[%WHITE%0%YELLOW%-->5%BLUE%]%WHITE%
-ItemDisplay[CLVL<80 NMAG SOCK=0 !ETH !INF !SUP (bsd OR 9vo OR 8cb) ILVL>25]: %WHITE%%NAME% %BLUE%[%WHITE%0%YELLOW%-->4%BLUE%]%WHITE%
-ItemDisplay[CLVL<80 NMAG SOCK=0 !ETH !INF !SUP (fla OR crs OR 9s8 OR rxb) (ILVL>25 AND ILVL<41)]: %WHITE%%NAME% %BLUE%[%WHITE%0%YELLOW%-->4%BLUE%]%WHITE%
-ItemDisplay[CLVL<80 NMAG SOCK=0 !ETH !INF !SUP (9h9 OR 9wc OR 9br OR 8rx) ILVL>40]: %WHITE%%NAME% %BLUE%[%WHITE%0%RED%-->4%BLUE%]%WHITE%
+ItemDisplay[CLVL<80 NMAG SOCK=0 !ETH !INF !SUP (2ax OR fla) ILVL>40]: %WHITE%%NAME% %BLUE%[%WHITE%0%YELLOW%-->5%BLUE%]
+ItemDisplay[CLVL<80 NMAG SOCK=0 !ETH !INF !SUP (bsd OR 9vo OR 8cb) ILVL>25]: %WHITE%%NAME% %BLUE%[%WHITE%0%YELLOW%-->4%BLUE%]
+ItemDisplay[CLVL<80 NMAG SOCK=0 !ETH !INF !SUP (fla OR crs OR 9s8 OR rxb) (ILVL>25 AND ILVL<41)]: %WHITE%%NAME% %BLUE%[%WHITE%0%YELLOW%-->4%BLUE%]
+ItemDisplay[CLVL<80 NMAG SOCK=0 !ETH !INF !SUP (9h9 OR 9wc OR 9br OR 8rx) ILVL>40]: %WHITE%%NAME% %BLUE%[%WHITE%0%RED%-->4%BLUE%]
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
 //║           ▬▬▬▬▬ Magic Equipment Exclusions for Immediately Ignored Equipment ▬▬▬▬▬            ║
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
@@ -442,7 +442,7 @@ ItemDisplay[MAG !ID !ETH EQ7]: %BLUE%%NAME%%WHITE%
 //║                       ▬▬▬▬▬ Unidentified Crafting Base Exclusions ▬▬▬▬▬                       ║
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
 // Craftable Amulets
-ItemDisplay[MAG !ID amu ILVL>84]: %NAME% %WHITE%[%GRAY%Lv.%ILVL%%WHITE%]%WHITE%
+ItemDisplay[MAG !ID amu ILVL>84]: %NAME% %WHITE%[%GRAY%Lv.%ILVL%%WHITE%]
 ItemDisplay[MAG !ID amu ILVL<85]: //Hide any
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
 //║                           ▬▬▬▬▬ Immediately Ignored Equipment ▬▬▬▬▬                           ║
@@ -510,7 +510,7 @@ ItemDisplay[NMAG !ELT WP13 !(SK96>0 OR SK97>0 OR SK98>0 OR SK99>0 OR SK100>0 OR 
 // Use the rule below to change the color of the base name of ethereal non-magical items. Default
 // color for this rule if used is to set it to %RED%.
 //ItemDisplay[NMAG ETH]: %RED%ETH %ORANGE%%NAME%%CONTINUE%
-ItemDisplay[NMAG !ETH]: %ORANGE%%NAME%%CONTINUE%
+ItemDisplay[NMAG !ETH]: %GRAY%%NAME%%CONTINUE%
 ItemDisplay[MAG]: %BLUE%%NAME%%CONTINUE%
 ItemDisplay[RARE]: %YELLOW%%NAME%%CONTINUE%
 ItemDisplay[SET]: %GREEN%%NAME%%MAP%%CONTINUE%
@@ -1394,60 +1394,60 @@ ItemDisplay[MAG ID amu ALLSK>0]: %NAME% %WHITE%[%GRAY%Lv.%ILVL%%WHITE%]
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
 //║                           ▬▬▬▬▬ Noteable Magical/Rare Equips ▬▬▬▬▬                            ║
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
-ItemDisplay[MAG CL1 TABSK40>2 SK247>2]: %NAME% %GOLD%[%GREEN%+6 Grizzly%GOLD%]%WHITE%
-ItemDisplay[MAG CL1 TABSK40>2 SK247>1]: %NAME% %GOLD%[%GREEN%+5 Grizzly%GOLD%]%WHITE%
-ItemDisplay[(MAG OR RARE) CL1 (TABSK40>1 OR CLSK5>1) SK247>2]: %NAME% %GOLD%[%GREEN%+5 Grizzly%GOLD%]%WHITE%
-ItemDisplay[MAG CL2 ID SK149>2 TABSK34>2]: %NAME% %GOLD%[%GREEN%+6 BO%GOLD%]%WHITE%
-ItemDisplay[(MAG OR RARE) CL2 SK149>2 (TABSK34>1 OR CLSK4>1)]: %NAME% %GOLD%[%GREEN%+5 BO%GOLD%]%WHITE%
-ItemDisplay[MAG CL2 SK149>1 TABSK34>2]: %NAME% %GOLD%[%GREEN%+5 BO%GOLD%]%WHITE%
-ItemDisplay[MAG WEAPON TABSK34>2]: %NAME% %GOLD%[%GREEN%+3 BO%GOLD%]%WHITE%
-ItemDisplay[MAG WEAPON TABSK34>1 CLVL<60]: %NAME% %GOLD%[%GREEN%+2 BO%GOLD%]%WHITE%
-ItemDisplay[MAG WEAPON TABSK34>0 CLVL<40]: %NAME% %GOLD%[%GREEN%+1 BO%GOLD%]%WHITE%
-ItemDisplay[MAG CL4 TABSK17>2 (SK74>2 OR SK83>2 OR SK84>2 OR SK92>2 OR SK93>2)]: %NAME% %GOLD%[%GREEN%+6 PnB Skill%GOLD%]%WHITE%
-ItemDisplay[MAG CL4 TABSK17>2 (SK74>1 OR SK83>1 OR SK84>1 OR SK92>1 OR SK93>1)]: %NAME% %GOLD%[%GREEN%+5 PnB Skill%GOLD%]%WHITE%
-ItemDisplay[(MAG OR RARE) CL4 (CLSK2>1 OR TABSK17>1) (SK74>2 OR SK83>2 OR SK84>2 OR SK92>2 OR SK93>2)]: %NAME% %GOLD%[%GREEN%+5 PnB Skill%GOLD%]%WHITE%
-ItemDisplay[MAG CL4 TABSK17>2 (SK74>0 OR SK83>0 OR SK84>0 OR SK92>0 OR SK93>0)]: %NAME% %GOLD%[%GREEN%+4 PnB Skill%GOLD%]%WHITE%
-ItemDisplay[(MAG OR RARE) CL4 (CLSK2>1 OR TABSK17>1) (SK74>1 OR SK83>1 OR SK84>1 OR SK92>1 OR SK93>1)]: %NAME% %GOLD%[%GREEN%+4 PnB Skill%GOLD%]%WHITE%
-ItemDisplay[(MAG OR RARE) CL4 (CLSK2>0 OR TABSK17>0) (SK74>2 OR SK83>2 OR SK84>2 OR SK92>2 OR SK93>2)]: %NAME% %GOLD%[%GREEN%+4 PnB Skill%GOLD%]%WHITE%
-ItemDisplay[MAG CL4 TABSK18>2 (SK75>2 OR SK80>2 OR SK85>2 OR SK90>2 OR SK94>2 OR SK95>2)]: %NAME% %GOLD%[%GREEN%+6 Summon Skill%GOLD%]%WHITE%
-ItemDisplay[MAG CL4 TABSK18>2 (SK75>1 OR SK80>1 OR SK85>1 OR SK90>1 OR SK94>1 OR SK95>1)]: %NAME% %GOLD%[%GREEN%+5 Summon Skill%GOLD%]%WHITE%
-ItemDisplay[(MAG OR RARE) CL4 (TABSK18>1 OR CLSK2>1) (SK69>2 OR SK70>2 OR SK75>2 OR SK80>2 OR SK85>2 OR SK90>2 OR SK94>2 OR SK95>2)]: %NAME% %GOLD%[%GREEN%+5 Summon Skill%GOLD%]%WHITE%
-ItemDisplay[MAG CL4 TABSK18>2 (SK75>0 OR SK80>0 OR SK85>0 OR SK90>0 OR SK94>0 OR SK95>0)]: %NAME% %GOLD%[%GREEN%+4 Summon Skill%GOLD%]%WHITE%
-ItemDisplay[MAG WP12 TABSK17>2 (SK74>2 OR SK83>2 OR SK84>2 OR SK92>2 OR SK93>2) FCR>19]: %NAME% %GOLD%[%GREEN%+6 PnB Skill%GOLD%]%WHITE%
-ItemDisplay[MAG WP12 TABSK17>2 (SK74>1 OR SK83>1 OR SK84>1 OR SK92>1 OR SK93>1) FCR>19]: %NAME% %GOLD%[%GREEN%+5 PnB Skill%GOLD%]%WHITE%
-ItemDisplay[(MAG OR RARE) WP12 (CLSK2>1 OR TABSK17>1) (SK67>2 OR SK74>2 OR SK83>2 OR SK84>2 OR SK92>2 OR SK93>2) FCR>19]: %NAME% %GOLD%[%GREEN%+5 PnB Skill%GOLD%]%WHITE%
-ItemDisplay[MAG CL5 TABSK48>2 (SK256>2 OR SK257>2 OR SK261>2 OR SK262>2 OR SK266>2 OR SK271>2 OR SK272>2 OR SK277>2)]: %NAME% %GOLD%[%GREEN%+6 Trap Skill%GOLD%]%WHITE%
-ItemDisplay[MAG CL5 TABSK48>2 (SK256>1 OR SK257>1 OR SK261>1 OR SK262>1 OR SK266>1 OR SK271>1 OR SK272>1 OR SK277>1)]: %NAME% %GOLD%[%GREEN%+5 Trap Skill%GOLD%]%WHITE%
-ItemDisplay[MAG CL5 TABSK48>1 (SK256>2 OR SK257>2 OR SK261>2 OR SK262>2 OR SK266>2 OR SK271>2 OR SK272>2 OR SK277>2)]: %NAME% %GOLD%[%GREEN%+5 Trap Skill%GOLD%]%WHITE%
-ItemDisplay[MAG CL6 TABSK8>2 (SK41>2 OR SK46>2 OR SK47>2 OR SK51>2 OR SK52>2 OR SK56>2 OR SK61>2 OR SK62>2)]: %NAME% %GOLD%[%GREEN%+6 Fire Skill%GOLD%]%WHITE%
-ItemDisplay[MAG CL6 TABSK8>2 (SK41>1 OR SK46>1 OR SK47>1 OR SK51>1 OR SK52>1 OR SK56>1 OR SK61>1 OR SK62>1)]: %NAME% %GOLD%[%GREEN%+5 Fire Skill%GOLD%]%WHITE%
-ItemDisplay[(MAG OR RARE) CL6 (CLSK1>1 OR TABSK8>1) (SK41>2 OR SK46>2 OR SK47>2 OR SK51>2 OR SK52>2 OR SK56>2 OR SK61>2 OR SK62>2)]: %NAME% %GOLD%[%GREEN%+5 Fire Skill%GOLD%]%WHITE%
-ItemDisplay[MAG CL6 TABSK9>2 (SK48>2 OR SK49>2 OR SK54>2 OR SK57>2 OR SK58>2 OR SK63>2)]: %NAME% %GOLD%[%GREEN%+6 Lightning Skill%GOLD%]%WHITE%
-ItemDisplay[MAG CL6 TABSK9>2 (SK48>1 OR SK49>1 OR SK54>1 OR SK57>1 OR SK58>1 OR SK63>1)]: %NAME% %GOLD%[%GREEN%+5 Lightning Skill%GOLD%]%WHITE%
-ItemDisplay[(MAG OR RARE) CL6 (CLSK1>1 OR TABSK9>1) (SK38>2 OR SK48>2 OR SK49>2 OR SK54>2 OR SK57>2 OR SK58>2 OR SK63>2)]: %NAME% %GOLD%[%GREEN%+5 Lightning Skill%GOLD%]%WHITE%
-ItemDisplay[MAG CL6 TABSK10>2 (SK44>2 OR SK45>2 OR SK50>2 OR SK55>2 OR SK59>2 OR SK60>2 OR SK64>2 OR SK65>2)]: %NAME% %GOLD%[%GREEN%+6 Cold Skill%GOLD%]%WHITE%
-ItemDisplay[MAG CL6 TABSK10>2 (SK44>1 OR SK45>1 OR SK50>1 OR SK55>1 OR SK59>1 OR SK60>1 OR SK64>1 OR SK65>1)]: %NAME% %GOLD%[%GREEN%+5 Cold Skill%GOLD%]%WHITE%
-ItemDisplay[(MAG OR RARE) CL6 (CLSK1>1 OR TABSK10>1) (SK40>2 OR SK44>2 OR SK45>2 OR SK50>2 OR SK55>2 OR SK59>2 OR SK60>2 OR SK64>2 OR SK65>2)]: %NAME% %GOLD%[%GREEN%+5 Cold Skill%GOLD%]%WHITE%
-ItemDisplay[MAG !ETH EQ4 TABSK0>2 IAS>19]: %NAME% %GOLD%[%GREEN%+3 Bow\Crossbow%GOLD%]%WHITE%
-ItemDisplay[MAG !ETH EQ4 TABSK1>2 IAS>19]: %NAME% %GOLD%[%GREEN%+3 Passive\Magic%GOLD%]%WHITE%
-ItemDisplay[MAG !ETH EQ4 TABSK2>2 IAS>19]: %NAME% %GOLD%[%GREEN%+3 Javelin\Spear%GOLD%]%WHITE%
-ItemDisplay[MAG !ETH amf TABSK2>5 IAS>39]: %NAME% %GOLD%[%GREEN%Keep%GOLD%]%WHITE%
-ItemDisplay[RARE !ETH CL7 WP5 (TABSK2>4 OR (TABSK2>2 AND CLSK0>1)) IAS>39]: %NAME% %GOLD%[%GREEN%Keep%GOLD%]%WHITE%
+ItemDisplay[MAG CL1 TABSK40>2 SK247>2]: %NAME% %GOLD%[%GREEN%+6 Grizzly%GOLD%]
+ItemDisplay[MAG CL1 TABSK40>2 SK247>1]: %NAME% %GOLD%[%GREEN%+5 Grizzly%GOLD%]
+ItemDisplay[(MAG OR RARE) CL1 (TABSK40>1 OR CLSK5>1) SK247>2]: %NAME% %GOLD%[%GREEN%+5 Grizzly%GOLD%]
+ItemDisplay[MAG CL2 ID SK149>2 TABSK34>2]: %NAME% %GOLD%[%GREEN%+6 BO%GOLD%]
+ItemDisplay[(MAG OR RARE) CL2 SK149>2 (TABSK34>1 OR CLSK4>1)]: %NAME% %GOLD%[%GREEN%+5 BO%GOLD%]
+ItemDisplay[MAG CL2 SK149>1 TABSK34>2]: %NAME% %GOLD%[%GREEN%+5 BO%GOLD%]
+ItemDisplay[MAG WEAPON TABSK34>2]: %NAME% %GOLD%[%GREEN%+3 BO%GOLD%]
+ItemDisplay[MAG WEAPON TABSK34>1 CLVL<60]: %NAME% %GOLD%[%GREEN%+2 BO%GOLD%]
+ItemDisplay[MAG WEAPON TABSK34>0 CLVL<40]: %NAME% %GOLD%[%GREEN%+1 BO%GOLD%]
+ItemDisplay[MAG CL4 TABSK17>2 (SK74>2 OR SK83>2 OR SK84>2 OR SK92>2 OR SK93>2)]: %NAME% %GOLD%[%GREEN%+6 PnB Skill%GOLD%]
+ItemDisplay[MAG CL4 TABSK17>2 (SK74>1 OR SK83>1 OR SK84>1 OR SK92>1 OR SK93>1)]: %NAME% %GOLD%[%GREEN%+5 PnB Skill%GOLD%]
+ItemDisplay[(MAG OR RARE) CL4 (CLSK2>1 OR TABSK17>1) (SK74>2 OR SK83>2 OR SK84>2 OR SK92>2 OR SK93>2)]: %NAME% %GOLD%[%GREEN%+5 PnB Skill%GOLD%]
+ItemDisplay[MAG CL4 TABSK17>2 (SK74>0 OR SK83>0 OR SK84>0 OR SK92>0 OR SK93>0)]: %NAME% %GOLD%[%GREEN%+4 PnB Skill%GOLD%]
+ItemDisplay[(MAG OR RARE) CL4 (CLSK2>1 OR TABSK17>1) (SK74>1 OR SK83>1 OR SK84>1 OR SK92>1 OR SK93>1)]: %NAME% %GOLD%[%GREEN%+4 PnB Skill%GOLD%]
+ItemDisplay[(MAG OR RARE) CL4 (CLSK2>0 OR TABSK17>0) (SK74>2 OR SK83>2 OR SK84>2 OR SK92>2 OR SK93>2)]: %NAME% %GOLD%[%GREEN%+4 PnB Skill%GOLD%]
+ItemDisplay[MAG CL4 TABSK18>2 (SK75>2 OR SK80>2 OR SK85>2 OR SK90>2 OR SK94>2 OR SK95>2)]: %NAME% %GOLD%[%GREEN%+6 Summon Skill%GOLD%]
+ItemDisplay[MAG CL4 TABSK18>2 (SK75>1 OR SK80>1 OR SK85>1 OR SK90>1 OR SK94>1 OR SK95>1)]: %NAME% %GOLD%[%GREEN%+5 Summon Skill%GOLD%]
+ItemDisplay[(MAG OR RARE) CL4 (TABSK18>1 OR CLSK2>1) (SK69>2 OR SK70>2 OR SK75>2 OR SK80>2 OR SK85>2 OR SK90>2 OR SK94>2 OR SK95>2)]: %NAME% %GOLD%[%GREEN%+5 Summon Skill%GOLD%]
+ItemDisplay[MAG CL4 TABSK18>2 (SK75>0 OR SK80>0 OR SK85>0 OR SK90>0 OR SK94>0 OR SK95>0)]: %NAME% %GOLD%[%GREEN%+4 Summon Skill%GOLD%]
+ItemDisplay[MAG WP12 TABSK17>2 (SK74>2 OR SK83>2 OR SK84>2 OR SK92>2 OR SK93>2) FCR>19]: %NAME% %GOLD%[%GREEN%+6 PnB Skill%GOLD%]
+ItemDisplay[MAG WP12 TABSK17>2 (SK74>1 OR SK83>1 OR SK84>1 OR SK92>1 OR SK93>1) FCR>19]: %NAME% %GOLD%[%GREEN%+5 PnB Skill%GOLD%]
+ItemDisplay[(MAG OR RARE) WP12 (CLSK2>1 OR TABSK17>1) (SK67>2 OR SK74>2 OR SK83>2 OR SK84>2 OR SK92>2 OR SK93>2) FCR>19]: %NAME% %GOLD%[%GREEN%+5 PnB Skill%GOLD%]
+ItemDisplay[MAG CL5 TABSK48>2 (SK256>2 OR SK257>2 OR SK261>2 OR SK262>2 OR SK266>2 OR SK271>2 OR SK272>2 OR SK277>2)]: %NAME% %GOLD%[%GREEN%+6 Trap Skill%GOLD%]
+ItemDisplay[MAG CL5 TABSK48>2 (SK256>1 OR SK257>1 OR SK261>1 OR SK262>1 OR SK266>1 OR SK271>1 OR SK272>1 OR SK277>1)]: %NAME% %GOLD%[%GREEN%+5 Trap Skill%GOLD%]
+ItemDisplay[MAG CL5 TABSK48>1 (SK256>2 OR SK257>2 OR SK261>2 OR SK262>2 OR SK266>2 OR SK271>2 OR SK272>2 OR SK277>2)]: %NAME% %GOLD%[%GREEN%+5 Trap Skill%GOLD%]
+ItemDisplay[MAG CL6 TABSK8>2 (SK41>2 OR SK46>2 OR SK47>2 OR SK51>2 OR SK52>2 OR SK56>2 OR SK61>2 OR SK62>2)]: %NAME% %GOLD%[%GREEN%+6 Fire Skill%GOLD%]
+ItemDisplay[MAG CL6 TABSK8>2 (SK41>1 OR SK46>1 OR SK47>1 OR SK51>1 OR SK52>1 OR SK56>1 OR SK61>1 OR SK62>1)]: %NAME% %GOLD%[%GREEN%+5 Fire Skill%GOLD%]
+ItemDisplay[(MAG OR RARE) CL6 (CLSK1>1 OR TABSK8>1) (SK41>2 OR SK46>2 OR SK47>2 OR SK51>2 OR SK52>2 OR SK56>2 OR SK61>2 OR SK62>2)]: %NAME% %GOLD%[%GREEN%+5 Fire Skill%GOLD%]
+ItemDisplay[MAG CL6 TABSK9>2 (SK48>2 OR SK49>2 OR SK54>2 OR SK57>2 OR SK58>2 OR SK63>2)]: %NAME% %GOLD%[%GREEN%+6 Lightning Skill%GOLD%]
+ItemDisplay[MAG CL6 TABSK9>2 (SK48>1 OR SK49>1 OR SK54>1 OR SK57>1 OR SK58>1 OR SK63>1)]: %NAME% %GOLD%[%GREEN%+5 Lightning Skill%GOLD%]
+ItemDisplay[(MAG OR RARE) CL6 (CLSK1>1 OR TABSK9>1) (SK38>2 OR SK48>2 OR SK49>2 OR SK54>2 OR SK57>2 OR SK58>2 OR SK63>2)]: %NAME% %GOLD%[%GREEN%+5 Lightning Skill%GOLD%]
+ItemDisplay[MAG CL6 TABSK10>2 (SK44>2 OR SK45>2 OR SK50>2 OR SK55>2 OR SK59>2 OR SK60>2 OR SK64>2 OR SK65>2)]: %NAME% %GOLD%[%GREEN%+6 Cold Skill%GOLD%]
+ItemDisplay[MAG CL6 TABSK10>2 (SK44>1 OR SK45>1 OR SK50>1 OR SK55>1 OR SK59>1 OR SK60>1 OR SK64>1 OR SK65>1)]: %NAME% %GOLD%[%GREEN%+5 Cold Skill%GOLD%]
+ItemDisplay[(MAG OR RARE) CL6 (CLSK1>1 OR TABSK10>1) (SK40>2 OR SK44>2 OR SK45>2 OR SK50>2 OR SK55>2 OR SK59>2 OR SK60>2 OR SK64>2 OR SK65>2)]: %NAME% %GOLD%[%GREEN%+5 Cold Skill%GOLD%]
+ItemDisplay[MAG !ETH EQ4 TABSK0>2 IAS>19]: %NAME% %GOLD%[%GREEN%+3 Bow\Crossbow%GOLD%]
+ItemDisplay[MAG !ETH EQ4 TABSK1>2 IAS>19]: %NAME% %GOLD%[%GREEN%+3 Passive\Magic%GOLD%]
+ItemDisplay[MAG !ETH EQ4 TABSK2>2 IAS>19]: %NAME% %GOLD%[%GREEN%+3 Javelin\Spear%GOLD%]
+ItemDisplay[MAG !ETH amf TABSK2>5 IAS>39]: %NAME% %GOLD%[%GREEN%Keep%GOLD%]
+ItemDisplay[RARE !ETH CL7 WP5 (TABSK2>4 OR (TABSK2>2 AND CLSK0>1)) IAS>39]: %NAME% %GOLD%[%GREEN%Keep%GOLD%]
 
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
 //║                             ▬▬▬▬▬ Identified Crafting Bases ▬▬▬▬▬                             ║
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
 // Craftable Amulets
 //─────────────────────────────────────────────────────────────────────────────────────────────────
-ItemDisplay[MAG amu (ILVL=82 OR ILVL=83) CLVL>97]: %NAME% %ORANGE%[C]%WHITE%
-ItemDisplay[MAG amu (ILVL=84 OR ILVL=85) CLVL>95]: %NAME% %ORANGE%[C]%WHITE%
-ItemDisplay[MAG amu (ILVL=86 OR ILVL=87) CLVL>93]: %NAME% %ORANGE%[C]%WHITE%
-ItemDisplay[MAG amu (ILVL=88 OR ILVL=89) CLVL>91]: %NAME% %ORANGE%[C]%WHITE%
-ItemDisplay[MAG amu (ILVL=90 OR ILVL=91) CLVL>89]: %NAME% %ORANGE%[C]%WHITE%
-ItemDisplay[MAG amu (ILVL=92 OR ILVL=93) CLVL>87]: %NAME% %ORANGE%[C]%WHITE%
-ItemDisplay[MAG amu (ILVL=94 OR ILVL=95) CLVL>85]: %NAME% %ORANGE%[C]%WHITE%
-ItemDisplay[MAG amu (ILVL=96 OR ILVL=97) CLVL>83]: %NAME% %ORANGE%[C]%WHITE%
-ItemDisplay[MAG amu ILVL>97 CLVL>81]: %NAME% %ORANGE%[C]%WHITE%
+ItemDisplay[MAG amu (ILVL=82 OR ILVL=83) CLVL>97]: %NAME% %ORANGE%[C]
+ItemDisplay[MAG amu (ILVL=84 OR ILVL=85) CLVL>95]: %NAME% %ORANGE%[C]
+ItemDisplay[MAG amu (ILVL=86 OR ILVL=87) CLVL>93]: %NAME% %ORANGE%[C]
+ItemDisplay[MAG amu (ILVL=88 OR ILVL=89) CLVL>91]: %NAME% %ORANGE%[C]
+ItemDisplay[MAG amu (ILVL=90 OR ILVL=91) CLVL>89]: %NAME% %ORANGE%[C]
+ItemDisplay[MAG amu (ILVL=92 OR ILVL=93) CLVL>87]: %NAME% %ORANGE%[C]
+ItemDisplay[MAG amu (ILVL=94 OR ILVL=95) CLVL>85]: %NAME% %ORANGE%[C]
+ItemDisplay[MAG amu (ILVL=96 OR ILVL=97) CLVL>83]: %NAME% %ORANGE%[C]
+ItemDisplay[MAG amu ILVL>97 CLVL>81]: %NAME% %ORANGE%[C]
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
 //║                       ▬▬▬▬▬ [Optional] Identified Crafting Bases ▬▬▬▬▬                        ║
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
@@ -1510,31 +1510,37 @@ ItemDisplay[!ETH ELT WP5 !CL7]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
 //║               ▬▬▬▬▬ [Custom] Rules for Runeword Bases with No Skill Tags ▬▬▬▬▬                ║
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
 ItemDisplay[NMAG (hbw OR cbw) !ETH SOCK=4]: %GRAY%Low Req Harmony Base //Hunter or Composite Bow Harmony Base
-ItemDisplay[NMAG 6lw ETH SOCK=4]: %ORANGE%%NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] //4os ETH Hydra Bow for Merc
+ItemDisplay[NMAG ETH (SOCK=0 OR SOCK=4) 6lw]: %ORANGE%Hydra Bow %WHITE%[%RED%%SOCKETS%%WHITE%] //4os ETH Hydra Bow for Merc
 
-ItemDisplay[ETH (SOCK=0 OR SOCK=6) (7p7 OR 7gm OR 6ws)]: %ORANGE%%NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] //0 or 6 socket Eth War Pike, Thunder Maul, Archon Staff
+ItemDisplay[ETH (SOCK=0 OR SOCK=6) 7p7]: %ORANGE%War Pike %WHITE%[%RED%%SOCKETS%%WHITE%] //0 or 6 socket Eth War Pike
+ItemDisplay[ETH (SOCK=0 OR SOCK=6) 7gm]: %ORANGE%Thunder Maul %WHITE%[%RED%%SOCKETS%%WHITE%] //0 or 6 socket Eth Thunder Maul
+ItemDisplay[ETH (SOCK=0 OR SOCK=6) 6ws]: %ORANGE%Archon Staff %WHITE%[%RED%%SOCKETS%%WHITE%] //0 or 6 socket Eth Archon Staff
 
 // Polearms - Thresher (7s8), Giant Thresher (7wc), Mancatcher (7br)
-ItemDisplay[NMAG (SOCK=0 OR SOCK=4) ETH (7s8 OR 7wc OR 7br)]: %RED%#### %ORANGE%%NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%####
+ItemDisplay[NMAG (SOCK=0 OR SOCK=4) ETH 7s8]: %RED%#### %GREEN%ETH Thresher %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%####
+ItemDisplay[NMAG (SOCK=0 OR SOCK=4) ETH 7wc]: %RED%#### %GREEN%ETH Giant Thresher %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%####
+ItemDisplay[NMAG (SOCK=0 OR SOCK=4) ETH 7br]: %RED%#### %GREEN%ETH Mancatcher %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%####
 
 // Polearms - Cryptic Axe (7pa), and Great Poleaxe (7h7) for characters under 80
-//ItemDisplay[NMAG CLVL<80 SOCK=4 ETH (7pa OR 7h7)]: %RED%#### %ORANGE%%NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%####
-ItemDisplay[NMAG (SOCK=0 OR SOCK=4) ETH (7pa OR 7h7)]: %RED%#### %ORANGE%%NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%####
+ItemDisplay[NMAG CLVL<80 SOCK=4 ETH (7pa OR 7h7)]: %RED%#### %ORANGE%%NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%####
+//ItemDisplay[NMAG (SOCK=0 OR SOCK=4) ETH (7pa OR 7h7)]: %RED%#### %ORANGE%%NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%####
 
 ItemDisplay[NMAG (crs OR bsd) SOCK=4]: %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] //4os Crystal/Broad
 
 //Show Elite and Mage Plate Body Armors
-ItemDisplay[NMAG SOCK>2 (uui OR uea OR ula OR utu OR ung OR ucl OR urs OR uhn OR upl OR utp OR uld OR uld OR ult OR uth OR uul OR uar OR xtp)]: %DARK_GREEN%%NAME% %WHITE%[%RED%%SOCKETS%%WHITE%]
+ItemDisplay[NMAG SOCK>2 (uui OR uea OR ula OR utu OR ung OR ucl OR urs OR uhn OR upl OR utp OR uld OR uld OR ult OR uth OR uul OR uar OR xtp)]: %RED%#### %ORANGE%%NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%####
 //ItemDisplay[NMAG SOCK<3 (uui OR uea OR ula OR utu OR ung OR ucl OR urs OR uhn OR upl OR utp OR uld OR uld OR ult OR uth OR uul OR uar OR xtp)]:
 
 //ItemDisplay[NMAG SOCK=3 aar]: %RED%#### %DARK_GREEN%%NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%#### //3os Ancient Armor
 
-ItemDisplay[NMAG WP13 (SOCK=0 OR SOCK>3) SK121>2]: %DARK_GREEN%%NAME% %YELLOW%[+3 FoH] //Pally Scepters with +3 
-ItemDisplay[NMAG WP13 (SOCK=0 OR SOCK>3) SK112>2]: %DARK_GREEN%%NAME% %YELLOW%[+3 Blessed Hammer]
-ItemDisplay[NMAG WP13 (SOCK=0 OR SOCK>3) SK113>2]: %DARK_GREEN%%NAME% %YELLOW%[+3 Conc]
-ItemDisplay[NMAG WP13 (SOCK=0 OR SOCK>3) SK123>2]: %DARK_GREEN%%NAME% %YELLOW%[+3 Conviction]
+ItemDisplay[NMAG WP13 (SOCK=0 OR SOCK>3) SK121>2]: %RED%#### %DARK_GREEN%%NAME% %YELLOW%[+3 FoH] %RED%####  //Pally Scepters with +3 
+ItemDisplay[NMAG WP13 (SOCK=0 OR SOCK>3) SK112>2]: %RED%#### %DARK_GREEN%%NAME% %YELLOW%[+3 Blessed Hammer] %RED%#### 
+ItemDisplay[NMAG WP13 (SOCK=0 OR SOCK>3) SK113>2]: %RED%#### %DARK_GREEN%%NAME% %YELLOW%[+3 Conc] %RED%#### 
+ItemDisplay[NMAG WP13 (SOCK=0 OR SOCK>3) SK123>2]: %RED%#### %DARK_GREEN%%NAME% %YELLOW%[+3 Conviction] %RED%#### 
 
-ItemDisplay[NMAG (pab OR paf) RES>39]: %DARK_GREEN%%NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] //Show all Sacred Targe and Vortex Shields with 40+ res
+ItemDisplay[NMAG pab RES>39]: %RED%#### %GREEN%Sacred Targe %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%####  //Show all Sacred Targe and Vortex Shields with 40+ res
+ItemDisplay[NMAG paf RES>39]: %RED%#### %GREEN%Vortex Shield %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%####  //Show all Sacred Targe and Vortex Shields with 40+ res
+
 ItemDisplay[NMAG SOCK>2 (7cr OR 7fb OR 7gs OR 72h OR 7gd) ETH]: %DARK_GREEN%%NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] //Eth Phase(7cr),ColossusSw(7fb),BalrogBl(7gs),Legend(72h),ColossusBlade(7gd)
 
 //Plague Claw Bases
@@ -1544,62 +1550,60 @@ ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) (SOCK=0 OR SOCK=3) SK271>2]: %DARK_G
 ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) (SOCK=0 OR SOCK=3) SK277>2 SK278>0]: %DARK_GREEN%%NAME% %YELLOW%[+3 BS\Venom]
 ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) (SOCK=0 OR SOCK=3) SK273>2]: %DARK_GREEN%%NAME% %YELLOW%[+3 Mind Blast]
 
-
-
 //║                         ▬▬▬▬▬ Runeword Bases with No Skill Tags ▬▬▬▬▬                         ║
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // 0 Sockets
 //─────────────────────────────────────────────────────────────────────────────────────────────────
-ItemDisplay[CLVL<80 SOCK=0 !ETH SUP (2ax OR fla) ILVL>40]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->5%BLUE%]%WHITE%
-ItemDisplay[CLVL<80 SOCK=0 !ETH SUP (bsd OR 9vo OR 8cb) ILVL>25]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->4%BLUE%]%WHITE%
-ItemDisplay[CLVL<80 SOCK=0 !ETH SUP (fla OR crs OR 9s8 OR rxb) (ILVL>25 AND ILVL<41)]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->4%BLUE%]%WHITE%
-ItemDisplay[CLVL<80 SOCK=0 ETH (scy OR hal OR wsc OR brn) (ILVL>25 AND ILVL<41)]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->4%BLUE%]%WHITE%
+ItemDisplay[CLVL<80 SOCK=0 !ETH SUP (2ax OR fla) ILVL>40]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->5%BLUE%]
+ItemDisplay[CLVL<80 SOCK=0 !ETH SUP (bsd OR 9vo OR 8cb) ILVL>25]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->4%BLUE%]
+ItemDisplay[CLVL<80 SOCK=0 !ETH SUP (fla OR crs OR 9s8 OR rxb) (ILVL>25 AND ILVL<41)]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->4%BLUE%]
+ItemDisplay[CLVL<80 SOCK=0 ETH (scy OR hal OR wsc OR brn) (ILVL>25 AND ILVL<41)]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->4%BLUE%]
 ItemDisplay[SUP ED>0 SOCK=0 (6hb OR 6cb) ILVL>25]:
-ItemDisplay[ETH SOCK=0 (7mp OR 7wa OR 7gd OR 7h7 OR 7wc) ILVL>40]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->6%BLUE%]%WHITE%
-ItemDisplay[ETH SOCK=0 (7fb OR 7s8 OR 7pa OR 7br) ILVL>40]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->5%BLUE%]%WHITE%
-ItemDisplay[ETH !SUP SOCK=0 9wc ILVL>40]: %NAME% %BLUE%[%WHITE%0%RED%-->4%BLUE%]%WHITE%
-ItemDisplay[!ETH SUP ED=15 SOCK=0 (brs OR ltp OR xtp)]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->3%BLUE%]%WHITE%
-ItemDisplay[!ETH SUP ED=15 SOCK=0 (ci2 OR ci3) ILVL>40]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->3%BLUE%]%WHITE%
-ItemDisplay[!ETH SUP ED=15 SOCK=0 (7mp OR 7wa OR 7cr) ILVL>40]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->6%BLUE%]%WHITE%
-ItemDisplay[!ETH SUP ED>0 SOCK=0 (ush OR xrn OR urn OR usk OR uh9) ILVL>40]: %NAME%%BLUE%[%WHITE%0%YELLOW%-->3%BLUE%]%WHITE%[%GRAY%Lv.%ILVL%%WHITE%]
-ItemDisplay[ETH SOCK=0 (uui OR uea OR ula OR utu) DEF>674 ILVL>25]: %NAME%%BLUE%[%WHITE%0%YELLOW%-->4%BLUE%]%WHITE%[%GRAY%Lv.%ILVL%%WHITE%]
-ItemDisplay[ETH SOCK=0 (ung OR urs OR uhn) DEF>711 ILVL>25]: %NAME%%BLUE%[%WHITE%0%YELLOW%-->4%BLUE%]%WHITE%[%GRAY%Lv.%ILVL%%WHITE%]
-ItemDisplay[ETH SOCK=0 (upl OR utp OR uld) DEF>749 ILVL>25]: %NAME%%BLUE%[%WHITE%0%YELLOW%-->4%BLUE%]%WHITE%[%GRAY%Lv.%ILVL%%WHITE%]
-ItemDisplay[!ETH SOCK=0 SUP ITEMSTAT91<-7 uit ILVL>40]: %NAME%%BLUE%[%WHITE%0%YELLOW%-->4%BLUE%]%WHITE%[%GRAY%Lv.%ILVL%%WHITE%]
-ItemDisplay[!SUP ((am6 OR am7 OR amb OR amc) AND TABSK0>2) ILVL>40 SOCK=0]: %NAME%%BLUE%[%WHITE%0%RED%-->4%BLUE%]%WHITE%[%GRAY%Lv.%ILVL%%WHITE%]
+ItemDisplay[ETH SOCK=0 (7mp OR 7wa OR 7gd OR 7h7 OR 7wc) ILVL>40]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->6%BLUE%]
+ItemDisplay[ETH SOCK=0 (7fb OR 7s8 OR 7pa OR 7br) ILVL>40]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->5%BLUE%]
+ItemDisplay[ETH !SUP SOCK=0 9wc ILVL>40]: %NAME% %BLUE%[%WHITE%0%RED%-->4%BLUE%]
+ItemDisplay[!ETH SUP ED=15 SOCK=0 (brs OR ltp OR xtp)]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->3%BLUE%]
+ItemDisplay[!ETH SUP ED=15 SOCK=0 (ci2 OR ci3) ILVL>40]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->3%BLUE%]
+ItemDisplay[!ETH SUP ED=15 SOCK=0 (7mp OR 7wa OR 7cr) ILVL>40]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->6%BLUE%]
+ItemDisplay[!ETH SUP ED>0 SOCK=0 (ush OR xrn OR urn OR usk OR uh9) ILVL>40]: %NAME%%BLUE%[%WHITE%0%YELLOW%-->3%BLUE%]
+ItemDisplay[ETH SOCK=0 (uui OR uea OR ula OR utu) DEF>674 ILVL>25]: %NAME%%BLUE%[%WHITE%0%YELLOW%-->4%BLUE%]
+ItemDisplay[ETH SOCK=0 (ung OR urs OR uhn) DEF>711 ILVL>25]: %NAME%%BLUE%[%WHITE%0%YELLOW%-->4%BLUE%]
+ItemDisplay[ETH SOCK=0 (upl OR utp OR uld) DEF>749 ILVL>25]: %NAME%%BLUE%[%WHITE%0%YELLOW%-->4%BLUE%]
+ItemDisplay[!ETH SOCK=0 SUP ITEMSTAT91<-7 uit ILVL>40]: %NAME%%BLUE%[%WHITE%0%YELLOW%-->4%BLUE%]
+ItemDisplay[!SUP ((am6 OR am7 OR amb OR amc) AND TABSK0>2) ILVL>40 SOCK=0]: %NAME%%BLUE%[%WHITE%0%RED%-->4%BLUE%]
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // 3 Sockets
 //─────────────────────────────────────────────────────────────────────────────────────────────────
-ItemDisplay[ETH SOCK=3 72h]: %NAME% %BLUE%[%GREEN%3%BLUE%]%WHITE%
-ItemDisplay[ETH SOCK=3 (uui OR uea OR ula OR utu) DEF>674]: %NAME% %BLUE%[%GREEN%3%BLUE%]%WHITE%
-ItemDisplay[ETH SOCK=3 (ung OR urs OR uhn) DEF>711]: %NAME% %BLUE%[%GREEN%3%BLUE%]%WHITE%
-ItemDisplay[ETH SOCK=3 (upl OR utp OR uld) DEF>749]: %NAME% %BLUE%[%GREEN%3%BLUE%]%WHITE%
-ItemDisplay[!ETH SOCK=3 (uit OR ush OR xrn OR urn OR usk OR uh9)]: %NAME% %BLUE%[%GREEN%3%BLUE%]%WHITE%
-ItemDisplay[!ETH SOCK=3 pab RES>39]: %NAME% %BLUE%[%GREEN%3%BLUE%]%WHITE%
-ItemDisplay[!ETH SUP ED=15 SOCK=3 (ci2 OR ci3 OR brs OR ltp OR xtp)]: %NAME% %BLUE%[%GREEN%3%BLUE%]%WHITE%
+ItemDisplay[ETH SOCK=3 72h]: %RED%#### %NAME% %BLUE%[%GREEN%3%BLUE%] %RED%####
+ItemDisplay[ETH SOCK=3 (uui OR uea OR ula OR utu) DEF>674]: %RED%#### %NAME% %BLUE%[%GREEN%3%BLUE%] %RED%####
+ItemDisplay[ETH SOCK=3 (ung OR urs OR uhn) DEF>711]: %RED%#### %NAME% %BLUE%[%GREEN%3%BLUE%] %RED%####
+ItemDisplay[ETH SOCK=3 (upl OR utp OR uld) DEF>749]: %RED%#### %NAME% %BLUE%[%GREEN%3%BLUE%] %RED%####
+ItemDisplay[!ETH SOCK=3 (uit OR ush OR xrn OR urn OR usk OR uh9)]: %RED%#### %NAME% %BLUE%[%GREEN%3%BLUE%] %RED%####
+ItemDisplay[!ETH SOCK=3 pab RES>39]: %RED%#### NAME% %BLUE%[%GREEN%3%BLUE%] %RED%####
+ItemDisplay[!ETH SUP ED=15 SOCK=3 (ci2 OR ci3 OR brs OR ltp OR xtp)]: %RED%#### %NAME% %BLUE%[%GREEN%3%BLUE%] %RED%####
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // 4 Sockets
 //─────────────────────────────────────────────────────────────────────────────────────────────────
-ItemDisplay[ETH SOCK=4 (uui OR uea OR ula OR utu) DEF>674]: %NAME% %BLUE%[%GREEN%4%BLUE%]%WHITE%
-ItemDisplay[ETH SOCK=4 (ung OR urs OR uhn) DEF>711]: %NAME% %BLUE%[%GREEN%4%BLUE%]%WHITE%
-ItemDisplay[ETH SOCK=4 (upl OR utp OR uld) DEF>749]: %NAME% %BLUE%[%GREEN%4%BLUE%]%WHITE%
-ItemDisplay[SOCK=4 (crs OR bsd OR 7cr OR 9wc OR 9br OR 7s8 OR 7wc OR 7br OR 8cb OR 8rx OR 6hb OR 6cb OR 6rx)]: %NAME% %BLUE%[%GREEN%4%BLUE%]%WHITE%
-ItemDisplay[ETH SOCK=4 (7mp OR 7wa OR 7fb OR 7gd OR wsc OR brn OR 9s8)]: %NAME% %BLUE%[%GREEN%4%BLUE%]%WHITE%
-ItemDisplay[!ETH SOCK=4 (fla OR uit)]: %NAME% %BLUE%[%GREEN%4%BLUE%]%WHITE%
-ItemDisplay[SOCK=4 ((am6 OR am7 OR amb OR amc) AND TABSK0>2)]: %NAME% %BLUE%[%GREEN%4%BLUE%]%WHITE%
-ItemDisplay[!ETH SOCK=4 pab RES>39]: %NAME% %BLUE%[%GREEN%4%BLUE%]%WHITE%
+ItemDisplay[ETH SOCK=4 (uui OR uea OR ula OR utu) DEF>674]: %RED%#### %NAME% %BLUE%[%GREEN%4%BLUE%] %RED%####
+ItemDisplay[ETH SOCK=4 (ung OR urs OR uhn) DEF>711]: %RED%#### %NAME% %BLUE%[%GREEN%4%BLUE%] %RED%####
+ItemDisplay[ETH SOCK=4 (upl OR utp OR uld) DEF>749]: %RED%#### %NAME% %BLUE%[%GREEN%4%BLUE%] %RED%####
+//ItemDisplay[SOCK=4 (crs OR bsd OR 7cr OR 9wc OR 9br OR 7s8 OR 7wc OR 7br OR 8cb OR 8rx OR 6hb OR 6cb OR 6rx)]: %RED%#### %NAME% %BLUE%[%GREEN%4%BLUE%] %RED%####
+ItemDisplay[ETH SOCK=4 (7mp OR 7wa OR 7fb OR 7gd OR wsc OR brn OR 9s8)]: %RED%#### %NAME% %BLUE%[%GREEN%4%BLUE%] %RED%####
+ItemDisplay[!ETH SOCK=4 uit]: %RED%#### %GREEN%Monarch %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%####
+ItemDisplay[!ETH SOCK=4 fla]: %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%]
+ItemDisplay[SOCK=4 ((am6 OR am7 OR amb OR amc) AND TABSK0>2)]: %RED%#### %NAME% %BLUE%[%GREEN%4%BLUE%] %RED%####
+ItemDisplay[!ETH SOCK=4 pab RES>39]: %RED%#### %ORANGE%%NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%####
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // 5 Sockets
 //─────────────────────────────────────────────────────────────────────────────────────────────────
-ItemDisplay[SOCK=5 (7mp OR 7wa OR 7cr OR 9s8 OR 9wc OR 9br OR 7s8 OR 7pa OR 7h7 OR 7wc OR 7br)]: %NAME% %BLUE%[%GREEN%5%BLUE%]%WHITE%
-ItemDisplay[ETH SOCK=5 (7fb OR 7gd)]: %NAME% %BLUE%[%GREEN%5%BLUE%]%WHITE%
-ItemDisplay[!ETH SOCK=5 (2ax OR mpi OR crs OR fla)]: %NAME% %BLUE%[%GREEN%5%BLUE%]%WHITE%
+ItemDisplay[SOCK=5 (7mp OR 7wa OR 7cr OR 9s8 OR 9wc OR 9br OR 7s8 OR 7pa OR 7h7 OR 7wc OR 7br)]: %NAME% %BLUE%[%GREEN%5%BLUE%]
+ItemDisplay[ETH SOCK=5 (7fb OR 7gd)]: %RED%#### %NAME% %BLUE%[%GREEN%5%BLUE%] %RED%####
+ItemDisplay[!ETH SOCK=5 (2ax OR mpi OR crs OR fla)]: %NAME% %BLUE%[%GREEN%5%BLUE%]
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // 6 Sockets
 //─────────────────────────────────────────────────────────────────────────────────────────────────
-ItemDisplay[SUP ED=15 SOCK=6 (7mp OR 7wa OR 7cr)]: %NAME% %BLUE%[%GREEN%6%BLUE%]%WHITE%
-
-ItemDisplay[ETH SOCK=6 (7fb OR 7gd OR 7h7 OR 7wc)]: %NAME% %BLUE%[%GREEN%6%BLUE%]%WHITE%
+ItemDisplay[SUP ED=15 SOCK=6 (7mp OR 7wa OR 7cr)]: %RED%#### %NAME% %BLUE%[%GREEN%6%BLUE%] %RED%####
+ItemDisplay[ETH SOCK=6 (7fb OR 7gd OR 7h7 OR 7wc)]: %RED%#### %NAME% %BLUE%[%GREEN%6%BLUE%] %RED%####
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
 //║                 ▬▬▬▬▬ [Custom] Rules for Runeword Bases with Skill Tags ▬▬▬▬▬                 ║
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
@@ -1619,122 +1623,122 @@ ItemDisplay[CL5 ELT !(7xf OR 7cs) SOCK=0 ILVL>25 SK277>2]:%NAME% %BLUE%[%WHITE%0
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // 3 Socket Claws (Chaos)
 //─────────────────────────────────────────────────────────────────────────────────────────────────
-ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) SOCK=3 SK277>2 SK274>2]: %NAME% %BLUE%[%GREEN%3%BLUE%]%GREEN%[Blade Shield\BoI+3]%WHITE%
-ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) SOCK=3 SK274>2]: %NAME% %BLUE%[%GREEN%3%BLUE%]%GREEN%[BoI+3]%WHITE%
-ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) SOCK=3 SK277>2 SK274>1]: %NAME% %BLUE%[%GREEN%3%BLUE%]%GREEN%[Blade Shield+3\BoI+2]%WHITE%
-ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) SOCK=3 SK274>1]: %NAME% %BLUE%[%GREEN%3%BLUE%]%GREEN%[BoI+2]%WHITE%
-ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) SOCK=3 SK277>2 SK274>0]: %NAME% %BLUE%[%GREEN%3%BLUE%]%GREEN%[Blade Shield+3\BoI+1]%WHITE%
-ItemDisplay[CL5 ELT SOCK=3 SK277>2]: %NAME% %BLUE%[%GREEN%3%BLUE%]%GREEN%[Blade Shield+3]%WHITE%
+ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) SOCK=3 SK277>2 SK274>2]: %NAME% %BLUE%[%GREEN%3%BLUE%]%GREEN%[Blade Shield\BoI+3]
+ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) SOCK=3 SK274>2]: %NAME% %BLUE%[%GREEN%3%BLUE%]%GREEN%[BoI+3]
+ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) SOCK=3 SK277>2 SK274>1]: %NAME% %BLUE%[%GREEN%3%BLUE%]%GREEN%[Blade Shield+3\BoI+2]
+ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) SOCK=3 SK274>1]: %NAME% %BLUE%[%GREEN%3%BLUE%]%GREEN%[BoI+2]
+ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) SOCK=3 SK277>2 SK274>0]: %NAME% %BLUE%[%GREEN%3%BLUE%]%GREEN%[Blade Shield+3\BoI+1]
+ItemDisplay[CL5 ELT SOCK=3 SK277>2]: %NAME% %BLUE%[%GREEN%3%BLUE%]%GREEN%[Blade Shield+3]
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // 0 Socket Wands (White)
 //─────────────────────────────────────────────────────────────────────────────────────────────────
-ItemDisplay[WP12 !(wnd OR ywn OR 9wn) SOCK=0 SK74>2 SK83>2 SK84>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->2%BLUE%]%YELLOW%[CE\Desecrate\B.Spear+3]%WHITE%
-ItemDisplay[WP12 !(wnd OR ywn OR 9wn) SOCK=0 SK74>2 SK83>2 SK92>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->2%BLUE%]%YELLOW%[CE\Desecrate\P.Nova+3]%WHITE%
-ItemDisplay[WP12 !(wnd OR ywn OR 9wn) SOCK=0 SK74>2 SK83>2 SK93>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->2%BLUE%]%YELLOW%[CE\Desecrate\B.Spirit+3]%WHITE%
-ItemDisplay[WP12 !(wnd OR ywn OR 9wn) SOCK=0 SK74>2 SK84>2 SK92>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->2%BLUE%]%YELLOW%[CE\B.Spear\P.Nova+3]%WHITE%
-ItemDisplay[WP12 !(wnd OR ywn OR 9wn) SOCK=0 SK74>2 SK84>2 SK93>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->2%BLUE%]%YELLOW%[CE\B.Spear\B.Spirit+3]%WHITE%
-ItemDisplay[WP12 !(wnd OR ywn OR 9wn) SOCK=0 SK74>2 SK92>2 SK93>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->2%BLUE%]%YELLOW%[CE\P.Nova\B.Spirit+3]%WHITE%
-ItemDisplay[WP12 !(wnd OR ywn OR 9wn) SOCK=0 SK83>2 SK84>2 SK92>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->2%BLUE%]%YELLOW%[Desecrate\B.Spear\P.Nova+3]%WHITE%
-ItemDisplay[WP12 !(wnd OR ywn OR 9wn) SOCK=0 SK83>2 SK84>2 SK93>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->2%BLUE%]%YELLOW%[Desecrate\B.Spear\B.Spirit+3]%WHITE%
-ItemDisplay[WP12 !(wnd OR ywn OR 9wn) SOCK=0 SK83>2 SK92>2 SK93>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->2%BLUE%]%YELLOW%[Desecrate\P.Nova\B.Spirit+3]%WHITE%
-ItemDisplay[WP12 !(wnd OR ywn OR 9wn) SOCK=0 SK84>2 SK92>2 SK93>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->2%BLUE%]%YELLOW%[B.Spear\P.Nova\B.Spirit+3]%WHITE%
+ItemDisplay[WP12 !(wnd OR ywn OR 9wn) SOCK=0 SK74>2 SK83>2 SK84>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->2%BLUE%]%YELLOW%[CE\Desecrate\B.Spear+3]
+ItemDisplay[WP12 !(wnd OR ywn OR 9wn) SOCK=0 SK74>2 SK83>2 SK92>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->2%BLUE%]%YELLOW%[CE\Desecrate\P.Nova+3]
+ItemDisplay[WP12 !(wnd OR ywn OR 9wn) SOCK=0 SK74>2 SK83>2 SK93>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->2%BLUE%]%YELLOW%[CE\Desecrate\B.Spirit+3]
+ItemDisplay[WP12 !(wnd OR ywn OR 9wn) SOCK=0 SK74>2 SK84>2 SK92>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->2%BLUE%]%YELLOW%[CE\B.Spear\P.Nova+3]
+ItemDisplay[WP12 !(wnd OR ywn OR 9wn) SOCK=0 SK74>2 SK84>2 SK93>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->2%BLUE%]%YELLOW%[CE\B.Spear\B.Spirit+3]
+ItemDisplay[WP12 !(wnd OR ywn OR 9wn) SOCK=0 SK74>2 SK92>2 SK93>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->2%BLUE%]%YELLOW%[CE\P.Nova\B.Spirit+3]
+ItemDisplay[WP12 !(wnd OR ywn OR 9wn) SOCK=0 SK83>2 SK84>2 SK92>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->2%BLUE%]%YELLOW%[Desecrate\B.Spear\P.Nova+3]
+ItemDisplay[WP12 !(wnd OR ywn OR 9wn) SOCK=0 SK83>2 SK84>2 SK93>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->2%BLUE%]%YELLOW%[Desecrate\B.Spear\B.Spirit+3]
+ItemDisplay[WP12 !(wnd OR ywn OR 9wn) SOCK=0 SK83>2 SK92>2 SK93>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->2%BLUE%]%YELLOW%[Desecrate\P.Nova\B.Spirit+3]
+ItemDisplay[WP12 !(wnd OR ywn OR 9wn) SOCK=0 SK84>2 SK92>2 SK93>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->2%BLUE%]%YELLOW%[B.Spear\P.Nova\B.Spirit+3]
 
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // 2 Socket Wands (White)
 //─────────────────────────────────────────────────────────────────────────────────────────────────
-ItemDisplay[WP12 SOCK=2 SK74>2 SK83>2 SK84>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[CE\Desecrate\B.Spear+3]%WHITE%
-ItemDisplay[WP12 SOCK=2 SK74>2 SK83>2 SK92>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[CE\Desecrate\P.Nova+3]%WHITE%
-ItemDisplay[WP12 SOCK=2 SK74>2 SK83>2 SK93>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[CE\Desecrate\B.Spirit+3]%WHITE%
-ItemDisplay[WP12 SOCK=2 SK74>2 SK84>2 SK92>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[CE\B.Spear\P.Nova+3]%WHITE%
-ItemDisplay[WP12 SOCK=2 SK74>2 SK84>2 SK93>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[CE\B.Spear\B.Spirit+3]%WHITE%
-ItemDisplay[WP12 SOCK=2 SK74>2 SK92>2 SK93>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[CE\P.Nova\B.Spirit+3]%WHITE%
-ItemDisplay[WP12 SOCK=2 SK83>2 SK84>2 SK92>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[Desecrate\B.Spear\P.Nova+3]%WHITE%
-ItemDisplay[WP12 SOCK=2 SK83>2 SK84>2 SK93>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[Desecrate\B.Spear\B.Spirit+3]%WHITE%
-ItemDisplay[WP12 SOCK=2 SK83>2 SK92>2 SK93>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[Desecrate\P.Nova\B.Spirit+3]%WHITE%
-ItemDisplay[WP12 SOCK=2 SK84>2 SK92>2 SK93>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[B.Spear\P.Nova\B.Spirit+3]%WHITE%
-ItemDisplay[WP12 SOCK=2 SK74>2 SK83>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[CE\Desecrate+3]%WHITE%
-ItemDisplay[WP12 SOCK=2 SK74>2 SK84>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[CE\B.Spear+3]%WHITE%
-ItemDisplay[WP12 SOCK=2 SK74>2 SK92>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[CE\P.Nova+3]%WHITE%
-ItemDisplay[WP12 SOCK=2 SK74>2 SK93>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[CE\B.Spirit+3]%WHITE%
-ItemDisplay[WP12 SOCK=2 SK83>2 SK84>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[Desecrate\B.Spear+3]%WHITE%
-ItemDisplay[WP12 SOCK=2 SK83>2 SK92>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[Desecrate\P.Nova+3]%WHITE%
-ItemDisplay[WP12 SOCK=2 SK83>2 SK93>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[Desecrate\B.Spirit+3]%WHITE%
-ItemDisplay[WP12 SOCK=2 SK84>2 SK92>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[B.Spear\P.Nova+3]%WHITE%
-ItemDisplay[WP12 SOCK=2 SK84>2 SK93>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[B.Spear\B.Spirit+3]%WHITE%
-ItemDisplay[WP12 SOCK=2 SK92>2 SK93>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[P.Nova\B.Spirit+3]%WHITE%
+ItemDisplay[WP12 SOCK=2 SK74>2 SK83>2 SK84>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[CE\Desecrate\B.Spear+3]
+ItemDisplay[WP12 SOCK=2 SK74>2 SK83>2 SK92>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[CE\Desecrate\P.Nova+3]
+ItemDisplay[WP12 SOCK=2 SK74>2 SK83>2 SK93>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[CE\Desecrate\B.Spirit+3]
+ItemDisplay[WP12 SOCK=2 SK74>2 SK84>2 SK92>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[CE\B.Spear\P.Nova+3]
+ItemDisplay[WP12 SOCK=2 SK74>2 SK84>2 SK93>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[CE\B.Spear\B.Spirit+3]
+ItemDisplay[WP12 SOCK=2 SK74>2 SK92>2 SK93>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[CE\P.Nova\B.Spirit+3]
+ItemDisplay[WP12 SOCK=2 SK83>2 SK84>2 SK92>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[Desecrate\B.Spear\P.Nova+3]
+ItemDisplay[WP12 SOCK=2 SK83>2 SK84>2 SK93>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[Desecrate\B.Spear\B.Spirit+3]
+ItemDisplay[WP12 SOCK=2 SK83>2 SK92>2 SK93>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[Desecrate\P.Nova\B.Spirit+3]
+ItemDisplay[WP12 SOCK=2 SK84>2 SK92>2 SK93>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[B.Spear\P.Nova\B.Spirit+3]
+ItemDisplay[WP12 SOCK=2 SK74>2 SK83>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[CE\Desecrate+3]
+ItemDisplay[WP12 SOCK=2 SK74>2 SK84>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[CE\B.Spear+3]
+ItemDisplay[WP12 SOCK=2 SK74>2 SK92>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[CE\P.Nova+3]
+ItemDisplay[WP12 SOCK=2 SK74>2 SK93>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[CE\B.Spirit+3]
+ItemDisplay[WP12 SOCK=2 SK83>2 SK84>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[Desecrate\B.Spear+3]
+ItemDisplay[WP12 SOCK=2 SK83>2 SK92>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[Desecrate\P.Nova+3]
+ItemDisplay[WP12 SOCK=2 SK83>2 SK93>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[Desecrate\B.Spirit+3]
+ItemDisplay[WP12 SOCK=2 SK84>2 SK92>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[B.Spear\P.Nova+3]
+ItemDisplay[WP12 SOCK=2 SK84>2 SK93>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[B.Spear\B.Spirit+3]
+ItemDisplay[WP12 SOCK=2 SK92>2 SK93>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[P.Nova\B.Spirit+3]
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // 0 Socket Staves (Leaf, Memory, and Heart of the Oak)
 //─────────────────────────────────────────────────────────────────────────────────────────────────
-ItemDisplay[(sst OR 8ss OR 6ss) SOCK=0 SK41>2 SK47>2 SK52>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->2%BLUE%]%YELLOW%[Blaze\F.Ball\Enflame+3]%WHITE%
-ItemDisplay[(sst OR 8ss) SOCK=0 SK41>2 SK47>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->2%BLUE%]%YELLOW%[Blaze\F.Ball+3]%WHITE%
-ItemDisplay[(sst OR 8ss OR 6ss) SOCK=0 SK41>2 SK52>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->2%BLUE%]%YELLOW%[Blaze\Enflame+3]%WHITE%
-ItemDisplay[(sst OR 8ss OR 6ss) SOCK=0 SK47>2 SK52>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->2%BLUE%]%YELLOW%[F.Ball\Enflame+3]%WHITE%
-ItemDisplay[sst SOCK=0 SK41>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->2%BLUE%]%YELLOW%[Blaze+3]%WHITE%
-ItemDisplay[sst SOCK=0 SK47>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->2%BLUE%]%YELLOW%[F.Ball+3]%WHITE%
-ItemDisplay[WP11 SOCK=0 SK41>2 SK47>2 SK52>2]: %NAME% %BLUE%[%WHITE%0%RED%-->2%BLUE%]%RED%[Blaze\F.Ball\Enflame+3]%WHITE%
-ItemDisplay[WP11 !ELT SOCK=0 SK41>2 SK47>2]: %NAME% %BLUE%[%WHITE%0%RED%-->2%BLUE%]%RED%[Blaze\F.Ball+3]%WHITE%
-ItemDisplay[WP11 SOCK=0 SK41>2 SK52>2]: %NAME% %BLUE%[%WHITE%0%RED%-->2%BLUE%]%RED%[Blaze\Enflame+3]%WHITE%
-ItemDisplay[WP11 SOCK=0 SK47>2 SK52>2]: %NAME% %BLUE%[%WHITE%0%RED%-->2%BLUE%]%RED%[F.Ball\Enflame+3]%WHITE%
-ItemDisplay[WP11 NORM SOCK=0 SK41>2]: %NAME% %BLUE%[%WHITE%0%RED%-->2%BLUE%]%RED%[Blaze+3]%WHITE%
-ItemDisplay[WP11 NORM SOCK=0 SK47>2]: %NAME% %BLUE%[%WHITE%0%RED%-->2%BLUE%]%RED%[F.Ball+3]%WHITE%
-ItemDisplay[(cst OR bst OR 8cs OR 8bs OR 6cs OR 6bs) SOCK=0 SK48>2 SK49>2 SK58>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->4%BLUE%]%YELLOW%[ES\Nova\L.Surge+3]%WHITE%
-ItemDisplay[(cst OR bst OR 8cs OR 8bs OR 6cs OR 6bs) SOCK=0 SK48>2 SK57>2 SK58>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->4%BLUE%]%YELLOW%[ES\Nova\Discharge+3]%WHITE%
-ItemDisplay[(cst OR bst OR 8cs OR 8bs OR 6cs OR 6bs) SOCK=0 SK49>2 SK57>2 SK58>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->4%BLUE%]%YELLOW%[ES\L.Surge\Discharge+3]%WHITE%
-ItemDisplay[(cst OR bst OR 8cs OR 8bs OR 6cs OR 6bs) SOCK=0 SK48>2 SK58>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->4%BLUE%]%YELLOW%[ES\Nova+3]%WHITE%
-ItemDisplay[(cst OR bst OR 8cs OR 8bs OR 6cs OR 6bs) SOCK=0 SK49>2 SK58>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->4%BLUE%]%YELLOW%[ES\L.Surge+3]%WHITE%
-ItemDisplay[(cst OR bst OR 8cs OR 8bs OR 6cs OR 6bs) SOCK=0 SK57>2 SK58>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->4%BLUE%]%YELLOW%[ES\Discharge+3]%WHITE%
-ItemDisplay[(cst OR bst OR 8cs OR 8bs OR 6cs OR 6bs) SOCK=0 SK58>2 SK52>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->4%BLUE%]%YELLOW%[ES\Enflame+3]%WHITE%
-ItemDisplay[(wst OR 8ws OR 6ws) SOCK=0 SK48>2 SK49>2 SK58>2]: %NAME% %BLUE%[%WHITE%0%RED%-->4%BLUE%]%RED%[ES\Nova\L.Surge+3]%WHITE%
-ItemDisplay[(wst OR 8ws OR 6ws) SOCK=0 SK48>2 SK57>2 SK58>2]: %NAME% %BLUE%[%WHITE%0%RED%-->4%BLUE%]%RED%[ES\Nova\Discharge+3]%WHITE%
-ItemDisplay[(wst OR 8ws OR 6ws) SOCK=0 SK49>2 SK57>2 SK58>2]: %NAME% %BLUE%[%WHITE%0%RED%-->4%BLUE%]%RED%[ES\L.Surge\Discharge+3]%WHITE%
-ItemDisplay[(wst OR 8ws OR 6ws) SOCK=0 SK48>2 SK58>2]: %NAME% %BLUE%[%WHITE%0%RED%-->4%BLUE%]%RED%[ES\Nova+3]%WHITE%
-ItemDisplay[(wst OR 8ws OR 6ws) SOCK=0 SK49>2 SK58>2]: %NAME% %BLUE%[%WHITE%0%RED%-->4%BLUE%]%RED%[ES\L.Surge+3]%WHITE%
-ItemDisplay[(wst OR 8ws OR 6ws) SOCK=0 SK57>2 SK58>2]: %NAME% %BLUE%[%WHITE%0%RED%-->4%BLUE%]%RED%[ES\Discharge+3]%WHITE%
-ItemDisplay[(wst OR 8ws OR 6ws) SOCK=0 SK58>2 SK52>2]: %NAME% %BLUE%[%WHITE%0%RED%-->4%BLUE%]%RED%[ES\Enflame+3]%WHITE%
-ItemDisplay[sst SOCK=0 SK40>2 SK52>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->2%BLUE%]%YELLOW%[Enflame\Frigerate+3]%WHITE%
-ItemDisplay[lst SOCK=0 SK40>2 SK52>2]: %NAME% %BLUE%[%WHITE%0%RED%-->2%BLUE%]%RED%[Enflame\Frigerate+3]%WHITE%
-ItemDisplay[(cst OR bst) SOCK=0 SK40>2 SK52>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->4%BLUE%]%YELLOW%[Frigerate\Enflame+3]%WHITE%
-ItemDisplay[wst SOCK=0 SK40>2 SK52>2]: %NAME% %BLUE%[%WHITE%0%RED%-->4%BLUE%]%RED%[Frigerate\Enflame+3]%WHITE%
-ItemDisplay[(cst OR bst OR 8cs OR 8bs OR 6cs OR 6bs) SOCK=0 SK58>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->4%BLUE%]%YELLOW%[ES+3]%WHITE%
-ItemDisplay[(cst OR bst OR 8cs OR 8bs OR 6cs OR 6bs) SOCK=0 SK49>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->4%BLUE%]%YELLOW%[L.Surge+3]%WHITE%
-ItemDisplay[(wst OR 8ws OR 6ws) SOCK=0 SK58>2]: %NAME% %BLUE%[%WHITE%0%RED%-->4%BLUE%]%RED%[ES+3]%WHITE%
-ItemDisplay[(wst OR 8ws OR 6ws) SOCK=0 SK49>2]: %NAME% %BLUE%[%WHITE%0%RED%-->4%BLUE%]%RED%[L.Surge+3]%WHITE%
-ItemDisplay[wst SOCK=0 SK40>2]: %NAME% %BLUE%[%WHITE%0%RED%-->4%BLUE%]%RED%[Frigerate+3]%WHITE%
-ItemDisplay[(sst OR 8ss OR 6ss) SOCK=0 SK52>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->2%BLUE%]%YELLOW%[Enflame+3]%WHITE%
-ItemDisplay[(lst OR 8ls OR 6ls) SOCK=0 SK52>2]: %NAME% %BLUE%[%WHITE%0%RED%-->2%BLUE%]%RED%[Enflame+3]%WHITE%
-ItemDisplay[(cst OR bst OR 8cs OR 8bs OR 6cs OR 6bs) SOCK=0 SK52>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->4%BLUE%]%YELLOW%[Enflame+3]%WHITE%
-ItemDisplay[(wst OR 8ws OR 6ws) SOCK=0 SK52>2]: %NAME% %BLUE%[%WHITE%0%RED%-->2\4%BLUE%]%RED%[Enflame+3]%WHITE%
+ItemDisplay[(sst OR 8ss OR 6ss) SOCK=0 SK41>2 SK47>2 SK52>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->2%BLUE%]%YELLOW%[Blaze\F.Ball\Enflame+3]
+ItemDisplay[(sst OR 8ss) SOCK=0 SK41>2 SK47>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->2%BLUE%]%YELLOW%[Blaze\F.Ball+3]
+ItemDisplay[(sst OR 8ss OR 6ss) SOCK=0 SK41>2 SK52>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->2%BLUE%]%YELLOW%[Blaze\Enflame+3]
+ItemDisplay[(sst OR 8ss OR 6ss) SOCK=0 SK47>2 SK52>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->2%BLUE%]%YELLOW%[F.Ball\Enflame+3]
+ItemDisplay[sst SOCK=0 SK41>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->2%BLUE%]%YELLOW%[Blaze+3]
+ItemDisplay[sst SOCK=0 SK47>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->2%BLUE%]%YELLOW%[F.Ball+3]
+ItemDisplay[WP11 SOCK=0 SK41>2 SK47>2 SK52>2]: %NAME% %BLUE%[%WHITE%0%RED%-->2%BLUE%]%RED%[Blaze\F.Ball\Enflame+3]
+ItemDisplay[WP11 !ELT SOCK=0 SK41>2 SK47>2]: %NAME% %BLUE%[%WHITE%0%RED%-->2%BLUE%]%RED%[Blaze\F.Ball+3]
+ItemDisplay[WP11 SOCK=0 SK41>2 SK52>2]: %NAME% %BLUE%[%WHITE%0%RED%-->2%BLUE%]%RED%[Blaze\Enflame+3]
+ItemDisplay[WP11 SOCK=0 SK47>2 SK52>2]: %NAME% %BLUE%[%WHITE%0%RED%-->2%BLUE%]%RED%[F.Ball\Enflame+3]
+ItemDisplay[WP11 NORM SOCK=0 SK41>2]: %NAME% %BLUE%[%WHITE%0%RED%-->2%BLUE%]%RED%[Blaze+3]
+ItemDisplay[WP11 NORM SOCK=0 SK47>2]: %NAME% %BLUE%[%WHITE%0%RED%-->2%BLUE%]%RED%[F.Ball+3]
+ItemDisplay[(cst OR bst OR 8cs OR 8bs OR 6cs OR 6bs) SOCK=0 SK48>2 SK49>2 SK58>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->4%BLUE%]%YELLOW%[ES\Nova\L.Surge+3]
+ItemDisplay[(cst OR bst OR 8cs OR 8bs OR 6cs OR 6bs) SOCK=0 SK48>2 SK57>2 SK58>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->4%BLUE%]%YELLOW%[ES\Nova\Discharge+3]
+ItemDisplay[(cst OR bst OR 8cs OR 8bs OR 6cs OR 6bs) SOCK=0 SK49>2 SK57>2 SK58>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->4%BLUE%]%YELLOW%[ES\L.Surge\Discharge+3]
+ItemDisplay[(cst OR bst OR 8cs OR 8bs OR 6cs OR 6bs) SOCK=0 SK48>2 SK58>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->4%BLUE%]%YELLOW%[ES\Nova+3]
+ItemDisplay[(cst OR bst OR 8cs OR 8bs OR 6cs OR 6bs) SOCK=0 SK49>2 SK58>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->4%BLUE%]%YELLOW%[ES\L.Surge+3]
+ItemDisplay[(cst OR bst OR 8cs OR 8bs OR 6cs OR 6bs) SOCK=0 SK57>2 SK58>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->4%BLUE%]%YELLOW%[ES\Discharge+3]
+ItemDisplay[(cst OR bst OR 8cs OR 8bs OR 6cs OR 6bs) SOCK=0 SK58>2 SK52>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->4%BLUE%]%YELLOW%[ES\Enflame+3]
+ItemDisplay[(wst OR 8ws OR 6ws) SOCK=0 SK48>2 SK49>2 SK58>2]: %NAME% %BLUE%[%WHITE%0%RED%-->4%BLUE%]%RED%[ES\Nova\L.Surge+3]
+ItemDisplay[(wst OR 8ws OR 6ws) SOCK=0 SK48>2 SK57>2 SK58>2]: %NAME% %BLUE%[%WHITE%0%RED%-->4%BLUE%]%RED%[ES\Nova\Discharge+3]
+ItemDisplay[(wst OR 8ws OR 6ws) SOCK=0 SK49>2 SK57>2 SK58>2]: %NAME% %BLUE%[%WHITE%0%RED%-->4%BLUE%]%RED%[ES\L.Surge\Discharge+3]
+ItemDisplay[(wst OR 8ws OR 6ws) SOCK=0 SK48>2 SK58>2]: %NAME% %BLUE%[%WHITE%0%RED%-->4%BLUE%]%RED%[ES\Nova+3]
+ItemDisplay[(wst OR 8ws OR 6ws) SOCK=0 SK49>2 SK58>2]: %NAME% %BLUE%[%WHITE%0%RED%-->4%BLUE%]%RED%[ES\L.Surge+3]
+ItemDisplay[(wst OR 8ws OR 6ws) SOCK=0 SK57>2 SK58>2]: %NAME% %BLUE%[%WHITE%0%RED%-->4%BLUE%]%RED%[ES\Discharge+3]
+ItemDisplay[(wst OR 8ws OR 6ws) SOCK=0 SK58>2 SK52>2]: %NAME% %BLUE%[%WHITE%0%RED%-->4%BLUE%]%RED%[ES\Enflame+3]
+ItemDisplay[sst SOCK=0 SK40>2 SK52>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->2%BLUE%]%YELLOW%[Enflame\Frigerate+3]
+ItemDisplay[lst SOCK=0 SK40>2 SK52>2]: %NAME% %BLUE%[%WHITE%0%RED%-->2%BLUE%]%RED%[Enflame\Frigerate+3]
+ItemDisplay[(cst OR bst) SOCK=0 SK40>2 SK52>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->4%BLUE%]%YELLOW%[Frigerate\Enflame+3]
+ItemDisplay[wst SOCK=0 SK40>2 SK52>2]: %NAME% %BLUE%[%WHITE%0%RED%-->4%BLUE%]%RED%[Frigerate\Enflame+3]
+ItemDisplay[(cst OR bst OR 8cs OR 8bs OR 6cs OR 6bs) SOCK=0 SK58>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->4%BLUE%]%YELLOW%[ES+3]
+ItemDisplay[(cst OR bst OR 8cs OR 8bs OR 6cs OR 6bs) SOCK=0 SK49>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->4%BLUE%]%YELLOW%[L.Surge+3]
+ItemDisplay[(wst OR 8ws OR 6ws) SOCK=0 SK58>2]: %NAME% %BLUE%[%WHITE%0%RED%-->4%BLUE%]%RED%[ES+3]
+ItemDisplay[(wst OR 8ws OR 6ws) SOCK=0 SK49>2]: %NAME% %BLUE%[%WHITE%0%RED%-->4%BLUE%]%RED%[L.Surge+3]
+ItemDisplay[wst SOCK=0 SK40>2]: %NAME% %BLUE%[%WHITE%0%RED%-->4%BLUE%]%RED%[Frigerate+3]
+ItemDisplay[(sst OR 8ss OR 6ss) SOCK=0 SK52>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->2%BLUE%]%YELLOW%[Enflame+3]
+ItemDisplay[(lst OR 8ls OR 6ls) SOCK=0 SK52>2]: %NAME% %BLUE%[%WHITE%0%RED%-->2%BLUE%]%RED%[Enflame+3]
+ItemDisplay[(cst OR bst OR 8cs OR 8bs OR 6cs OR 6bs) SOCK=0 SK52>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->4%BLUE%]%YELLOW%[Enflame+3]
+ItemDisplay[(wst OR 8ws OR 6ws) SOCK=0 SK52>2]: %NAME% %BLUE%[%WHITE%0%RED%-->2\4%BLUE%]%RED%[Enflame+3]
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // 2 Socket Staves (Leaf)
 //─────────────────────────────────────────────────────────────────────────────────────────────────
-ItemDisplay[WP11 SOCK=2 SK41>2 SK47>2 SK52>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[Blaze\F.Ball\Enflame+3]%WHITE%
-ItemDisplay[WP11 SOCK=2 SK41>2 SK47>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[Blaze\F.Ball+3]%WHITE%
-ItemDisplay[WP11 SOCK=2 SK41>2 SK52>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[Blaze\Enflame+3]%WHITE%
-ItemDisplay[WP11 SOCK=2 SK47>2 SK52>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[F.Ball\Enflame+3]%WHITE%
-ItemDisplay[WP11 SOCK=2 SK41>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[Blaze+3]%WHITE%
-ItemDisplay[WP11 SOCK=2 SK47>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[F.Ball+3]%WHITE%
-ItemDisplay[WP11 SOCK=2 SK52>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[Enflame+3]%WHITE%
+ItemDisplay[WP11 SOCK=2 SK41>2 SK47>2 SK52>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[Blaze\F.Ball\Enflame+3]
+ItemDisplay[WP11 SOCK=2 SK41>2 SK47>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[Blaze\F.Ball+3]
+ItemDisplay[WP11 SOCK=2 SK41>2 SK52>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[Blaze\Enflame+3]
+ItemDisplay[WP11 SOCK=2 SK47>2 SK52>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[F.Ball\Enflame+3]
+ItemDisplay[WP11 SOCK=2 SK41>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[Blaze+3]
+ItemDisplay[WP11 SOCK=2 SK47>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[F.Ball+3]
+ItemDisplay[WP11 SOCK=2 SK52>2]: %NAME% %BLUE%[%GREEN%2%BLUE%]%GREEN%[Enflame+3]
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // 4 Socket Staves (Memory and Heart of the Oak)
 //─────────────────────────────────────────────────────────────────────────────────────────────────
-ItemDisplay[WP11 SOCK=4 SK48>2 SK49>2 SK58>2]: %NAME% %BLUE%[%GREEN%4%BLUE%]%GREEN%[ES\Nova\L.Surge+3]%WHITE%
-ItemDisplay[WP11 SOCK=4 SK48>2 SK57>2 SK58>2]: %NAME% %BLUE%[%GREEN%4%BLUE%]%GREEN%[ES\Nova\Discharge+3]%WHITE%
-ItemDisplay[WP11 SOCK=4 SK49>2 SK57>2 SK58>2]: %NAME% %BLUE%[%GREEN%4%BLUE%]%GREEN%[ES\L.Surge\Discharge+3]%WHITE%
-ItemDisplay[WP11 SOCK=4 SK48>2 SK58>2]: %NAME% %BLUE%[%GREEN%4%BLUE%]%GREEN%[ES\Nova+3]%WHITE%
-ItemDisplay[WP11 SOCK=4 SK49>2 SK58>2]: %NAME% %BLUE%[%GREEN%4%BLUE%]%GREEN%[ES\L.Surge+3]%WHITE%
-ItemDisplay[WP11 SOCK=4 SK57>2 SK58>2]: %NAME% %BLUE%[%GREEN%4%BLUE%]%GREEN%[ES\Discharge+3]%WHITE%
-ItemDisplay[WP11 SOCK=4 SK58>2 SK52>2]: %NAME% %BLUE%[%GREEN%4%BLUE%]%GREEN%[ES\Enflame+3]%WHITE%
-ItemDisplay[WP11 SOCK=4 SK40>2 SK52>2]: %NAME% %BLUE%[%GREEN%4%BLUE%]%GREEN%[Frigerate\Enflame+3]%WHITE%
-ItemDisplay[WP11 SOCK=4 SK58>2]: %NAME% %BLUE%[%GREEN%4%BLUE%]%GREEN%[ES+3]%WHITE%
-ItemDisplay[WP11 SOCK=4 SK49>2]: %NAME% %BLUE%[%GREEN%4%BLUE%]%GREEN%[L.Surge+3]%WHITE%
-ItemDisplay[WP11 SOCK=4 SK40>2]: %NAME% %BLUE%[%GREEN%4%BLUE%]%GREEN%[Frigerate+3]%WHITE%
-ItemDisplay[WP11 SOCK=4 SK52>2]: %NAME% %BLUE%[%GREEN%4%BLUE%]%GREEN%[Enflame+3]%WHITE%
+ItemDisplay[WP11 SOCK=4 SK48>2 SK49>2 SK58>2]: %NAME% %BLUE%[%GREEN%4%BLUE%]%GREEN%[ES\Nova\L.Surge+3]
+ItemDisplay[WP11 SOCK=4 SK48>2 SK57>2 SK58>2]: %NAME% %BLUE%[%GREEN%4%BLUE%]%GREEN%[ES\Nova\Discharge+3]
+ItemDisplay[WP11 SOCK=4 SK49>2 SK57>2 SK58>2]: %NAME% %BLUE%[%GREEN%4%BLUE%]%GREEN%[ES\L.Surge\Discharge+3]
+ItemDisplay[WP11 SOCK=4 SK48>2 SK58>2]: %NAME% %BLUE%[%GREEN%4%BLUE%]%GREEN%[ES\Nova+3]
+ItemDisplay[WP11 SOCK=4 SK49>2 SK58>2]: %NAME% %BLUE%[%GREEN%4%BLUE%]%GREEN%[ES\L.Surge+3]
+ItemDisplay[WP11 SOCK=4 SK57>2 SK58>2]: %NAME% %BLUE%[%GREEN%4%BLUE%]%GREEN%[ES\Discharge+3]
+ItemDisplay[WP11 SOCK=4 SK58>2 SK52>2]: %NAME% %BLUE%[%GREEN%4%BLUE%]%GREEN%[ES\Enflame+3]
+ItemDisplay[WP11 SOCK=4 SK40>2 SK52>2]: %NAME% %BLUE%[%GREEN%4%BLUE%]%GREEN%[Frigerate\Enflame+3]
+ItemDisplay[WP11 SOCK=4 SK58>2]: %NAME% %BLUE%[%GREEN%4%BLUE%]%GREEN%[ES+3]
+ItemDisplay[WP11 SOCK=4 SK49>2]: %NAME% %BLUE%[%GREEN%4%BLUE%]%GREEN%[L.Surge+3]
+ItemDisplay[WP11 SOCK=4 SK40>2]: %NAME% %BLUE%[%GREEN%4%BLUE%]%GREEN%[Frigerate+3]
+ItemDisplay[WP11 SOCK=4 SK52>2]: %NAME% %BLUE%[%GREEN%4%BLUE%]%GREEN%[Enflame+3]
 
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // 0 or 3 Socket Orbs (Plague)
-ItemDisplay[(ob5 OR oba OR obf) (SOCK=0 OR SOCK=3) ILVL>25 SK62>2 SK64>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->3%BLUE%]%YELLOW%[Hydra\F.Orb+3]%WHITE%
-ItemDisplay[(ob5 OR oba OR obf) (SOCK=0 OR SOCK=3) ILVL>25 SK62>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->3%BLUE%]%YELLOW%[Hydra+3]%WHITE%
-ItemDisplay[(ob5 OR oba OR obf) (SOCK=0 OR SOCK=3) ILVL>25 SK64>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->3%BLUE%]%YELLOW%[F.Orb+3]%WHITE%
+ItemDisplay[(ob5 OR oba OR obf) (SOCK=0 OR SOCK=3) ILVL>25 SK62>2 SK64>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->3%BLUE%]%YELLOW%[Hydra\F.Orb+3]
+ItemDisplay[(ob5 OR oba OR obf) (SOCK=0 OR SOCK=3) ILVL>25 SK62>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->3%BLUE%]%YELLOW%[Hydra+3]
+ItemDisplay[(ob5 OR oba OR obf) (SOCK=0 OR SOCK=3) ILVL>25 SK64>2]: %NAME% %BLUE%[%WHITE%0%YELLOW%-->3%BLUE%]%YELLOW%[F.Orb+3]
 
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
 //║     ▬▬▬▬▬ Socket Tag for Non-Magical Items with No Matched Rule for Runeword Bases ▬▬▬▬▬      ║
@@ -1754,4 +1758,4 @@ ItemDisplay[CL5 (SK251>0 OR SK252>0 OR SK253>0 OR SK254>0 OR SK255>0 OR SK256>0 
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
 //ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID))]:
 //ItemDisplay[NMAG SOCK=0 CLVL>89]:
-ItemDisplay[]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%] %GRAY%%CODE%
+ItemDisplay[]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%] %BLACK%%CODE%
