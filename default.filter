@@ -1517,9 +1517,9 @@ ItemDisplay[ETH (SOCK=0 OR SOCK=6) 7gm]: %ORANGE%Thunder Maul %WHITE%[%RED%%SOCK
 ItemDisplay[ETH (SOCK=0 OR SOCK=6) 6ws]: %ORANGE%Archon Staff %WHITE%[%RED%%SOCKETS%%WHITE%] //0 or 6 socket Eth Archon Staff
 
 // Polearms - Thresher (7s8), Giant Thresher (7wc), Mancatcher (7br)
-ItemDisplay[NMAG (SOCK=0 OR SOCK=4) ETH 7s8]: %RED%#### %GREEN%ETH Thresher %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%####
-ItemDisplay[NMAG (SOCK=0 OR SOCK=4) ETH 7wc]: %RED%#### %GREEN%ETH Giant Thresher %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%####
-ItemDisplay[NMAG (SOCK=0 OR SOCK=4) ETH 7br]: %RED%#### %GREEN%ETH Mancatcher %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%####
+ItemDisplay[NMAG !SUP (SOCK=0 OR SOCK=4) ETH 7s8]: %RED%#### %GREEN%ETH Thresher %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%####
+ItemDisplay[NMAG !SUP (SOCK=0 OR SOCK=4) ETH 7wc]: %RED%#### %GREEN%ETH Giant Thresher %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%####
+ItemDisplay[NMAG !SUP (SOCK=0 OR SOCK=4) ETH 7br]: %RED%#### %GREEN%ETH Mancatcher %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%####
 
 // Polearms - Cryptic Axe (7pa), and Great Poleaxe (7h7) for characters under 80
 ItemDisplay[NMAG CLVL<80 SOCK=4 ETH (7pa OR 7h7)]: %RED%#### %ORANGE%%NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%####
@@ -1743,7 +1743,7 @@ ItemDisplay[(ob5 OR oba OR obf) (SOCK=0 OR SOCK=3) ILVL>25 SK64>2]: %NAME% %BLUE
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
 //║     ▬▬▬▬▬ Socket Tag for Non-Magical Items with No Matched Rule for Runeword Bases ▬▬▬▬▬      ║
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
-ItemDisplay[SOCK>0]: %NAME% %GREEN%[%WHITE%%SOCKETS%%GREEN%]%CONTINUE%
+ItemDisplay[SOCK>0]: %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%]%CONTINUE%
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
 //║                         ▬▬▬▬▬ End Processing - 4th Wave (Final) ▬▬▬▬▬                         ║
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
@@ -1758,4 +1758,5 @@ ItemDisplay[CL5 (SK251>0 OR SK252>0 OR SK253>0 OR SK254>0 OR SK255>0 OR SK256>0 
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
 //ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID))]:
 //ItemDisplay[NMAG SOCK=0 CLVL>89]:
-ItemDisplay[]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%] %BLACK%%CODE%
+//ItemDisplay[]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%] %BLACK%%CODE%
+ItemDisplay[]: 
