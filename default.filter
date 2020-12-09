@@ -127,7 +127,7 @@ ItemDisplay[imra]: %RED%## %GREEN%%NAME% %RED%#{%WHITE%This Item + %BLUE%Jewel %
 ItemDisplay[rera]: %RED%## %GREEN%%NAME% %RED%#{%WHITE%This Item + Perf Gem + %ORANGE%Rune>9%NL%%TAN%Note%WHITE%: Reroll %YELLOW%Rare %WHITE%Map:}%MAP% //Horadrim Orb
 ItemDisplay[scou]: %RED%## %GREEN%%NAME% %RED%#{%WHITE%This Item + %ORANGE%Hel%NL%%TAN%Note%WHITE%: Revert back to a White Map:}%MAP% //Orb of Destruction
 ItemDisplay[upma]: %RED%## %GREEN%%NAME% %RED%#{%WHITE%This Item + Perf %GRAY%O %WHITE%+ %ORANGE%Rune>9%NL%%TAN%Note%WHITE%: Upg %BLUE%Magic %WHITE%to %YELLOW%Rare%WHITE% Map:}%MAP% //Angelic Orb
-ItemDisplay[lbox]: %GREEN%### %PURPLE%%NAME% %GREEN%###%MAP%{%WHITE%Two-Handed Weapon = 4 max%NL%One-Handed Weapon = 2 max%NL%Helmet, Chest, Shield = 2 max%NL%%TAN%Note%WHITE%: Use it to %TAN%Socket %WHITE%an Item} //Larzuk's Box
+ItemDisplay[lbox]: %GREEN%### %RED%%NAME% %GREEN%###%MAP%{%WHITE%Two-Handed Weapon = 4 max%NL%One-Handed Weapon = 2 max%NL%Helmet, Chest, Shield = 2 max%NL%%TAN%Note%WHITE%: Use it to %TAN%Socket %WHITE%an Item} //Larzuk's Box
 ItemDisplay[wss]: %GREEN%### %PURPLE%Orb of Corruption %GREEN%###%MAP% //Worldstone Shard	
 
 //PD2 Dclone Items
@@ -518,6 +518,7 @@ ItemDisplay[UNI]: %GOLD%%NAME%%MAP%%CONTINUE%
 ItemDisplay[!(NMAG OR MAG OR RARE OR SET OR UNI)]: %ORANGE%%NAME%%CONTINUE%
 ItemDisplay[ETH !NMAG]: %GREEN%ETH %GRAY%%NAME%%CONTINUE%
 ItemDisplay[NMAG ETH]: %RED%ETH %ORANGE%%NAME%%CONTINUE%
+ItemDisplay[UNI ETH]: %RED%ETH %GOLD%%NAME%%CONTINUE%
 
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
 //║                  ▬▬▬▬▬ Sockets for Everything Except Non-Magical Items ▬▬▬▬▬                  ║
@@ -528,7 +529,7 @@ ItemDisplay[!NMAG SOCK>0]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%]%CONTINUE%
 //║                  ▬▬▬▬▬ UNIQUE ITEMS ▬▬▬▬▬                  ║
 //╚════════════════════════════════════════════════════════════╝
 //EQ1 - Helms
-ItemDisplay[EQ1 UNI !ID !(xh9 OR xhm OR ELT) CLVL>79]: //Hide all unique helms except elite and vamp gaze after lvl79
+ItemDisplay[UNI !ID (cap OR skp OR hlm OR fhl OR ghm OR msk OR crn OR bhm OR xap OR xkp OR xlm OR xhl OR xhm OR xsk OR xrn) CLVL>79]: //Hide all unique helms except elite and vamp gaze after lvl79
 
 //Normal Unique Helms
 ItemDisplay[cap UNI !ID]: %GOLD%Biggin's Bonnet
@@ -608,7 +609,7 @@ ItemDisplay[uul UNI !ID]: %GOLD%Steel Carapace
 ItemDisplay[uar UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%Templar's or Tyrael's Might %BLUE%###%WHITE%###%RED%###
 
 //EQ3 - Shields
-ItemDisplay[EQ3 UNI !ID !(gts OR xml OR xow OR xsh OR xts OR ELT) CLVL>79]:
+ItemDisplay[UNI !ID (buc OR sml OR lrg OR kit OR spk OR tow OR bsh OR gts OR xuc OR xml OR xrg OR xit OR xpk) CLVL>79]:
 
 //Normal Unique Shields
 ItemDisplay[buc UNI !ID]: %GOLD%Pelta Lunata
@@ -1101,8 +1102,8 @@ ItemDisplay[SET !ID 7gd]: %GREEN%Bul-Kathos's 2H Sword
 ItemDisplay[SET !ID 7wd]: %GREEN%Bul-Kathos's 1H Sword
 
 //Cathan's Traps
-ItemDisplay[SET !ID (mdk OR chn OR bst) CLVL>30]:
-ItemDisplay[SET !ID mdk]: %GREEN%Cathan's Helm
+ItemDisplay[SET !ID (msk OR chn OR bst) CLVL>30]:
+ItemDisplay[SET !ID msk]: %GREEN%Cathan's Helm
 ItemDisplay[SET !ID chn]: %GREEN%Cathan's Armor
 ItemDisplay[SET !ID bst]: %GREEN%Cathan's Weapon
 
@@ -1264,7 +1265,7 @@ ItemDisplay[SET !ID utc]: %RED%# %GREEN%Trang-Oul's Belt %RED%#
 ItemDisplay[SET !ID xmg]: %RED%# %GREEN%Trang-Oul's Gloves %RED%#
 
 //Vidala's Rig - Only show boots to corrupt with pierce (for javazons)
-ItemDisplay[SET !ID (lea OR lbb) CLVL>30]:
+ItemDisplay[SET !ID (lea OR tbt OR lbb) CLVL>30]:
 ItemDisplay[SET !ID lea]: %GREEN%Vidala's Armor
 ItemDisplay[SET !ID tbt]: %GREEN%Vidala's Boots
 ItemDisplay[SET !ID lbb]: %GREEN%Vidala's Bow
@@ -1273,33 +1274,33 @@ ItemDisplay[SET !ID lbb]: %GREEN%Vidala's Bow
 //║                                      ▬▬▬▬▬ Charms ▬▬▬▬▬                                       ║
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
 // Display class name for charms with skill bonuses for that class.
-ItemDisplay[ID cm3 TABSK0>0]: %GREEN%Bow %CONTINUE%
-ItemDisplay[ID cm3 TABSK1>0]: %GREEN%Passive %CONTINUE%
-ItemDisplay[ID cm3 TABSK2>0]: %GREEN%Javelin %CONTINUE%
+ItemDisplay[ID cm3 TABSK0>0]: %GREEN%Zon Bow %CONTINUE%
+ItemDisplay[ID cm3 TABSK1>0]: %GREEN%Zon Passive %CONTINUE%
+ItemDisplay[ID cm3 TABSK2>0]: %GREEN%Zon Javelin %CONTINUE%
 
-ItemDisplay[ID cm3 TABSK8>0]: %GREEN%Fire %CONTINUE%
-ItemDisplay[ID cm3 TABSK9>0]: %GREEN%Light %CONTINUE%
-ItemDisplay[ID cm3 TABSK10>0]: %GREEN%Cold %CONTINUE%
+ItemDisplay[ID cm3 TABSK8>0]: %GREEN%Sorc Fire %CONTINUE%
+ItemDisplay[ID cm3 TABSK9>0]: %GREEN%Sorc Light %CONTINUE%
+ItemDisplay[ID cm3 TABSK10>0]: %GREEN%Sorc Cold %CONTINUE%
 
-ItemDisplay[ID cm3 TABSK16>0]: %GREEN%Curse %CONTINUE%
-ItemDisplay[ID cm3 TABSK17>0]: %GREEN%PnB %CONTINUE%
-ItemDisplay[ID cm3 TABSK18>0]: %GREEN%N.Summon %CONTINUE%
+ItemDisplay[ID cm3 TABSK16>0]: %GREEN%Nec Curse %CONTINUE%
+ItemDisplay[ID cm3 TABSK17>0]: %GREEN%Nec PnB %CONTINUE%
+ItemDisplay[ID cm3 TABSK18>0]: %GREEN%Nec Summon %CONTINUE%
 
-ItemDisplay[ID cm3 TABSK24>0]: %GREEN%P.Combat %CONTINUE%
-ItemDisplay[ID cm3 TABSK25>0]: %GREEN%Offensive %CONTINUE%
-ItemDisplay[ID cm3 TABSK26>0]: %GREEN%Defensive %CONTINUE%
+ItemDisplay[ID cm3 TABSK24>0]: %GREEN%Pal Combat %CONTINUE%
+ItemDisplay[ID cm3 TABSK25>0]: %GREEN%Pal Offensive %CONTINUE%
+ItemDisplay[ID cm3 TABSK26>0]: %GREEN%Pal Defensive %CONTINUE%
 
-ItemDisplay[ID cm3 TABSK32>0]: %GREEN%B.Combat %CONTINUE%
-ItemDisplay[ID cm3 TABSK33>0]: %GREEN%Masteries %CONTINUE%
-ItemDisplay[ID cm3 TABSK34>0]: %GREEN%Warcries %CONTINUE%
+ItemDisplay[ID cm3 TABSK32>0]: %GREEN%Barb Combat %CONTINUE%
+ItemDisplay[ID cm3 TABSK33>0]: %GREEN%Barb Masteries %CONTINUE%
+ItemDisplay[ID cm3 TABSK34>0]: %GREEN%Barb Warcries %CONTINUE%
 
-ItemDisplay[ID cm3 TABSK40>0]: %GREEN%D.Summon %CONTINUE%
-ItemDisplay[ID cm3 TABSK41>0]: %GREEN%Shapeshifting %CONTINUE%
-ItemDisplay[ID cm3 TABSK42>0]: %GREEN%Elemental %CONTINUE%
+ItemDisplay[ID cm3 TABSK40>0]: %GREEN%Dru Summon %CONTINUE%
+ItemDisplay[ID cm3 TABSK41>0]: %GREEN%Dru Shapeshifting %CONTINUE%
+ItemDisplay[ID cm3 TABSK42>0]: %GREEN%Dru Elemental %CONTINUE%
 
-ItemDisplay[ID cm3 TABSK48>0]: %GREEN%Trap %CONTINUE%
-ItemDisplay[ID cm3 TABSK49>0]: %GREEN%Shadow %CONTINUE%
-ItemDisplay[ID cm3 TABSK50>0]: %GREEN%Martial Arts %CONTINUE%
+ItemDisplay[ID cm3 TABSK48>0]: %GREEN%Sin Trap %CONTINUE%
+ItemDisplay[ID cm3 TABSK49>0]: %GREEN%Sin Shadow %CONTINUE%
+ItemDisplay[ID cm3 TABSK50>0]: %GREEN%Sin Martial Arts %CONTINUE%
 
 
 ItemDisplay[ID cm3 ((TABSK0>0 OR TABSK1>0 OR TABSK2>0 OR TABSK8>0 OR TABSK9>0 OR TABSK10>0 OR TABSK16>0 OR TABSK17>0 OR TABSK18>0 OR TABSK24>0 OR TABSK25>0 OR TABSK26>0 OR TABSK32>0 OR TABSK33>0 OR TABSK34>0 OR TABSK40>0 OR TABSK41>0 OR TABSK42>0 OR TABSK48>0 OR TABSK49>0 OR TABSK50>0) AND FHR>11)]: %NAME%%RED%+FHR
@@ -1313,7 +1314,6 @@ ItemDisplay[ID cm3 ((TABSK0>0 OR TABSK1>0 OR TABSK2>0 OR TABSK8>0 OR TABSK9>0 OR
 ItemDisplay[ID cm3 ((TABSK0>0 OR TABSK1>0 OR TABSK2>0 OR TABSK8>0 OR TABSK9>0 OR TABSK10>0 OR TABSK16>0 OR TABSK17>0 OR TABSK18>0 OR TABSK24>0 OR TABSK25>0 OR TABSK26>0 OR TABSK32>0 OR TABSK33>0 OR TABSK34>0 OR TABSK40>0 OR TABSK41>0 OR TABSK42>0 OR TABSK48>0 OR TABSK49>0 OR TABSK50>0) AND ITEMSTAT2>56)]: %NAME%%RED%+6Dex
 
 ItemDisplay[ID cm3 ((TABSK0>0 OR TABSK1>0 OR TABSK2>0 OR TABSK8>0 OR TABSK9>0 OR TABSK10>0 OR TABSK16>0 OR TABSK17>0 OR TABSK18>0 OR TABSK24>0 OR TABSK25>0 OR TABSK26>0 OR TABSK32>0 OR TABSK33>0 OR TABSK34>0 OR TABSK40>0 OR TABSK41>0 OR TABSK42>0 OR TABSK48>0 OR TABSK49>0 OR TABSK50>0) AND GFIND>0)]: %NAME%%RED%+Gold Find
-
 
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Large and grand charms have their rules based on how many small charms with similar bonuses
@@ -1496,13 +1496,13 @@ ItemDisplay[NMAG (hbw OR cbw) !ETH SOCK=4]: %GRAY%Low Req Harmony Base //Hunter 
 ItemDisplay[NMAG ETH (SOCK=0 OR SOCK=4) 6lw]: %ORANGE%Hydra Bow %WHITE%[%RED%%SOCKETS%%WHITE%] //4os ETH Hydra Bow for Merc
 
 ItemDisplay[ETH (SOCK=0 OR SOCK=6) 7p7]: %ORANGE%War Pike %WHITE%[%RED%%SOCKETS%%WHITE%] //0 or 6 socket Eth War Pike
-ItemDisplay[ETH (SOCK=0 OR SOCK=6) 7gm]: %ORANGE%Thunder Maul %WHITE%[%RED%%SOCKETS%%WHITE%] //0 or 6 socket Eth Thunder Maul
+ItemDisplay[ETH (SOCK=0 OR SOCK>3) 7gm]: %ORANGE%ETH Thunder Maul %WHITE%[%RED%%SOCKETS%%WHITE%] //0 or 6 socket Eth Thunder Maul
 ItemDisplay[ETH (SOCK=0 OR SOCK=6) 6ws]: %ORANGE%Archon Staff %WHITE%[%RED%%SOCKETS%%WHITE%] //0 or 6 socket Eth Archon Staff
 
 // Polearms - Thresher (7s8), Giant Thresher (7wc), Mancatcher (7br)
-ItemDisplay[NMAG !SUP (SOCK=0 OR SOCK=4) ETH 7s8]: %RED%#### %GREEN%ETH Thresher %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%####
-ItemDisplay[NMAG !SUP (SOCK=0 OR SOCK=4) ETH 7wc]: %RED%#### %GREEN%ETH Giant Thresher %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%####
-ItemDisplay[NMAG !SUP (SOCK=0 OR SOCK=4) ETH 7br]: %RED%#### %GREEN%ETH Mancatcher %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%####
+ItemDisplay[NMAG (SOCK=0 OR SOCK=4) ETH 7s8]: %RED%#### %GREEN%ETH Thresher %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%####
+ItemDisplay[NMAG (SOCK=0 OR SOCK=4) ETH 7wc]: %RED%#### %GREEN%ETH Giant Thresher %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%####
+ItemDisplay[NMAG (SOCK=0 OR SOCK=4) ETH 7br]: %RED%#### %GREEN%ETH Mancatcher %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%####
 
 // Polearms - Cryptic Axe (7pa), and Great Poleaxe (7h7) for characters under 80
 ItemDisplay[NMAG CLVL<80 SOCK=4 ETH (7pa OR 7h7)]: %RED%#### %ORANGE%%NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%####
