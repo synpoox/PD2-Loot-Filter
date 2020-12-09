@@ -516,9 +516,14 @@ ItemDisplay[RARE]: %YELLOW%%NAME%%CONTINUE%
 ItemDisplay[SET]: %GREEN%%NAME%%MAP%%CONTINUE%
 ItemDisplay[UNI]: %GOLD%%NAME%%MAP%%CONTINUE%
 ItemDisplay[!(NMAG OR MAG OR RARE OR SET OR UNI)]: %ORANGE%%NAME%%CONTINUE%
-ItemDisplay[ETH !NMAG]: %GREEN%ETH %GRAY%%NAME%%CONTINUE%
-ItemDisplay[NMAG ETH]: %RED%ETH %ORANGE%%NAME%%CONTINUE%
-ItemDisplay[UNI ETH]: %RED%ETH %GOLD%%NAME%%CONTINUE%
+ItemDisplay[ETH UNI]: %RED%ETH %GOLD%%NAME%%MAP%%CONTINUE%
+ItemDisplay[ETH SET]: %RED%ETH %GREEN%%NAME%%MAP%%CONTINUE%
+ItemDisplay[ETH MAG]: %RED%ETH %BLUE%%NAME%%CONTINUE%
+ItemDisplay[ETH NMAG]: %RED%ETH %GRAY%%NAME%%CONTINUE%
+
+//ItemDisplay[ETH !NMAG]: %GREEN%ETH %GRAY%%NAME%%CONTINUE%
+//ItemDisplay[NMAG ETH]: %RED%ETH %ORANGE%%NAME%%CONTINUE%
+//ItemDisplay[UNI ETH]: %RED%ETH %GOLD%%NAME%%CONTINUE%
 
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
 //║                  ▬▬▬▬▬ Sockets for Everything Except Non-Magical Items ▬▬▬▬▬                  ║
