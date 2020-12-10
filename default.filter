@@ -554,18 +554,18 @@ ItemDisplay[xhl UNI !ID]: %GOLD%Darksight Helm
 ItemDisplay[xhm UNI !ID]: %GOLD%Valkyrie Wing
 ItemDisplay[xsk UNI !ID]: %GOLD%Blackhorn's Face
 ItemDisplay[xrn UNI !ID]: %GOLD%Crown of Thieves
-ItemDisplay[xh9 UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%Vampire Gaze %BLUE%###%WHITE%###%RED%###
+ItemDisplay[xh9 UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Vampire Gaze %BLUE%###%WHITE%###%RED%###
 
 //Elite Unique Helms
-ItemDisplay[uap UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%Shako %BLUE%###%WHITE%###%RED%###
-ItemDisplay[ulm UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%Steel Shade %BLUE%###%WHITE%###%RED%###
-ItemDisplay[uhm UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%Nightwing's Veil Maybe!!!! %BLUE%###%WHITE%###%RED%###
-ItemDisplay[usk UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%Andariel's Visage %RED%###%WHITE%###%BLUE%###
-ItemDisplay[urn UNI !ID]: %RED%#%WHITE%#%BLUE%# %GOLD%Crown of Ages %BLUE%#%WHITE%#%RED%#
-ItemDisplay[uh9 UNI !ID]: %RED%#%WHITE%#%BLUE%# %GOLD%Giant Skull %BLUE%#%WHITE%#%RED%#
+ItemDisplay[uap UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Shako %BLUE%###%WHITE%###%RED%###
+ItemDisplay[ulm UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Steel Shade %BLUE%###%WHITE%###%RED%###
+ItemDisplay[uhm UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Nightwing's Veil Maybe!!!! %BLUE%###%WHITE%###%RED%###
+ItemDisplay[usk UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Andariel's Visage %RED%###%WHITE%###%BLUE%###
+ItemDisplay[urn UNI !ID !ETH]: %RED%#%WHITE%#%BLUE%# %GOLD%Crown of Ages %BLUE%#%WHITE%#%RED%#
+ItemDisplay[uh9 UNI !ID !ETH]: %RED%#%WHITE%#%BLUE%# %GOLD%Giant Skull %BLUE%#%WHITE%#%RED%#
 
 //EQ7 - Circlets
-ItemDisplay[ci3 UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%Griffon's Eye %BLUE%###%WHITE%###%RED%###
+ItemDisplay[ci3 UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Griffon's Eye %BLUE%###%WHITE%###%RED%###
 ItemDisplay[ci2 UNI !ID]: %GOLD%Kira's Guardian
 
 //EQ2 - Body Armor
@@ -590,28 +590,28 @@ ItemDisplay[aar UNI !ID]: %GOLD%Silks of the Victor
 
 //Exceptional Unique Armor
 ItemDisplay[xui UNI !ID]: %GOLD%The Spirit Shroud
-ItemDisplay[xea UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%Skin of the Vipermagi %BLUE%###%WHITE%###%RED%###
+ItemDisplay[xea UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Skin of the Vipermagi %BLUE%###%WHITE%###%RED%###
 ItemDisplay[xla UNI !ID]: %GOLD%Skin of the Flayed One
 ItemDisplay[xtu UNI !ID]: %GOLD%Iron Pelt
 ItemDisplay[xcl UNI !ID]: %GOLD%Crow Caw
 ItemDisplay[xng UNI !ID]: %GOLD%Spirit Forge
 ItemDisplay[xrs UNI !ID]: %GOLD%Duriel's Shell
-ItemDisplay[xhn UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%Shaftstop %BLUE%###%WHITE%###%RED%###
-ItemDisplay[xpl UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%Skullder's Ire %BLUE%###%WHITE%###%RED%###
+ItemDisplay[xhn UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Shaftstop %BLUE%###%WHITE%###%RED%###
+ItemDisplay[xpl UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Skullder's Ire %BLUE%###%WHITE%###%RED%###
 ItemDisplay[xtp UNI !ID]: %GOLD%Que-Hegan's Wisdom
 ItemDisplay[xld UNI !ID]: %GOLD%Toothrow
-ItemDisplay[xlt UNI !ID]: %RED%#%WHITE%#%BLUE%# %GOLD%Guardian Angel %BLUE%#%WHITE%#%RED%#
+ItemDisplay[xlt UNI !ID !ETH]: %RED%#%WHITE%#%BLUE%# %GOLD%Guardian Angel %BLUE%#%WHITE%#%RED%#
 ItemDisplay[xth UNI !ID]: %GOLD%Atma's Wail
 ItemDisplay[xul UNI !ID]: %GOLD%Black Hades
 ItemDisplay[xar UNI !ID]: %GOLD%Corpsemourn
 
 //Elite Body Armor
-ItemDisplay[uui UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%Ormus' Robes %BLUE%###%WHITE%###%RED%###
-ItemDisplay[utu UNI !ID]: %RED%### %GOLD%The Gladiator's Bane %BLUE%###%WHITE%###%RED%###
-ItemDisplay[upl UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%Arkaine's Valor %BLUE%###%WHITE%###%RED%###
-ItemDisplay[uld UNI !ID]: %RED%### %GOLD%Leviathan %RED%###
+ItemDisplay[uui UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Ormus' Robes %BLUE%###%WHITE%###%RED%###
+ItemDisplay[utu UNI !ID !ETH]: %RED%### %GOLD%The Gladiator's Bane %BLUE%###%WHITE%###%RED%###
+ItemDisplay[upl UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Arkaine's Valor %BLUE%###%WHITE%###%RED%###
+ItemDisplay[uld UNI !ID !ETH]: %RED%### %GOLD%Leviathan %RED%###
 ItemDisplay[uul UNI !ID]: %GOLD%Steel Carapace
-ItemDisplay[uar UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%Templar's or Tyrael's Might %BLUE%###%WHITE%###%RED%###
+ItemDisplay[uar UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Templar's or Tyrael's Might %BLUE%###%WHITE%###%RED%###
 
 //EQ3 - Shields
 ItemDisplay[UNI !ID (buc OR sml OR lrg OR kit OR spk OR tow OR bsh OR gts OR xuc OR xml OR xrg OR xit OR xpk) CLVL>79]:
@@ -632,13 +632,13 @@ ItemDisplay[xml UNI !ID]: %GOLD%Moser's Blessed Circle
 ItemDisplay[xrg UNI !ID]: %GOLD%Stormchaser
 ItemDisplay[xit UNI !ID]: %GOLD%Tiamat's Rebuke
 ItemDisplay[xpk UNI !ID]: %GOLD%Lance Guard
-ItemDisplay[xow UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%Gerke's Sanctuary %RED%###%WHITE%###%BLUE%###
-ItemDisplay[xsh UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%Lidless Wall %RED%###%WHITE%###%BLUE%###
+ItemDisplay[xow UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Gerke's Sanctuary %RED%###%WHITE%###%BLUE%###
+ItemDisplay[xsh UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Lidless Wall %RED%###%WHITE%###%BLUE%###
 ItemDisplay[xts UNI !ID]: %GOLD%Radament's Sphere
 
 //Elite Unique Shields
 ItemDisplay[uml UNI !ID]: %GOLD%Blackoak Shield
-ItemDisplay[uit UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%Stormshield %BLUE%###%WHITE%###%RED%###
+ItemDisplay[uit UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Stormshield %BLUE%###%WHITE%###%RED%###
 ItemDisplay[upk UNI !ID]: %GOLD%Spike Thorn
 ItemDisplay[uow UNI !ID]: %RED%### %GOLD%Medusa's Gaze %RED%###
 ItemDisplay[ush UNI !ID]: %RED%### %GOLD%Head Hunter's Glory %RED%###
@@ -650,18 +650,18 @@ ItemDisplay[EQ4 UNI !ID !(vgl OR mgl OR tgl OR hgl OR xmg OR ELT) CLVL>79]:
 ItemDisplay[lgl UNI !ID]: %GOLD%The Hand of Broc
 ItemDisplay[vgl UNI !ID]: %GOLD%Bloodfist
 ItemDisplay[mgl UNI !ID]: %GOLD%Chance Guards
-ItemDisplay[tgl UNI !ID]: %RED%#%WHITE%#%BLUE%# %GOLD%Magefist %RED%#%WHITE%#%BLUE%#
-ItemDisplay[hgl UNI !ID]: %RED%#%WHITE%#%BLUE%# %GOLD%Frostburn %RED%#%WHITE%#%BLUE%#
+ItemDisplay[tgl UNI !ID !ETH]: %RED%#%WHITE%#%BLUE%# %GOLD%Magefist %RED%#%WHITE%#%BLUE%#
+ItemDisplay[hgl UNI !ID !ETH]: %RED%#%WHITE%#%BLUE%# %GOLD%Frostburn %RED%#%WHITE%#%BLUE%#
 
 //Exceptional Unique Gloves
 ItemDisplay[xlg UNI !ID]: %GOLD%Venom Grip
 ItemDisplay[xvg UNI !ID]: %GOLD%Gravepalm
-ItemDisplay[xmg UNI !ID]: %RED%### %GOLD%Ghoulhide %RED%###
+ItemDisplay[xmg UNI !ID !ETH]: %RED%### %GOLD%Ghoulhide %RED%###
 ItemDisplay[xtg UNI !ID]: %GOLD%Lava Gout
 ItemDisplay[xhg UNI !ID]: %GOLD%Hellmouth
 
 //Elite Unique Gloves
-ItemDisplay[uvg UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%Dracul's Grasp %BLUE%###%WHITE%###%RED%###
+ItemDisplay[uvg UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Dracul's Grasp %BLUE%###%WHITE%###%RED%###
 ItemDisplay[umg UNI !ID]: %RED%### %GOLD%Soul Drainer %RED%### 
 ItemDisplay[uhg UNI !ID]: %RED%### %GOLD%Steelrend %RED%### 
 
@@ -680,16 +680,16 @@ ItemDisplay[tbl UNI !ID]: %GOLD%Goldwrap
 ItemDisplay[hbl UNI !ID]: %GOLD%Bladebuckle
 
 //Exceptional Unique Belts
-ItemDisplay[zlb UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%String of Ears %BLUE%###%WHITE%###%RED%###
-ItemDisplay[zvb UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%Razortail %BLUE%###%WHITE%###%RED%###
+ItemDisplay[zlb UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%String of Ears %BLUE%###%WHITE%###%RED%###
+ItemDisplay[zvb UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Razortail %BLUE%###%WHITE%###%RED%###
 ItemDisplay[zmb UNI !ID]: %GOLD%Gloom's Trap
 ItemDisplay[ztb UNI !ID]: %GOLD%Snowclash
-ItemDisplay[zhb UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%Thundergod's Vigor %BLUE%###%WHITE%###%RED%###
+ItemDisplay[zhb UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Thundergod's Vigor %BLUE%###%WHITE%###%RED%###
 
 //Elite Unique Belts
-ItemDisplay[ulc UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%Arachnid Mesh %BLUE%###%WHITE%###%RED%###
-ItemDisplay[uvc UNI !ID]: %GOLD%Nosferatu's Coil
-ItemDisplay[umc UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%Verdungo's Hearty Cord %BLUE%###%WHITE%###%RED%###
+ItemDisplay[ulc UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Arachnid Mesh %BLUE%###%WHITE%###%RED%###
+ItemDisplay[uvc UNI !ID !ETH]: %GOLD%Nosferatu's Coil
+ItemDisplay[umc UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Verdungo's Hearty Cord %BLUE%###%WHITE%###%RED%###
 
 //+--------------+
 //¦ Unique Boots ¦
@@ -706,15 +706,15 @@ ItemDisplay[hbt UNI !ID]: %GOLD%Tearhaunch
 
 //Exceptional Unique Boots
 ItemDisplay[xlb UNI !ID]: %GOLD%Infernostride
-ItemDisplay[xvb UNI !ID]: %RED%##%WHITE%##%BLUE%## %GOLD%Waterwalk %BLUE%##%WHITE%##%RED%##
-ItemDisplay[xmb UNI !ID]: %RED%#%WHITE%#%BLUE%# %GOLD%Silkweave %BLUE%#%WHITE%#%RED%#
-ItemDisplay[xtb UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%War Traveler %BLUE%###%WHITE%###%RED%###
-ItemDisplay[xhb UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%Gore Rider %BLUE%###%WHITE%###%RED%###
+ItemDisplay[xvb UNI !ID !ETH]: %RED%##%WHITE%##%BLUE%## %GOLD%Waterwalk %BLUE%##%WHITE%##%RED%##
+ItemDisplay[xmb UNI !ID !ETH]: %RED%#%WHITE%#%BLUE%# %GOLD%Silkweave %BLUE%#%WHITE%#%RED%#
+ItemDisplay[xtb UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%War Traveler %BLUE%###%WHITE%###%RED%###
+ItemDisplay[xhb UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Gore Rider %BLUE%###%WHITE%###%RED%###
 
 //Elite Unique Boots
-ItemDisplay[uvb UNI !ID]: %RED%#%WHITE%#%BLUE%# %GOLD%Sandstorm Trek %BLUE%#%WHITE%#%RED%#
-ItemDisplay[umb UNI !ID]: %RED%#%WHITE%#%BLUE%# %GOLD%Marrowwalk %BLUE%#%WHITE%#%RED%#
-ItemDisplay[uhb UNI !ID]: %RED%#%WHITE%#%BLUE%# %GOLD%Shadow Dancer %BLUE%#%WHITE%#%RED%#
+ItemDisplay[uvb UNI !ID !ETH]: %RED%#%WHITE%#%BLUE%# %GOLD%Sandstorm Trek %BLUE%#%WHITE%#%RED%#
+ItemDisplay[umb UNI !ID !ETH]: %RED%#%WHITE%#%BLUE%# %GOLD%Marrowwalk %BLUE%#%WHITE%#%RED%#
+ItemDisplay[uhb UNI !ID !ETH]: %RED%#%WHITE%#%BLUE%# %GOLD%Shadow Dancer %BLUE%#%WHITE%#%RED%#
 
 //+----------------+
 //¦ Unique Weapons ¦
@@ -750,7 +750,7 @@ ItemDisplay[9gi UNI !ID]: %GOLD%The Minotaur
 ItemDisplay[7ha UNI !ID]: %GOLD%Razor's Edge
 ItemDisplay[72a UNI !ID]: %GOLD%Rune Master
 ItemDisplay[7mp UNI !ID]: %GOLD%Cranebeak
-ItemDisplay[7wa UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%Death Cleaver %BLUE%###%WHITE%###%RED%###
+ItemDisplay[7wa UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Death Cleaver %BLUE%###%WHITE%###%RED%###
 ItemDisplay[7bt UNI !ID]: %GOLD%Hellslayer
 ItemDisplay[7ga UNI !ID]: %GOLD%Messerschmidt's Reaver
 ItemDisplay[7gi UNI !ID]: %GOLD%Executioner's Justice
@@ -824,7 +824,7 @@ ItemDisplay[9gd UNI !ID]: %GOLD%Swordguard
 //Elite Unique Swords
 ItemDisplay[7sm UNI !ID]: %GOLD%Djinn Slayer
 ItemDisplay[7sb UNI !ID]: %GOLD%Bloodmoon
-ItemDisplay[7cr UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%Lightsabre or Azurewrath %BLUE%###%WHITE%###%RED%###
+ItemDisplay[7cr UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Lightsabre or Azurewrath %BLUE%###%WHITE%###%RED%###
 ItemDisplay[7ls UNI !ID]: %GOLD%Frostwind
 ItemDisplay[7gs UNI !ID]: %GOLD%Flamebellow
 ItemDisplay[7b7 UNI !ID]: %GOLD%Doombringer
@@ -847,7 +847,7 @@ ItemDisplay[9bl UNI !ID]: %GOLD%Stormspike
 
 //Elite Unique Daggers
 ItemDisplay[7dg UNI !ID]: %GOLD%Wizardspike
-ItemDisplay[7kr UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%Fleshripper %BLUE%###%WHITE%###%RED%###
+ItemDisplay[7kr UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Fleshripper %BLUE%###%WHITE%###%RED%###
 
 //WP5 - Throwing Weapons
 ItemDisplay[UNI !ID (9tk OR 9ta OR 7ta OR 7b8) CLVL>79]:
@@ -857,7 +857,7 @@ ItemDisplay[9tk UNI !ID]: %GOLD%Deathbit
 ItemDisplay[9ta UNI !ID]: %GOLD%The Scalper
 
 //Elite Unique Throwing Weapons
-ItemDisplay[7bk UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%Warshrike %BLUE%###%WHITE%###%RED%###
+ItemDisplay[7bk UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Warshrike %BLUE%###%WHITE%###%RED%###
 ItemDisplay[7ta UNI !ID]: %GOLD%Gimmershred
 ItemDisplay[7b8 UNI !ID]: %GOLD%Lacerator
 
@@ -942,7 +942,7 @@ ItemDisplay[8lw UNI !ID]: %GOLD%Goldstrike Arch
 //Elite Unique Bows
 ItemDisplay[6l7 UNI !ID]: %GOLD%Eaglehorn
 ItemDisplay[6sw UNI !ID]: %GOLD%Widowmaker
-ItemDisplay[6lw UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%Windforce %BLUE%###%WHITE%###%RED%###
+ItemDisplay[6lw UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Windforce %BLUE%###%WHITE%###%RED%###
 
 //WP10 - Crossbows
 ItemDisplay[WP10 UNI !ID CLVL>79]:
@@ -1001,7 +1001,7 @@ ItemDisplay[9gw UNI !ID]: %GOLD%Blackhand Key
 
 //Elite Unique Wands
 ItemDisplay[7bw UNI !ID]: %GOLD%Boneshade
-ItemDisplay[7gw UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%Death's Web %BLUE%###%WHITE%###%RED%###
+ItemDisplay[7gw UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Death's Web %BLUE%###%WHITE%###%RED%###
 
 //WP13 - Scepters
 ItemDisplay[WP13 UNI !ID !(9ws OR ELT) CLVL>79]:
@@ -1014,33 +1014,33 @@ ItemDisplay[wsp UNI !ID]: %GOLD%Stormeye
 //Exceptional Unique Scepters
 ItemDisplay[9sc UNI !ID]: %GOLD%Zakarum's Hand
 ItemDisplay[9qs UNI !ID]: %GOLD%The Fetid Sprinkler
-ItemDisplay[9ws UNI !ID]: %RED%#%WHITE%#%BLUE%# %GOLD%Hand of Blessed Light %BLUE%#%WHITE%#%RED%#
+ItemDisplay[9ws UNI !ID !ETH]: %RED%#%WHITE%#%BLUE%# %GOLD%Hand of Blessed Light %BLUE%#%WHITE%#%RED%#
 
 //Elite Unique Scepters
 ItemDisplay[7sc UNI !ID]: %RED%#%WHITE%#%BLUE%# %GOLD%Heaven's Light or The Redeemer %BLUE%#%WHITE%#%RED%#
-ItemDisplay[7ws UNI !ID]: %RED%#%WHITE%#%BLUE%# %GOLD%Astreon's Iron Ward %BLUE%#%WHITE%#%RED%#
+ItemDisplay[7ws UNI !ID !ETH]: %RED%#%WHITE%#%BLUE%# %GOLD%Astreon's Iron Ward %BLUE%#%WHITE%#%RED%#
 
 //CL1 - DRUID ITEMS
-ItemDisplay[dra UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%Jalal's Mane %BLUE%###%WHITE%###%RED%###
+ItemDisplay[dra UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Jalal's Mane %BLUE%###%WHITE%###%RED%###
 ItemDisplay[drb UNI !ID]: %GOLD%Cerebus' Bite
 ItemDisplay[dre UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%Ravenlore %BLUE%###%WHITE%###%RED%###
 ItemDisplay[drd UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%Spirit Keeper %BLUE%###%WHITE%###%RED%###
 
 //CL2 - BARBARIAN ITEMS
-ItemDisplay[baa UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%Arreat's Face %BLUE%###%WHITE%###%RED%###
+ItemDisplay[baa UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Arreat's Face %BLUE%###%WHITE%###%RED%###
 ItemDisplay[bac UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%Wolfhowl %BLUE%###%WHITE%###%RED%###
 ItemDisplay[bad UNI !ID]: %GOLD%Demonhorn's Edge
 ItemDisplay[bae UNI !ID]: %GOLD%Halaberd's Reign
 
 //CL3 - PALADIN ITEMS
 ItemDisplay[pac UNI !ID]: %GOLD%Alma Negra
-ItemDisplay[pa9 UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%Herald of Zakarum %BLUE%###%WHITE%###%RED%###
+ItemDisplay[pa9 UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Herald of Zakarum %BLUE%###%WHITE%###%RED%###
 ItemDisplay[pae UNI !ID]: %GOLD%Dragonscale
 
 //CL4 - NECROMANCER ITEMS
-ItemDisplay[nea UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%Homunculus %BLUE%###%WHITE%###%RED%###
-ItemDisplay[nef UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%Darkforce Spawn %BLUE%###%WHITE%###%RED%###
-ItemDisplay[nee UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%Boneflame %BLUE%###%WHITE%###%RED%###
+ItemDisplay[nea UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Homunculus %BLUE%###%WHITE%###%RED%###
+ItemDisplay[nef UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Darkforce Spawn %BLUE%###%WHITE%###%RED%###
+ItemDisplay[nee UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Boneflame %BLUE%###%WHITE%###%RED%###
 
 //CL5 - ASSASSIN ITEMS
 ItemDisplay[9tw UNI !ID]: %GOLD%Bartuc's Cut-Throat
@@ -1048,9 +1048,9 @@ ItemDisplay[7wb UNI !ID]: %GOLD%Jade Talon
 ItemDisplay[7lw UNI !ID]: %GOLD%Firelizard's Talons
 
 //CL6 - SORC ITEMS
-ItemDisplay[oba UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%The Oculus %BLUE%###%WHITE%###%RED%###
-ItemDisplay[obc UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%Eschuta's Temper %ORANGE%[Slam if+3] %BLUE%###%WHITE%###%RED%###
-ItemDisplay[obf UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%Death's Fathom %BLUE%###%WHITE%###%RED%###
+ItemDisplay[oba UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%The Oculus %BLUE%###%WHITE%###%RED%###
+ItemDisplay[obc UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Eschuta's Temper %ORANGE%[Slam if+3] %BLUE%###%WHITE%###%RED%###
+ItemDisplay[obf UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Death's Fathom %BLUE%###%WHITE%###%RED%###
 
 //CL7 - AMAZON ITEMS
 ItemDisplay[amd UNI !ID]: %GOLD%Stoneraven
