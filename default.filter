@@ -1534,7 +1534,7 @@ ItemDisplay[NMAG SOCK>2 (7cr OR 7fb OR 7gs OR 72h OR 7gd) ETH]: %DARK_GREEN%%NAM
 //Plague Claw Bases
 ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) (SOCK=0 OR SOCK=3) SK262>2 SK272>2]: %DARK_GREEN%%NAME% %YELLOW%[+3 Wof\WoI]
 ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) (SOCK=0 OR SOCK=3) SK271>2 SK276>2]: %DARK_GREEN%%NAME% %YELLOW%[+3 LS\DS]
-ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) (SOCK=0 OR SOCK=3) SK271>2]: %DARK_GREEN%%NAME% %YELLOW%[+3 LS]
+ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) (SOCK=0 OR SOCK=3) SK271>2]: %DARK_GREEN%%NAME% %YELLOW%[+3 ChLS]
 ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) (SOCK=0 OR SOCK=3) SK277>2 SK278>0]: %DARK_GREEN%%NAME% %YELLOW%[+3 BS\Venom]
 ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) (SOCK=0 OR SOCK=3) SK273>2]: %DARK_GREEN%%NAME% %YELLOW%[+3 Mind Blast]
 
