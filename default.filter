@@ -78,7 +78,7 @@ ItemDisplay[gpm OR opm OR opl OR ops OR gps OR gpl]: //Hide Choking, Exploding, 
 
 //║                                       ▬▬▬▬▬ Runes ▬▬▬▬▬                                       ║
 ItemDisplay[(RUNE=8 OR RUNE=19)]: %GREEN%%RUNENAME% Rune %GRAY%(%RUNENUM%)
-ItemDisplay[RUNE<20]: %GRAY%%RUNENAME% Rune (%RUNENUM%)
+ItemDisplay[RUNE<20]: %GRAY%%RUNENAME% Rune %GRAY%(%RUNENUM%)
 ItemDisplay[(RUNE>19 AND RUNE<26)]: %RED%#%WHITE%#%BLUE%# %GREEN%%RUNENAME% RUNE %GRAY%(%RUNENUM%) %BLUE%#%WHITE%#%RED%#%MAP%
 ItemDisplay[RUNE>25]: %RED%###%WHITE%###%BLUE%### %GREEN%%RUNENAME% RUNE %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%###%MAP%
 
@@ -119,7 +119,7 @@ ItemDisplay[fed]: %RED%## %TAN%%NAME% %PURPLE%[Baal] %RED%##%MAP% //Festering Es
 
 // Other Special Items
 ItemDisplay[ear]: //Hide Ears
-//ItemDisplay[std]: %NAME% //Standard of Heroes
+ItemDisplay[std]: %NAME% //Standard of Heroes
 
 //PD2 Items
 ItemDisplay[imma]: %RED%## %GREEN%%NAME% %RED%#%MAP% //Arcane Orb
@@ -127,7 +127,7 @@ ItemDisplay[imra]: %RED%## %GREEN%%NAME% %RED%#{%WHITE%This Item + %BLUE%Jewel %
 ItemDisplay[rera]: %RED%## %GREEN%%NAME% %RED%#{%WHITE%This Item + Perf Gem + %ORANGE%Rune>9%NL%%TAN%Note%WHITE%: Reroll %YELLOW%Rare %WHITE%Map:}%MAP% //Horadrim Orb
 ItemDisplay[scou]: %RED%## %GREEN%%NAME% %RED%#{%WHITE%This Item + %ORANGE%Hel%NL%%TAN%Note%WHITE%: Revert back to a White Map:}%MAP% //Orb of Destruction
 ItemDisplay[upma]: %RED%## %GREEN%%NAME% %RED%#{%WHITE%This Item + Perf %GRAY%O %WHITE%+ %ORANGE%Rune>9%NL%%TAN%Note%WHITE%: Upg %BLUE%Magic %WHITE%to %YELLOW%Rare%WHITE% Map:}%MAP% //Angelic Orb
-ItemDisplay[lbox]: %GREEN%### %RED%%NAME% %GREEN%###%MAP%{%WHITE%Two-Handed Weapon = 4 max%NL%One-Handed Weapon = 2 max%NL%Helmet, Chest, Shield = 2 max%NL%%TAN%Note%WHITE%: Use it to %TAN%Socket %WHITE%an Item} //Larzuk's Box
+ItemDisplay[lbox]: %GREEN%### %RED%%NAME% %GREEN%###{%WHITE%2H Wep = 4 Max%NL%1H Wep = 2 max%NL%Helm, Chest, Shield = 2 Max%NL%%TAN%Note%WHITE%: Use it to %TAN%Socket %WHITE%an Item}%MAP% //Larzuk's Box
 ItemDisplay[wss]: %GREEN%### %PURPLE%Orb of Corruption %GREEN%###%MAP% //Worldstone Shard	
 
 //PD2 Dclone Items
@@ -182,7 +182,7 @@ ItemDisplay[t16 !ID RARE]: %RED%#%WHITE%#%BLUE%# %YELLOW%Ruins of Viz-jun %GRAY%
 
 //t17 River of Blood
 ItemDisplay[t17 !ID NMAG]: %RED%#%WHITE%#%BLUE%# %WHITE%River of Blood %GRAY%T3 %BLUE%#%WHITE%#%RED%#%MAP%
-ItemDisplay[t17 !ID MAG]: %BLUE%### River of Blood %GRAY%T3 %RED%[Unid] %BLUE%###%MAP%
+ItemDisplay[t17 !ID MAG]: %RED%##%WHITE%##%BLUE%## River of Blood %GRAY%T3 %RED%[Unid] %BLUE%##%WHITE%##%RED%##%MAP%
 ItemDisplay[t17 !ID RARE]: %RED%###%WHITE%###%BLUE%### %YELLOW%River of Blood %GRAY%T3 %RED%[Unid] %BLUE%###%WHITE%###%RED%###%MAP%
 
 //t18 Phlegethon/Lava
@@ -607,7 +607,7 @@ ItemDisplay[xar UNI !ID]: %GOLD%Corpsemourn
 
 //Elite Body Armor
 ItemDisplay[uui UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Ormus' Robes %BLUE%###%WHITE%###%RED%###
-ItemDisplay[utu UNI !ID !ETH]: %RED%### %GOLD%The Gladiator's Bane %BLUE%###%WHITE%###%RED%###
+ItemDisplay[utu UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%The Gladiator's Bane %BLUE%###%WHITE%###%RED%###
 ItemDisplay[upl UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Arkaine's Valor %BLUE%###%WHITE%###%RED%###
 ItemDisplay[uld UNI !ID !ETH]: %RED%### %GOLD%Leviathan %RED%###
 ItemDisplay[uul UNI !ID]: %GOLD%Steel Carapace
@@ -1457,13 +1457,12 @@ ItemDisplay[!NMAG CL1 (SK221>1 OR SK222>1 OR SK223>1 OR SK224>1 OR SK225>1 OR SK
 ItemDisplay[!NMAG CL5 (SK251>1 OR SK252>1 OR SK253>1 OR SK254>1 OR SK255>1 OR SK256>1 OR SK257>1 OR SK258>1 OR SK259>1 OR SK260>1 OR SK261>1 OR SK262>1 OR SK263>1 OR SK264>1 OR SK265>1 OR SK266>1 OR SK267>1 OR SK268>1 OR SK269>1 OR SK270>1 OR SK271>1 OR SK272>1 OR SK273>1 OR SK274>1 OR SK275>1 OR SK276>1 OR SK277>1 OR SK278>1 OR SK279>1 OR SK280>1)]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
 ItemDisplay[!NMAG]: %NAME%%WHITE%
 
-
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Everything is non-magical after this line.
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
 //║                                ▬▬▬▬▬ Superior ED Values ▬▬▬▬▬                                 ║
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
-ItemDisplay[SUP ED=15]: %NAME% %GOLD%[15% ED]%CONTINUE%
+ItemDisplay[SUP ED=15]: %NAME% %GOLD%[%RED%15% ED%GOLD%[]%CONTINUE%
 ItemDisplay[SUP ED=14]: %NAME% %GOLD%[%BLUE%14% ED%GOLD%]%CONTINUE%
 ItemDisplay[SUP ED=13]: %NAME% %GOLD%[%BLUE%13% ED%GOLD%]%CONTINUE%
 ItemDisplay[SUP ED=12]: %NAME% %GOLD%[%BLUE%12% ED%GOLD%]%CONTINUE%
@@ -1497,7 +1496,7 @@ ItemDisplay[!ETH ELT WP5 !CL7]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
 //║               ▬▬▬▬▬ [Custom] Rules for Runeword Bases with No Skill Tags ▬▬▬▬▬                ║
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
-ItemDisplay[NMAG (hbw OR cbw) !ETH SOCK=4]: %GRAY%Low Req Harmony Base //Hunter or Composite Bow Harmony Base
+ItemDisplay[NMAG (hbw OR cbw) !ETH SOCK=4 CLVL<90]: %GRAY%Low Req Harmony Base //Hunter or Composite Bow Harmony Base
 ItemDisplay[NMAG ETH (SOCK=0 OR SOCK=4) 6lw]: %ORANGE%Hydra Bow %WHITE%[%RED%%SOCKETS%%WHITE%] //4os ETH Hydra Bow for Merc
 
 ItemDisplay[ETH (SOCK=0 OR SOCK=6) 7p7]: %ORANGE%War Pike %WHITE%[%RED%%SOCKETS%%WHITE%] //0 or 6 socket Eth War Pike
@@ -1513,7 +1512,7 @@ ItemDisplay[NMAG (SOCK=0 OR SOCK=4) ETH 7br]: %RED%#### %GREEN%ETH Mancatcher %W
 ItemDisplay[NMAG CLVL<80 SOCK=4 ETH (7pa OR 7h7)]: %RED%#### %ORANGE%%NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%####
 //ItemDisplay[NMAG (SOCK=0 OR SOCK=4) ETH (7pa OR 7h7)]: %RED%#### %ORANGE%%NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%####
 
-ItemDisplay[NMAG (crs OR bsd) SOCK=4]: %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] //4os Crystal/Broad
+ItemDisplay[NMAG CLVL<80 (crs OR bsd) SOCK=4]: %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] //4os Crystal/Broad
 
 //Show Elite and Mage Plate Body Armors
 ItemDisplay[NMAG SOCK>2 (uui OR uea OR ula OR utu OR ung OR ucl OR urs OR uhn OR upl OR utp OR uld OR uld OR ult OR uth OR uul OR uar OR xtp)]: %RED%#### %ORANGE%%NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%####
