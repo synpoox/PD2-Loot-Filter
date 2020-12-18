@@ -521,10 +521,6 @@ ItemDisplay[ETH SET]: %RED%ETH %GREEN%%NAME%%MAP%%CONTINUE%
 ItemDisplay[ETH MAG]: %RED%ETH %BLUE%%NAME%%CONTINUE%
 ItemDisplay[ETH NMAG]: %RED%ETH %GRAY%%NAME%%CONTINUE%
 
-//ItemDisplay[ETH !NMAG]: %GREEN%ETH %GRAY%%NAME%%CONTINUE%
-//ItemDisplay[NMAG ETH]: %RED%ETH %ORANGE%%NAME%%CONTINUE%
-//ItemDisplay[UNI ETH]: %RED%ETH %GOLD%%NAME%%CONTINUE%
-
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
 //║                  ▬▬▬▬▬ Sockets for Everything Except Non-Magical Items ▬▬▬▬▬                  ║
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
@@ -561,8 +557,8 @@ ItemDisplay[uap UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Shako %BLUE%###
 ItemDisplay[ulm UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Steel Shade %BLUE%###%WHITE%###%RED%###
 ItemDisplay[uhm UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Nightwing's Veil Maybe!!!! %BLUE%###%WHITE%###%RED%###
 ItemDisplay[usk UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Andariel's Visage %RED%###%WHITE%###%BLUE%###
-ItemDisplay[urn UNI !ID !ETH]: %RED%#%WHITE%#%BLUE%# %GOLD%Crown of Ages %BLUE%#%WHITE%#%RED%#
-ItemDisplay[uh9 UNI !ID !ETH]: %RED%#%WHITE%#%BLUE%# %GOLD%Giant Skull %BLUE%#%WHITE%#%RED%#
+ItemDisplay[urn UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Crown of Ages %BLUE%###%WHITE%###%RED%###
+ItemDisplay[uh9 UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Giant Skull %BLUE%###%WHITE%###%RED%###
 
 //EQ7 - Circlets
 ItemDisplay[ci3 UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Griffon's Eye %BLUE%###%WHITE%###%RED%###
@@ -1462,7 +1458,7 @@ ItemDisplay[!NMAG]: %NAME%%WHITE%
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
 //║                                ▬▬▬▬▬ Superior ED Values ▬▬▬▬▬                                 ║
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
-ItemDisplay[SUP ED=15]: %NAME% %GOLD%[%RED%15% ED%GOLD%[]%CONTINUE%
+ItemDisplay[SUP ED=15]: %NAME% %GOLD%[%RED%15% ED%GOLD%]%CONTINUE%
 ItemDisplay[SUP ED=14]: %NAME% %GOLD%[%BLUE%14% ED%GOLD%]%CONTINUE%
 ItemDisplay[SUP ED=13]: %NAME% %GOLD%[%BLUE%13% ED%GOLD%]%CONTINUE%
 ItemDisplay[SUP ED=12]: %NAME% %GOLD%[%BLUE%12% ED%GOLD%]%CONTINUE%
@@ -1528,14 +1524,16 @@ ItemDisplay[NMAG WP13 (SOCK=0 OR SOCK>3) SK123>2]: %RED%#### %DARK_GREEN%%NAME% 
 ItemDisplay[NMAG pab RES>39]: %RED%#### %GREEN%Sacred Targe %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%####  //Show all Sacred Targe and Vortex Shields with 40+ res
 ItemDisplay[NMAG paf RES>39]: %RED%#### %GREEN%Vortex Shield %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%####  //Show all Sacred Targe and Vortex Shields with 40+ res
 
-ItemDisplay[NMAG SOCK>2 (7cr OR 7fb OR 7gs OR 72h OR 7gd) ETH]: %DARK_GREEN%%NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] //Eth Phase(7cr),ColossusSw(7fb),BalrogBl(7gs),Legend(72h),ColossusBlade(7gd)
+ItemDisplay[NMAG (SOCK=0 OR SOCK=3) (7cr OR 7fb OR 7gs OR 72h OR 7gd) ETH]: %DARK_GREEN%%NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] //Eth Phase(7cr),ColossusSw(7fb),BalrogBl(7gs),Legend(72h),ColossusBlade(7gd)
 
 //Plague Claw Bases
 ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) (SOCK=0 OR SOCK=3) SK262>2 SK272>2]: %DARK_GREEN%%NAME% %YELLOW%[+3 Wof\WoI]
-ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) (SOCK=0 OR SOCK=3) SK271>2 SK276>2]: %DARK_GREEN%%NAME% %YELLOW%[+3 LS\DS]
+ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) (SOCK=0 OR SOCK=3) SK271>2 SK276>2]: %DARK_GREEN%%NAME% %YELLOW%[+3 ChLS\DS]
 ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) (SOCK=0 OR SOCK=3) SK271>2]: %DARK_GREEN%%NAME% %YELLOW%[+3 ChLS]
 ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) (SOCK=0 OR SOCK=3) SK277>2 SK278>0]: %DARK_GREEN%%NAME% %YELLOW%[+3 BS\Venom]
 ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) (SOCK=0 OR SOCK=3) SK273>2]: %DARK_GREEN%%NAME% %YELLOW%[+3 Mind Blast]
+ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) (SOCK=0 OR SOCK=3) SK278>2]: %DARK_GREEN%%NAME% %YELLOW%[+3 Venom]
+ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) (SOCK=0 OR SOCK=3) SK273>1]: %DARK_GREEN%%NAME% %YELLOW%[+2 Mind Blast]
 
 //║                         ▬▬▬▬▬ Runeword Bases with No Skill Tags ▬▬▬▬▬                         ║
 //─────────────────────────────────────────────────────────────────────────────────────────────────
