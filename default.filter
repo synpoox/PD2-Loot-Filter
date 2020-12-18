@@ -1042,6 +1042,7 @@ ItemDisplay[nee UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Boneflame %BLUE
 ItemDisplay[9tw UNI !ID]: %GOLD%Bartuc's Cut-Throat
 ItemDisplay[7wb UNI !ID]: %GOLD%Jade Talon
 ItemDisplay[7lw UNI !ID]: %GOLD%Firelizard's Talons
+ItemDisplay[7cs UNI !ID]: %RED%###%WHITE%###%BLUE%### %GOLD%Shadow Killer %BLUE%###%WHITE%###%RED%###
 
 //CL6 - SORC ITEMS
 ItemDisplay[oba UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%The Oculus %BLUE%###%WHITE%###%RED%###
@@ -1168,6 +1169,7 @@ ItemDisplay[SET !ID xhb]: %GREEN%Immortal King's Boots
 
 //Infernal Tools
 ItemDisplay[SET !ID (gwn OR cap) CLVL>50]:
+ItemDisplay[SET !ID dgr]: %GREEN%Infernal Spire
 ItemDisplay[SET !ID gwn]: %GREEN%Infernal Torch Wand
 ItemDisplay[SET !ID cap]: %GREEN%Infernal or Sander's Cap
 
