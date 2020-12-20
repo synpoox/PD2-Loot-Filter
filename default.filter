@@ -77,10 +77,47 @@ ItemDisplay[vps CLVL>41]: //Ignore all Stamina Potions
 ItemDisplay[gpm OR opm OR opl OR ops OR gps OR gpl]: //Hide Choking, Exploding, Fulminating, Oil, Rancid, Strangling Potions
 
 //║                                       ▬▬▬▬▬ Runes ▬▬▬▬▬                                       ║
-ItemDisplay[(RUNE=8 OR RUNE=19)]: %GREEN%%RUNENAME% Rune %GRAY%(%RUNENUM%)
-ItemDisplay[RUNE<20]: %GRAY%%RUNENAME% Rune %GRAY%(%RUNENUM%)
-ItemDisplay[(RUNE>19 AND RUNE<26)]: %RED%#%WHITE%#%BLUE%# %GREEN%%RUNENAME% RUNE %GRAY%(%RUNENUM%) %BLUE%#%WHITE%#%RED%#%MAP%
-ItemDisplay[RUNE>25]: %RED%###%WHITE%###%BLUE%### %GREEN%%RUNENAME% RUNE %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%###%MAP%
+//ItemDisplay[(RUNE=8 OR RUNE=19)]: %GREEN%%RUNENAME% Rune %GRAY%(%RUNENUM%)
+//ItemDisplay[RUNE<20]: %GRAY%%RUNENAME% Rune %GRAY%(%RUNENUM%)
+//ItemDisplay[(RUNE>19 AND RUNE<26)]: %RED%#%WHITE%#%BLUE%# %GREEN%%RUNENAME% RUNE %GRAY%(%RUNENUM%) %BLUE%#%WHITE%#%RED%#%MAP%
+//ItemDisplay[RUNE>25]: %RED%###%WHITE%###%BLUE%### %GREEN%%RUNENAME% RUNE %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%###%MAP%
+
+ItemDisplay[r01 OR r01s]: %GRAY%El (%RUNENUM%)
+ItemDisplay[r02 OR r02s]: %GRAY%Eld (%RUNENUM%)
+ItemDisplay[r03 OR r03s]: %GRAY%Tir (%RUNENUM%)
+ItemDisplay[r04 OR r04s]: %GRAY%Nef (%RUNENUM%)
+ItemDisplay[r05 OR r05s]: %GRAY%Eth (%RUNENUM%)
+ItemDisplay[r06 OR r06s]: %GRAY%Ith (%RUNENUM%)
+ItemDisplay[r07 OR r07s]: %GRAY%Tal (%RUNENUM%)
+ItemDisplay[r08 OR r08s]: %GRAY%Ral (%RUNENUM%) %DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r09 OR r09s]: %GRAY%Ort (%RUNENUM%)
+ItemDisplay[r10 OR r10s]: %GRAY%Thul (%RUNENUM%)
+ItemDisplay[r11 OR r11s]: %GRAY%Amn (%RUNENUM%) %DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r12 OR r12s]: %GRAY%Sol (%RUNENUM%)
+ItemDisplay[r13 OR r13s]: %GRAY%Sheal (%RUNENUM%)
+ItemDisplay[r14 OR r14s]: %GRAY%Dol (%RUNENUM%)
+ItemDisplay[r15 OR r15s]: %GRAY%Hel (%RUNENUM%) %DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r16 OR r16s]: %GRAY%Io (%RUNENUM%)
+ItemDisplay[r17 OR r17s]: %GRAY%Lum (%RUNENUM%)
+ItemDisplay[r18 OR r18s]: %GRAY%Ko (%RUNENUM%)
+ItemDisplay[r19 OR r19s]: %GRAY%Fal (%RUNENUM%)
+ItemDisplay[r20 OR r20s]: %RED%#%WHITE%#%BLUE%# %GREEN%LEM %GRAY%(%RUNENUM%) %BLUE%#%WHITE%#%RED%# %DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r21 OR r21s]: %RED%#%WHITE%#%BLUE%# %GREEN%PUL %GRAY%(%RUNENUM%) %BLUE%#%WHITE%#%RED%# %DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r22 OR r22s]: %RED%#%WHITE%#%BLUE%# %GREEN%UM %GRAY%(%RUNENUM%) %BLUE%#%WHITE%#%RED%# %DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r23 OR r23s]: %RED%#%WHITE%#%BLUE%# %GREEN%MAL %GRAY%(%RUNENUM%) %BLUE%#%WHITE%#%RED%# %DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r24 OR r24s]: %RED%###%WHITE%###%BLUE%### %GREEN%IST %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%### %DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r25 OR r25s]: %RED%###%WHITE%###%BLUE%### %GREEN%GUL %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%### %DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r26 OR r26s]: %RED%###%WHITE%###%BLUE%### %GREEN%VEX %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%### %DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r27 OR r27s]: %RED%###%WHITE%###%BLUE%### %GREEN%OHM %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%###%DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r28 OR r28s]: %RED%###%WHITE%###%BLUE%### %GREEN%LO %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%###%DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r29 OR r29s]: %RED%###%WHITE%###%BLUE%### %GREEN%SUR %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%### %DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r30 OR r30s]: %RED%###%WHITE%###%BLUE%### %GREEN%BER %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%### %DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r31 OR r31s]: %RED%###%WHITE%###%BLUE%### %GREEN%JAH %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%### %DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r32 OR r32s]: %RED%###%WHITE%###%BLUE%### %GREEN%CHAM %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%### %DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r33 OR r33s]: %RED%###%WHITE%###%BLUE%### %GREEN%ZOD %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%### %DOT-76%%MAP-0B%%BORDER-50%
+
+
+
 
 //║                     ▬▬▬▬▬ Town Portal and ID Scrolls/Tomes and Keys ▬▬▬▬▬                     ║
 ItemDisplay[tsc]: %GREEN%!%GRAY%TP
@@ -104,8 +141,8 @@ ItemDisplay[mp4]: %GREEN%!%BLUE%Grt Mana
 ItemDisplay[hp5 CLVL>89]: //Ignore Super Healing Potions (Level 90+)
 ItemDisplay[hp5]: %GREEN%!%RED%HP
 ItemDisplay[mp5]: %GREEN%!%BLUE%MP
-ItemDisplay[rvl]: %GREEN%!%PURPLE%7%
-ItemDisplay[rvs]: %GREEN%!%PURPLE%3%
+ItemDisplay[rvl]: %BLACK%   %GREEN%!%PURPLE%7%  %BLACK% 
+ItemDisplay[rvs]: %BLACK%   %GREEN%!%PURPLE%3%  %BLACK% 
 ║                                   ▬▬▬▬▬ Special Items ▬▬▬▬▬                                   ║
 ItemDisplay[pk1]: %RED%#%WHITE%#%BLUE%# %TAN%Terror %GRAY%[Countess] %BLUE%#%WHITE%#%RED%#%MAP%
 ItemDisplay[pk2]: %RED%#%WHITE%#%BLUE%# %TAN%Hate %GRAY%[Summoner] %BLUE%#%WHITE%#%RED%#%MAP%
@@ -176,19 +213,19 @@ ItemDisplay[t15 !ID MAG]: %BLUE%### Horazon's Memory %GRAY%T?? %RED%[Unid] %BLUE
 ItemDisplay[t15 !ID RARE]: %RED%###%WHITE%###%BLUE%### %YELLOW%Horazon's Memory %GRAY%T?? %RED%[Unid] %BLUE%###%WHITE%###%RED%###%MAP%
 
 //t16 Ruins of Viz-jun
-ItemDisplay[t16 !ID NMAG]: %WHITE%### Ruins of Viz-jun %GRAY%T1 %WHITE%###%MAP%
-ItemDisplay[t16 !ID MAG]: %BLUE%### Ruins of Viz-jun %GRAY%T1 %RED%[Unid] %BLUE%###%MAP%
-ItemDisplay[t16 !ID RARE]: %RED%#%WHITE%#%BLUE%# %YELLOW%Ruins of Viz-jun %GRAY%T1 %RED%[Unid] %BLUE%#%WHITE%#%RED%#%MAP%
+ItemDisplay[t16 !ID NMAG]: %WHITE%###   Ruins of Viz-jun %GRAY%T1   %WHITE%###%MAP%
+ItemDisplay[t16 !ID MAG]: %BLUE%###   Ruins of Viz-jun %GRAY%T1 %RED%[Unid]   %BLUE%###%MAP%
+ItemDisplay[t16 !ID RARE]: %RED%#%WHITE%#%BLUE%#   %YELLOW%Ruins of Viz-jun %GRAY%T1 %RED%[Unid]   %BLUE%#%WHITE%#%RED%#%MAP%
 
 //t17 River of Blood
-ItemDisplay[t17 !ID NMAG]: %RED%#%WHITE%#%BLUE%# %WHITE%River of Blood %GRAY%T3 %BLUE%#%WHITE%#%RED%#%MAP%
-ItemDisplay[t17 !ID MAG]: %RED%##%WHITE%##%BLUE%## River of Blood %GRAY%T3 %RED%[Unid] %BLUE%##%WHITE%##%RED%##%MAP%
-ItemDisplay[t17 !ID RARE]: %RED%###%WHITE%###%BLUE%### %YELLOW%River of Blood %GRAY%T3 %RED%[Unid] %BLUE%###%WHITE%###%RED%###%MAP%
+ItemDisplay[t17 !ID NMAG]: %RED%#%WHITE%#%BLUE%#   %WHITE%River of Blood %GRAY%T3 %BLUE%#%WHITE%#%RED%#%MAP%
+ItemDisplay[t17 !ID MAG]: %RED%##%WHITE%##%BLUE%##   River of Blood %GRAY%T3 %RED%[Unid] %BLUE%##%WHITE%##%RED%##%MAP%
+ItemDisplay[t17 !ID RARE]: %RED%###%WHITE%###%BLUE%###   %YELLOW%River of Blood %GRAY%T3 %RED%[Unid] %BLUE%###%WHITE%###%RED%###%MAP%
 
 //t18 Phlegethon/Lava
-ItemDisplay[t18 !ID NMAG]: %WHITE%### Phlegethon\Lava %GRAY%T2 %WHITE%###%MAP%
-ItemDisplay[t18 !ID MAG]: %BLUE%### Phlegethon\Lava %GRAY%T2 %RED%[Unid] %BLUE%###%MAP%
-ItemDisplay[t18 !ID RARE]: %RED%##%WHITE%##%BLUE%## %YELLOW%Phlegethon\Lava %GRAY%T2 %RED%[Unid] %BLUE%##%WHITE%##%RED%##%MAP%
+ItemDisplay[t18 !ID NMAG]: %WHITE%###   Phlegethon\Lava %GRAY%T2   %WHITE%###%MAP%
+ItemDisplay[t18 !ID MAG]: %BLUE%###   Phlegethon\Lava %GRAY%T2 %RED%[Unid]   %BLUE%###%MAP%
+ItemDisplay[t18 !ID RARE]: %RED%##%WHITE%##%BLUE%##   %YELLOW%Phlegethon\Lava %GRAY%T2 %RED%[Unid]   %BLUE%##%WHITE%##%RED%##%MAP%
 
 ItemDisplay[t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t17 OR t18 ID]: %NAME%%PURPLE%%MAP%
 
@@ -329,7 +366,7 @@ ItemDisplay[(NMAG OR (RARE AND !ID)) ((CL5 AND NORM) OR 9ar OR 9wb OR 9xf)]: //I
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (ktr OR wrb OR axf OR ces OR 9wb OR 9xf OR 9cs OR 7xf OR 7cs)]: //Ignore Katars that can't Have 3 Sockets
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Sorceress Orbs - Ignore All Orbs That Can Not Have 3 Sockets
-ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) CL6 !(ob5 OR oba OR obf)]: //Ignore All Orbs That Can Not Have 3 Sockets
+//ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) CL6 !(ob5 OR oba OR obf)]: //Ignore All Orbs That Can Not Have 3 Sockets
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Shields - Ignore all Shield except Monarch (uit)
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (buc OR xuc OR uuc)]: //Ignore Buckler, Defender, and Heater [Light]
@@ -1526,16 +1563,24 @@ ItemDisplay[NMAG WP13 (SOCK=0 OR SOCK>3) SK123>2]: %RED%#### %DARK_GREEN%%NAME% 
 ItemDisplay[NMAG pab RES>39]: %RED%#### %GREEN%Sacred Targe %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%####  //Show all Sacred Targe and Vortex Shields with 40+ res
 ItemDisplay[NMAG paf RES>39]: %RED%#### %GREEN%Vortex Shield %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%####  //Show all Sacred Targe and Vortex Shields with 40+ res
 
-ItemDisplay[NMAG (SOCK=0 OR SOCK=3) (7cr OR 7fb OR 7gs OR 72h OR 7gd) ETH]: %DARK_GREEN%%NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] //Eth Phase(7cr),ColossusSw(7fb),BalrogBl(7gs),Legend(72h),ColossusBlade(7gd)
+ItemDisplay[NMAG (SOCK=0 OR SOCK=3) (7cr OR 7fb OR 7gs OR 72h OR 7gd) ETH]: %RED%#### %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%#### //Eth Phase(7cr),ColossusSw(7fb),BalrogBl(7gs),Legend(72h),ColossusBlade(7gd)
 
 //Plague Claw Bases
-ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) (SOCK=0 OR SOCK=3) SK262>2 SK272>2]: %DARK_GREEN%%NAME% %YELLOW%[+3 Wof\WoI]
-ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) (SOCK=0 OR SOCK=3) SK271>2 SK276>2]: %DARK_GREEN%%NAME% %YELLOW%[+3 ChLS\DS]
-ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) (SOCK=0 OR SOCK=3) SK271>2]: %DARK_GREEN%%NAME% %YELLOW%[+3 ChLS]
-ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) (SOCK=0 OR SOCK=3) SK277>2 SK278>0]: %DARK_GREEN%%NAME% %YELLOW%[+3 BS\Venom]
-ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) (SOCK=0 OR SOCK=3) SK273>2]: %DARK_GREEN%%NAME% %YELLOW%[+3 Mind Blast]
-ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) (SOCK=0 OR SOCK=3) SK278>2]: %DARK_GREEN%%NAME% %YELLOW%[+3 Venom]
-ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) (SOCK=0 OR SOCK=3) SK273>1]: %DARK_GREEN%%NAME% %YELLOW%[+2 Mind Blast]
+ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) (SOCK=0 OR SOCK=3) SK262>2 SK272>2]: %RED%#### %DARK_GREEN%%NAME% %YELLOW%[+3 Wof\WoI] %RED%#### 
+ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) (SOCK=0 OR SOCK=3) SK262>2]: %RED%#### %DARK_GREEN%%NAME% %YELLOW%[+3 Wof] %RED%#### 
+ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) (SOCK=0 OR SOCK=3) SK271>2 SK276>2]: %RED%#### %DARK_GREEN%%NAME% %YELLOW%[+3 ChLS\DS] %RED%#### 
+ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) (SOCK=0 OR SOCK=3) SK271>2]: %RED%#### %DARK_GREEN%%NAME% %YELLOW%[+3 ChLS] %RED%#### 
+ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) (SOCK=0 OR SOCK=3) SK277>2 SK278>0]: %RED%#### %DARK_GREEN%%NAME% %YELLOW%[+3 BS\Venom] %RED%#### 
+ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) (SOCK=0 OR SOCK=3) SK273>2]: %RED%#### %DARK_GREEN%%NAME% %YELLOW%[+3 Mind Blast] %RED%#### 
+ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) (SOCK=0 OR SOCK=3) SK278>2]: %RED%#### %DARK_GREEN%%NAME% %YELLOW%[+3 Venom] %RED%#### 
+
+//Plague Sorceress Orb
+ItemDisplay[(ob5 OR oba OR obf) (SOCK=0 OR SOCK=3) SK56>2 SK61>2]: %RED%#### %GREEN%%NAME% %YELLOW%[Meteor\FMast+3] %RED%#### 
+ItemDisplay[(ob5 OR oba OR obf) (SOCK=0 OR SOCK=3) SK47>2 SK61>2]: %RED%#### %GREEN%%NAME% %YELLOW%[Fireball\FMast+3] %RED%#### 
+ItemDisplay[(ob5 OR oba OR obf) (SOCK=0 OR SOCK=3) SK64>2 SK45>2]: %RED%#### %GREEN%%NAME% %YELLOW%[Forb\IceBlast+3] %RED%#### 
+
+
+
 
 //║                         ▬▬▬▬▬ Runeword Bases with No Skill Tags ▬▬▬▬▬                         ║
 //─────────────────────────────────────────────────────────────────────────────────────────────────
