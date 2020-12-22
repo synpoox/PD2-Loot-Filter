@@ -44,7 +44,7 @@ ItemDisplay[tr2]: %NAME%%MAP% //Scroll of Resistance Act V
 //║                                    ▬▬▬▬▬ Gold Drops ▬▬▬▬▬                                     ║
 ItemDisplay[GOLD<100 CLVL<20]:
 ItemDisplay[GOLD<2000 (CLVL>19 AND CLVL<=69)]:
-ItemDisplay[GOLD<5000 CLVL>69]:
+ItemDisplay[GOLD<9000 CLVL>69]:
 ItemDisplay[GOLD>0]: %NAME%
 
 //║                     ▬▬▬▬▬ [Optional] Rules for Ignoring Misc Items ▬▬▬▬▬                      ║
@@ -82,25 +82,25 @@ ItemDisplay[gpm OR opm OR opl OR ops OR gps OR gpl]: //Hide Choking, Exploding, 
 //ItemDisplay[(RUNE>19 AND RUNE<26)]: %RED%#%WHITE%#%BLUE%# %GREEN%%RUNENAME% RUNE %GRAY%(%RUNENUM%) %BLUE%#%WHITE%#%RED%#%MAP%
 //ItemDisplay[RUNE>25]: %RED%###%WHITE%###%BLUE%### %GREEN%%RUNENAME% RUNE %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%###%MAP%
 
-ItemDisplay[r01 OR r01s]: %GRAY%El (%RUNENUM%)
-ItemDisplay[r02 OR r02s]: %GRAY%Eld (%RUNENUM%)
-ItemDisplay[r03 OR r03s]: %GRAY%Tir (%RUNENUM%)
-ItemDisplay[r04 OR r04s]: %GRAY%Nef (%RUNENUM%)
-ItemDisplay[r05 OR r05s]: %GRAY%Eth (%RUNENUM%)
-ItemDisplay[r06 OR r06s]: %GRAY%Ith (%RUNENUM%)
-ItemDisplay[r07 OR r07s]: %GRAY%Tal (%RUNENUM%)
-ItemDisplay[r08 OR r08s]: %GRAY%Ral (%RUNENUM%) %DOT-76%%MAP-0B%%BORDER-50%
-ItemDisplay[r09 OR r09s]: %GRAY%Ort (%RUNENUM%)
-ItemDisplay[r10 OR r10s]: %GRAY%Thul (%RUNENUM%)
-ItemDisplay[r11 OR r11s]: %GRAY%Amn (%RUNENUM%) %DOT-76%%MAP-0B%%BORDER-50%
-ItemDisplay[r12 OR r12s]: %GRAY%Sol (%RUNENUM%)
-ItemDisplay[r13 OR r13s]: %GRAY%Sheal (%RUNENUM%)
-ItemDisplay[r14 OR r14s]: %GRAY%Dol (%RUNENUM%)
-ItemDisplay[r15 OR r15s]: %GRAY%Hel (%RUNENUM%) %DOT-76%%MAP-0B%%BORDER-50%
-ItemDisplay[r16 OR r16s]: %GRAY%Io (%RUNENUM%)
-ItemDisplay[r17 OR r17s]: %GRAY%Lum (%RUNENUM%)
-ItemDisplay[r18 OR r18s]: %GRAY%Ko (%RUNENUM%)
-ItemDisplay[r19 OR r19s]: %GRAY%Fal (%RUNENUM%)
+ItemDisplay[r01 OR r01s]: %ORANGE%El (%RUNENUM%)
+ItemDisplay[r02 OR r02s]: %ORANGE%Eld (%RUNENUM%)
+ItemDisplay[r03 OR r03s]: %ORANGE%Tir (%RUNENUM%)
+ItemDisplay[r04 OR r04s]: %ORANGE%Nef (%RUNENUM%)
+ItemDisplay[r05 OR r05s]: %ORANGE%Eth (%RUNENUM%)
+ItemDisplay[r06 OR r06s]: %ORANGE%Ith (%RUNENUM%)
+ItemDisplay[r07 OR r07s]: %ORANGE%Tal (%RUNENUM%)
+ItemDisplay[r08 OR r08s]: %ORANGE%Ral (%RUNENUM%) %DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r09 OR r09s]: %ORANGE%Ort (%RUNENUM%)
+ItemDisplay[r10 OR r10s]: %ORANGE%Thul (%RUNENUM%)
+ItemDisplay[r11 OR r11s]: %ORANGE%Amn (%RUNENUM%) %DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r12 OR r12s]: %ORANGE%Sol (%RUNENUM%)
+ItemDisplay[r13 OR r13s]: %ORANGE%Sheal (%RUNENUM%)
+ItemDisplay[r14 OR r14s]: %ORANGE%Dol (%RUNENUM%)
+ItemDisplay[r15 OR r15s]: %ORANGE%Hel (%RUNENUM%) %DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r16 OR r16s]: %ORANGE%Io (%RUNENUM%)
+ItemDisplay[r17 OR r17s]: %ORANGE%Lum (%RUNENUM%)
+ItemDisplay[r18 OR r18s]: %ORANGE%Ko (%RUNENUM%)
+ItemDisplay[r19 OR r19s]: %ORANGE%Fal (%RUNENUM%)
 ItemDisplay[r20 OR r20s]: %RED%#%WHITE%#%BLUE%# %GREEN%LEM %GRAY%(%RUNENUM%) %BLUE%#%WHITE%#%RED%# %DOT-76%%MAP-0B%%BORDER-50%
 ItemDisplay[r21 OR r21s]: %RED%#%WHITE%#%BLUE%# %GREEN%PUL %GRAY%(%RUNENUM%) %BLUE%#%WHITE%#%RED%# %DOT-76%%MAP-0B%%BORDER-50%
 ItemDisplay[r22 OR r22s]: %RED%#%WHITE%#%BLUE%# %GREEN%UM %GRAY%(%RUNENUM%) %BLUE%#%WHITE%#%RED%# %DOT-76%%MAP-0B%%BORDER-50%
