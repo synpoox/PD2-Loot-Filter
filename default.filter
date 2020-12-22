@@ -94,7 +94,7 @@ ItemDisplay[r09 OR r09s]: %ORANGE%Ort %GRAY%(%RUNENUM%)
 ItemDisplay[r10 OR r10s]: %ORANGE%Thul %GRAY%(%RUNENUM%)
 ItemDisplay[r11 OR r11s]: %ORANGE%Amn %GRAY%%RUNENUM%) %DOT-76%%MAP-0B%%BORDER-50%
 ItemDisplay[r12 OR r12s]: %ORANGE%Sol %GRAY%(%RUNENUM%)
-ItemDisplay[r13 OR r13s]: %ORANGE%Sheal %GRAY%(%RUNENUM%)
+ItemDisplay[r13 OR r13s]: %ORANGE%Shael %GRAY%(%RUNENUM%)
 ItemDisplay[r14 OR r14s]: %ORANGE%Dol %GRAY%(%RUNENUM%)
 ItemDisplay[r15 OR r15s]: %ORANGE%Hel %GRAY%(%RUNENUM%) %DOT-76%%MAP-0B%%BORDER-50%
 ItemDisplay[r16 OR r16s]: %ORANGE%Io %GRAY%(%RUNENUM%)
