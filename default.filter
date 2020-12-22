@@ -84,9 +84,9 @@ ItemDisplay[gpm OR opm OR opl OR ops OR gps OR gpl]: //Hide Choking, Exploding, 
 
 ItemDisplay[r01 OR r01s]: %ORANGE%El %GRAY%(%RUNENUM%)
 ItemDisplay[r02 OR r02s]: %ORANGE%Eld %GRAY%(%RUNENUM%)
-ItemDisplay[r03 OR r03s]: %ORANGE%Tir (%GRAY%%RUNENUM%)
+ItemDisplay[r03 OR r03s]: %ORANGE%Tir %GRAY%(%RUNENUM%)
 ItemDisplay[r04 OR r04s]: %ORANGE%Nef %GRAY%(%RUNENUM%)
-ItemDisplay[r05 OR r05s]: %ORANGE%Eth (%GRAY%%RUNENUM%)
+ItemDisplay[r05 OR r05s]: %ORANGE%Eth %GRAY%(%RUNENUM%)
 ItemDisplay[r06 OR r06s]: %ORANGE%Ith %GRAY%(%RUNENUM%)
 ItemDisplay[r07 OR r07s]: %ORANGE%Tal %GRAY%(%RUNENUM%)
 ItemDisplay[r08 OR r08s]: %ORANGE%Ral %GRAY%(%RUNENUM%) %DOT-76%%MAP-0B%%BORDER-50%
