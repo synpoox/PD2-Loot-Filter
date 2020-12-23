@@ -82,39 +82,39 @@ ItemDisplay[gpm OR opm OR opl OR ops OR gps OR gpl]: //Hide Choking, Exploding, 
 //ItemDisplay[(RUNE>19 AND RUNE<26)]: %RED%#%WHITE%#%BLUE%# %GREEN%%RUNENAME% RUNE %GRAY%(%RUNENUM%) %BLUE%#%WHITE%#%RED%#%MAP%
 //ItemDisplay[RUNE>25]: %RED%###%WHITE%###%BLUE%### %GREEN%%RUNENAME% RUNE %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%###%MAP%
 
-ItemDisplay[r01 OR r01s]: %ORANGE%El %GRAY%(%RUNENUM%)
-ItemDisplay[r02 OR r02s]: %ORANGE%Eld %GRAY%(%RUNENUM%)
-ItemDisplay[r03 OR r03s]: %ORANGE%Tir %GRAY%(%RUNENUM%)
-ItemDisplay[r04 OR r04s]: %ORANGE%Nef %GRAY%(%RUNENUM%)
-ItemDisplay[r05 OR r05s]: %ORANGE%Eth %GRAY%(%RUNENUM%)
-ItemDisplay[r06 OR r06s]: %ORANGE%Ith %GRAY%(%RUNENUM%)
-ItemDisplay[r07 OR r07s]: %ORANGE%Tal %GRAY%(%RUNENUM%)
-ItemDisplay[r08 OR r08s]: %ORANGE%Ral %GRAY%(%RUNENUM%) %DOT-76%%MAP-0B%%BORDER-50%
-ItemDisplay[r09 OR r09s]: %ORANGE%Ort %GRAY%(%RUNENUM%)
-ItemDisplay[r10 OR r10s]: %ORANGE%Thul %GRAY%(%RUNENUM%)
-ItemDisplay[r11 OR r11s]: %ORANGE%Amn %GRAY%%RUNENUM%) %DOT-76%%MAP-0B%%BORDER-50%
-ItemDisplay[r12 OR r12s]: %ORANGE%Sol %GRAY%(%RUNENUM%)
-ItemDisplay[r13 OR r13s]: %ORANGE%Shael %GRAY%(%RUNENUM%)
-ItemDisplay[r14 OR r14s]: %ORANGE%Dol %GRAY%(%RUNENUM%)
-ItemDisplay[r15 OR r15s]: %ORANGE%Hel %GRAY%(%RUNENUM%) %DOT-76%%MAP-0B%%BORDER-50%
-ItemDisplay[r16 OR r16s]: %ORANGE%Io %GRAY%(%RUNENUM%)
-ItemDisplay[r17 OR r17s]: %ORANGE%Lum %GRAY%(%RUNENUM%)
-ItemDisplay[r18 OR r18s]: %ORANGE%Ko %GRAY%(%RUNENUM%)
-ItemDisplay[r19 OR r19s]: %ORANGE%Fal %GRAY%(%RUNENUM%)
-ItemDisplay[r20 OR r20s]: %RED%#%WHITE%#%BLUE%# %GREEN%LEM %GRAY%(%RUNENUM%) %BLUE%#%WHITE%#%RED%# %DOT-76%%MAP-0B%%BORDER-50%
-ItemDisplay[r21 OR r21s]: %RED%#%WHITE%#%BLUE%# %GREEN%PUL %GRAY%(%RUNENUM%) %BLUE%#%WHITE%#%RED%# %DOT-76%%MAP-0B%%BORDER-50%
-ItemDisplay[r22 OR r22s]: %RED%#%WHITE%#%BLUE%# %GREEN%UM %GRAY%(%RUNENUM%) %BLUE%#%WHITE%#%RED%# %DOT-76%%MAP-0B%%BORDER-50%
-ItemDisplay[r23 OR r23s]: %RED%#%WHITE%#%BLUE%# %GREEN%MAL %GRAY%(%RUNENUM%) %BLUE%#%WHITE%#%RED%# %DOT-76%%MAP-0B%%BORDER-50%
-ItemDisplay[r24 OR r24s]: %RED%###%WHITE%###%BLUE%### %GREEN%IST %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%### %DOT-76%%MAP-0B%%BORDER-50%
-ItemDisplay[r25 OR r25s]: %RED%###%WHITE%###%BLUE%### %GREEN%GUL %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%### %DOT-76%%MAP-0B%%BORDER-50%
-ItemDisplay[r26 OR r26s]: %RED%###%WHITE%###%BLUE%### %GREEN%VEX %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%### %DOT-76%%MAP-0B%%BORDER-50%
-ItemDisplay[r27 OR r27s]: %RED%###%WHITE%###%BLUE%### %GREEN%OHM %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%###%DOT-76%%MAP-0B%%BORDER-50%
-ItemDisplay[r28 OR r28s]: %RED%###%WHITE%###%BLUE%### %GREEN%LO %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%###%DOT-76%%MAP-0B%%BORDER-50%
-ItemDisplay[r29 OR r29s]: %RED%###%WHITE%###%BLUE%### %GREEN%SUR %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%### %DOT-76%%MAP-0B%%BORDER-50%
-ItemDisplay[r30 OR r30s]: %RED%###%WHITE%###%BLUE%### %GREEN%BER %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%### %DOT-76%%MAP-0B%%BORDER-50%
-ItemDisplay[r31 OR r31s]: %RED%###%WHITE%###%BLUE%### %GREEN%JAH %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%### %DOT-76%%MAP-0B%%BORDER-50%
-ItemDisplay[r32 OR r32s]: %RED%###%WHITE%###%BLUE%### %GREEN%CHAM %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%### %DOT-76%%MAP-0B%%BORDER-50%
-ItemDisplay[r33 OR r33s]: %RED%###%WHITE%###%BLUE%### %GREEN%ZOD %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%### %DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r01 OR r01s]: %ORANGE%El Rune %GRAY%(%RUNENUM%)
+ItemDisplay[r02 OR r02s]: %ORANGE%Eld Rune %GRAY%(%RUNENUM%)
+ItemDisplay[r03 OR r03s]: %ORANGE%Tir Rune %GRAY%(%RUNENUM%)
+ItemDisplay[r04 OR r04s]: %ORANGE%Nef Rune %GRAY%(%RUNENUM%)
+ItemDisplay[r05 OR r05s]: %ORANGE%Eth Rune %GRAY%(%RUNENUM%)
+ItemDisplay[r06 OR r06s]: %ORANGE%Ith Rune %GRAY%(%RUNENUM%)
+ItemDisplay[r07 OR r07s]: %ORANGE%Tal Rune %GRAY%(%RUNENUM%)
+ItemDisplay[r08 OR r08s]: %ORANGE%Ral Rune %GRAY%(%RUNENUM%)
+ItemDisplay[r09 OR r09s]: %ORANGE%Ort Rune %GRAY%(%RUNENUM%)
+ItemDisplay[r10 OR r10s]: %ORANGE%Thul Rune %GRAY%(%RUNENUM%)
+ItemDisplay[r11 OR r11s]: %ORANGE%Amn Rune %GRAY%%RUNENUM%)
+ItemDisplay[r12 OR r12s]: %ORANGE%Sol Rune %GRAY%(%RUNENUM%)
+ItemDisplay[r13 OR r13s]: %ORANGE%Shael Rune %GRAY%(%RUNENUM%)
+ItemDisplay[r14 OR r14s]: %ORANGE%Dol Rune %GRAY%(%RUNENUM%)
+ItemDisplay[r15 OR r15s]: %ORANGE%Hel Rune %GRAY%(%RUNENUM%)
+ItemDisplay[r16 OR r16s]: %ORANGE%Io Rune %GRAY%(%RUNENUM%)
+ItemDisplay[r17 OR r17s]: %ORANGE%Lum Rune %GRAY%(%RUNENUM%)
+ItemDisplay[r18 OR r18s]: %ORANGE%Ko Rune %GRAY%(%RUNENUM%)
+ItemDisplay[r19 OR r19s]: %ORANGE%Fal Rune %GRAY%(%RUNENUM%)
+ItemDisplay[r20 OR r20s]: %RED%#%WHITE%#%BLUE%# %GREEN%LEM Rune %GRAY%(%RUNENUM%) %BLUE%#%WHITE%#%RED%# %DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r21 OR r21s]: %RED%#%WHITE%#%BLUE%# %GREEN%PUL Rune %GRAY%(%RUNENUM%) %BLUE%#%WHITE%#%RED%# %DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r22 OR r22s]: %RED%#%WHITE%#%BLUE%# %GREEN%UM Rune %GRAY%(%RUNENUM%) %BLUE%#%WHITE%#%RED%# %DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r23 OR r23s]: %RED%#%WHITE%#%BLUE%# %GREEN%MAL Rune %GRAY%(%RUNENUM%) %BLUE%#%WHITE%#%RED%# %DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r24 OR r24s]: %RED%###%WHITE%###%BLUE%### %GREEN%IST Rune %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%### %DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r25 OR r25s]: %RED%###%WHITE%###%BLUE%### %GREEN%GUL Rune %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%### %DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r26 OR r26s]: %RED%###%WHITE%###%BLUE%### %GREEN%VEX Rune %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%### %DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r27 OR r27s]: %RED%###%WHITE%###%BLUE%### %GREEN%OHM Rune %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%###%DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r28 OR r28s]: %RED%###%WHITE%###%BLUE%### %GREEN%LO Rune %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%###%DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r29 OR r29s]: %RED%###%WHITE%###%BLUE%### %GREEN%SUR Rune %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%### %DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r30 OR r30s]: %RED%###%WHITE%###%BLUE%### %GREEN%BER Rune %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%### %DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r31 OR r31s]: %RED%###%WHITE%###%BLUE%### %GREEN%JAH Rune %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%### %DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r32 OR r32s]: %RED%###%WHITE%###%BLUE%### %GREEN%CHAM Rune %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%### %DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r33 OR r33s]: %RED%###%WHITE%###%BLUE%### %GREEN%ZOD Rune %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%### %DOT-76%%MAP-0B%%BORDER-50%
 
 
 
@@ -321,13 +321,13 @@ ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (pax OR 9pa)]: //Ignore Poleaxe, P
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (hal OR 9h9)]: //Ignore Halberd, Bec-de-Corbin
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (wsc OR 9wc)]: //Ignore War Scythe, Grim Scythe
 //─────────────────────────────────────────────────────────────────────────────────────────────────
-// Bows - Ignore All Bows except Composite (cbw), Hunter (hbw), and Hydra Bow (6lw) (Harmony Bow)
+// Bows - Ignore All Bows except Composite (cbw), Hunter (hbw), and Hydra Bow (6lw) (Harmony Bow), and Crusader Bow (6l7)
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (sbw OR 8sb OR 6sb)]: //Ignore Short Bow, Edge Bow, and Spider Bow
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (8hb OR 6hb)]: //Ignore Razor Bow, and Blade Bow
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (lbw OR 8lb OR 6lb)]: //Ignore Long Bow, Cedar Bow, and Shadow Bow
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (8cb OR 6cb)]: //Ignore Double Bow, and Great Bow
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (sbb OR 8s8 OR 6s7)]: //Ignore Short Battle Bow, Short Siege Bow, and Diamond Bow
-ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (lbb OR 8l8 OR 6l7)]: //Ignore Long Battle Bow, Long Siege Bow, and Crusader Bow
+ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (lbb OR 8l8)]: //Ignore Long Battle Bow, Long Siege Bow, and Crusader Bow
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (swb OR 8sw OR 6sw)]: //Ignore Short War Bow, Rune Bow, and Ward Bow
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (lwb OR 8lw)]: //Ignore Long War Bow, Gothic Bow, and Hydra Bow
 //─────────────────────────────────────────────────────────────────────────────────────────────────
@@ -350,8 +350,8 @@ ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (wnd OR ywn OR 9wn)]:
 //ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (gsc OR 9qs OR 7qs)]: //Ignore Grand Scepter, Holy Water Sprinkler, and Seraph Rod
 //ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (wsp OR 9ws OR 7ws)]: //Ignore War Scepter, Divine Scepter, and Caduceus
 //─────────────────────────────────────────────────────────────────────────────────────────────────
-// Amazon Bows - Ignore All Amazon Bows Except Grand Matron Bow
-ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (am1 OR am6 OR amb)]: //Ignore Stag Bow, Ashwood Bow, or Matriarchal Bow
+// Amazon Bows - Ignore All Amazon Bows Except Matriarchal Bow and Grand Matron Bow
+ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (am1 OR am6)]: //Ignore Stag Bow, Ashwood Bow, or Matriarchal Bow
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (am2 OR am7)]: //Ignore Reflex Bow, Ceremonial Bow
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Amazon Spears - Ignore All Amazon Spears
@@ -1532,7 +1532,9 @@ ItemDisplay[!ETH ELT WP5 !CL7]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
 //║               ▬▬▬▬▬ [Custom] Rules for Runeword Bases with No Skill Tags ▬▬▬▬▬                ║
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
 ItemDisplay[NMAG (hbw OR cbw) !ETH SOCK=4 CLVL<90]: %GRAY%Low Req Harmony Base //Hunter or Composite Bow Harmony Base
-ItemDisplay[NMAG ETH (SOCK=0 OR SOCK=4) 6lw]: %ORANGE%Hydra Bow %WHITE%[%RED%%SOCKETS%%WHITE%] //4os ETH Hydra Bow for Merc
+ItemDisplay[NMAG (SOCK=0 OR SOCK=4) 6lw]: %ORANGE%Hydra Bow %WHITE%[%RED%%SOCKETS%%WHITE%] //4os Hydra Bow for Merc
+ItemDisplay[NMAG (SOCK=0 OR SOCK=4) 6l7]: %ORANGE%Hydra Bow %WHITE%[%RED%%SOCKETS%%WHITE%] //4os Crusader Bow for Merc
+
 
 ItemDisplay[ETH (SOCK=0 OR SOCK=6) 7p7]: %ORANGE%War Pike %WHITE%[%RED%%SOCKETS%%WHITE%] //0 or 6 socket Eth War Pike
 ItemDisplay[ETH (SOCK=0 OR SOCK>3) 7gm]: %ORANGE%ETH Thunder Maul %WHITE%[%RED%%SOCKETS%%WHITE%] //0 or 6 socket Eth Thunder Maul
