@@ -101,20 +101,20 @@ ItemDisplay[r16 OR r16s]: %ORANGE%Io Rune %GRAY%(%RUNENUM%)
 ItemDisplay[r17 OR r17s]: %ORANGE%Lum Rune %GRAY%(%RUNENUM%)
 ItemDisplay[r18 OR r18s]: %ORANGE%Ko Rune %GRAY%(%RUNENUM%)
 ItemDisplay[r19 OR r19s]: %ORANGE%Fal Rune %GRAY%(%RUNENUM%)
-ItemDisplay[r20 OR r20s]: %RED%#%WHITE%#%BLUE%# %GREEN%LEM Rune %GRAY%(%RUNENUM%) %BLUE%#%WHITE%#%RED%# %DOT-76%%MAP-0B%%BORDER-50%
-ItemDisplay[r21 OR r21s]: %RED%#%WHITE%#%BLUE%# %GREEN%PUL Rune %GRAY%(%RUNENUM%) %BLUE%#%WHITE%#%RED%# %DOT-76%%MAP-0B%%BORDER-50%
-ItemDisplay[r22 OR r22s]: %RED%#%WHITE%#%BLUE%# %GREEN%UM Rune %GRAY%(%RUNENUM%) %BLUE%#%WHITE%#%RED%# %DOT-76%%MAP-0B%%BORDER-50%
-ItemDisplay[r23 OR r23s]: %RED%#%WHITE%#%BLUE%# %GREEN%MAL Rune %GRAY%(%RUNENUM%) %BLUE%#%WHITE%#%RED%# %DOT-76%%MAP-0B%%BORDER-50%
-ItemDisplay[r24 OR r24s]: %RED%###%WHITE%###%BLUE%### %GREEN%IST Rune %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%### %DOT-76%%MAP-0B%%BORDER-50%
-ItemDisplay[r25 OR r25s]: %RED%###%WHITE%###%BLUE%### %GREEN%GUL Rune %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%### %DOT-76%%MAP-0B%%BORDER-50%
-ItemDisplay[r26 OR r26s]: %RED%###%WHITE%###%BLUE%### %GREEN%VEX Rune %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%### %DOT-76%%MAP-0B%%BORDER-50%
-ItemDisplay[r27 OR r27s]: %RED%###%WHITE%###%BLUE%### %GREEN%OHM Rune %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%###%DOT-76%%MAP-0B%%BORDER-50%
-ItemDisplay[r28 OR r28s]: %RED%###%WHITE%###%BLUE%### %GREEN%LO Rune %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%###%DOT-76%%MAP-0B%%BORDER-50%
-ItemDisplay[r29 OR r29s]: %RED%###%WHITE%###%BLUE%### %GREEN%SUR Rune %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%### %DOT-76%%MAP-0B%%BORDER-50%
-ItemDisplay[r30 OR r30s]: %RED%###%WHITE%###%BLUE%### %GREEN%BER Rune %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%### %DOT-76%%MAP-0B%%BORDER-50%
-ItemDisplay[r31 OR r31s]: %RED%###%WHITE%###%BLUE%### %GREEN%JAH Rune %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%### %DOT-76%%MAP-0B%%BORDER-50%
-ItemDisplay[r32 OR r32s]: %RED%###%WHITE%###%BLUE%### %GREEN%CHAM Rune %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%### %DOT-76%%MAP-0B%%BORDER-50%
-ItemDisplay[r33 OR r33s]: %RED%###%WHITE%###%BLUE%### %GREEN%ZOD Rune %GRAY%(%RUNENUM%) %BLUE%###%WHITE%###%RED%### %DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r20 OR r20s]: %RED%#%WHITE%#%BLUE%#  %GREEN%LEM Rune %GRAY%(%RUNENUM%)  %BLUE%#%WHITE%#%RED%# %DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r21 OR r21s]: %RED%#%WHITE%#%BLUE%#  %GREEN%PUL Rune %GRAY%(%RUNENUM%)  %BLUE%#%WHITE%#%RED%# %DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r22 OR r22s]: %RED%#%WHITE%#%BLUE%#  %GREEN%UM Rune %GRAY%(%RUNENUM%)  %BLUE%#%WHITE%#%RED%# %DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r23 OR r23s]: %RED%#%WHITE%#%BLUE%#  %GREEN%MAL Rune %GRAY%(%RUNENUM%)  %BLUE%#%WHITE%#%RED%# %DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r24 OR r24s]: %RED%###%WHITE%###%BLUE%###  %GREEN%IST Rune %GRAY%(%RUNENUM%)  %BLUE%###%WHITE%###%RED%### %DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r25 OR r25s]: %RED%###%WHITE%###%BLUE%###  %GREEN%GUL Rune %GRAY%(%RUNENUM%)  %BLUE%###%WHITE%###%RED%### %DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r26 OR r26s]: %RED%###%WHITE%###%BLUE%###  %GREEN%VEX Rune %GRAY%(%RUNENUM%)  %BLUE%###%WHITE%###%RED%### %DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r27 OR r27s]: %RED%###%WHITE%###%BLUE%###  %GREEN%OHM Rune %GRAY%(%RUNENUM%)  %BLUE%###%WHITE%###%RED%###%DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r28 OR r28s]: %RED%###%WHITE%###%BLUE%###  %GREEN%LO Rune %GRAY%(%RUNENUM%)  %BLUE%###%WHITE%###%RED%###%DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r29 OR r29s]: %RED%###%WHITE%###%BLUE%###  %GREEN%SUR Rune %GRAY%(%RUNENUM%)  %BLUE%###%WHITE%###%RED%### %DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r30 OR r30s]: %RED%###%WHITE%###%BLUE%###  %GREEN%BER Rune %GRAY%(%RUNENUM%)  %BLUE%###%WHITE%###%RED%### %DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r31 OR r31s]: %RED%###%WHITE%###%BLUE%###  %GREEN%JAH Rune %GRAY%(%RUNENUM%)  %BLUE%###%WHITE%###%RED%### %DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r32 OR r32s]: %RED%###%WHITE%###%BLUE%###  %GREEN%CHAM Rune %GRAY%(%RUNENUM%)  %BLUE%###%WHITE%###%RED%### %DOT-76%%MAP-0B%%BORDER-50%
+ItemDisplay[r33 OR r33s]: %RED%###%WHITE%###%BLUE%###  %GREEN%ZOD Rune %GRAY%(%RUNENUM%)  %BLUE%###%WHITE%###%RED%### %DOT-76%%MAP-0B%%BORDER-50%
 
 
 
@@ -675,6 +675,7 @@ ItemDisplay[uit UNI !ID !ETH]: %RED%###%WHITE%###%BLUE%### %GOLD%Stormshield %BL
 ItemDisplay[upk UNI !ID]: %GOLD%Spike Thorn
 ItemDisplay[uow UNI !ID]: %RED%### %GOLD%Medusa's Gaze %RED%###
 ItemDisplay[ush UNI !ID]: %RED%### %GOLD%Head Hunter's Glory %RED%###
+ItemDisplay[uts UNI !ID]: %RED%### %GOLD%Spirit Ward %RED%###
 
 //EQ4 - Gloves
 ItemDisplay[EQ4 UNI !ID !(vgl OR mgl OR tgl OR hgl OR xmg OR ELT) CLVL>79]:
@@ -1532,8 +1533,8 @@ ItemDisplay[!ETH ELT WP5 !CL7]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
 //║               ▬▬▬▬▬ [Custom] Rules for Runeword Bases with No Skill Tags ▬▬▬▬▬                ║
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
 ItemDisplay[NMAG (hbw OR cbw) !ETH SOCK=4 CLVL<90]: %GRAY%Low Req Harmony Base //Hunter or Composite Bow Harmony Base
-ItemDisplay[NMAG (SOCK=0 OR SOCK=4) 6lw]: %ORANGE%Hydra Bow %WHITE%[%RED%%SOCKETS%%WHITE%] //4os Hydra Bow for Merc
-ItemDisplay[NMAG (SOCK=0 OR SOCK=4) 6l7]: %ORANGE%Hydra Bow %WHITE%[%RED%%SOCKETS%%WHITE%] //4os Crusader Bow for Merc
+ItemDisplay[NMAG SOCK=4 6lw]: %ORANGE%Hydra Bow %WHITE%[%RED%%SOCKETS%%WHITE%] //4os Hydra Bow for Merc
+ItemDisplay[NMAG SOCK=4 6l7]: %ORANGE%Hydra Bow %WHITE%[%RED%%SOCKETS%%WHITE%] //4os Crusader Bow for Merc
 
 
 ItemDisplay[ETH (SOCK=0 OR SOCK=6) 7p7]: %ORANGE%War Pike %WHITE%[%RED%%SOCKETS%%WHITE%] //0 or 6 socket Eth War Pike
