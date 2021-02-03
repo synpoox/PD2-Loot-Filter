@@ -217,7 +217,7 @@ ItemDisplay[MAG !ID rin CLVL>69]: //Ignore unidentified magic rings at level 70+
 ItemDisplay[MAG !ID (cm1 OR cm3 OR jew)]: %NL%%DOT-9B%%GREEN%####   %BLUE%%NAME% %WHITE%[%GRAY%Lv.%ILVL%%WHITE%]   %GREEN%####%NL% //Magical Unid SC/GC
 ItemDisplay[MAG !ID cm2 CLVL<76]: %BLUE%%NAME% //Magical Unid Large Charm
 ItemDisplay[RARE !ID (jew OR rin OR amu)]: %NL%%NL%%DOT-9B%%GREEN%#### %YELLOW%%NAME% %GREEN%####%NL%%NL% //Rare Jewel, Ring, Ammy
-ItemDisplay[RARE !ID (ci0 OR ci1 OR ci2 or ci3)]: %NL%%NL%%DOT-9B%%GREEN%#### %YELLOW%%NAME% %GREEN%####%NL%%NL% //Rare Circlets
+ItemDisplay[RARE !ID (ci0 OR ci1 OR ci2 OR ci3)]: %NL%%NL%%DOT-9B%%GREEN%#### %YELLOW%%NAME% %GREEN%####%NL%%NL% //Rare Circlets
 
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 //║              ▬▬▬▬▬ [Optional] Rules for Ignoring Specific Equipment Types ▬▬▬▬▬               ║
