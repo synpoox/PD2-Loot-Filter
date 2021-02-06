@@ -137,10 +137,10 @@ ItemDisplay[lbox]: %GREEN%### %RED%%NAME% %GREEN%###{%WHITE%2H Wep = 4 Max%NL%1H
 ItemDisplay[wss]: %NL%%NL%          %GREEN%###   %PURPLE%Orb of Corruption   %GREEN%###          %NL%%NL%          %MAP% //Worldstone Shard	
 
 //PD2 Dclone Items
-ItemDisplay[dcma]: %RED%## %GREEN%%NAME% %RED%##%MAP% //Vision of Terror
-ItemDisplay[dcbl]: %RED%## %GREEN%%NAME% %RED%##%MAP% //Pure Demonic Essence
-ItemDisplay[dcho]: %RED%## %GREEN%%NAME% %RED%##%MAP% //Black Soulstone
-ItemDisplay[dcso]: %RED%## %GREEN%%NAME% %RED%##%MAP% //Prime Evil Soul
+ItemDisplay[dcma]: %NL%%NL%          %RED%## %GREEN%%NAME% %RED%##         %NL%%NL%          %MAP% //Vision of Terror
+ItemDisplay[dcbl]: %NL%%NL%          %RED%## %GREEN%%NAME% %RED%##         %NL%%NL%          %MAP% //Pure Demonic Essence
+ItemDisplay[dcho]: %NL%%NL%          %RED%## %GREEN%%NAME% %RED%##         %NL%%NL%          %MAP% //Black Soulstone
+ItemDisplay[dcso]: %NL%%NL%          %RED%## %GREEN%%NAME% %RED%##         %NL%%NL%          %MAP% //Prime Evil Soul
 
 //PD2 Maps 
 //+-------------------------------+
@@ -978,7 +978,7 @@ ItemDisplay[6hx UNI !ID]: %GOLD%Hellrack
 ItemDisplay[6rx UNI !ID]: %GOLD%Gut Siphon
 
 //WP11 - Staves
-ItemDisplay[UNI !ID (sst OR lst OR cst OR bst OR wst OR 8ss 8cs OR 8bs OR 8ws) CLVL>79]:
+ItemDisplay[UNI !ID (sst OR lst OR cst OR bst OR wst OR 8ss OR 8cs OR 8bs OR 8ws) CLVL>79]:
 
 //Normal Unique Staves
 ItemDisplay[sst UNI !ID]: %GOLD%Bane Ash
@@ -1412,7 +1412,7 @@ ItemDisplay[MAG cm3 ILVL>76]: %NAME% %WHITE%[%GRAY%Lv.%ILVL%%WHITE%]
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
 //║                             ▬▬▬▬▬ End Processing - 1st Wave ▬▬▬▬▬                             ║
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
-ItemDisplay[!NMAG !ID !((WP5 AND !CL7) or amu or rin)]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
+ItemDisplay[!NMAG !ID !((WP5 AND !CL7) OR amu OR rin)]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
 ItemDisplay[!MAG !ID]: %NAME% %WHITE%
 ItemDisplay[!(NMAG OR MAG OR RARE) ID]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
 ItemDisplay[MAG ID amu ALLSK>0]: %NAME% %WHITE%[%GRAY%Lv.%ILVL%%WHITE%]
@@ -1560,7 +1560,7 @@ ItemDisplay[NMAG CLVL<80 (crs OR bsd) SOCK=4]: %NAME% %WHITE%[%RED%%SOCKETS%%WHI
 ItemDisplay[NMAG SOCK>2 (uui OR uea OR ula OR utu OR ung OR ucl OR urs OR uhn OR upl OR utp OR uld OR uld OR ult OR uth OR uul OR uar OR xtp)]: %RED%#### %ORANGE%%NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%####
 //ItemDisplay[NMAG SOCK<3 (uui OR uea OR ula OR utu OR ung OR ucl OR urs OR uhn OR upl OR utp OR uld OR uld OR ult OR uth OR uul OR uar OR xtp)]:
 
-ItemDisplay[NMAG SOCK>2 aar]: %RED%#### %DARK_GREEN%%NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%#### //3os Ancient Armor
+ItemDisplay[NMAG (SOCK=3 OR SOCK=4) aar]: %RED%#### %DARK_GREEN%%NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%#### //3os Ancient Armor
 
 ItemDisplay[NMAG WP13 (SOCK=0 OR SOCK>3) SK121>2]: %RED%#### %DARK_GREEN%%NAME% %YELLOW%[+3 FoH] %RED%####  //Pally Scepters with +3 
 ItemDisplay[NMAG WP13 (SOCK=0 OR SOCK>3) SK112>2]: %RED%#### %DARK_GREEN%%NAME% %YELLOW%[+3 Blessed Hammer] %RED%#### 
@@ -1615,14 +1615,14 @@ ItemDisplay[uit (SOCK=0 OR SOCK=4) !ETH !INF NMAG DEF>139]: %DOT-D6%%NAME%%CONTI
 ItemDisplay[uit (SOCK=0 OR SOCK=4) ETH !INF NMAG DEF>209]: %DOT-D6%%NAME%%CONTINUE%
 
 //High DEF Bases (w/o ED)
-ItemDisplay[xtp !SOCK=1 !ETH !INF NMAG DEF>249 ED<5]: %NAME%  %WHITE%[%RED%%SOCKETS%%WHITE%]%CONTINUE%
-ItemDisplay[(uui OR uea OR ula) (SOCK=0 OR SOCK>2) !ETH !INF NMAG DEF>449 ED<5]: %NAME%  %WHITE%[%RED%%SOCKETS%%WHITE%]%CONTINUE%
-ItemDisplay[utu (SOCK=0 OR SOCK>2) !ETH !INF NMAG DEF>459 ED<5]: %NAME%  %WHITE%[%RED%%SOCKETS%%WHITE%]%CONTINUE%
-ItemDisplay[urs (SOCK=0 OR SOCK>2) !ETH !INF NMAG DEF>479 ED<5]: %NAME%  %WHITE%[%RED%%SOCKETS%%WHITE%]%CONTINUE%
-ItemDisplay[utp (SOCK=0 OR SOCK>2) !ETH !INF NMAG DEF>499 ED<5]: %NAME%  %WHITE%[%RED%%SOCKETS%%WHITE%]%CONTINUE%
-ItemDisplay[EQ2 ELT !SOCK=1 ETH !INF NMAG DEF>699 ED<5]: %NAME%  %WHITE%[%RED%%SOCKETS%%WHITE%]%CONTINUE%
-ItemDisplay[uit (SOCK=0 OR SOCK=4) !ETH !INF NMAG DEF>139 ED<5]: %NAME%  %WHITE%[%RED%%SOCKETS%%WHITE%]%CONTINUE%
-ItemDisplay[uit (SOCK=0 OR SOCK=4) ETH !INF NMAG DEF>209 ED<5]: %NAME%  %WHITE%[%RED%%SOCKETS%%WHITE%]%CONTINUE%
+ItemDisplay[xtp !SOCK=1 !ETH !INF NMAG DEF>249 ED<5]: %NAME%%CONTINUE%
+ItemDisplay[(uui OR uea OR ula) (SOCK=0 OR SOCK>2) !ETH !INF NMAG DEF>449 ED<5]: %NAME%%CONTINUE%
+ItemDisplay[utu (SOCK=0 OR SOCK>2) !ETH !INF NMAG DEF>459 ED<5]: %NAME%%CONTINUE%
+ItemDisplay[urs (SOCK=0 OR SOCK>2) !ETH !INF NMAG DEF>479 ED<5]: %NAME%%CONTINUE%
+ItemDisplay[utp (SOCK=0 OR SOCK>2) !ETH !INF NMAG DEF>499 ED<5]: %NAME%%CONTINUE%
+ItemDisplay[EQ2 ELT !SOCK=1 ETH !INF NMAG DEF>699 ED<5]: %NAME%%CONTINUE%
+ItemDisplay[uit (SOCK=0 OR SOCK=4) !ETH !INF NMAG DEF>139 ED<5]: %NAME%%CONTINUE%
+ItemDisplay[uit (SOCK=0 OR SOCK=4) ETH !INF NMAG DEF>209 ED<5]: %NAME%%CONTINUE%
 
 
 //Superior Bases with ED
@@ -2005,5 +2005,5 @@ ItemDisplay[CL5 (SK251>0 OR SK252>0 OR SK253>0 OR SK254>0 OR SK255>0 OR SK256>0 
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
 //ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID))]:
 //ItemDisplay[NMAG SOCK=0 CLVL>89]:
-ItemDisplay[]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
-//ItemDisplay[]: 
+//ItemDisplay[]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
+ItemDisplay[]: 
