@@ -55,13 +55,13 @@ ItemDisplay[gfv OR gfw OR gfg OR gfr OR gfb OR gfy OR skf]: //Ignore Flawed Gems
 ItemDisplay[gsv OR gsw OR gsg OR gsr OR gsb OR gsy OR sku]: //Ignore Regular Gems
 //ItemDisplay[glg OR glb OR gly OR glr]: //Ignore All Flawless Except for Amethyst, Diamond, and Skull
 
-ItemDisplay[gzvs OR gzv]: %NL%%ORANGE%[%PURPLE%@%ORANGE%]%NL% //Flawless Amethyst
-ItemDisplay[glws OR glw]: %NL%%ORANGE%[%WHITE%@%ORANGE%]%NL% //Flawless Diamond
-ItemDisplay[glgs OR glg]: %NL%%ORANGE%[%GREEN%@%ORANGE%]%NL% //Flawless Emerald
-ItemDisplay[glrs OR glr]: %NL%%ORANGE%[%RED%@%ORANGE%]%NL% //Flawless Ruby
-ItemDisplay[glbs OR glb]: %NL%%ORANGE%[%BLUE%@%ORANGE%]%NL% //Flawless Sapphire
-ItemDisplay[glys OR gly]: %NL%%ORANGE%[%YELLOW%@%ORANGE%]%NL% //Flawless Topaz
-ItemDisplay[skls OR skl]: %NL%%ORANGE%[%GRAY%@%ORANGE%]%NL% //Flawless Skull
+ItemDisplay[gzvs OR gzv]: %NL%         %ORANGE%[%PURPLE%@%ORANGE%]         %NL% //Flawless Amethyst
+ItemDisplay[glws OR glw]: %NL%         %ORANGE%[%WHITE%@%ORANGE%]         %NL% //Flawless Diamond
+ItemDisplay[glgs OR glg]: %NL%         %ORANGE%[%GREEN%@%ORANGE%]         %NL% //Flawless Emerald
+ItemDisplay[glrs OR glr]: %NL%         %ORANGE%[%RED%@%ORANGE%]         %NL% //Flawless Ruby
+ItemDisplay[glbs OR glb]: %NL%         %ORANGE%[%BLUE%@%ORANGE%]         %NL% //Flawless Sapphire
+ItemDisplay[glys OR gly]: %NL%         %ORANGE%[%YELLOW%@%ORANGE%]         %NL% //Flawless Topaz
+ItemDisplay[skls OR skl]: %NL%         %ORANGE%[%GRAY%@%ORANGE%]         %NL% //Flawless Skull
 
 ItemDisplay[gpvs OR gpv]: %PURPLE%Amethyst //Perfect Gems
 ItemDisplay[gpws OR gpw]: %WHITE%Diamond
