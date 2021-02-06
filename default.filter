@@ -1701,7 +1701,7 @@ ItemDisplay[(cst OR bst OR 8cs OR 8bs OR 6cs OR 6bs) SK58>2 !INF !SUP SOCK=0 NMA
 ItemDisplay[(wst OR 8ws OR 6ws) SK58>2 !INF !SUP SOCK=0 NMAG]: %DOT-D6%%GRAY%[%ORANGE%+3 es%GRAY%] %NAME%  %WHITE%[%RED%%SOCKETS%%WHITE%]{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
 //Faith/Bows
 ItemDisplay[(amc OR amb) TABSK0>2 !INF !SUP SOCK=0 NMAG]: %DOT-D6%%GRAY%[%ORANGE%+3 bow%GRAY%] %NAME%  %WHITE%[%RED%%SOCKETS%%WHITE%]{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
-ItemDisplay[(6cb OR 8rx OR 6rx) !INF !SUP SOCK=0 NMAG]: %NAME%  %WHITE%[%RED%%SOCKETS%%WHITE%]{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
+ItemDisplay[(6cb OR 8rx OR 6rx) !INF !SUP SOCK=0 NMAG CLVL<91]: %NAME%  %WHITE%[%RED%%SOCKETS%%WHITE%]{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
 //Infi/Insi/Pride and Obedience/Doom
 ItemDisplay[(7vo OR 7tr) ETH !INF !SUP SOCK=0 NMAG]: %DOT-D6%%NAME%  %WHITE%[%RED%%SOCKETS%%WHITE%]{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
 ItemDisplay[(7wc OR 7pa OR 7s8 OR 7h7 OR 7br OR 7st) ETH !INF !SUP SOCK=0 NMAG]: %DOT-D6%%NAME%  %WHITE%[%RED%%SOCKETS%%WHITE%]{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
@@ -1778,7 +1778,7 @@ ItemDisplay[NEC SK93>2 SOCK=0 SUP NMAG]: %DOT-D6%%GRAY%[%ORANGE%+3 bst%GRAY%] %N
 //Memory
 ItemDisplay[(cst OR bst OR 8cs OR 8bs OR 6cs OR 6bs) SK58>2 SOCK=0 SUP NMAG]: %DOT-D6%%GRAY%[%ORANGE%+3 es%GRAY%] %NAME%
 //Bows/Crossbows
-ItemDisplay[(6cb OR 8rx OR 6rx) SOCK=0 SUP NMAG]: %NAME%
+ItemDisplay[(6cb OR 8rx OR 6rx) SOCK=0 SUP NMAG]: //Hide 0 socket Great Bow, Chu-Ko-Nu, and Demon Crossbow
 //Infi/Insi/Pride and Obedience/Doom
 ItemDisplay[(7vo OR 7tr) ETH SOCK=0 SUP NMAG]: %DOT-D6%%NAME%
 //Grief/Beast/Passion
