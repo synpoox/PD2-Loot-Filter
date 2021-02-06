@@ -448,7 +448,7 @@ ItemDisplay[MAG !ID !ETH WP13]: %BLUE%%NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Circlets
 //─────────────────────────────────────────────────────────────────────────────────────────────────
-ItemDisplay[MAG !ID !ETH EQ7]: %BLUE%%NAME%%WHITE%
+ItemDisplay[MAG !ID !ETH EQ7]: %BLUE%%NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
 //║                       ▬▬▬▬▬ Unidentified Crafting Base Exclusions ▬▬▬▬▬                       ║
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
@@ -1492,7 +1492,7 @@ ItemDisplay[!NMAG WP13 (SK96>0 OR SK97>0 OR SK98>0 OR SK99>0 OR SK100>0 OR SK101
 ItemDisplay[!NMAG CL2 (SK126>1 OR SK127>1 OR SK128>1 OR SK129>1 OR SK130>1 OR SK131>1 OR SK132>1 OR SK133>1 OR SK134>1 OR SK135>1 OR SK136>1 OR SK137>1 OR SK138>1 OR SK139>1 OR SK140>1 OR SK141>1 OR SK142>1 OR SK143>1 OR SK144>1 OR SK145>1 OR SK146>1 OR SK147>1 OR SK148>1 OR SK149>1 OR SK150>1 OR SK151>1 OR SK152>1 OR SK153>1 OR SK154>1 OR SK155>1)]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
 ItemDisplay[!NMAG CL1 (SK221>1 OR SK222>1 OR SK223>1 OR SK224>1 OR SK225>1 OR SK226>1 OR SK227>1 OR SK228>1 OR SK229>1 OR SK230>1 OR SK231>1 OR SK232>1 OR SK233>1 OR SK234>1 OR SK235>1 OR SK236>1 OR SK237>1 OR SK238>1 OR SK239>1 OR SK240>1 OR SK241>1 OR SK242>1 OR SK243>1 OR SK244>1 OR SK245>1 OR SK246>1 OR SK247>1 OR SK248>1 OR SK249>1 OR SK250>1)]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
 ItemDisplay[!NMAG CL5 (SK251>1 OR SK252>1 OR SK253>1 OR SK254>1 OR SK255>1 OR SK256>1 OR SK257>1 OR SK258>1 OR SK259>1 OR SK260>1 OR SK261>1 OR SK262>1 OR SK263>1 OR SK264>1 OR SK265>1 OR SK266>1 OR SK267>1 OR SK268>1 OR SK269>1 OR SK270>1 OR SK271>1 OR SK272>1 OR SK273>1 OR SK274>1 OR SK275>1 OR SK276>1 OR SK277>1 OR SK278>1 OR SK279>1 OR SK280>1)]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
-ItemDisplay[!NMAG]: %NAME%%WHITE%
+ItemDisplay[!NMAG]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
 
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Everything is non-magical after this line.
@@ -1615,14 +1615,14 @@ ItemDisplay[uit (SOCK=0 OR SOCK=4) !ETH !INF NMAG DEF>139]: %DOT-D6%%NAME%%CONTI
 ItemDisplay[uit (SOCK=0 OR SOCK=4) ETH !INF NMAG DEF>209]: %DOT-D6%%NAME%%CONTINUE%
 
 //High DEF Bases (w/o ED)
-ItemDisplay[xtp !SOCK=1 !ETH !INF NMAG DEF>249 ED<5]: %NAME%%CONTINUE%
-ItemDisplay[(uui OR uea OR ula) (SOCK=0 OR SOCK>2) !ETH !INF NMAG DEF>449 ED<5]: %NAME%%CONTINUE%
-ItemDisplay[utu (SOCK=0 OR SOCK>2) !ETH !INF NMAG DEF>459 ED<5]: %NAME%%CONTINUE%
-ItemDisplay[urs (SOCK=0 OR SOCK>2) !ETH !INF NMAG DEF>479 ED<5]: %NAME%%CONTINUE%
-ItemDisplay[utp (SOCK=0 OR SOCK>2) !ETH !INF NMAG DEF>499 ED<5]: %NAME%%CONTINUE%
-ItemDisplay[EQ2 ELT !SOCK=1 ETH !INF NMAG DEF>699 ED<5]: %NAME%%CONTINUE%
-ItemDisplay[uit (SOCK=0 OR SOCK=4) !ETH !INF NMAG DEF>139 ED<5]: %NAME%%CONTINUE%
-ItemDisplay[uit (SOCK=0 OR SOCK=4) ETH !INF NMAG DEF>209 ED<5]: %NAME%%CONTINUE%
+ItemDisplay[xtp !SOCK=1 !ETH !INF NMAG DEF>249 ED<5]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]%CONTINUE%
+ItemDisplay[(uui OR uea OR ula) (SOCK=0 OR SOCK>2) !ETH !INF NMAG DEF>449 ED<5]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]%CONTINUE%
+ItemDisplay[utu (SOCK=0 OR SOCK>2) !ETH !INF NMAG DEF>459 ED<5]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]%CONTINUE%
+ItemDisplay[urs (SOCK=0 OR SOCK>2) !ETH !INF NMAG DEF>479 ED<5]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]%CONTINUE%
+ItemDisplay[utp (SOCK=0 OR SOCK>2) !ETH !INF NMAG DEF>499 ED<5]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]%CONTINUE%
+ItemDisplay[EQ2 ELT !SOCK=1 ETH !INF NMAG DEF>699 ED<5]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]%CONTINUE%
+ItemDisplay[uit (SOCK=0 OR SOCK=4) !ETH !INF NMAG DEF>139 ED<5]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]%CONTINUE%
+ItemDisplay[uit (SOCK=0 OR SOCK=4) ETH !INF NMAG DEF>209 ED<5]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]%CONTINUE%
 
 
 //Superior Bases with ED
@@ -2005,5 +2005,5 @@ ItemDisplay[CL5 (SK251>0 OR SK252>0 OR SK253>0 OR SK254>0 OR SK255>0 OR SK256>0 
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
 //ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID))]:
 //ItemDisplay[NMAG SOCK=0 CLVL>89]:
-//ItemDisplay[]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
-ItemDisplay[]: 
+ItemDisplay[]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
+//ItemDisplay[]: 
