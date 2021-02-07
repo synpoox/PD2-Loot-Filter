@@ -133,7 +133,7 @@ ItemDisplay[imra]: %RED%## %GREEN%%NAME% %RED%##{%WHITE%This Item + %BLUE%Jewel 
 ItemDisplay[rera]: %RED%## %GREEN%%NAME% %RED%##{%WHITE%This Item + Perf Gem + %ORANGE%Rune>9%NL%%TAN%Note%WHITE%: Reroll %YELLOW%Rare %WHITE%Map:}%MAP% //Horadrim Orb
 ItemDisplay[scou]: %RED%## %GREEN%%NAME% %RED%##{%WHITE%This Item + %ORANGE%Hel%NL%%TAN%Note%WHITE%: Revert back to a White Map:}%MAP% //Orb of Destruction
 ItemDisplay[upma]: %RED%## %GREEN%%NAME% %RED%##{%WHITE%This Item + Perf %GRAY%O %WHITE%+ %ORANGE%Rune>9%NL%%TAN%Note%WHITE%: Upg %BLUE%Magic %WHITE%to %YELLOW%Rare%WHITE% Map:}%MAP% //Angelic Orb
-ItemDisplay[lbox]: %GREEN%### %RED%%NAME% %GREEN%###{%WHITE%2H Wep = 4 Max%NL%1H Wep = 2 max%NL%Helm, Chest, Shield = 2 Max%NL%%TAN%Note%WHITE%: Use it to %TAN%Socket %WHITE%an Item}%MAP% //Larzuk's Box
+ItemDisplay[lbox]: %NL%%NL%          %GREEN%### %RED%%NAME% %GREEN%###          %NL%%NL%{%WHITE%2H Wep = 4 Max%NL%1H Wep = 2 max%NL%Helm, Chest, Shield = 2 Max%NL%%TAN%Note%WHITE%: Use it to %TAN%Socket %WHITE%an Item}%MAP% //Larzuk's Box
 ItemDisplay[wss]: %NL%%NL%          %GREEN%###   %PURPLE%Orb of Corruption   %GREEN%###          %NL%%NL%          %MAP% //Worldstone Shard	
 
 //PD2 Dclone Items
@@ -1605,23 +1605,23 @@ ItemDisplay[WAND CHSK82>0]: %NAME%  %WHITE%[%RED%%SOCKETS%%WHITE%]%NL%%RED%###  
 
 
 //Highlight RW Bases with high DEF
-ItemDisplay[xtp !SOCK=1 !ETH !INF NMAG DEF>249]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
-ItemDisplay[(uui OR uea OR ula) (SOCK=0 OR SOCK>2) !ETH !INF NMAG DEF>449]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
-ItemDisplay[utu (SOCK=0 OR SOCK>2) !ETH !INF NMAG DEF>459]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
-ItemDisplay[urs (SOCK=0 OR SOCK>2) !ETH !INF NMAG DEF>479]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
-ItemDisplay[utp (SOCK=0 OR SOCK>2) !ETH !INF NMAG DEF>499]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
-ItemDisplay[EQ2 ELT !SOCK=1 ETH !INF NMAG DEF>699]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
-ItemDisplay[uit (SOCK=0 OR SOCK=4) !ETH !INF NMAG DEF>139]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%] //Monarch
+ItemDisplay[xtp !SOCK=1 !ETH !INF NMAG DEF>249]: %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %WHITE%[%PRICE%%GOLD%G%WHITE%]
+ItemDisplay[(uui OR uea OR ula) (SOCK=0 OR SOCK>2) !ETH !INF NMAG DEF>449]: %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %WHITE%[%PRICE%%GOLD%G%WHITE%]
+ItemDisplay[utu (SOCK=0 OR SOCK>2) !ETH !INF NMAG DEF>459]: %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %WHITE%[%PRICE%%GOLD%G%WHITE%]
+ItemDisplay[urs (SOCK=0 OR SOCK>2) !ETH !INF NMAG DEF>479]: %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %WHITE%[%PRICE%%GOLD%G%WHITE%]
+ItemDisplay[utp (SOCK=0 OR SOCK>2) !ETH !INF NMAG DEF>499]: %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %WHITE%[%PRICE%%GOLD%G%WHITE%]
+ItemDisplay[EQ2 ELT !SOCK=1 ETH !INF NMAG DEF>699]: %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %WHITE%[%PRICE%%GOLD%G%WHITE%]
+ItemDisplay[uit (SOCK=0 OR SOCK=4) !ETH !INF NMAG DEF>139]: %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %WHITE%[%PRICE%%GOLD%G%WHITE%] //Monarch
 //ItemDisplay[uit (SOCK=0 OR SOCK=4) ETH !INF NMAG DEF>209]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%] // Eth Monarchs
 
 //High DEF Bases (w/o ED)
-ItemDisplay[xtp !SOCK=1 !ETH !INF NMAG DEF>249 ED<5]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]%CONTINUE%
-ItemDisplay[(uui OR uea OR ula) (SOCK=0 OR SOCK>2) !ETH !INF NMAG DEF>449 ED<5]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]%CONTINUE%
-ItemDisplay[utu (SOCK=0 OR SOCK>2) !ETH !INF NMAG DEF>459 ED<5]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]%CONTINUE%
-ItemDisplay[urs (SOCK=0 OR SOCK>2) !ETH !INF NMAG DEF>479 ED<5]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]%CONTINUE%
-ItemDisplay[utp (SOCK=0 OR SOCK>2) !ETH !INF NMAG DEF>499 ED<5]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]%CONTINUE%
-ItemDisplay[EQ2 ELT !SOCK=1 ETH !INF NMAG DEF>699 ED<5]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]%CONTINUE%
-ItemDisplay[uit (SOCK=0 OR SOCK=4) !ETH !INF NMAG DEF>139 ED<5]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]%CONTINUE% //Monarch
+ItemDisplay[xtp !SOCK=1 !ETH !INF NMAG DEF>249 ED<5]: %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %WHITE%[%PRICE%%GOLD%G%WHITE%]%CONTINUE%
+ItemDisplay[(uui OR uea OR ula) (SOCK=0 OR SOCK>2) !ETH !INF NMAG DEF>449 ED<5]: %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %WHITE%[%PRICE%%GOLD%G%WHITE%]%CONTINUE%
+ItemDisplay[utu (SOCK=0 OR SOCK>2) !ETH !INF NMAG DEF>459 ED<5]: %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %WHITE%[%PRICE%%GOLD%G%WHITE%]%CONTINUE%
+ItemDisplay[urs (SOCK=0 OR SOCK>2) !ETH !INF NMAG DEF>479 ED<5]: %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %WHITE%[%PRICE%%GOLD%G%WHITE%]%CONTINUE%
+ItemDisplay[utp (SOCK=0 OR SOCK>2) !ETH !INF NMAG DEF>499 ED<5]: %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%]%WHITE%[%PRICE%%GOLD%G%WHITE%]%CONTINUE%
+ItemDisplay[EQ2 ELT !SOCK=1 ETH !INF NMAG DEF>699 ED<5]: %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %WHITE%[%PRICE%%GOLD%G%WHITE%]%CONTINUE%
+ItemDisplay[uit (SOCK=0 OR SOCK=4) !ETH !INF NMAG DEF>139 ED<5]: %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %WHITE%[%PRICE%%GOLD%G%WHITE%]%CONTINUE% //Monarch
 //ItemDisplay[uit (SOCK=0 OR SOCK=4) ETH !INF NMAG DEF>209 ED<5]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]%CONTINUE% //Eth Monarch
 
 
@@ -1722,7 +1722,7 @@ ItemDisplay[(clw OR btl OR skr OR 9ar OR 9lw OR 9tw OR 9qr OR 7ar OR 7wb OR 7lw 
 ItemDisplay[(clw OR btl OR skr OR 9ar OR 9lw OR 9tw OR 9qr OR 7ar OR 7wb OR 7lw OR 7tw OR 7qr) SK277>2 !INF !SUP SOCK=0 NMAG]: %DOT-D6%%GRAY%[%ORANGE%+3 bs%GRAY%] %NAME%  %WHITE%[%RED%%SOCKETS%%WHITE%]{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
 ItemDisplay[(clw OR btl OR skr OR 9ar OR 9lw OR 9tw OR 9qr OR 7ar OR 7wb OR 7lw OR 7tw OR 7qr) SK278>2 !INF !SUP SOCK=0 NMAG]: %DOT-D6%%GRAY%[%ORANGE%+3 vnm%GRAY%] %NAME%  %WHITE%[%RED%%SOCKETS%%WHITE%]{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
 ItemDisplay[(clw OR btl OR skr OR 9ar OR 9lw OR 9tw OR 9qr OR 7ar OR 7wb OR 7lw OR 7tw OR 7qr) SK276>2 !INF !SUP SOCK=0 NMAG]: %DOT-D6%%GRAY%[%ORANGE%+3 ds%GRAY%] %NAME%  %WHITE%[%RED%%SOCKETS%%WHITE%]{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
-ItemDisplay[(clw OR btl OR skr OR 9ar OR 9lw OR 9tw OR 9qr OR 7ar OR 7wb OR 7lw OR 7tw OR 7qr) SK271>2 !INF !SUP SOCK=0 NMAG]: %DOT-D6%%GRAY%[%ORANGE%+3 ls%GRAY%] %NAME%  %WHITE%[%RED%%SOCKETS%%WHITE%]{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
+ItemDisplay[(clw OR btl OR skr OR 9ar OR 9lw OR 9tw OR 9qr OR 7ar OR 7wb OR 7lw OR 7tw OR 7qr) SK271>2 !INF !SUP SOCK=0 NMAG]: %DOT-D6%%GRAY%[%ORANGE%+3 ChainLS%GRAY%] %NAME%  %WHITE%[%RED%%SOCKETS%%WHITE%]{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
 ItemDisplay[(clw OR btl OR skr OR 9ar OR 9lw OR 9tw OR 9qr OR 7ar OR 7wb OR 7lw OR 7tw OR 7qr) SK272>2 !INF !SUP SOCK=0 NMAG]: %DOT-D6%%GRAY%[%ORANGE%+3 woi%GRAY%] %NAME%  %WHITE%[%RED%%SOCKETS%%WHITE%]{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
 ItemDisplay[(clw OR btl OR skr OR 9ar OR 9lw OR 9tw OR 9qr OR 7ar OR 7wb OR 7lw OR 7tw OR 7qr) SK266>2 !INF !SUP SOCK=0 NMAG]: %DOT-D6%%GRAY%[%ORANGE%+3 bf%GRAY%] %NAME%  %WHITE%[%RED%%SOCKETS%%WHITE%]{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
 ItemDisplay[(clw OR btl OR skr OR 9ar OR 9lw OR 9tw OR 9qr OR 7ar OR 7wb OR 7lw OR 7tw OR 7qr) SK262>2 !INF !SUP SOCK=0 NMAG]: %DOT-D6%%GRAY%[%ORANGE%+3 wof%GRAY%] %NAME%  %WHITE%[%RED%%SOCKETS%%WHITE%]{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
@@ -1789,7 +1789,7 @@ ItemDisplay[7fb ETH SOCK=0 SUP NMAG]: %DOT-D6%%NAME%
 ItemDisplay[(7wa OR 7cr) SOCK=0 SUP NMAG]: %DOT-D6%%NAME%
 ItemDisplay[(7wa OR 7gd OR 7p7 OR 7h7) ETH SOCK=0 SUP NMAG]: %DOT-D6%%NAME%
 //Lawbringer
-ItemDisplay[(72h OR 7gs) ETH SOCK=0 SUP NMAG]: %DOT-D6%%NAME%
+ItemDisplay[(72h OR 7gs) ETH SOCK=0 SUP NMAG]: %DOT-D6%%NAME% 
 //Chaos
 ItemDisplay[(7ar OR 7tw OR 7qr OR 9tw) SK275>0 ETH SOCK=0 SUP NMAG]: %DOT-D6%%GRAY%[%ORANGE%chaos%GRAY%] %NAME%
 //Plague
