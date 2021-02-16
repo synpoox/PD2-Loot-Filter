@@ -711,11 +711,11 @@ ItemDisplay[umc UNI !ID !ETH]: %NL%%NL%%BORDER-50%%RED%###%WHITE%###%BLUE%### %G
 ItemDisplay[EQ5 UNI !ID vbt CLVL>79]:
 
 //Normal Unique Boots
-ItemDisplay[lbt UNI !ID !ETH]: %GOLD%Hotspur
+ItemDisplay[lbt UNI !ID !ETH]: %NL%%NL%%BORDER-50%%GOLD%Hotspur%NL%%NL%
 ItemDisplay[vbt UNI !ID !ETH]: %GOLD%Gorefoot
 ItemDisplay[mbt UNI !ID !ETH]: %GOLD%Treads of Cthon
 ItemDisplay[tbt UNI !ID !ETH]: %GOLD%Goblin Toe
-ItemDisplay[hbt UNI !ID !ETH]: %GOLD%Tearhaunch
+ItemDisplay[hbt UNI !ID !ETH]: %NL%%NL%%BORDER-50%%GOLD%Tearhaunch%NL%%NL%
 
 //Exceptional Unique Boots
 ItemDisplay[xlb UNI !ID !ETH]: %GOLD%Infernostride
@@ -766,7 +766,9 @@ ItemDisplay[7mp UNI !ID]: %GOLD%Cranebeak
 ItemDisplay[7wa UNI !ID]: %NL%%NL%%BORDER-50%%RED%###%WHITE%###%BLUE%### %GOLD%Death Cleaver %BLUE%###%WHITE%###%RED%###%NL%%NL%
 ItemDisplay[7bt UNI !ID]: %NL%%NL%%BORDER-50%%GOLD%Hellslayer%NL%%NL%
 ItemDisplay[7ga UNI !ID]: %GOLD%Messerschmidt's Reaver
-ItemDisplay[7gi UNI !ID]: %NL%%NL%%BORDER-50%%GOLD%Executioner's Justice%NL%%NL%
+ItemDisplay[7gi UNI !ID ETH]: %NL%%NL%%BORDER-50%%RED%ETH %GOLD%Executioner's Justice%NL%%NL%
+ItemDisplay[7gi UNI !ID]: %GOLD%Executioner's Justice
+
 
 //WP2 - MACES
 ItemDisplay[WP2 UNI !ID !(9gm OR ELT) CLVL>79]:
@@ -789,16 +791,18 @@ ItemDisplay[9mt UNI !ID]: %GOLD%Moonfall
 ItemDisplay[9fl UNI !ID]: %GOLD%Baezil's Vortex
 ItemDisplay[9wh UNI !ID]: %GOLD%Earthshaker
 ItemDisplay[9m9 UNI !ID]: %GOLD%Bloodtree Stump
-ItemDisplay[9gm UNI !ID]: %NL%%BORDER-50%%GOLD%The Gavel of Pain%NL%
+ItemDisplay[9gm UNI !ID ETH]: %BORDER-50%%NL%%RED%ETH %GOLD%The Gavel of Pain%NL%
+ItemDisplay[9gm UNI !ID]: %GOLD%The Gavel of Pain
+
 
 //Elite Unique Maces
 ItemDisplay[7cl UNI !ID]: %GOLD%Nord's Tenderizer
 ItemDisplay[7sp UNI !ID]: %NL%%NL%%BORDER-50%%GOLD%Demon Limb%NL%%NL%
 ItemDisplay[7mt UNI !ID]: %GOLD%Baranar's Star
-ItemDisplay[7fl UNI !ID ETH]: %NL%%NL%%BORDER-50%%GOLD%Horizon's Tornado or Stormlash%NL%%NL%
-ItemDisplay[7wh UNI !ID ETH]: %NL%%NL%%BORDER-50%%GOLD%Stone Crusher or Schaefer's Hammer%NL%%NL%
-ItemDisplay[7m7 UNI !ID ETH]: %NL%%NL%%BORDER-50%%GOLD%Windhammer%NL%%NL%
-ItemDisplay[7gm UNI !ID ETH]: %NL%%NL%%BORDER-50%%GOLD%Earth Shifter or The Cranium Basher%NL%%NL%
+ItemDisplay[7fl UNI !ID ETH]: %NL%%NL%%BORDER-50%%RED%ETH %GOLD%Horizon's Tornado or Stormlash%NL%%NL%
+ItemDisplay[7wh UNI !ID ETH]: %NL%%NL%%BORDER-50%%RED%ETH %GOLD%Stone Crusher or Schaefer's Hammer%NL%%NL%
+ItemDisplay[7m7 UNI !ID ETH]: %NL%%NL%%BORDER-50%%RED%ETH %GOLD%Windhammer%NL%%NL%
+ItemDisplay[7gm UNI !ID ETH]: %NL%%NL%%BORDER-50%%RED%ETH %GOLD%Earth Shifter or The Cranium Basher%NL%%NL%
 
 //WP3 - Swords
 ItemDisplay[WP3 UNI !ID !ELT CLVL>79]:
@@ -990,6 +994,7 @@ ItemDisplay[wst UNI !ID]: %GOLD%The Iron Jang Bong
 //Exceptional Unique Staves
 ItemDisplay[8ss UNI !ID]: %GOLD%Razorswitch
 ItemDisplay[8ls UNI !ID]: %GOLD%Ribcracker
+ItemDisplay[8ls UNI !ID ETH]: %NL%%NL%%BORDER-50%%RED%###%WHITE%###%BLUE%### %RED%ETH %GOLD%Ribcracker %BLUE%###%WHITE%###%RED%###%NL%%NL%
 ItemDisplay[8cs UNI !ID]: %GOLD%Chromatic Ire
 ItemDisplay[8bs UNI !ID]: %GOLD%Warpspear
 ItemDisplay[8ws UNI !ID]: %GOLD%Skull Collector
@@ -1279,8 +1284,8 @@ ItemDisplay[SET !ID ulg]: %NL%%NL%%BORDER-50%%RED%### %GREEN%Laying of Hands Glo
 ItemDisplay[SET !ID uui]: %GREEN%The Disciple Armor
 ItemDisplay[SET !ID xlb]: %GREEN%The Disciple Boots
 ItemDisplay[SET !ID umc]: %GREEN%The Disciple Belt
-
 //Trang-Oul's Avatar (Necro)
+
 ItemDisplay[SET !ID uh9]: %NL%%NL%%BORDER-50%%RED%# %GREEN%Trang-Oul's Helm %RED%#%NL%%NL%
 ItemDisplay[SET !ID xul]: %NL%%NL%%BORDER-50%%RED%# %GREEN%Trang-Oul's Armor %RED%#%NL%%NL%
 ItemDisplay[SET !ID ne9]: %NL%%NL%%BORDER-50%%RED%# %GREEN%Trang-Oul's Shield %RED%#%NL%%NL%
@@ -1329,7 +1334,6 @@ ItemDisplay[ID cm3 TABSK42>0]: %GREEN%Dru Elemental %CONTINUE%
 ItemDisplay[ID cm3 TABSK48>0]: %GREEN%Sin Trap %CONTINUE%
 ItemDisplay[ID cm3 TABSK49>0]: %GREEN%Sin Shadow %CONTINUE%
 ItemDisplay[ID cm3 TABSK50>0]: %GREEN%Sin Martial Arts %CONTINUE%
-
 
 ItemDisplay[ID cm3 ((TABSK0>0 OR TABSK1>0 OR TABSK2>0 OR TABSK8>0 OR TABSK9>0 OR TABSK10>0 OR TABSK16>0 OR TABSK17>0 OR TABSK18>0 OR TABSK24>0 OR TABSK25>0 OR TABSK26>0 OR TABSK32>0 OR TABSK33>0 OR TABSK34>0 OR TABSK40>0 OR TABSK41>0 OR TABSK42>0 OR TABSK48>0 OR TABSK49>0 OR TABSK50>0) AND FHR>11)]: %NAME%%RED%+FHR
 
@@ -1557,7 +1561,7 @@ ItemDisplay[NMAG CLVL<80 SOCK=4 ETH (7pa OR 7h7)]: %RED%#### %ORANGE%%NAME% %WHI
 ItemDisplay[NMAG CLVL<80 (crs OR bsd) SOCK=4]: %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] //4os Crystal/Broad
 
 //Show Elite and Mage Plate Body Armors
-ItemDisplay[NMAG SOCK>2 (uui OR uea OR ula OR utu OR ung OR ucl OR urs OR uhn OR upl OR utp OR uld OR uld OR ult OR uth OR uul OR uar OR xtp)]: %RED%#### %ORANGE%%NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%####
+ItemDisplay[NMAG SOCK>2 (uui OR uea OR ula OR utu OR ung OR ucl OR urs OR uhn OR upl OR utp OR uld OR uld OR ult OR uth OR uul OR uar OR xtp)]: %GREEN%#### %ORANGE%%NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %GREEN%####
 //ItemDisplay[NMAG SOCK<3 (uui OR uea OR ula OR utu OR ung OR ucl OR urs OR uhn OR upl OR utp OR uld OR uld OR ult OR uth OR uul OR uar OR xtp)]:
 
 ItemDisplay[NMAG (SOCK=3 OR SOCK=4) aar]: %RED%#### %DARK_GREEN%%NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%#### //3os Ancient Armor
@@ -1574,13 +1578,13 @@ ItemDisplay[NMAG paf RES>39]: %RED%#### %GREEN%Vortex Shield %WHITE%[%RED%%SOCKE
 ItemDisplay[NMAG SOCK>2 (7cr OR 7fb OR 7gs OR 72h OR 7gd) ETH]: %RED%#### %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%#### //Eth Phase(7cr),ColossusSw(7fb),BalrogBl(7gs),Legend(72h),ColossusBlade(7gd)
 
 //Plague Claw Bases
-ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) (SOCK=0 OR SOCK=3) SK262>2 SK272>2]: %RED%#### %DARK_GREEN%%NAME% %YELLOW%[+3 Wof\WoI] %RED%#### 
-ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) (SOCK=0 OR SOCK=3) SK262>2]: %RED%#### %DARK_GREEN%%NAME% %YELLOW%[+3 Wof] %RED%#### 
-ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) (SOCK=0 OR SOCK=3) SK271>2 SK276>2]: %RED%#### %DARK_GREEN%%NAME% %YELLOW%[+3 ChLS\DS] %RED%#### 
-ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) (SOCK=0 OR SOCK=3) SK271>2]: %RED%#### %DARK_GREEN%%NAME% %YELLOW%[+3 ChLS] %RED%#### 
-ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) (SOCK=0 OR SOCK=3) SK277>2 SK278>0]: %RED%#### %DARK_GREEN%%NAME% %YELLOW%[+3 BS\Venom] %RED%#### 
-ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) (SOCK=0 OR SOCK=3) SK273>2]: %RED%#### %DARK_GREEN%%NAME% %YELLOW%[+3 Mind Blast] %RED%#### 
-ItemDisplay[!ETH (7ar OR 7lw OR 7tw OR 7qr) (SOCK=0 OR SOCK=3) SK278>2]: %RED%#### %DARK_GREEN%%NAME% %YELLOW%[+3 Venom] %RED%#### 
+ItemDisplay[!ETH CL5 (SOCK=0 OR SOCK=3) SK262>2 SK272>2]: %RED%#### %DARK_GREEN%%NAME% %YELLOW%[+3 Wof\WoI] %RED%#### 
+ItemDisplay[!ETH CL5 (SOCK=0 OR SOCK=3) SK262>2]: %RED%#### %DARK_GREEN%%NAME% %YELLOW%[+3 Wof] %RED%#### 
+ItemDisplay[!ETH CL5 (SOCK=0 OR SOCK=3) SK271>2 SK276>2]: %RED%#### %DARK_GREEN%%NAME% %YELLOW%[+3 ChLS\DS] %RED%#### 
+ItemDisplay[!ETH CL5 (SOCK=0 OR SOCK=3) SK271>2]: %RED%#### %DARK_GREEN%%NAME% %YELLOW%[+3 ChLS] %RED%#### 
+ItemDisplay[!ETH CL5 (SOCK=0 OR SOCK=3) SK277>2 SK278>0]: %RED%#### %DARK_GREEN%%NAME% %YELLOW%[+3 BS\Venom] %RED%#### 
+ItemDisplay[!ETH CL5 (SOCK=0 OR SOCK=3) SK273>2]: %RED%#### %DARK_GREEN%%NAME% %YELLOW%[+3 Mind Blast] %RED%#### 
+ItemDisplay[!ETH CL5 (SOCK=0 OR SOCK=3) SK278>2]: %RED%#### %DARK_GREEN%%NAME% %YELLOW%[+3 Venom] %RED%#### 
 
 //Plague Sorceress Orb
 ItemDisplay[(ob5 OR oba OR obf) (SOCK=0 OR SOCK=3) SK56>2 SK61>2]: %RED%#### %GREEN%%NAME%  %WHITE%[%RED%%SOCKETS%%WHITE%] %YELLOW%[Meteor\FMast+3] %RED%#### 
@@ -1611,7 +1615,7 @@ ItemDisplay[utu (SOCK=0 OR SOCK>2) !ETH !INF NMAG DEF>459]: %NAME% %WHITE%[%RED%
 ItemDisplay[urs (SOCK=0 OR SOCK>2) !ETH !INF NMAG DEF>479]: %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %WHITE%[%PRICE%%GOLD%G%WHITE%]
 ItemDisplay[utp (SOCK=0 OR SOCK>2) !ETH !INF NMAG DEF>499]: %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %WHITE%[%PRICE%%GOLD%G%WHITE%]
 ItemDisplay[EQ2 ELT !SOCK=1 ETH !INF NMAG DEF>699]: %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %WHITE%[%PRICE%%GOLD%G%WHITE%]
-ItemDisplay[uit (SOCK=0 OR SOCK=4) !ETH !INF NMAG DEF>139]: %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %WHITE%[%PRICE%%GOLD%G%WHITE%] //Monarch
+ItemDisplay[uit SOCK=4 !ETH !INF NMAG DEF>139]: %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %WHITE%[%PRICE%%GOLD%G%WHITE%] //Monarch
 //ItemDisplay[uit (SOCK=0 OR SOCK=4) ETH !INF NMAG DEF>209]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%] // Eth Monarchs
 
 //High DEF Bases (w/o ED)
@@ -1621,7 +1625,7 @@ ItemDisplay[utu (SOCK=0 OR SOCK>2) !ETH !INF NMAG DEF>459 ED<5]: %NAME% %WHITE%[
 ItemDisplay[urs (SOCK=0 OR SOCK>2) !ETH !INF NMAG DEF>479 ED<5]: %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %WHITE%[%PRICE%%GOLD%G%WHITE%]%CONTINUE%
 ItemDisplay[utp (SOCK=0 OR SOCK>2) !ETH !INF NMAG DEF>499 ED<5]: %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%]%WHITE%[%PRICE%%GOLD%G%WHITE%]%CONTINUE%
 ItemDisplay[EQ2 ELT !SOCK=1 ETH !INF NMAG DEF>699 ED<5]: %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %WHITE%[%PRICE%%GOLD%G%WHITE%]%CONTINUE%
-ItemDisplay[uit (SOCK=0 OR SOCK=4) !ETH !INF NMAG DEF>139 ED<5]: %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %WHITE%[%PRICE%%GOLD%G%WHITE%]%CONTINUE% //Monarch
+ItemDisplay[uit SOCK=4 !ETH !INF NMAG DEF>139 ED<5]: %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %WHITE%[%PRICE%%GOLD%G%WHITE%]%CONTINUE% //Monarch
 //ItemDisplay[uit (SOCK=0 OR SOCK=4) ETH !INF NMAG DEF>209 ED<5]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]%CONTINUE% //Eth Monarch
 
 
@@ -1903,7 +1907,7 @@ ItemDisplay[(amc OR amb) NMAG !RW TABSK0>2 SOCK=4]: %DOT-D6%%GRAY%[%ORANGE%+3 bo
 ItemDisplay[6cb NMAG !RW SOCK=3]: %NAME%  %WHITE%[%RED%%SOCKETS%%WHITE%]{%GRAY%Edge, Melody, Plague, Venom%NL%%TAN%Note%WHITE%: Possible RuneWords:}
 ItemDisplay[(6cb OR 8rx OR 6rx) NMAG !RW SOCK=4]: %NAME%  %WHITE%[%RED%%SOCKETS%%WHITE%]{%GRAY%Ice, Passion, Phoenix, Wrath%NL%Faith, Fortitude, Hand of Justice,%NL%%TAN%Note%WHITE%: Possible RuneWords: %GRAY%Brand,}
 //Axes
-ItemDisplay[7wa !INF NMAG !RW SOCK=4]: %DOT-D6%%NAME%  %WHITE%[%RED%%SOCKETS%%WHITE%]{%GRAY%Oath, Passion, Phoenix%NL%Fortitude, Hand of Justice, Kingslayer,%NL%%TAN%Note%WHITE%: Possible RuneWords: %GRAY%Famine,}
+ItemDisplay[7wa !INF NMAG !RW SOCK=4]: %DOT-D6%%NAME%{%GRAY%Oath, Passion, Phoenix%NL%Fortitude, Hand of Justice, Kingslayer,%NL%%TAN%Note%WHITE%: Possible RuneWords: %GRAY%Famine,}
 ItemDisplay[7wa !INF NMAG !RW SOCK=5]: %DOT-D6%%NAME%  %WHITE%[%RED%%SOCKETS%%WHITE%]{%GRAY%Eternity, Grief, Honor%NL%Call to Arms, Death, Doom,%NL%%TAN%Note%WHITE%: Possible RuneWords: %GRAY%Beast,}
 ItemDisplay[7wa !INF NMAG !RW SOCK=6]: %DOT-D6%%NAME%  %WHITE%[%RED%%SOCKETS%%WHITE%]{%GRAY%of the Dying, Last Wish, Silence%NL%%TAN%Note%WHITE%: Possible RuneWords: %GRAY%Breath}
 ItemDisplay[(7bt OR 7ba OR 7ga OR 7gi) !INF ETH NMAG !RW SOCK=5]: %DOT-D6%%NAME%  %WHITE%[%RED%%SOCKETS%%WHITE%]{%GRAY%Eternity, Grief, Honor%NL%Call to Arms, Death, Doom,%NL%%TAN%Note%WHITE%: Possible RuneWords: %GRAY%Beast,}
