@@ -77,6 +77,10 @@ ItemDisplay[wms CLVL>41]: //Ignore all Thawing Potions
 ItemDisplay[vps CLVL>41]: //Ignore all Stamina Potions
 ItemDisplay[gpm OR opm OR opl OR ops OR gps OR gpl CLVL>41]: //Hide Choking, Exploding, Fulminating, Oil, Rancid, Strangling Potions
 
+// Hide White Arrows / Bolts
+ItemDisplay[(aqv OR cqv) NMAG CLVL>6]:
+
+
 //║                                       ▬▬▬▬▬ Runes ▬▬▬▬▬                                       ║
 ItemDisplay[RUNE<10]: %ORANGE%%RUNENAME% Rune %GRAY%(%RUNENUM%)
 ItemDisplay[RUNE<20]: %NL%%ORANGE%%RUNENAME% Rune %GRAY%(%RUNENUM%)%NL%
@@ -218,8 +222,6 @@ ItemDisplay[t21 OR t22 OR t23 OR t24]: %NAME% %YELLOW%*%MAP-62%
 ItemDisplay[t31 OR t32 OR t33 OR t34 OR t35 OR t36]: %NAME% %ORANGE%*%MAP-62%
 ItemDisplay[t41 OR t42]: %NAME% %RED%*%MAP-62%
 
-// Hide White Arrows / Bolts
-ItemDisplay[(aqv OR cqv) NMAG CLVL>6]:
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 //║                             ▬▬▬▬▬ Catch-All for Misc Items ▬▬▬▬▬                              ║
 ItemDisplay[!(WEAPON OR ARMOR OR aq2 OR cq2 OR cm1 OR cm2 OR cm3 OR rin OR amu OR jew)]: %NAME% %RED%%CODE%
@@ -2014,8 +2016,8 @@ ItemDisplay[SHIELD (EXC OR ELT) !INF !SUP SOCK=0 NMAG CLVL<80]: %NAME%{%WHITE%Th
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
 //║     ▬▬▬▬▬ Socket Tag for Non-Magical Items with No Matched Rule for Runeword Bases ▬▬▬▬▬      ║
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
-ItemDisplay[SOCK>0]: 
-//ItemDisplay[SOCK>0]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%] %CONTINUE%
+//ItemDisplay[SOCK>0]: 
+ItemDisplay[SOCK>0]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%] %CONTINUE%
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
 //║                         ▬▬▬▬▬ End Processing - 4th Wave (Final) ▬▬▬▬▬                         ║
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
