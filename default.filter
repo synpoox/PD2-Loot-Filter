@@ -217,7 +217,7 @@ ItemDisplay[t41 OR t42]: %NL%%NL%          %NAME% %RED%*         %NL%%NL%%MAP-62
 
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 //║                             ▬▬▬▬▬ Catch-All for Misc Items ▬▬▬▬▬                              ║
-ItemDisplay[!(WEAPON OR ARMOR OR aq2 OR cq2 OR cm1 OR cm2 OR cm3 OR rin OR amu OR jew)]: %NAME%
+ItemDisplay[!(WEAPON OR ARMOR OR aqv OR cqv OR cm1 OR cm2 OR cm3 OR rin OR amu OR jew)]: %NAME%
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 //║█║                             Equipment and Magic Item Handling                             ║█║
 ItemDisplay[RW !ETH]: %WHITE%%NAME% %RED%[%WHITE%%SOCKETS%%RED%]
@@ -480,10 +480,10 @@ ItemDisplay[MAG !ID amu ILVL<85]: //Hide any
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
 //║                           ▬▬▬▬▬ Immediately Ignored Equipment ▬▬▬▬▬                           ║
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
-ItemDisplay[MAG !ID (aq2 OR cq2) CLVL>69]: //Ignore Unidentified Magic Arrows/Bolts (Level 70+)
+ItemDisplay[MAG !ID (aqv OR cqv) CLVL>69]: //Ignore Unidentified Magic Arrows/Bolts (Level 70+)
 //ItemDisplay[MAG !ID (WEAPON OR ARMOR) !(!ETH AND WP5) CLVL>11]: //Ignore Unidentified Magic Equipment Except Non-Ethereal Magic Throwing Weapons (Level 12+)
 ItemDisplay[INF]: //Ignore Inferior Equipment
-ItemDisplay[NMAG (aq2 OR cq2) CLVL>5]: //Ignore Non-Magical Arrows/Bolts (Level 6+)
+ItemDisplay[NMAG (aqv OR cqv) CLVL>5]: //Ignore Non-Magical Arrows/Bolts (Level 6+)
 ItemDisplay[NMAG !(CL6 OR WP11 OR WP12 OR WP13 OR leg) SOCK=1 CLVL>5]: //Ignore Single Socket Items Except Orbs, Staves, Wands, Scepters, and Wirt's Leg (Level 6+)
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Ignore all non-magical gloves, boots, and belts. (Level 6+)
@@ -1509,7 +1509,7 @@ ItemDisplay[!NMAG !ETH (bkf OR ssp) CLVL<36]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHIT
 ItemDisplay[!NMAG !ETH (9ja OR 9pi OR 9s9) CLVL<60]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
 ItemDisplay[!NMAG !ETH (9tk OR 9ta OR 9bk) CLVL<70]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
 ItemDisplay[!NMAG !ETH ELT WP5 !CL7]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
-ItemDisplay[(aq2 OR cq2 OR cm1 OR cm2 OR cm3 OR jew)]: %GREEN%%NAME% %WHITE%[%GRAY%Lv.%ILVL%%WHITE%]
+ItemDisplay[(aqv OR cqv OR cm1 OR cm2 OR cm3 OR jew)]: %GREEN%%NAME% %WHITE%[%GRAY%Lv.%ILVL%%WHITE%]
 ItemDisplay[!NMAG (CL6 OR WP11) (SK36>0 OR SK37>0 OR SK38>0 OR SK39>0 OR SK40>0 OR SK41>0 OR SK42>0 OR SK43>0 OR SK44>0 OR SK45>0 OR SK46>0 OR SK47>0 OR SK48>0 OR SK49>0 OR SK50>0 OR SK51>0 OR SK52>0 OR SK53>0 OR SK54>0 OR SK55>0 OR SK56>0 OR SK57>0 OR SK58>0 OR SK59>0 OR SK60>0 OR SK61>0 OR SK62>0 OR SK63>0 OR SK64>0 OR SK65>0)]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
 ItemDisplay[!NMAG (CL4 OR WP12) (SK66>0 OR SK67>0 OR SK68>0 OR SK69>0 OR SK70>0 OR SK71>0 OR SK72>0 OR SK73>0 OR SK74>0 OR SK75>0 OR SK76>0 OR SK77>0 OR SK78>0 OR SK79>0 OR SK80>0 OR SK81>0 OR SK82>0 OR SK83>0 OR SK84>0 OR SK85>0 OR SK86>0 OR SK87>0 OR SK88>0 OR SK89>0 OR SK90>0 OR SK91>0 OR SK92>0 OR SK93>0 OR SK94>0 OR SK95>0)]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
 ItemDisplay[!NMAG WP13 (SK96>0 OR SK97>0 OR SK98>0 OR SK99>0 OR SK100>0 OR SK101>0 OR SK102>0 OR SK103>0 OR SK104>0 OR SK105>0 OR SK106>0 OR SK107>0 OR SK108>0 OR SK109>0 OR SK110>0 OR SK111>0 OR SK112>0 OR SK113>0 OR SK114>0 OR SK115>0 OR SK116>0 OR SK117>0 OR SK118>0 OR SK119>0 OR SK120>0 OR SK121>0 OR SK122>0 OR SK123>0 OR SK124>0 OR SK125>0)]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
