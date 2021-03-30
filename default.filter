@@ -1814,7 +1814,7 @@ ItemDisplay[NEC SK93>2 SOCK=0 SUP NMAG]: %DOT-D6%%GRAY%[%ORANGE%+3 bst%GRAY%] %N
 //Memory
 ItemDisplay[(cst OR bst OR 8cs OR 8bs OR 6cs OR 6bs) SK58>2 SOCK=0 SUP NMAG]: %DOT-D6%%GRAY%[%ORANGE%+3 es%GRAY%] %NAME%
 //Bows/Crossbows
-ItemDisplay[(6cb OR 8rx OR 6rx) SOCK=0 SUP NMAG]: %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] //Hide 0 socket Great Bow, Chu-Ko-Nu, and Demon Crossbow
+ItemDisplay[(6cb OR 8rx OR 6rx) SOCK=0 SUP NMAG]: %NAME% //Hide 0 socket Great Bow, Chu-Ko-Nu, and Demon Crossbow
 //Infi/Insi/Pride and Obedience/Doom
 ItemDisplay[(7vo OR 7tr) ETH SOCK=0 SUP NMAG]: %DOT-D6%%NAME%
 //Grief/Beast/Passion
