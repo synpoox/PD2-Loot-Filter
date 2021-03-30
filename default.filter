@@ -85,7 +85,7 @@ ItemDisplay[(aqv OR cqv) NMAG CLVL>6]:
 ItemDisplay[RUNE<10]: %ORANGE%%RUNENAME% Rune %GRAY%(%RUNENUM%)
 ItemDisplay[RUNE<20]: %ORANGE%%RUNENAME% Rune %GRAY%(%RUNENUM%)
 ItemDisplay[(RUNE>19 AND RUNE<26)]: %BORDER-62%                  %RED%#%WHITE%#%BLUE%#  %GREEN%%RUNENAME% RUNE %GRAY%(%RUNENUM%)  %BLUE%#%WHITE%#%RED%#                  %CONTINUE%
-ItemDisplay[RUNE>25]: %BORDER-62%                  %RED%###%WHITE%###%BLUE%###  %GREEN%%RUNENAME% RUNE %GRAY%(%RUNENUM%)  %BLUE%###%WHITE%###%RED%###                  %CONTINUE%
+ItemDisplay[RUNE>25]: %BORDER-62%          %RED%###%WHITE%###%BLUE%###  %GREEN%%RUNENAME% RUNE %GRAY%(%RUNENUM%)  %BLUE%###%WHITE%###%RED%###          %CONTINUE%
 
 //║                     ▬▬▬▬▬ Town Portal and ID Scrolls/Tomes and Keys ▬▬▬▬▬                     ║
 //Utilites
@@ -143,7 +143,7 @@ ItemDisplay[scrb]: %BORDER-62%                  %GREEN%#### %NAME%{%WHITE%This I
 
 
 ItemDisplay[lbox]: %BORDER-62%                  %GREEN%### %RED%%NAME% %GREEN%###                  {%WHITE%2H Wep = 4 Max%NL%1H Wep = 2 max%NL%Helm, Chest, Shield = 2 Max%NL%%TAN%Note%WHITE%: Use it to %TAN%Socket %WHITE%an Item}%MAP% //Larzuk's Box
-ItemDisplay[wss]: %BORDER-62%                  %GREEN%###   %PURPLE%Orb of Corruption   %GREEN%###                  %MAP% //Worldstone Shard	
+ItemDisplay[wss]: %BORDER-62%            %GREEN%###   %PURPLE%Orb of Corruption   %GREEN%###            %MAP% //Worldstone Shard	
 
 //PD2 Dclone Items
 ItemDisplay[dcma]: %BORDER-62%          %RED%## %GREEN%%NAME% %RED%##          %MAP% //Vision of Terror
