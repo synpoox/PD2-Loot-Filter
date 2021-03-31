@@ -213,7 +213,7 @@ ItemDisplay[RARE t41]: %NAME%%YELLOW%Cathedral of Light Map%WHITE%%CONTINUE%
 ItemDisplay[t11 OR t12 OR t13]: %NAME% %GREEN%*%MAP-62%
 ItemDisplay[t21 OR t22 OR t23 OR t33 OR t35]: %NAME% %YELLOW%*%MAP-62%
 ItemDisplay[t31 OR t32 OR t34 OR t36 OR t24]: %BORDER-62%          %GREEN%####   %NAME%   %GREEN%####%ORANGE%*          %MAP-62%
-ItemDisplay[t41 OR t42]: %BORDER-62%                  %NAME% %RED%*                  %MAP-62%
+ItemDisplay[t41 OR t42]: %BORDER-62%          %NAME% %RED%*          %MAP-62%
 
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 //║                             ▬▬▬▬▬ Catch-All for Misc Items ▬▬▬▬▬                              ║
@@ -431,7 +431,8 @@ ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (pa5 OR paa) CLVL>70]: //Ignore Cr
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (utb OR uhb) CLVL>70]: 
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Boots - Show all Boots except Mirrored (utb) and Myrmidon (uhb) [Too High Str Req]
-ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (utb OR uhb) CLVL>70]: 
+//ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (utb OR uhb) CLVL>70]: 
+ItemDisplay[EQ5 (NMAG OR ((MAG OR RARE) AND !ID)) CLVL>70]: //Ignore All Boots
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Belts - Ignore All Belts That Do Not Have 16 Potion Slots
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) EQ6 NORM !hbl CLVL>70]: 
@@ -477,20 +478,30 @@ ItemDisplay[MAG !ID !ETH EQ7]: %BLUE%%NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
 ItemDisplay[MAG !ID EQ1 !CL2 !CL1 ILVL>5 ETH]: //Hide Eth Helms
 ItemDisplay[MAG !ID EQ1 !CL2 !CL1 ILVL>5]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
+
+ItemDisplay[MAG !ID EQ2 CLVL>89]: //Hide Magical Body Armors
+ItemDisplay[RARE !ID EQ2 CLVL>89]: //Hide Rare Body Armors
+
 ItemDisplay[MAG !ID EQ4 ILVL>5 ETH]: //Hide Eth Gloves
 ItemDisplay[MAG !ID EQ4 ILVL>5]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
 ItemDisplay[MAG !ID EQ5 CLVL>5 ETH]: //Hide ETH Boots
 ItemDisplay[MAG !ID EQ5 CLVL>5]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
 ItemDisplay[MAG !ID EQ6 CLVL>5 ETH]: //Hide ETH Belts
-ItemDisplay[MAG !ID EQ6 CLVL>5]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
+ItemDisplay[MAG !ID EQ6 CLVL>89]: //Hide Magical Belts
 ItemDisplay[MAG !ID CL4 CLVL>5 ETH]: //Hide ETH Nec Shields
 
 // Ignore Rare Crystal (crs), Broad (bsd), Phase (7cr), Colossus Sword (7fb), Balrog (7gs), Legend (72h), Colossus Blade (7gd), Dimensional Blade (9cr), Champion Sword (7b7), Highland Blade (7cm)
 ItemDisplay[RARE !ID (crs OR bsd OR 7cr OR 7fb OR 7gs OR 72h OR 7gd OR 9cr OR 7b7 OR 7cm) CLVL>89]: 
+ItemDisplay[MAGE !ID (crs OR bsd OR) CLVL>89]: 
 // Ignore Rare Axes Double Axe (2ax) and Beserker Axe (7wa), Glorious Axe (7gi), 
 ItemDisplay[RARE !ID (2ax OR 7wa OR 7gi) CLVL>89]: 
+ItemDisplay[MAG !ID (2ax OR 7wa) CLVL>89]: 
 // Ignore rare Flail (fla), Thunder Maul (7gm), Ogre Maul (7m7), Martel de Fer (9gm), War Club (9m9)
 ItemDisplay[RARE !ID (fla OR 7gm OR 7m7 OR 9gm OR 9m9) CLVL>89]: 
+
+// Bows - Ignore Rare and magical Composite (cbw), Hunter (hbw), and Hydra Bow (6lw), Crusader Bow (6l7), Shadow Bow (6lb), Great Bow (6cb)
+ItemDisplay[RARE !ID (cbw OR hbw OR 6lw OR 6l7 OR 6lb OR 6cb) CLVL>89]: 
+ItemDisplay[MAG !ID (cbw OR hbw OR 6lw OR 6l7 OR 6lb OR 6cb) CLVL>89]: 
 
 
 
@@ -1075,7 +1086,7 @@ ItemDisplay[9ws UNI !ID !ETH]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %GOLD%Han
 
 //Elite Unique Scepters
 ItemDisplay[7sc UNI !ID]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %GOLD%Heaven's Light or The Redeemer  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
-ItemDisplay[7ws UNI !ID]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %GOLD%HAstreon's Iron Ward  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
+ItemDisplay[7ws UNI !ID]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %GOLD%Astreon's Iron Ward  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
 
 //CL1 - DRUID ITEMS
 ItemDisplay[dra UNI !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Jalal's Mane  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
