@@ -139,7 +139,7 @@ ItemDisplay[upma]: %NAME% %ORANGE%*{%BLUE%Map %WHITE%+ %GOLD%Orb %WHITE%+ Perf %
 ItemDisplay[imma]: %NAME% %ORANGE%*{%WHITE%Map + %GOLD%Orb %WHITE%+ %BLUE%Jewel %NL%%TAN%Note%WHITE%: Imbue White Map to %BLUE%Magic%WHITE%:}%MAP% //Arcane Orb		
 ItemDisplay[scou]: %NAME% %ORANGE%*{%BLUE%M%WHITE%a%YELLOW%p %WHITE%+ %GOLD%Orb %WHITE%+ %ORANGE%Hel Rune%NL%%TAN%Note%WHITE%: Imbue %BLUE%Magic%WHITE%/%YELLOW%Rare %WHITE%Map to White:}%MAP% //Orb of Destruction
 ItemDisplay[upmp]: %NAME% %ORANGE%*{%WHITE%3x%BLUE%M%WHITE%a%YELLOW%p %TAN%(%WHITE%Tier:%ORANGE%x%TAN%) %WHITE%+ %GOLD%Orb %WHITE%= Map %TAN%(%WHITE%Tier:%ORANGE%x%WHITE%+1%TAN%)%NL%Note%WHITE%: Upgrade Maps for higher Tier:}%MAP% //Cartographers Orb
-ItemDisplay[scrb]: %BORDER-62%                  %GREEN%#### %NAME%{%WHITE%This Item + T3 Map%NL%Note: Enter Group Dungeon:} %GREEN%####%MAP%
+ItemDisplay[scrb]: %BORDER-62%          %GREEN%#### %NAME%{%WHITE%This Item + T3 Map%NL%Note: Enter Group Dungeon:} %GREEN%####          %MAP%
 
 
 ItemDisplay[lbox]: %BORDER-62%                  %GREEN%### %RED%%NAME% %GREEN%###                  {%WHITE%2H Wep = 4 Max%NL%1H Wep = 2 max%NL%Helm, Chest, Shield = 2 Max%NL%%TAN%Note%WHITE%: Use it to %TAN%Socket %WHITE%an Item}%MAP% //Larzuk's Box
@@ -343,7 +343,7 @@ ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (wnd OR ywn OR 9wn) CLVL>70]:
 //ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (wsp OR 9ws OR 7ws) CLVL>70]: //Ignore War Scepter, Divine Scepter, and Caduceus
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Amazon Bows - Ignore All Amazon Bows Except Matriarchal Bow and Grand Matron Bow
-ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (am1 OR am6) CLVL>70]: //Ignore Stag Bow, Ashwood Bow, or Matriarchal Bow
+ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (am1 OR am6) CLVL>70]: //Ignore Stag Bow, Ashwood Bow
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (am2 OR am7) CLVL>70]: //Ignore Reflex Bow, Ceremonial Bow
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Amazon Spears - Ignore All Amazon Spears
@@ -473,7 +473,7 @@ ItemDisplay[MAG !ID !ETH WP13]: %BLUE%%NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Circlets
 //─────────────────────────────────────────────────────────────────────────────────────────────────
-ItemDisplay[MAG !ID !ETH EQ7]: %BLUE%%NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
+//ItemDisplay[MAG !ID !ETH EQ7]: %BLUE%%NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
 //║                       ▬▬▬▬▬ Unidentified Crafting Base Exclusions ▬▬▬▬▬                       ║
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
@@ -491,6 +491,8 @@ ItemDisplay[MAG !ID EQ6 CLVL>5 ETH]: //Hide ETH Belts
 ItemDisplay[MAG !ID EQ6 CLVL>89]: //Hide Magical Belts
 ItemDisplay[MAG !ID CL4 CLVL>5 ETH]: //Hide ETH Nec Shields
 ItemDisplay[MAG !ID uit CLVL>5 ETH]: //Hide Eth Monarch
+ItemDisplay[RARE !ID uit CLVL>5]: //Hide Rare Monarch
+
 
 // Ignore Rare Crystal (crs), Broad (bsd), Phase (7cr), Colossus Sword (7fb), Balrog (7gs), Legend (72h), Colossus Blade (7gd), Dimensional Blade (9cr), Champion Sword (7b7), Highland Blade (7cm)
 ItemDisplay[RARE !ID (crs OR bsd OR 7cr OR 7fb OR 7gs OR 72h OR 7gd OR 9cr OR 7b7 OR 7cm) CLVL>89]: 
@@ -499,20 +501,25 @@ ItemDisplay[MAG !ID (crs OR bsd) CLVL>89]:
 ItemDisplay[NMAG WP5 CLVL>89]: 
 // Ignore Rare Axes Double Axe (2ax) and Beserker Axe (7wa), Glorious Axe (7gi), 
 ItemDisplay[RARE !ID (2ax OR 7wa OR 7gi) CLVL>89]: 
-ItemDisplay[MAG !ID (2ax OR 7wa) CLVL>89]: 
+ItemDisplay[MAG !ID (2ax OR 7wa OR 7gi) CLVL>89]: 
+ItemDisplay[NMAG !ETH 7wa CLVL>89]: 
+
 // Ignore rare Flail (fla), Thunder Maul (7gm), Ogre Maul (7m7), Martel de Fer (9gm), War Club (9m9)
 ItemDisplay[RARE !ID (fla OR 7gm OR 7m7 OR 9gm OR 9m9) CLVL>89]: 
 ItemDisplay[MAG !ETH !ID (fla OR 7gm OR 7m7 OR 9gm OR 9m9) CLVL>89]: 
+ItemDisplay[MAG ETH !ID fla CLVL>89]: 
 
 // Polearms - Ignore non eth magical and rare Thresher (7s8), Giant Thresher (7wc), Cryptic Axe (7pa), and Great Poleaxe (7h7)
 ItemDisplay[RARE !ID (7s8 OR 7wc OR 7pa OR 7h7) CLVL>89]: 
 ItemDisplay[MAG !ETH !ID (7s8 OR 7wc OR 7pa OR 7h7) CLVL>89]: 
 
+// Spears - Ignore non eth magical and rare Mancatcher (7br) and War Pike (7p7)
+ItemDisplay[RARE !ID (7br OR 7p7) CLVL>89]: 
+ItemDisplay[MAG !ETH !ID (7br OR 7p7) CLVL>89]: 
 
-
-// Bows - Ignore Rare and magical Composite (cbw), Hunter (hbw), and Hydra Bow (6lw), Crusader Bow (6l7), Shadow Bow (6lb), Great Bow (6cb)
-ItemDisplay[RARE !ID (cbw OR hbw OR 6lw OR 6l7 OR 6lb OR 6cb) CLVL>89]: 
-ItemDisplay[MAG !ID (cbw OR hbw OR 6lw OR 6l7 OR 6lb OR 6cb) CLVL>89]: 
+// Bows - Ignore Rare and magical Composite (cbw), Hunter (hbw), and Hydra Bow (6lw), Crusader Bow (6l7), Shadow Bow (6lb), Great Bow (6cb), Matriarchal Bow (amb), Grand Matron Bow (amc)
+ItemDisplay[RARE !ID (cbw OR hbw OR 6lw OR 6l7 OR 6lb OR 6cb OR amb OR amc) CLVL>89]: 
+ItemDisplay[MAG !ID (cbw OR hbw OR 6lw OR 6l7 OR 6lb OR 6cb OR amb OR amc) CLVL>89]: 
 
 // Staves - Ignore Rare and Magical Archon Staves (6ws)
 ItemDisplay[RARE !ID 6ws CLVL>89]: 
@@ -520,8 +527,21 @@ ItemDisplay[MAG !ID 6ws CLVL>89]:
 
 
 ItemDisplay[MAG !ID ETH CL2 CLVL>89]: //Hide ETH magical Barb helms
+ItemDisplay[RARE !ID CL2 CLVL>89]: //Hide Rare Barb helms
 
-ItemDisplay[EQ7 !ID ETH CLVL>89]: //Hide all ETH Circlets
+
+ItemDisplay[!ID ETH (ci0 OR ci1 OR ci2 OR ci3) CLVL>89]: //Hide all ETH Circlets
+ItemDisplay[MAG (ci0 OR ci1 OR ci2 OR ci3) !ID CLVL>89]: //Hide all magical Circlets
+
+
+// Hide ETH wands
+ItemDisplay[NMAG ETH WP12 CLVL>89]: //Hide Eth Wands
+
+// Ignore non eth magical and rare Javelins
+ItemDisplay[RARE !ID (jav OR 9ja OR 7ja OR pil OR 9pi OR 7pi OR ssp OR 9s9 OR 7s7 OR glv OR 9gl OR 7gl OR tsp OR 9ts OR 7ts) CLVL>89]: 
+ItemDisplay[MAG !ETH !ID (jav OR 9ja OR 7ja OR pil OR 9pi OR 7pi OR ssp OR 9s9 OR 7s7 OR glv OR 9gl OR 7gl OR tsp OR 9ts OR 7ts) CLVL>89]: 
+
+
 
 
 
@@ -1134,7 +1154,7 @@ ItemDisplay[nee UNI !ID !ETH]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GO
 //CL5 - ASSASSIN ITEMS
 ItemDisplay[9tw UNI !ID]: %GOLD%Bartuc's Cut-Throat
 ItemDisplay[7wb UNI !ID]: %GOLD%Jade Talon
-ItemDisplay[7lw UNI !ID]: %GOLD%Firelizard's Talons
+ItemDisplay[7lw UNI !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Firelizard's Talons  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 ItemDisplay[7cs UNI !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Shadow Killer  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 
 //CL6 - SORC ITEMS
@@ -1661,7 +1681,7 @@ ItemDisplay[!ETH CL5 (SOCK=0 OR SOCK=3) SK273>2]: %RED%#### %DARK_GREEN%%NAME% %
 ItemDisplay[!ETH CL5 (SOCK=0 OR SOCK=3) SK278>2]: %RED%#### %DARK_GREEN%%NAME% %YELLOW%[+3 Venom] %RED%#### 
 ItemDisplay[!ETH CL5 (SOCK=0 OR SOCK=3) SK265>2]: %RED%#### %DARK_GREEN%%NAME% %YELLOW%[+3 Cobra Strike] %RED%#### 
 ItemDisplay[!ETH CL5 (SOCK=0 OR SOCK=3) SK280>2]: %RED%#### %DARK_GREEN%%NAME% %YELLOW%[+3 Phoenix Strike] %RED%#### 
-ItemDisplay[!ETH CL5 (SOCK=0 OR SOCK=3) SK275>0]: %RED%#### %DARK_GREEN%%NAME% %YELLOW%[Dragon Flight] %RED%#### 
+//ItemDisplay[!ETH CL5 (SOCK=0 OR SOCK=3) SK275>0]: %RED%#### %DARK_GREEN%%NAME% %YELLOW%[Dragon Flight] %RED%#### 
 
 
 //Plague Sorceress Orb
@@ -1711,25 +1731,25 @@ ItemDisplay[uit SOCK=4 !ETH !INF NMAG DEF>139 ED<5]: %NAME% %WHITE%[%RED%%SOCKET
 
 //Superior Bases with ED
 //Armors
-ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=5]: %GRAY%[%BLUE%5% ED%GRAY%] %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%]%CONTINUE%
+ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=5]: %GRAY%[%BLUE%5% ED%GRAY%] %NAME%%CONTINUE%
 ItemDisplay[((EQ2 ELT !SOCK=1) OR ((uit OR (CL3 ELT RES>29)) (SOCK=0 OR SOCK=4))) ETH !INF SUP NMAG ED=5]: %GRAY%[%BLUE%5% ED%GRAY%] %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%]
-ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=6]: %GRAY%[%BLUE%6% ED%GRAY%] %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%]%CONTINUE%
+ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=6]: %GRAY%[%BLUE%6% ED%GRAY%] %NAME%%CONTINUE%
 ItemDisplay[((EQ2 ELT !SOCK=1) OR ((uit OR (CL3 ELT RES>29)) (SOCK=0 OR SOCK=4))) ETH !INF SUP NMAG ED=6]: %GRAY%[%BLUE%6% ED%GRAY%] %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%]
-ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=7]: %GRAY%[%BLUE%7% ED%GRAY%] %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%]%CONTINUE%
+ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=7]: %GRAY%[%BLUE%7% ED%GRAY%] %NAME%%CONTINUE%
 ItemDisplay[((EQ2 ELT !SOCK=1) OR ((uit OR (CL3 ELT RES>29)) (SOCK=0 OR SOCK=4))) ETH !INF SUP NMAG ED=7]: %GRAY%[%BLUE%7% ED%GRAY%] %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%]
-ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=8]: %GRAY%[%BLUE%8% ED%GRAY%] %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%]%CONTINUE%
+ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=8]: %GRAY%[%BLUE%8% ED%GRAY%] %NAME%%CONTINUE%
 ItemDisplay[((EQ2 ELT !SOCK=1) OR ((uit OR (CL3 ELT RES>29)) (SOCK=0 OR SOCK=4))) ETH !INF SUP NMAG ED=8]: %GRAY%[%BLUE%8% ED%GRAY%] %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%]
-ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=9]: %GRAY%[%BLUE%9% ED%GRAY%] %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%]%CONTINUE%
+ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=9]: %GRAY%[%BLUE%9% ED%GRAY%] %NAME%%CONTINUE%
 ItemDisplay[((EQ2 ELT !SOCK=1) OR ((uit OR (CL3 ELT RES>29)) (SOCK=0 OR SOCK=4))) ETH !INF SUP NMAG ED=9]: %GRAY%[%BLUE%9% ED%GRAY%] %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%]
-ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=10]: %GRAY%[%BLUE%10% ED%GRAY%] %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%]%CONTINUE%
+ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=10]: %GRAY%[%BLUE%10% ED%GRAY%] %NAME%%CONTINUE%
 ItemDisplay[((EQ2 ELT !SOCK=1) OR ((uit OR (CL3 ELT RES>29)) (SOCK=0 OR SOCK=4))) ETH !INF SUP NMAG ED=10]: %GRAY%[%BLUE%10% ED%GRAY%] %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%]
-ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=11]: %GRAY%[%BLUE%11% ED%GRAY%] %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%]%CONTINUE%
+ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=11]: %GRAY%[%BLUE%11% ED%GRAY%] %NAME%%CONTINUE%
 ItemDisplay[((EQ2 ELT !SOCK=1) OR ((uit OR (CL3 ELT RES>29)) (SOCK=0 OR SOCK=4))) ETH !INF SUP NMAG ED=11]: %GRAY%[%BLUE%11% ED%GRAY%] %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%]
-ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=12]: %GRAY%[%BLUE%12% ED%GRAY%] %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%]%CONTINUE%
+ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=12]: %GRAY%[%BLUE%12% ED%GRAY%] %NAME%%CONTINUE%
 ItemDisplay[((EQ2 ELT !SOCK=1) OR ((uit OR (CL3 ELT RES>29)) (SOCK=0 OR SOCK=4))) ETH !INF SUP NMAG ED=12]: %GRAY%[%BLUE%12% ED%GRAY%] %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%]
-ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=13]: %GRAY%[%BLUE%13% ED%GRAY%] %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%]%CONTINUE%
+ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=13]: %GRAY%[%BLUE%13% ED%GRAY%] %NAME%%CONTINUE%
 ItemDisplay[((EQ2 ELT !SOCK=1) OR ((uit OR (CL3 ELT RES>29)) (SOCK=0 OR SOCK=4))) ETH !INF SUP NMAG ED=13]: %GRAY%[%BLUE%13% ED%GRAY%] %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%]
-ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=14]: %GRAY%[%BLUE%14% ED%GRAY%] %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%]%CONTINUE%
+ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=14]: %GRAY%[%BLUE%14% ED%GRAY%] %NAME%%CONTINUE%
 ItemDisplay[((EQ2 ELT !SOCK=1) OR ((uit OR (CL3 ELT RES>29)) (SOCK=0 OR SOCK=4))) ETH !INF SUP NMAG ED=14]: %GRAY%[%BLUE%14% ED%GRAY%] %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%]
 ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=15]: %GRAY%[%BLUE%15% ED%GRAY%] %NAME%%CONTINUE%
 ItemDisplay[((EQ2 ELT !SOCK=1) OR ((uit OR (CL3 ELT RES>29)) (SOCK=0 OR SOCK=4))) ETH !INF SUP NMAG ED=15]: %GRAY%[%BLUE%15% ED%GRAY%] %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%]
