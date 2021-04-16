@@ -419,11 +419,11 @@ ItemDisplay[(ne3 OR ne8 OR ned) (NMAG OR ((MAG OR RARE) !ID))]: //Ignore Unravel
 //ItemDisplay[(ne4 OR ne9 OR nee) (NMAG OR ((MAG OR RARE) !ID))]: //Ignore Gargoyle Head, Cantor Trophy, and Succubus Skull
 //ItemDisplay[(ne5 OR nea OR nef) (NMAG OR ((MAG OR RARE) !ID))]: //Ignore Demon Head, Heirophant Trophy, and Bloodlord Skull
 //─────────────────────────────────────────────────────────────────────────────────────────────────
-// Paladin Shields - Ignore All Pally Shields except Sacred Targe (pab) and Vortex Shield (paf)
+// Paladin Shields - Ignore All Pally Shields except Elites: Sacred Targe (pab), Vortex Shield (paf), Sacred Rondache (pac), Kurast Shield (pad), and Zakarum Shield (pae)
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (pa1 OR pa6) CLVL>70]: //Ignore Targe, Akaran Targe
-ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (pa2 OR pa7 OR pac) CLVL>70]: //Ignore Rondache, Akaran Rondache, and Sacred Rondache
-ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (pa3 OR pa8 OR pad) CLVL>70]: //Ignore Heraldic Shield, Protector Shield, and Kurast Shield
-ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (pa4 OR pa9 OR pae) CLVL>70]: //Ignore Aerin Shield, Gilded Shield, and Zakarum Shield
+ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (pa2 OR pa7) CLVL>70]: //Ignore Rondache, Akaran Rondache
+ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (pa3 OR pa8) CLVL>70]: //Ignore Heraldic Shield, Protector Shield
+ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (pa4 OR pa9) CLVL>70]: //Ignore Aerin Shield, Gilded Shield
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (pa5 OR paa) CLVL>70]: //Ignore Crown Shield, Royal Shield
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Gloves - Ignore All nonmagical and magical Gloves
@@ -1615,7 +1615,7 @@ ItemDisplay[!NMAG]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
 //║                        ▬▬▬▬▬ Paladin Shield All Resists Automod ▬▬▬▬▬                         ║
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
 ItemDisplay[CL3 RES>25]: %NAME% %PURPLE%[%GOLD%40+ RES%PURPLE%]%CONTINUE%
-ItemDisplay[CL3 RES<26]:
+//ItemDisplay[CL3 RES<26]:
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
 //║                             ▬▬▬▬▬ End Processing - 3rd Wave ▬▬▬▬▬                             ║
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
@@ -1664,12 +1664,13 @@ ItemDisplay[NMAG (wsp OR 9ws OR 7ws) (SOCK=0 OR SOCK>3) SK112>2]: %RED%#### %DAR
 ItemDisplay[NMAG (wsp OR 9ws OR 7ws) (SOCK=0 OR SOCK>3) SK113>2]: %RED%#### %DARK_GREEN%%NAME% %YELLOW%[+3 Conc] %RED%#### 
 ItemDisplay[NMAG (wsp OR 9ws OR 7ws) (SOCK=0 OR SOCK>3) SK123>2]: %RED%#### %DARK_GREEN%%NAME% %YELLOW%[+3 Conviction] %RED%#### 
 ItemDisplay[NMAG (wsp OR 9ws OR 7ws) (SOCK=0 OR SOCK>3) TABSK25>2]: %RED%#### %DARK_GREEN%%NAME% %YELLOW%[+3 Offensive] %RED%#### 
-ItemDisplay[NMAG (wsp OR 9ws OR 7ws) (SOCK=0 OR SOCK>3) SK117>0]: %RED%#### %DARK_GREEN%%NAME% %YELLOW%[Holy Shield] %RED%#### 
+ItemDisplay[NMAG (wsp OR 9ws OR 7ws) (SOCK=0 OR SOCK>3) SK117>0]: %DOT-D6%%RED%#### %DARK_GREEN%%NAME% %YELLOW%[Holy Shield] %RED%#### 
 ItemDisplay[NMAG (wsp OR 9ws OR 7ws) (SOCK=0 OR SOCK>3) SK109>2]: %RED%#### %DARK_GREEN%%NAME% %YELLOW%[+3 Cleansing] %RED%#### 
 ItemDisplay[NMAG (wsp OR 9ws OR 7ws) (SOCK=0 OR SOCK>3) SK124>3]: %RED%#### %DARK_GREEN%%NAME% %YELLOW%[+3 Redemption] %RED%#### 
 
-ItemDisplay[NMAG pab RES>24]: %RED%#### %GREEN%Sacred Targe %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%####  //Show all Sacred Targe and Vortex Shields with 25+ res
-ItemDisplay[NMAG paf RES>24]: %RED%#### %GREEN%Vortex Shield %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%####  //Show all Sacred Targe and Vortex Shields with 25+ res
+ItemDisplay[NMAG pab RES>24]: %RED%#### %GREEN%Sacred Targe %DOT-D6%%WHITE%[%RED%%SOCKETS%%WHITE%] %RED%####  //Show all Sacred Targe and Vortex Shields with 25+ res
+ItemDisplay[NMAG paf RES>24]: %RED%#### %GREEN%Vortex Shield %DOT-D6%%WHITE%[%RED%%SOCKETS%%WHITE%] %RED%####  //Show all Sacred Targe and Vortex Shields with 25+ res
+ItemDisplay[NMAG CL3 ELT !INF ETH !RW (SOCK=0 OR SOCK=4) AR>100]: %DOT-D6%%RED%#### %GRAY%[%RED%ED%GRAY%] %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%#### 
 
 ItemDisplay[NMAG SOCK>2 (7cr OR 7fb OR 7gs OR 72h OR 7gd) ETH]: %RED%#### %NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %RED%#### //Eth Phase(7cr),ColossusSw(7fb),BalrogBl(7gs),Legend(72h),ColossusBlade(7gd)
 
@@ -1686,11 +1687,15 @@ ItemDisplay[!ETH CL5 (SOCK=0 OR SOCK=3) SK265>2]: %RED%#### %DARK_GREEN%%NAME% %
 ItemDisplay[!ETH CL5 (SOCK=0 OR SOCK=3) SK280>2]: %RED%#### %DARK_GREEN%%NAME% %YELLOW%[+3 Phoenix Strike] %RED%#### 
 //ItemDisplay[!ETH CL5 (SOCK=0 OR SOCK=3) SK275>0]: %RED%#### %DARK_GREEN%%NAME% %YELLOW%[Dragon Flight] %RED%#### 
 
-
 //Plague Sorceress Orb
-ItemDisplay[(ob5 OR oba OR obf) (SOCK=0 OR SOCK=3) SK56>2 SK61>2]: %RED%#### %GREEN%%NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %YELLOW%[Meteor\FMast+3] %RED%#### 
-ItemDisplay[(ob5 OR oba OR obf) (SOCK=0 OR SOCK=3) SK47>2 SK61>2]: %RED%#### %GREEN%%NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %YELLOW%[Fireball\FMast+3] %RED%#### 
-ItemDisplay[(ob5 OR oba OR obf) (SOCK=0 OR SOCK=3) SK64>2 SK45>2]: %RED%#### %GREEN%%NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %YELLOW%[Forb\IceBlast+3] %RED%#### 
+ItemDisplay[(ob5 OR oba OR obf) (SOCK=0 OR SOCK=3) SK56>2]: %RED%#### %GREEN%%NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %YELLOW%[+3 Meteor] %RED%#### 
+ItemDisplay[(ob5 OR oba OR obf) (SOCK=0 OR SOCK=3) SK47>2]: %RED%#### %GREEN%%NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %YELLOW%[+3 Fireball] %RED%#### 
+ItemDisplay[(ob5 OR oba OR obf) (SOCK=0 OR SOCK=3) SK64>2]: %RED%#### %GREEN%%NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %YELLOW%[+3 Forb] %RED%#### 
+ItemDisplay[(ob5 OR oba OR obf) (SOCK=0 OR SOCK=3) SK40>2]: %RED%#### %GREEN%%NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %YELLOW%[+3 Cold Ench] %RED%#### 
+ItemDisplay[(ob5 OR oba OR obf) (SOCK=0 OR SOCK=3) SK44>2]: %RED%#### %GREEN%%NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %YELLOW%[+3 Frost NovaForb] %RED%#### 
+ItemDisplay[(ob5 OR oba OR obf) (SOCK=0 OR SOCK=3) SK52>2]: %RED%#### %GREEN%%NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %YELLOW%[+3 Fire Ench] %RED%#### 
+ItemDisplay[(ob5 OR oba OR obf) (SOCK=0 OR SOCK=3) SK59>2]: %RED%#### %GREEN%%NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %YELLOW%[+3 Blizzard] %RED%#### 
+ItemDisplay[(ob5 OR oba OR obf) (SOCK=0 OR SOCK=3) SK62>2]: %RED%#### %GREEN%%NAME% %WHITE%[%RED%%SOCKETS%%WHITE%] %YELLOW%[+3 Hydra] %RED%#### 
 
 //Berserker Axe
 ItemDisplay[7wa ETH !INF !SUP SOCK=0 NMAG]: %BORDER-68%%RED%##%WHITE%##%BLUE%##     %GREEN%%NAME% %WHITE%[%RED%%SOCKETS%%WHITE%]     %BLUE%##%WHITE%##%RED%##
