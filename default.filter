@@ -1289,7 +1289,7 @@ ItemDisplay[SET !ID qui]: %GREEN%Arctic Armor
 ItemDisplay[SET !ID swb]: %GREEN%Arctic Bow
 
 //Berserker's Arsenal
-ItemDisplay[SET !ID (hlm OR spl OR 2ax) CLVL>30]:
+ItemDisplay[SET !ID (hlm OR spl OR 2ax) CLVL>30]: 
 ItemDisplay[SET !ID hlm]: %GREEN%Berserker's Helm
 ItemDisplay[SET !ID spl]: %GREEN%Berserker's Armor
 ItemDisplay[SET !ID 2ax]: %GREEN%Berserker's Axe
@@ -1687,7 +1687,7 @@ ItemDisplay[!NMAG]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
 //║                        ▬▬▬▬▬ Paladin Shield All Resists Automod ▬▬▬▬▬                         ║
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
-ItemDisplay[CL3 RES>25]: %NAME% %PURPLE%[%GOLD%40+ RES%PURPLE%]%CONTINUE%
+ItemDisplay[CL3 RES>25]: %NAME% %PURPLE%[%GOLD%26+ RES%PURPLE%]%CONTINUE%
 //ItemDisplay[CL3 RES<26]:
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
 //║                             ▬▬▬▬▬ End Processing - 3rd Wave ▬▬▬▬▬                             ║
