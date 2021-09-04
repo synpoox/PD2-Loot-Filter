@@ -520,7 +520,7 @@ ItemDisplay[NMAG WP3 SOCK=2]:
 // Ignore Rare Axes Double Axe (2ax) and Beserker Axe (7wa), Glorious Axe (7gi), Decapitator (7bt)
 ItemDisplay[RARE !ID (2ax OR 7wa OR 7gi OR 7bt) CLVL>70]: 
 ItemDisplay[MAG !ID (2ax OR 7wa OR 7gi) CLVL>70]: 
-ItemDisplay[NMAG SOCK<5 (2ax OR 7wa OR 7gi) CLVL>70]: 
+ItemDisplay[NMAG !(SOCK=0 OR SOCK>4) (2ax OR 7wa OR 7gi) CLVL>70]: 
 ItemDisplay[NMAG !ETH (7wa OR 7bt) CLVL>70]: 
 ItemDisplay[NMAG !ETH 2ax !SOCK=5 CLVL>70]: 
 
@@ -1094,7 +1094,8 @@ ItemDisplay[9wc UNI !ID]: %GOLD%Grim's Burning Dead
 //Elite Unique Polearms
 ItemDisplay[7o7 UNI !ID]: %GOLD%Bonehew
 ItemDisplay[7s8 UNI !ID ETH]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Reaper's Toll  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
-ItemDisplay[7pa UNI !ID ETH]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %GOLD%Tomb Reaver  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
+ItemDisplay[7pa UNI !ID ETH]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %RED%ETH %GOLD%Tomb Reaver  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
+ItemDisplay[7pa UNI !ID]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %GOLD%Tomb Reaver  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
 ItemDisplay[7wc UNI !ID]: %GOLD%Stormspire
 
 //WP9 - Bows
@@ -1243,7 +1244,8 @@ ItemDisplay[obc UNI !ID !ETH]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GO
 ItemDisplay[obf UNI !ID !ETH]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Death's Fathom  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 
 //CL7 - AMAZON ITEMS
-ItemDisplay[am5 UNI !ID !ETH]: %GOLD%True Silver %RED%(New)
+ItemDisplay[am5 UNI !ID ETH]: %RED%ETH %GOLD%True Silver %RED%(New)
+ItemDisplay[am5 UNI !ID]: %GOLD%True Silver %RED%(New)
 ItemDisplay[amd UNI !ID]: %GOLD%Stoneraven
 ItemDisplay[am9 UNI !ID]: %GOLD%Lycander's Flank
 ItemDisplay[am7 UNI !ID]: %GOLD%Lycander's Aim
@@ -1295,9 +1297,9 @@ ItemDisplay[SET !ID spl]: %GREEN%Berserker's Armor
 ItemDisplay[SET !ID 2ax]: %GREEN%Berserker's Axe
 
 //Bul-Kathos' Children
-ItemDisplay[SET !ID (7gd OR 7wd) CLVL>70]:
-ItemDisplay[SET !ID 7gd]: %GREEN%Bul-Kathos's 2H Sword
-ItemDisplay[SET !ID 7wd]: %GREEN%Bul-Kathos's 1H Sword
+ItemDisplay[SET !ID (7gd OR 7fb) CLVL>70]:
+ItemDisplay[SET !ID 7gd]: %GREEN%Bul-Kathos' Sacred Charge
+ItemDisplay[SET !ID 7fb]: %GREEN%Bul-Kathos' Tribal Guardian
 
 //Cathan's Traps
 ItemDisplay[SET !ID (msk OR chn OR bst) CLVL>30]:
