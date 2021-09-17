@@ -67,7 +67,7 @@ ItemDisplay[skls OR skl]: %ORANGE%[%GRAY%@%ORANGE%] //Flawless Skull
 
 ItemDisplay[gpvs OR gpv]: %PURPLE%Amethyst //Perfect Gems
 ItemDisplay[gpws OR gpw]: %WHITE%Diamond
-ItemDisplay[gpgs OR gpg]: %GREEN%Emereld
+ItemDisplay[gpgs OR gpg]: %GREEN%Emerald
 ItemDisplay[gprs OR gpr]: %RED%Ruby
 ItemDisplay[gpbs OR gpb]: %BLUE%Sapphire
 ItemDisplay[gpys OR gpy]: %YELLOW%Topaz
@@ -299,8 +299,8 @@ ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (bkf OR 9bk OR 7bk) CLVL>70]: //Ig
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (jav OR 9ja OR 7ja) CLVL>70]: //Ignore Javelin, War Javelin, and Hyperion Javelin
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (pil OR 9pi OR 7pi) CLVL>70]: //Ignore Pilum, Great Pilum, and Stygian Pilum
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (ssp OR 9s9 OR 7s7) CLVL>70]: //Ignore Short Spear, Simbilan, and Balrog Spear
-ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (glv OR 9gl) CLVL>70]: //Ignore Glaive, Spiculum, and Ghost Glaive
-ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (tsp OR 9ts OR 7ts) CLVL>70]: //Ignore Throwing Spear, Harpoon, and Winged Harpoon
+//ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (glv OR 9gl) CLVL>70]: //Ignore Glaive, Spiculum, and Ghost Glaive
+//ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (tsp OR 9ts OR 7ts) CLVL>70]: //Ignore Throwing Spear, Harpoon, and Winged Harpoon
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Spears - Ignore all Spears except Mancatcher (7br) and War Pike (7p7)
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (spr OR 9sr OR 7sr) CLVL>70]: //Ignore Spear, War Spear, and Hyperion Spear
