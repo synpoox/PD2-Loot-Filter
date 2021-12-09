@@ -143,7 +143,7 @@ ItemDisplay[jewf]: %BLUE%%NAME%{%WHITE%Magic Jewel Stack used for %ORANGE%Crafti
 //PD2 Items
 ItemDisplay[imra]: %NAME% %ORANGE%*{%WHITE%Map + %GOLD%Orb %WHITE%+ %BLUE%Jewel %WHITE%+ %ORANGE%Rune>9%NL%%TAN%Note%WHITE%: Imbue White Map to %YELLOW%Rare%WHITE%}%MAP% //Zakarum Orb
 ItemDisplay[rera]: %NAME% %ORANGE%*{%YELLOW%Map %WHITE%+ %GOLD%Orb %WHITE%+ Perf Gem + %ORANGE%Rune>9%NL%%TAN%Note%WHITE%: Reroll %YELLOW%Rare %WHITE%Map:}%MAP% //Horadrim Orb
-ItemDisplay[upma]: %NAME% %ORANGE%*{%BLUE%Map %WHITE%+ %GOLD%Orb %WHITE%+ Perf %GRAY%O %WHITE%+ %ORANGE%Rune>9%NL%%TAN%Note%WHITE%: Imbue %BLUE%Magic %WHITE%Map to %YELLOW%Rare%WHITE%:} //Angelic Orb
+ItemDisplay[upma]: %NAME% %ORANGE%*{%BLUE%Map %WHITE%+ %GOLD%Orb %WHITE%+ Perf %GRAY%PSkull %WHITE%+ %ORANGE%Rune>9%NL%%TAN%Note%WHITE%: Imbue %BLUE%Magic %WHITE%Map to %YELLOW%Rare%WHITE%:} //Angelic Orb
 ItemDisplay[imma]: %NAME% %ORANGE%*{%WHITE%Map + %GOLD%Orb %WHITE%+ %BLUE%Jewel %NL%%TAN%Note%WHITE%: Imbue White Map to %BLUE%Magic%WHITE%:}%MAP% //Arcane Orb		
 ItemDisplay[scou]: %NAME% %ORANGE%*{%BLUE%M%WHITE%a%YELLOW%p %WHITE%+ %GOLD%Orb %WHITE%+ %ORANGE%Hel Rune%NL%%TAN%Note%WHITE%: Imbue %BLUE%Magic%WHITE%/%YELLOW%Rare %WHITE%Map to White:}%MAP% //Orb of Destruction
 ItemDisplay[upmp]: %NAME% %ORANGE%*{%WHITE%3x%BLUE%M%WHITE%a%YELLOW%p %TAN%(%WHITE%Tier:%ORANGE%x%TAN%) %WHITE%+ %GOLD%Orb %WHITE%= Map %TAN%(%WHITE%Tier:%ORANGE%x%WHITE%+1%TAN%)%NL%Note%WHITE%: Upgrade Maps for higher Tier:}%MAP% //Cartographers Orb
@@ -461,7 +461,7 @@ ItemDisplay[EQ4 (NMAG OR MAG) !ID CLVL>80]: //Ignore All nonmagical and magical 
 ItemDisplay[EQ5 (NMAG OR MAG) !ID CLVL>85]: //Ignore All Nonmagical and magical Boots
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Belts - Ignore All Belts That Do Not Have 16 Potion Slots
-//ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) EQ6 NORM !hbl CLVL>85]: 
+ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) EQ6 NORM !hbl CLVL>85]: 
 ItemDisplay[EQ6 NMAG CLVL>85]: //Ignore All Nonmagical Belts
 
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
@@ -516,12 +516,12 @@ ItemDisplay[MAG !ID EQ4 ILVL>5]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
 ItemDisplay[MAG !ID EQ5 CLVL>5 ETH]: //Hide ETH Boots
 ItemDisplay[MAG !ID EQ5 CLVL>5]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
 ItemDisplay[MAG !ID EQ6 CLVL>5 ETH]: //Hide ETH Belts
-ItemDisplay[MAG !ID EQ6 CLVL>85]: //Hide Magical Belts
+//ItemDisplay[MAG !ID EQ6 CLVL>85]: //Hide Magical Belts
 ItemDisplay[MAG !ID CL4 CLVL>5 ETH]: //Hide ETH Nec Shields
 
 ItemDisplay[MAG !ID (uit OR kit OR lrg) CLVL>5]: //Hide Eth Monarch, Kite Shield (kit), and Large Shield (lrg)
 ItemDisplay[RARE !ID (uit OR kit OR lrg) CLVL>5]: //Hide Rare Monarch, Kite Shield (kit), and Large Shield (lrg)
-ItemDisplay[NMAG SOCK<3 (kit OR lrg) CLVL>85]: //Hide less than 3 socket Monarch, Kite Shield (kit), and Large Shield (lrg)
+ItemDisplay[NMAG SOCK<3 (uit OR kit OR lrg) CLVL>85]: //Hide less than 3 socket Monarch, Kite Shield (kit), and Large Shield (lrg)
 
 ItemDisplay[NMAG SOCK>0 (ci0 OR ci1 OR ci2 OR ci3)]: //Hide nonmagical 1+ socket Circlets
 ItemDisplay[NMAG (ci0 OR ci1 OR ci2 OR ci3) CLVL>70]: //Hide nonmagical circlets after 90
@@ -543,6 +543,9 @@ ItemDisplay[MAG !ID (2ax OR 7wa OR 7gi) CLVL>85]:
 ItemDisplay[NMAG !(SOCK=0 OR SOCK>4) (2ax OR 7wa OR 7gi) CLVL>85]: 
 ItemDisplay[NMAG !ETH (7wa OR 7gi OR 7bt) CLVL>85]: 
 ItemDisplay[NMAG !ETH 2ax !SOCK=5 CLVL>85]: 
+
+//Ignore 1-2 Socket Club, Cudgel, and Truncheon, Spiked Club, Barbed Club, and Tyrant Club
+ItemDisplay[NMAG (SOCK=1 OR SOCK=2) (clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp) CLVL>85]: 
 
 // Ignore rare Flail (fla), Thunder Maul (7gm), Ogre Maul (7m7), Martel de Fer (9gm), War Club (9m9)
 ItemDisplay[RARE !ID (fla OR 7gm OR 7m7 OR 9gm OR 9m9) CLVL>85]: 
@@ -572,6 +575,7 @@ ItemDisplay[NMAG SOCK<4 (7br OR 7p7)]:
 
 // Scepters - Hide Magic and rare - War Scepter (wsp), Divine Scepter (9ws), and Caduceus (7ws)
 ItemDisplay[((MAG OR RARE) AND !ID) (wsp OR 9ws OR 7ws) CLVL>85]: 
+ItemDisplay[NMAG SOCK=2 WP13]: 
 
 // Bows - Ignore Rare and magical Composite (cbw), Hunter (hbw), and Hydra Bow (6lw), Crusader Bow (6l7), Shadow Bow (6lb), Great Bow (6cb), Matriarchal Bow (amb), Grand Matron Bow (amc)
 ItemDisplay[RARE !ID (cbw OR hbw OR 6lw OR 6l7 OR 6lb OR 6cb OR amb OR amc) CLVL>85]: 
@@ -807,7 +811,7 @@ ItemDisplay[xng UNI !ID]: %GOLD%Spirit Forge
 ItemDisplay[xrs UNI !ID]: %GOLD%Duriel's Shell
 ItemDisplay[xhn UNI !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Shaftstop  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 ItemDisplay[xpl UNI !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Skullder's Ire  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
-ItemDisplay[xtp UNI !ID]: %GOLD%Que-Hegan's Wisdom
+ItemDisplay[xtp UNI !ID]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %GOLD%Que-Hegan's Wisdom  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
 ItemDisplay[xld UNI !ID]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %GOLD%Toothrow  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
 ItemDisplay[xlt UNI !ID]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %GOLD%Guardian Angel  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
 ItemDisplay[xth UNI !ID]: %GOLD%Atma's Wail
@@ -845,7 +849,7 @@ ItemDisplay[xit UNI !ID]: %GOLD%Tiamat's Rebuke
 ItemDisplay[xpk UNI !ID]: %GOLD%Lance Guard
 ItemDisplay[xow UNI !ID !ETH]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Gerke's Sanctuary  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 ItemDisplay[xsh UNI !ID !ETH]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Lidless Wall  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
-ItemDisplay[xts UNI !ID !ETH]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %GOLD%Radament's Sphere  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
+ItemDisplay[xts UNI !ID !ETH]: %GOLD%Radament's Sphere
 
 //Elite Unique Shields
 ItemDisplay[uml UNI !ID]: %GOLD%Blackoak Shield
@@ -1091,7 +1095,7 @@ ItemDisplay[7b8 UNI !ID]: %BORDER-62%%GOLD%Lacerator%MAP-0E%
 ItemDisplay[7s7 UNI !ID ETH]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Demon's Arch  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 ItemDisplay[7gl UNI !ID ETH]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %RED%ETH %GOLD%Wraith Flight  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 ItemDisplay[7gl UNI !ID]: %BORDER-62%%GOLD%Wraith Flight%MAP-0E%
-ItemDisplay[7ts UNI !ID]: %GOLD%Gargoyle's Bite
+ItemDisplay[7ts UNI !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Gargoyle's Bite  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 
 //WP7 - Spears
 //ItemDisplay[UNI !ID (spr OR tri OR brn OR spt OR pik OR 9sr OR 9br OR 9p9 OR 7sr OR 7br) CLVL>79]:
@@ -1215,16 +1219,16 @@ ItemDisplay[6ws UNI !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Ma
 //ItemDisplay[WP12 UNI !ID !(EXC OR ELT) CLVL>79]:
 
 //Normal Unique Wands
-ItemDisplay[wnd UNI !ID]: %GOLD%Torch of Iro
-ItemDisplay[ywn UNI !ID]: %GOLD%Maelstrom
-ItemDisplay[bwn UNI !ID]: %GOLD%Gravenspine
-ItemDisplay[gwn UNI !ID]: %GOLD%Ume's Lament
+ItemDisplay[wnd UNI !ID]: %GOLD%Torch of Iro Wand
+ItemDisplay[ywn UNI !ID]: %GOLD%Maelstrom Wand
+ItemDisplay[bwn UNI !ID]: %GOLD%Gravenspine Wand
+ItemDisplay[gwn UNI !ID]: %GOLD%Ume's Lament Wand
 
 //Exceptional Unique Wands
-ItemDisplay[9wn UNI !ID]: %GOLD%Suicide Branch
-ItemDisplay[9yw UNI !ID]: %GOLD%Carin Shard
+ItemDisplay[9wn UNI !ID]: %GOLD%Suicide Branch Wand
+ItemDisplay[9yw UNI !ID]: %GOLD%Carin Shard Wand
 ItemDisplay[9bw UNI !ID]: %GOLD%Arm of King Leoric
-ItemDisplay[9gw UNI !ID]: %GOLD%Blackhand Key
+ItemDisplay[9gw UNI !ID]: %GOLD%Blackhand Key Wand
 
 //Elite Unique Wands
 ItemDisplay[7bw UNI !ID]: %GOLD%Boneshade
@@ -1760,7 +1764,7 @@ ItemDisplay[NMAG SOCK=4 6rx]: %ORANGE%Demon Crossbow %RED%[%WHITE%%SOCKETS%%RED%
 ItemDisplay[ETH (SOCK=0 OR SOCK=6) 7p7]: %RED%#### %GREEN%ETH War Pike %RED%[%WHITE%%SOCKETS%%RED%] %RED%#### //0 or 6 socket Eth War Pike
 ItemDisplay[ETH (SOCK=0 OR SOCK>3) 7gm]: %RED%#### %GREEN%ETH Thunder Maul %RED%[%WHITE%%SOCKETS%%RED%] %RED%#### //0 or 6 socket Eth Thunder Maul
 ItemDisplay[ETH (SOCK=0 OR SOCK=6) 6ws]: %RED%#### %GREEN%ETH Archon Staff %RED%[%WHITE%%SOCKETS%%RED%] %RED%#### //0 or 6 socket Eth Archon Staff
-ItemDisplay[ETH (SOCK=0 OR SOCK=2) 6cs]: %RED%#### %GREEN%ETH Elder Staff %RED%[%WHITE%%SOCKETS%%RED%] %RED%#### //0 or 2 socket Eth Elder Staff
+//ItemDisplay[ETH (SOCK=0 OR SOCK=2) 6cs]: %RED%#### %GREEN%ETH Elder Staff %RED%[%WHITE%%SOCKETS%%RED%] %RED%#### //0 or 2 socket Eth Elder Staff (Wind)
 
 
 
