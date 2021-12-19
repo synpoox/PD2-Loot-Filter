@@ -48,7 +48,8 @@ ItemDisplay[tr2]: %NAME%%MAP% //Scroll of Resistance Act V
 //ItemDisplay[GOLD<100 CLVL<20]:
 //ItemDisplay[GOLD<1000 (CLVL>19 AND CLVL<=69)]:
 //ItemDisplay[GOLD<3000 CLVL>69]:
-ItemDisplay[GOLD>0]: //Hide all gold piles since it auto picks up
+ItemDisplay[GOLD>10000]: %NAME%
+ItemDisplay[GOLD>0]: //Hide all small gold piles since it auto picks up
 
 //║                     ▬▬▬▬▬ [Optional] Rules for Ignoring Misc Items ▬▬▬▬▬                      ║
 ItemDisplay[key]: //Hide keys. You can still buy them.
@@ -144,8 +145,10 @@ ItemDisplay[jewf]: %BLUE%%NAME%{%WHITE%Magic Jewel Stack used for %ORANGE%Crafti
 ItemDisplay[imra]: %NAME% %ORANGE%*{%WHITE%Map + %GOLD%Orb %WHITE%+ %BLUE%Jewel %WHITE%+ %ORANGE%Rune>9%NL%%TAN%Note%WHITE%: Imbue White Map to %YELLOW%Rare%WHITE%}%MAP% //Zakarum Orb
 ItemDisplay[rera]: %NAME% %ORANGE%*{%YELLOW%Map %WHITE%+ %GOLD%Orb %WHITE%+ Perf Gem + %ORANGE%Rune>9%NL%%TAN%Note%WHITE%: Reroll %YELLOW%Rare %WHITE%Map:}%MAP% //Horadrim Orb
 ItemDisplay[upma]: %NAME% %ORANGE%*{%BLUE%Map %WHITE%+ %GOLD%Orb %WHITE%+ Perf %GRAY%PSkull %WHITE%+ %ORANGE%Rune>9%NL%%TAN%Note%WHITE%: Imbue %BLUE%Magic %WHITE%Map to %YELLOW%Rare%WHITE%:} //Angelic Orb
-ItemDisplay[imma]: %NAME% %ORANGE%*{%WHITE%Map + %GOLD%Orb %WHITE%+ %BLUE%Jewel %NL%%TAN%Note%WHITE%: Imbue White Map to %BLUE%Magic%WHITE%:}%MAP% //Arcane Orb		
-ItemDisplay[scou]: %NAME% %ORANGE%*{%BLUE%M%WHITE%a%YELLOW%p %WHITE%+ %GOLD%Orb %WHITE%+ %ORANGE%Hel Rune%NL%%TAN%Note%WHITE%: Imbue %BLUE%Magic%WHITE%/%YELLOW%Rare %WHITE%Map to White:}%MAP% //Orb of Destruction
+ééItemDisplay[imma]: %NAME% %ORANGE%*{%WHITE%Map + %GOLD%Orb %WHITE%+ %BLUE%Jewel %NL%%TAN%Note%WHITE%: Imbue White Map to %BLUE%Magic%WHITE%:}%MAP% //Arcane Orb		
+ItemDisplay[imma]: {%WHITE%Map + %GOLD%Orb %WHITE%+ %BLUE%Jewel %NL%%TAN%Note%WHITE%: Imbue White Map to %BLUE%Magic%WHITE%:}%MAP% //Arcane Orb		
+//ItemDisplay[scou]: %NAME% %ORANGE%*{%BLUE%M%WHITE%a%YELLOW%p %WHITE%+ %GOLD%Orb %WHITE%+ %ORANGE%Hel Rune%NL%%TAN%Note%WHITE%: Imbue %BLUE%Magic%WHITE%/%YELLOW%Rare %WHITE%Map to White:}%MAP% //Orb of Destruction
+ItemDisplay[scou]: {%BLUE%M%WHITE%a%YELLOW%p %WHITE%+ %GOLD%Orb %WHITE%+ %ORANGE%Hel Rune%NL%%TAN%Note%WHITE%: Imbue %BLUE%Magic%WHITE%/%YELLOW%Rare %WHITE%Map to White:}%MAP% //Orb of Destruction
 ItemDisplay[upmp]: %NAME% %ORANGE%*{%WHITE%3x%BLUE%M%WHITE%a%YELLOW%p %TAN%(%WHITE%Tier:%ORANGE%x%TAN%) %WHITE%+ %GOLD%Orb %WHITE%= Map %TAN%(%WHITE%Tier:%ORANGE%x%WHITE%+1%TAN%)%NL%Note%WHITE%: Upgrade Maps for higher Tier:}%MAP% //Cartographers Orb
 ItemDisplay[scrb]: %BORDER-62%          %GREEN%#### %NAME%{%WHITE%This Item + T3 Map%NL%Note: Enter Group Dungeon:} %GREEN%####          %MAP%
 
@@ -164,6 +167,7 @@ ItemDisplay[dcso]: %BORDER-62%%RED%##     %GREEN%%NAME%     %RED%##{%RED%Drops f
 ItemDisplay[rtmo]: %BORDER-0A%%WHITE%*%BLUE%*%PURPLE%*     %ORANGE%%NAME%     %PURPLE%*%BLUE%*%WHITE%*{%WHITE%Used in a recipe that creates a %ORANGE%Voidstone}
 ItemDisplay[rtmv]: %BORDER-0A%%WHITE%*%BLUE%*%PURPLE%*     %ORANGE%%NAME%     %PURPLE%*%BLUE%*%WHITE%*{%ORANGE%Uber Rathma %GRAY%awaits...%NL%%NL%%WHITE%The %RED%Blood Fountain %WHITE%of Harrogath%NL%A singular attempt:}
 ItemDisplay[rtma]: %BORDER-0A%%WHITE%*%BLUE%*%PURPLE%*     %ORANGE%%NAME%     %PURPLE%*%BLUE%*%WHITE%*{%ORANGE%Uber Rathma %GRAY%awaits...%NL%%NL%%WHITE%The %RED%Blood Fountain %WHITE%of Harrogath%NL%A singular attempt:}
+ItemDisplay[rtmf]: %BORDER-0A%%WHITE%*%BLUE%*%PURPLE%*     %ORANGE%%NAME%     %PURPLE%*%BLUE%*%WHITE%*{%ORANGE%Uber Rathma %GRAY%awaits...%NL%%NL%%WHITE%The %RED%Blood Fountain %WHITE%of Harrogath%NL%A singular attempt:} //Ancient Bone Fragment
 ItemDisplay[cwss]: %BORDER-62%      %GREEN%###   %PURPLE%Tainted Orb of Corruption x%QTY%  %GREEN%###      %MAP% //Tainted Worldstone Shard
 
 
@@ -189,7 +193,9 @@ ItemDisplay[NMAG t37]: %ORANGE%[T3] %WHITE%The Pandemonium Citadel Map%MAP-62%%C
 ItemDisplay[NMAG t38]: %ORANGE%[T3] %WHITE%The Canyon of Sescheron%MAP-62%%CONTINUE%
 ItemDisplay[NMAG t39]: %ORANGE%[T3] %WHITE%The Kehjistan Marketplace%MAP-62%%CONTINUE%
 
-ItemDisplay[NMAG t41]: %RED%[T4] %WHITE%Cathedral of Light Map%MAP-62%%CONTINUE%
+ItemDisplay[NMAG t41]: %RED%[T4] %WHITE%Cathedral of Light Dungeon%MAP-62%%CONTINUE%
+ItemDisplay[NMAG t42]: %RED%[T4] %WHITE%Plains of Torment Dungeon%MAP-62%%CONTINUE%
+
 
 // Magic
 ItemDisplay[MAG t11]: %GREEN%[T1] %BLUE%Ruins of Vizjun Map%MAP-62%%CONTINUE%
@@ -212,7 +218,8 @@ ItemDisplay[MAG t37]: %ORANGE%[T3] %BLUE%The Pandemonium Citadel Map%MAP-62%%CON
 ItemDisplay[MAG t38]: %ORANGE%[T3] %BLUE%The Canyon of Sescheron%MAP-62%%CONTINUE%
 ItemDisplay[MAG t39]: %ORANGE%[T3] %BLUE%The Kehjistan Marketplace%MAP-62%%CONTINUE%
 
-ItemDisplay[MAG t41]: %RED%[T4] %BLUE%Cathedral of Light Map%MAP-62%%CONTINUE%
+ItemDisplay[MAG t41]: %RED%[T4] %BLUE%Cathedral of Light Dungeon%MAP-62%%CONTINUE%
+ItemDisplay[MAG t42]: %RED%[T4] %BLUE%Plains of Torment Dungeon%MAP-62%%CONTINUE%
 
 // Rare
 ItemDisplay[RARE t11]: %GREEN%[T1] %YELLOW%Ruins of Vizjun Map%MAP-62%%CONTINUE%
@@ -235,9 +242,10 @@ ItemDisplay[RARE t37]: %ORANGE%[T3] %YELLOW%The Pandemonium Citadel Map%MAP-62%%
 ItemDisplay[RARE t38]: %ORANGE%[T3] %YELLOW%The Canyon of Sescheron%MAP-62%%CONTINUE%
 ItemDisplay[RARE t39]: %ORANGE%[T3] %YELLOW%The Kehjistan Marketplace%MAP-62%%CONTINUE%
 
-ItemDisplay[RARE t41]: %RED%[T4] %YELLOW%Cathedral of Light Map%MAP-62%%CONTINUE%
+ItemDisplay[RARE t41]: %RED%[T4] %YELLOW%Cathedral of Light Dungeon%MAP-62%%CONTINUE%
+ItemDisplay[RARE t42]: %RED%[T4] %YELLOW%Plains of Torment Dungeon%MAP-62%%CONTINUE%
 
-ItemDisplay[(MAG OR RARE) (t11 OR t12 OR t13 OR t21 OR t22 OR t23 OR t24 OR t25 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t41) !ID]: %NAME% %RED%[Unid]%MAP-62%
+ItemDisplay[(MAG OR RARE) (t11 OR t12 OR t13 OR t21 OR t22 OR t23 OR t24 OR t25 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t41 OR t42) !ID]: %NAME% %RED%[Unid]%MAP-62%
 
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 //║                             ▬▬▬▬▬ Catch-All for Misc Items ▬▬▬▬▬                              ║
