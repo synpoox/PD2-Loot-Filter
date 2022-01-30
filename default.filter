@@ -252,6 +252,17 @@ ItemDisplay[(MAG OR RARE) (t11 OR t12 OR t13 OR t21 OR t22 OR t23 OR t24 OR t25 
 ItemDisplay[!(WEAPON OR ARMOR OR aqv OR cqv OR cm1 OR cm2 OR cm3 OR rin OR amu OR jew)]: %NAME%
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 //║█║                             Equipment and Magic Item Handling                             ║█║
+ItemDisplay[RW ED=5]: %GRAY%[%BLUE%5%%GRAY%] %NAME%%CONTINUE%
+ItemDisplay[RW ED=6]: %GRAY%[%BLUE%6%%GRAY%] %NAME%%CONTINUE%
+ItemDisplay[RW ED=7]: %GRAY%[%BLUE%7%%GRAY%] %NAME%%CONTINUE%
+ItemDisplay[RW ED=8]: %GRAY%[%BLUE%8%%GRAY%] %NAME%%CONTINUE%
+ItemDisplay[RW ED=9]: %GRAY%[%BLUE%9%%GRAY%] %NAME%%CONTINUE%
+ItemDisplay[RW ED=10]: %GRAY%[%BLUE%10%%GRAY%] %NAME%%CONTINUE%
+ItemDisplay[RW ED=11]: %GRAY%[%BLUE%11%%GRAY%] %NAME%%CONTINUE%
+ItemDisplay[RW ED=12]: %GRAY%[%BLUE%12%%GRAY%] %NAME%%CONTINUE%
+ItemDisplay[RW ED=13]: %GRAY%[%BLUE%13%%GRAY%] %NAME%%CONTINUE%
+ItemDisplay[RW ED=14]: %GRAY%[%BLUE%14%%GRAY%] %NAME%%CONTINUE%
+ItemDisplay[RW ED=15]: %GRAY%[%BLUE%15%%GRAY%] %NAME%%CONTINUE%
 ItemDisplay[RW !ETH]: %WHITE%%NAME% %RED%[%WHITE%%SOCKETS%%RED%]
 ItemDisplay[RW ETH]: %GRAY%E.%NAME% %RED%[%WHITE%%SOCKETS%%RED%]
 //─────────────────────────────────────────────────────────────────────────────────────────────────
@@ -269,10 +280,10 @@ ItemDisplay[RARE !ID !ETH (ci0 OR ci1 OR ci2 OR ci3)]: %DOT-9B%%GREEN%#### %YELL
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 //║              ▬▬▬▬▬ [Optional] Rules for Ignoring Specific Equipment Types ▬▬▬▬▬               ║
 //─────────────────────────────────────────────────────────────────────────────────────────────────
-// All Axes - Ignore All One-Handed Axes except Double Axe (2ax) and Beserker Axe (7wa), Glorious Axe (7gi), Decapitator (7bt)
+// All Axes - Ignore All One-Handed Axes except Double Axe (2ax) and Beserker Axe (7wa), Glorious Axe (7gi), Decapitator (7bt), Ettin Axe (72a)
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (hax OR 9ha OR 7ha) CLVL>85]: //Ignore Hand Axe, Hatchet, and Tomahawk
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (axe OR 9ax OR 7ax) CLVL>85]: //Ignore Axe, Cleaver, and Small Crescent
-ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (92a OR 72a) CLVL>85]: //Ignore Twin Axe, and Ettin Axe
+ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) 92a CLVL>85]: //Ignore Twin Axe
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (mpi OR 9mp OR 7mp) CLVL>85]: //Ignore Military Pick, Crowbill, and War Spike
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (wax OR 9wa) CLVL>85]: //Ignore War Axe, Naga
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (lax OR 9la OR 7la) CLVL>85]: //Ignore Large Axe, Military Axe, and Feral Axe
@@ -545,12 +556,12 @@ ItemDisplay[NMAG WP3 SOCK=2]:
 
 //ItemDisplay[NMAG WP5 CLVL>85]: //Hide NMAG Throwing Weapons
 
-// Ignore Rare Axes Double Axe (2ax) and Beserker Axe (7wa), Glorious Axe (7gi), Decapitator (7bt)
-ItemDisplay[RARE !ID (2ax OR 7wa OR 7gi OR 7bt) CLVL>85]: 
-ItemDisplay[MAG !ID !ETH (2ax OR 7wa OR 7gi OR 7bt) CLVL>85]: 
+// Ignore Rare Axes Double Axe (2ax) and Beserker Axe (7wa), Glorious Axe (7gi), Decapitator (7bt), Ettin Axe (72a)
+ItemDisplay[RARE !ID (2ax OR 7wa OR 7gi OR 7bt OR 72a) CLVL>85]: 
+ItemDisplay[MAG !ID !ETH (2ax OR 7wa OR 7gi OR 7bt OR 72a) CLVL>85]: 
 ItemDisplay[MAG !ID (2ax OR 7wa OR 7gi) CLVL>85]: 
 ItemDisplay[NMAG !(SOCK=0 OR SOCK>4) (2ax OR 7wa OR 7gi) CLVL>85]: 
-ItemDisplay[NMAG !ETH (7wa OR 7gi OR 7bt) CLVL>85]: 
+ItemDisplay[NMAG !ETH (7wa OR 7gi OR 7bt OR 72a) CLVL>85]: 
 ItemDisplay[NMAG !ETH 2ax !SOCK=5 CLVL>85]: 
 
 //Ignore 1-2 Socket Club, Cudgel, and Truncheon, Spiked Club, Barbed Club, and Tyrant Club
@@ -823,7 +834,7 @@ ItemDisplay[xpl UNI !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Sk
 ItemDisplay[xtp UNI !ID]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %GOLD%Que-Hegan's Wisdom  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
 ItemDisplay[xld UNI !ID]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %GOLD%Toothrow  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
 ItemDisplay[xlt UNI !ID]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %GOLD%Guardian Angel  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
-ItemDisplay[xth UNI !ID]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %GOLD%Atma's Wail  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
+ItemDisplay[xth UNI !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Atma's Wail  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 ItemDisplay[xul UNI !ID]: %BORDER-62%%GOLD%Black Hades%MAP-0E%
 ItemDisplay[xar UNI !ID]: %BORDER-62%%GOLD%Corpsemourn%MAP-0E%
 
@@ -1822,9 +1833,9 @@ ItemDisplay[NMAG (SOCK=0 OR SOCK>2) (7cr OR 7fb OR 7gs OR 72h OR 7gd) !ETH CLVL<
 //Assassin/Plague Claw Bases
 ItemDisplay[MAG TABSK48=3 SIN]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%] %YELLOW%[+3 Trap]%MAP-7F%%CONTINUE%
 ItemDisplay[CL5 (SOCK=0 OR SOCK=3) SK262>2 SK272>2]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%] %YELLOW%[+3 Wof\WoI]%MAP-7F%%CONTINUE%
-ItemDisplay[CL5 (SOCK=0 OR SOCK=3) SK262>2]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%] %YELLOW%[+3 Wof]%MAP-7F%%CONTINUE%
+ItemDisplay[CL5 (SOCK=0 OR SOCK=3) SK262>2]: %NAME% %YELLOW%[+3 Wof]%MAP-7F%%CONTINUE%
 ItemDisplay[CL5 (SOCK=0 OR SOCK=3) SK271>2 SK276>2]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%] %YELLOW%[+3 ChainLS\DS]%MAP-7F%%CONTINUE%
-ItemDisplay[CL5 (SOCK=0 OR SOCK=3) SK271>2]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%] %YELLOW%[+3 ChainLS]%MAP-7F%%CONTINUE%
+ItemDisplay[CL5 (SOCK=0 OR SOCK=3) SK271>2]: %NAME% %YELLOW%[+3 ChainLS]%MAP-7F%%CONTINUE%
 ItemDisplay[CL5 (SOCK=0 OR SOCK=3) SK277>2 SK278>0]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%] %YELLOW%[+3 BS\Venom]%MAP-7F%%CONTINUE%
 ItemDisplay[CL5 (SOCK=0 OR SOCK=3) SK273>2]: %NAME% %YELLOW%[+3 Mind Blast]%CONTINUE%
 ItemDisplay[CL5 (SOCK=0 OR SOCK=3) SK278>2]: %NAME% %YELLOW%[+3 Venom]%CONTINUE%
@@ -2071,11 +2082,11 @@ ItemDisplay[(WP2 OR CL1) SK248>2]: %NAME% %YELLOW%[+3 Fury]%CONTINUE%
 //ItemDisplay[(WP2 OR CL1) SK370>0]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%] %YELLOW%[+3 Gust]
 ItemDisplay[(WP2 OR CL1) SK370>0]: %NAME% %YELLOW%[+Gust]%CONTINUE%
 
-//Berserker Axe
-ItemDisplay[7wa ETH !INF !SUP SOCK=0 NMAG]: %BORDER-68%%RED%##%WHITE%##%BLUE%##     %GREEN%%NAME% %RED%[%WHITE%%SOCKETS%%RED%]     %BLUE%##%WHITE%##%RED%##
-ItemDisplay[7wa ETH !INF SUP SOCK=0 NMAG]: %BORDER-68%%RED%##%WHITE%##%BLUE%##     %GREEN%%NAME% %RED%[%WHITE%%SOCKETS%%RED%]     %BLUE%##%WHITE%##%RED%##
-ItemDisplay[7wa ETH !INF SOCK=5 NMAG !RW]: %BORDER-68%%RED%##%WHITE%##%BLUE%##     %GREEN%%NAME% %RED%[%WHITE%%SOCKETS%%RED%]     %BLUE%##%WHITE%##%RED%##
-ItemDisplay[7wa ETH !INF SOCK=6 NMAG !RW]: %BORDER-68%%RED%##%WHITE%##%BLUE%##     %GREEN%%NAME% %RED%[%WHITE%%SOCKETS%%RED%]     %BLUE%##%WHITE%##%RED%##
+//Berserker Axe and Ettin Axe
+ItemDisplay[(7wa OR 72a) ETH !INF !SUP SOCK=0 NMAG]: %BORDER-68%%RED%##%WHITE%##%BLUE%##     %GREEN%%NAME% %RED%[%WHITE%%SOCKETS%%RED%]     %BLUE%##%WHITE%##%RED%##
+ItemDisplay[(7wa OR 72a) ETH !INF SUP SOCK=0 NMAG]: %BORDER-68%%RED%##%WHITE%##%BLUE%##     %GREEN%%NAME% %RED%[%WHITE%%SOCKETS%%RED%]     %BLUE%##%WHITE%##%RED%##
+ItemDisplay[(7wa OR 72a) ETH !INF SOCK=5 NMAG !RW]: %BORDER-68%%RED%##%WHITE%##%BLUE%##     %GREEN%%NAME% %RED%[%WHITE%%SOCKETS%%RED%]     %BLUE%##%WHITE%##%RED%##
+ItemDisplay[(7wa OR 72a) ETH !INF SOCK=6 NMAG !RW]: %BORDER-68%%RED%##%WHITE%##%BLUE%##     %GREEN%%NAME% %RED%[%WHITE%%SOCKETS%%RED%]     %BLUE%##%WHITE%##%RED%##
 
 
 //Shop Hunting
