@@ -186,6 +186,10 @@ ItemDisplay[ubaa]: %BORDER-0A%%WHITE%*%BLUE%*%PURPLE%*     %GREEN%Sigil of Madaw
 ItemDisplay[ubab]: %BORDER-0A%%WHITE%*%BLUE%*%PURPLE%*     %GREEN%Sigil of Talic %RED%[T2]     %PURPLE%*%BLUE%*%WHITE%*{%ORANGE%Combine with other Sigils to create Relic of the Ancients} //Sigil of Talic from T2 Maps
 ItemDisplay[ubac]: %BORDER-0A%%WHITE%*%BLUE%*%PURPLE%*     %GREEN%Sigil of Korlic %RED%[T3]     %PURPLE%*%BLUE%*%WHITE%*{%ORANGE%Combine with other Sigils to create Relic of the Ancients} //Sigil of Korlic from T3 Maps
 
+ItemDisplay[lsvl]: %BORDER-62%%RED%##     %GREEN%Vial of Lightsong     %RED%##{%RED%Make Item ETH}%MAP% //Vial of Lightsong (make item eth)
+ItemDisplay[llmr]: %BORDER-62%%RED%##     %GREEN%Lilith's Mirror     %RED%##{%RED%Copies an item}%MAP% //Lilith's Mirror (make copy)	
+
+
 //-----------------------------MAPS-----------------------------
 // Normal
 ItemDisplay[NMAG t11]: %GREEN%[T1] %WHITE%Ruins of Vizjun%MAP-62%%CONTINUE%
