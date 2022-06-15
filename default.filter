@@ -182,9 +182,9 @@ ItemDisplay[cwss]: %BORDER-62%      %GREEN%###   %PURPLE%Tainted Orb of Corrupti
 
 //PD2 Uber Ancients
 ItemDisplay[uba]: %BORDER-0A%%GREEN%###    %ORANGE%%NAME%    %GREEN%###{%ORANGE%Opens Uber Ancients} //Relic of the Ancients
-ItemDisplay[ubaa]: %BORDER-0A%%WHITE%*%BLUE%*%PURPLE%*     %ORANGE%%NAME% %RED%[T1]     %PURPLE%*%BLUE%*%WHITE%*{%ORANGE%Combine with other Sigils to create Relic of the Ancients} //Sigil of Madawc from T1 Maps
-ItemDisplay[ubab]: %BORDER-0A%%WHITE%*%BLUE%*%PURPLE%*     %ORANGE%%NAME% %RED%[T2]     %PURPLE%*%BLUE%*%WHITE%*{%ORANGE%Combine with other Sigils to create Relic of the Ancients} //Sigil of Talic from T2 Maps
-ItemDisplay[ubac]: %BORDER-0A%%WHITE%*%BLUE%*%PURPLE%*     %ORANGE%%NAME% %RED%[T3]     %PURPLE%*%BLUE%*%WHITE%*{%ORANGE%Combine with other Sigils to create Relic of the Ancients} //Sigil of Korlic from T3 Maps
+ItemDisplay[ubaa]: %BORDER-0A%%WHITE%*%BLUE%*%PURPLE%*     %GREEN%Sigil of Madawc %RED%[T1]     %PURPLE%*%BLUE%*%WHITE%*{%ORANGE%Combine with other Sigils to create Relic of the Ancients} //Sigil of Madawc from T1 Maps
+ItemDisplay[ubab]: %BORDER-0A%%WHITE%*%BLUE%*%PURPLE%*     %GREEN%Sigil of Talic %RED%[T2]     %PURPLE%*%BLUE%*%WHITE%*{%ORANGE%Combine with other Sigils to create Relic of the Ancients} //Sigil of Talic from T2 Maps
+ItemDisplay[ubac]: %BORDER-0A%%WHITE%*%BLUE%*%PURPLE%*     %GREEN%Sigil of Korlic %RED%[T3]     %PURPLE%*%BLUE%*%WHITE%*{%ORANGE%Combine with other Sigils to create Relic of the Ancients} //Sigil of Korlic from T3 Maps
 
 //-----------------------------MAPS-----------------------------
 // Normal
@@ -367,7 +367,8 @@ ItemDisplay[RARE !ID !ETH (crs OR bsd OR 7cr OR 7fb OR 7gs OR 72h OR 7gd OR 9cr 
 //ItemDisplay[RARE !ID (crs OR bsd OR 7cr OR 7fb OR 7gs OR 72h OR 7gd OR 9cr OR 7b7 OR 7cm) CLVL>85]: 
 ItemDisplay[MAG !ETH !ID (crs OR bsd OR 7cr OR 7fb OR 7gs OR 72h OR 7gd OR 9cr OR 7b7 OR 7cm) CLVL>90]: 
 ItemDisplay[MAG !ID (crs OR bsd) CLVL>90]: 
-ItemDisplay[NMAG WP3 !ETH CLVL>90]: //Hide non eth swords after 90
+ItemDisplay[NMAG WP3 !ETH !7cr CLVL>90]: //Hide non eth swords after 90
+ItemDisplay[NMAG 7cr !(SOCK=3 OR SOCK=5) CLVL>90]: //Hide phase blades not 3 or 5 socket
 ItemDisplay[NMAG WP3 ETH (NORM OR EXC) CLVL>90]: //Hide normal and exceptional nonmagic swords 90
 ItemDisplay[NMAG WP3 (SOCK=1 OR SOCK=2)]: //Hide all 1 and 2 socket swords
 //─────────────────────────────────────────────────────────────────────────────────────────────────
@@ -423,7 +424,9 @@ ItemDisplay[(MAG OR RARE) !ID !ETH (brn OR 9br OR 7br) CLVL>85]:
 ItemDisplay[(MAG OR RARE) !ID !ETH (spt OR 9st OR 7st) CLVL>85]: 
 ItemDisplay[(MAG OR RARE) !ID !ETH (pik OR 9p9 OR 7p7) CLVL>85]: 
 ItemDisplay[NMAG !ETH (spr OR 9sr OR 7sr OR tri OR 9tr OR 7tr OR brn OR 9br OR 7br OR spt OR 9st OR 7st OR pik OR 9p9 OR 7p7) CLVL>85]: 
+ItemDisplay[NMAG SOCK<4 (spr OR 9sr OR 7sr OR tri OR 9tr OR 7tr OR brn OR 9br OR 7br OR spt OR 9st OR 7st OR pik OR 9p9 OR 7p7) CLVL>85]: 
 ItemDisplay[NMAG !ETH (7br OR 7p7) CLVL>85]: 
+ItemDisplay[MAG (spr OR 9sr OR tri OR 9tr OR brn OR 9br OR spt OR 9st OR pik OR 9p9) CLVL>85]: //hide magic normal and exceptional spears after 85
 //ItemDisplay[NMAG WP7 CLVL>89]: 
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Polearms - Ignore all Polearm except Thresher (7s8), Giant Thresher (7wc), Cryptic Axe (7pa), and Great Poleaxe (7h7)
@@ -440,7 +443,9 @@ ItemDisplay[RARE !ID !ETH (WP8 OR 7s8 OR 7wc OR 7pa OR 7h7) CLVL>85]:
 ItemDisplay[MAG !ETH !ID (WP8 OR 7s8 OR 7wc OR 7pa OR 7h7) CLVL>85]: 
 ItemDisplay[NMAG !(SOCK=0 OR SOCK=4) (WP8 OR 7s8 OR 7wc OR 7pa OR 7h7) CLVL>85]: 
 ItemDisplay[NMAG !ETH (bar OR 9b7 OR 7o7 OR vou OR 9vo OR 7vo OR scy OR 9s8 OR pax OR 9pa OR hal OR 9h9 OR wsc OR 9wc) CLVL>85]: 
-//ItemDisplay[NMAG !ETH (WP8 OR 7s8 OR 7wc OR 7pa OR 7h7) CLVL>89]: //hide non eth thresher etc
+ItemDisplay[NMAG !ETH SOCK<4 (WP8 OR 7s8 OR 7wc OR 7pa OR 7h7) CLVL>89]: //hide non eth non 4 socket polearms 
+ItemDisplay[NMAG !ETH (WP8 OR 7s8 OR 7wc OR 7pa OR 7h7) CLVL>92]: // Just hide non eth nonmagic polearms after 92
+ItemDisplay[NMAG (bar OR vou OR scy OR pax OR hal OR wsc OR 9b7 OR 9vo OR 9s8 OR 9pa OR 9h9 OR 9wc) CLVL>89]: //Hide nonmagic normal and exceptional polearms after 89
 //ItemDisplay[NMAG WP8 CLVL>89]: 
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Bows - Ignore All Bows except Composite (cbw), Hunter (hbw), and Hydra Bow (6lw), Crusader Bow (6l7), Shadow Bow (6lb), Great Bow (6cb), Ward Bow (6sw)
@@ -454,7 +459,7 @@ ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (swb OR 8sw) CLVL>85]: //Ignore Sh
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (lwb OR 8lw) CLVL>85]: //Ignore Long War Bow, Gothic Bow
 
 // Bows - Ignore Rare and magical Composite (cbw), Hunter (hbw), and Hydra Bow (6lw), Crusader Bow (6l7), Shadow Bow (6lb), Great Bow (6cb), Matriarchal Bow (amb), Grand Matron Bow (amc)
-//ItemDisplay[RARE !ID (cbw OR hbw OR 6lw OR 6l7 OR 6lb OR 6cb OR amb OR amc OR 6sw) CLVL>85]: 
+ItemDisplay[RARE !ID (cbw OR hbw) CLVL>85]: 
 ItemDisplay[MAG !ID (cbw OR hbw OR 6lw OR 6l7 OR 6lb OR 6cb OR amb OR amc OR 6sw) CLVL>85]: 
 //ItemDisplay[NMAG WP9 CLVL>10]: 
 ItemDisplay[NMAG SOCK<4 (cbw OR hbw OR 6lw OR 6l7 OR 6lb OR 6cb OR 6sw OR amb OR amc) CLVL>85]: 
@@ -484,7 +489,7 @@ ItemDisplay[NMAG WP10 !6rx CLVL>10]:
 //ItemDisplay[MAG !ID (6ws OR 6cs) CLVL>85]: 
 //ItemDisplay[NMAG 6ws !SOCK=4]: 
 //ItemDisplay[NMAG !ETH 6cs]: 
-//ItemDisplay[NMAG WP11 CLVL>10]: 
+ItemDisplay[NMAG WP11 !(SOCK=0 OR SOCK=4) CLVL>60]: 
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Wands - Ignore All Wands That Can Not Have 2 Sockets
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (wnd OR ywn OR 9wn) CLVL>85]:
@@ -534,7 +539,7 @@ ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (tow OR xow OR uow) CLVL>90]: //Ig
 ItemDisplay[MAG !ID ETH EQ3 CLVL>5]: //Hide Eth Magical Shields
 ItemDisplay[MAG !ID (kit OR lrg) CLVL>50]: //Hide Magic kite Shield (kit), and Large Shield (lrg)
 //ItemDisplay[MAG !ID (uit OR kit OR lrg) CLVL>5]: //Hide Eth Monarch, Kite Shield (kit), and Large Shield (lrg)
-//ItemDisplay[RARE !ID (uit OR kit OR lrg) CLVL>49]: //Hide Rare Monarch, Kite Shield (kit), and Large Shield (lrg)
+ItemDisplay[RARE !ID (uit OR kit OR lrg) CLVL>85]: //Hide Rare Monarch, Kite Shield (kit), and Large Shield (lrg)
 ItemDisplay[NMAG (SOCK=1 OR SOCK=2) (uit OR kit OR lrg) CLVL>85]: //Hide less than 3 socket Monarch, Kite Shield (kit), and Large Shield (lrg)
 ItemDisplay[NMAG EQ3 !(CL3 OR CL4) SOCK<3 CLVL>90]: //Hide less than 3 socket shields non pal non nec
 //─────────────────────────────────────────────────────────────────────────────────────────────────
@@ -556,12 +561,12 @@ ItemDisplay[(NMAG OR (MAG AND !ID)) (scl OR xcl) CLVL>90]: //Ignore Scale Mail, 
 ItemDisplay[(NMAG OR (MAG AND !ID)) (plt OR xlt) CLVL>90]: //Ignore Plate Mail, Templar Coat
 ItemDisplay[(NMAG OR (MAG AND !ID)) (ful OR xul) CLVL>90]: //Ignore Full Plate, Chaos Armor
 
-//ItemDisplay[MAG !ID EQ2 CLVL>70]: //Hide Magical Body Armors
+ItemDisplay[MAG !ID EQ2 CLVL>90: //Hide Magical Body Armors
 //ItemDisplay[RARE !ID EQ2 CLVL>85]: //Hide Rare Body Armors
 ItemDisplay[NMAG EQ2 SOCK<3 CLVL>85]: //Hide low socket nmag armors
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Helms - Ignore All Helms, Barbarian Helms, and Druid Pelts but not Circlets
-//ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (cap OR xap OR uap) CLVL>90]: //Ignore Cap, War Hat, and Shako
+ItemDisplay[(NMAG OR (MAG AND !ID)) (cap OR xap OR uap) CLVL>90]: //Ignore Cap, War Hat, and Shako
 ItemDisplay[(NMAG OR (MAG AND !ID)) (skp OR xkp OR ukp) CLVL>90]: //Ignore Skull Cap, Sallet, and Hydraskull
 ItemDisplay[(NMAG OR (MAG AND !ID)) (hlm OR xlm OR ulm) CLVL>90]: //Ignore Helm, Casque, and Armet
 ItemDisplay[(NMAG OR (MAG AND !ID)) (fhl OR xhl OR uhl) CLVL>90]: //Ignore Full Helm, Basinet, and Giant Conch
@@ -615,6 +620,7 @@ ItemDisplay[ETH NMAG CL1 CLVL>30]:
 // Necro Heads
 //ItemDisplay[MAG !ID CL4 CLVL>5 ETH]: //Hide ETH Nec Shields
 ItemDisplay[MAG CL4 !ID CLVL>85]:
+ItemDisplay[NMAG CL4 ETH CLVL>30]:
 //ItemDisplay[RARE (ne4 OR ne9 OR nee OR ne5 OR nea OR nef) !ID CLVL>85]:
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Paladin Shields - Ignore All Pally Shields except Elites: Sacred Targe (pab), Vortex Shield (paf), Sacred Rondache (pac), Kurast Shield (pad), and Zakarum Shield (pae)
@@ -626,11 +632,12 @@ ItemDisplay[MAG CL4 !ID CLVL>85]:
 
 // Paladin Shields - Hide Rare and magical Paladin Shields - Sacred Targe (pab), Vortex Shield (paf), Sacred Rondache (pac), Kurast Shield (pad), and Zakarum Shield (pae)
 //ItemDisplay[((MAG OR RARE) AND !ID) CL3 CLVL>85]:
-ItemDisplay[((MAG OR RARE) AND !ID) (NORM OR EXC) CL3 CLVL>85]:
+ItemDisplay[((MAG OR RARE) AND !ID) (NORM OR EXC) CL3 CLVL>90]:
+ItemDisplay[NMAG (NORM OR EXC) CL3 CLVL>90]:
 //ItemDisplay[RARE !ID CL3 CLVL>85]:
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Gloves - Ignore All nonmagical and eth magical Gloves
-ItemDisplay[EQ4 NMAG CLVL>60]: //Ignore All nonmagical Gloves
+ItemDisplay[EQ4 NMAG CLVL>30]: //Ignore All nonmagical Gloves
 //ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (utb OR uhb) CLVL>85]: //Show All Gloves except Crusader Gauntlets (utg) and Ogre Gauntlets (uhg) [Too High Str Req]
 ItemDisplay[MAG !ID EQ4 ILVL>5 ETH]: //Hide Eth Gloves
 ItemDisplay[MAG !ID EQ4 ILVL>5]: %NAME% %WHITE%[%PRICE%%GOLD%G%WHITE%]
@@ -1881,8 +1888,8 @@ ItemDisplay[NMAG (SOCK=0 OR SOCK>2) (7cr OR 7fb OR 7gs OR 72h OR 7gd) !ETH CLVL<
 
 //Assassin/Plague Claw Bases
 ItemDisplay[MAG TABSK48=3 SIN]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%] %YELLOW%[+3 Trap]%MAP-7F%%CONTINUE%
-ItemDisplay[CL5 (SOCK=0 OR SOCK=3) SK262>2 SK272>2]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%] %YELLOW%[+3 Wof\WoI]%MAP-7F%%CONTINUE%
-ItemDisplay[CL5 (SOCK=0 OR SOCK=3) SK262>2]: %NAME% %YELLOW%[+3 Wof]%MAP-7F%%CONTINUE%
+ItemDisplay[CL5 (SOCK=0 OR SOCK=3) SK262>2 SK272>2]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%] %YELLOW%[+3 WoF\WoI]%MAP-7F%%CONTINUE%
+ItemDisplay[CL5 (SOCK=0 OR SOCK=3) SK262>2]: %NAME% %YELLOW%[+3 WoF]%MAP-7F%%CONTINUE%
 ItemDisplay[CL5 (SOCK=0 OR SOCK=3) SK271>2 SK276>2]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%] %YELLOW%[+3 ChainLS\DS]%MAP-7F%%CONTINUE%
 ItemDisplay[CL5 (SOCK=0 OR SOCK=3) SK271>2]: %NAME% %YELLOW%[+3 ChainLS]%MAP-7F%%CONTINUE%
 ItemDisplay[CL5 (SOCK=0 OR SOCK=3) SK277>2 SK278>0]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%] %YELLOW%[+3 BS\Venom]%MAP-7F%%CONTINUE%
@@ -1959,10 +1966,11 @@ ItemDisplay[(CL6 OR WP11) SK376>2]: %NAME% %YELLOW%[+3 Combustion]%CONTINUE%
 ItemDisplay[(CL6 OR WP11) SK383>2]: %NAME% %YELLOW%[+3 Lesser Hydra]%CONTINUE%
 
 //Necromancer Wands Necromancer Shields
-ItemDisplay[(CL4 OR WP12) NMAG]: %GRAY%%NAME%%CONTINUE%
+ItemDisplay[CL4 NMAG]: %GRAY%NecHead%CONTINUE%
+ItemDisplay[WP12 NMAG]: %GRAY%%NAME%%CONTINUE%
 ItemDisplay[(CL4 OR WP12) MAG]: %BLUE%%NAME%%CONTINUE%
 ItemDisplay[(CL4 OR WP12) SK92>2]: %NAME% %YELLOW%[+3 PsnNova]%CONTINUE%
-ItemDisplay[(CL4 OR WP12) SK84>2]: %NAME% %YELLOW%[+3 Spear]%CONTINUE%
+ItemDisplay[(CL4 OR WP12) SK84>2]: %NAME% %YELLOW%[+3 BSpear]%CONTINUE%
 ItemDisplay[(CL4 OR WP12) SK67>2]: %NAME% %YELLOW%[+3 Teeth]%CONTINUE%
 ItemDisplay[(CL4 OR WP12) SK70>2]: %NAME% %YELLOW%[+3 SkelWarrior]%CONTINUE%
 ItemDisplay[(CL4 OR WP12) SK89>2]: %NAME% %YELLOW%[+3 SkelArcher]%CONTINUE%
@@ -2207,7 +2215,7 @@ ItemDisplay[(bsd OR lsd) NMAG !INF !SUP SOCK=0 ILVL>25 CLVL<80]: %NAME% %RED%[%W
 ItemDisplay[fla NMAG !INF !SUP SOCK=0]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
 
 //Memory
-ItemDisplay[(cst OR bst OR 8cs OR 8bs OR 6cs OR 6bs) SK58>2 !INF !SUP SOCK=0 NMAG]: %DOT-D6%%GRAY%[%ORANGE%+3 es%GRAY%] %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
+ItemDisplay[(cst OR bst OR 8cs OR 8bs OR 6cs OR 6bs) SK58>2 !INF !SUP SOCK=0 NMAG]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
 ItemDisplay[(wst OR 8ws OR 6ws) SK58>2 !INF !SUP SOCK=0 NMAG]: %DOT-D6%%GRAY%[%ORANGE%+3 es%GRAY%] %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
 //Faith/Bows
 ItemDisplay[(amc OR amb) TABSK0>2 !INF !SUP SOCK=0 NMAG]: %DOT-D6%%GRAY%[%ORANGE%+3 bow%GRAY%] %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
@@ -2311,7 +2319,7 @@ ItemDisplay[(7m7 OR 7gm) !INF ETH NMAG !RW SOCK=5]: %DOT-D6%%NAME% %RED%[%WHITE%
 ItemDisplay[7gm !INF ETH NMAG !RW SOCK=6]: %DOT-D6%%NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%GRAY%of the Dying, Last Wish, Silence%NL%%TAN%Note%WHITE%: Possible RuneWords: %GRAY%Breath}
 //Scepters
 ItemDisplay[(wsp OR 9ws OR 7ws) !INF !ETH NMAG !RW SOCK=4]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%GRAY%Passion, Phoenix, Rift%NL%Holy Thunder, Hand of Justice,%NL%%TAN%Note%WHITE%: Possible RuneWords: %GRAY%Fortitude,}
-ItemDisplay[(SCEPTER !(scp OR 9sc OR 7sc)) !INF !ETH NMAG !RW SK101>2 SOCK=3]: %DOT-D6%%GRAY%[%ORANGE%+3 hbo%GRAY%] %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%GRAY%Malice, Plague, Venom, Wind%NL%Fury, King's Grace, Lawbringer,%NL%%TAN%Note%WHITE%: Possible RuneWords:}
+//ItemDisplay[(SCEPTER !(scp OR 9sc OR 7sc)) !INF !ETH NMAG !RW SK101>2 SOCK=3]: %DOT-D6%%GRAY%[%ORANGE%+3 hbo%GRAY%] %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%GRAY%Malice, Plague, Venom, Wind%NL%Fury, King's Grace, Lawbringer,%NL%%TAN%Note%WHITE%: Possible RuneWords:}
 ItemDisplay[(SCEPTER !(scp OR 9sc OR 7sc)) !INF !ETH NMAG !RW SK121>2 SOCK=3]: %DOT-D6%%GRAY%[%ORANGE%+3 foh%GRAY%] %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%GRAY%Malice, Plague, Venom, Wind%NL%Fury, King's Grace, Lawbringer,%NL%%TAN%Note%WHITE%: Possible RuneWords:}
 ItemDisplay[(SCEPTER !(scp OR 9sc OR 7sc)) !INF !ETH NMAG !RW SK118>2 SOCK=3]: %DOT-D6%%GRAY%[%ORANGE%+3 hsh%GRAY%] %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%GRAY%Malice, Plague, Venom, Wind%NL%Fury, King's Grace, Lawbringer,%NL%%TAN%Note%WHITE%: Possible RuneWords:}
 //Swords
