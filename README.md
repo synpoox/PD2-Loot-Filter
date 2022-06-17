@@ -1,6 +1,7 @@
 # RetroCro's PD2 Loot Filter
 
 **About:** 		This my attempt at a Ladder Reset to End Game mapping loot filter. 
+
 **Features:** 	This filter shows the identified names of set and unique items. This filter will get stricter as you level. It notifies for important drops and draws minimap icons. 
 
 ## Runes:
