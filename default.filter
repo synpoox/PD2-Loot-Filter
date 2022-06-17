@@ -1006,7 +1006,7 @@ ItemDisplay[9fl UNI !ID]: %BORDER-62%%GOLD%Baezil's Vortex%MAP-0E%
 ItemDisplay[9wh UNI !ID]: %BORDER-62%%GOLD%Earthshaker%MAP-0E%
 ItemDisplay[9m9 UNI !ID]: %BORDER-62%%GOLD%Bloodtree Stump%MAP-0E%
 ItemDisplay[9gm UNI !ID ETH]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %RED%ETH %GOLD%The Gavel of Pain  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
-ItemDisplay[9gm UNI !ID]: %BORDER-62%%GOLD%The Gavel of Pain%MAP-0E%
+ItemDisplay[9gm UNI !ID]: %BORDER-62%%RED%#%WHITE%#%BLUE%#  %GOLD%The Gavel of Pain  %BLUE%#%WHITE%#%RED%#%MAP-0E%
 
 //Elite Unique Maces
 ItemDisplay[7cl UNI !ID]: %BORDER-62%%GOLD%Nord's Tenderizer%MAP-0E%
@@ -1014,8 +1014,11 @@ ItemDisplay[7sp UNI !ID]: %BORDER-62%%GOLD%Demon Limb%MAP-0E%
 ItemDisplay[7mt UNI !ID]: %BORDER-62%%GOLD%Baranar's Star%MAP-0E%
 ItemDisplay[7fl UNI !ID ETH]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %RED%ETH %GOLD%Horizon's Tornado or Stormlash  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
 ItemDisplay[7wh UNI !ID ETH]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %RED%ETH %GOLD%Stone Crusher or Schaefer's Hammer  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
+ItemDisplay[7wh UNI !ID]: %BORDER-62%%RED%#%WHITE%#%BLUE%#  %GOLD%Stone Crusher or Schaefer's Hammer  %BLUE%#%WHITE%#%RED%#%MAP-0E%
 ItemDisplay[7m7 UNI !ID ETH]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %RED%ETH %GOLD%Windhammer  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
+ItemDisplay[7m7 UNI !ID]: %BORDER-62%%RED%#%WHITE%#%BLUE%#  %GOLD%Windhammer  %BLUE%#%WHITE%#%RED%#%MAP-0E%
 ItemDisplay[7gm UNI !ID ETH]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %RED%ETH %GOLD%Earth Shifter or The Cranium Basher  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
+ItemDisplay[7gm UNI !ID]: %BORDER-62%%RED%#%WHITE%#%BLUE%#  %GOLD%Earth Shifter or The Cranium Basher  %BLUE%#%WHITE%#%RED%#%MAP-0E%
 
 //WP3 - Swords
 //ItemDisplay[WP3 UNI !ID !ELT CLVL>79]:
