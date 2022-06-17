@@ -96,7 +96,7 @@ ItemDisplay[(aqv OR cqv) NMAG CLVL>6]:
 //║                                       ▬▬▬▬▬ Runes ▬▬▬▬▬                                       ║
 ItemDisplay[RUNE<10]: %BORDER-62%%GREEN%%RUNENAME% Rune %GRAY%(%RUNENUM%)
 ItemDisplay[RUNE<20]: %BORDER-62%%GREEN%%RUNENAME% Rune %GRAY%(%RUNENUM%)
-ItemDisplay[(RUNE>19 AND RUNE<26)]: %BORDER-62%                  %RED%#%WHITE%#%BLUE%#  %GREEN%%RUNENAME% RUNE %GRAY%(%RUNENUM%)  %BLUE%#%WHITE%#%RED%#                  %CONTINUE%
+ItemDisplay[(RUNE>19 AND RUNE<26)]: %BORDER-62%%RED%#%WHITE%#%BLUE%#  %GREEN%%RUNENAME% RUNE %GRAY%(%RUNENUM%)  %BLUE%#%WHITE%#%RED%#%CONTINUE%
 ItemDisplay[RUNE>25]: %BORDER-62%          %RED%###%WHITE%###%BLUE%###  %GREEN%%RUNENAME% RUNE %GRAY%(%RUNENUM%)  %BLUE%###%WHITE%###%RED%###          %CONTINUE%
 
 
@@ -155,7 +155,6 @@ ItemDisplay[imra]: %NAME% %ORANGE%*{%WHITE%Map + %GOLD%Orb %WHITE%+ %BLUE%Jewel 
 ItemDisplay[rera]: %NAME% %ORANGE%*{%YELLOW%Map %WHITE%+ %GOLD%Orb %WHITE%+ Perf Gem + %ORANGE%Rune>9%NL%%TAN%Note%WHITE%: Reroll %YELLOW%Rare %WHITE%Map:}%MAP% //Horadrim Orb
 ItemDisplay[upma]: %NAME% %ORANGE%*{%BLUE%Map %WHITE%+ %GOLD%Orb %WHITE%+ Perf %GRAY%PSkull %WHITE%+ %ORANGE%Rune>9%NL%%TAN%Note%WHITE%: Imbue %BLUE%Magic %WHITE%Map to %YELLOW%Rare%WHITE%:} //Angelic Orb
 ItemDisplay[imma]: %NAME% %ORANGE%*{%WHITE%Map + %GOLD%Orb %WHITE%+ %BLUE%Jewel %NL%%TAN%Note%WHITE%: Imbue White Map to %BLUE%Magic%WHITE%:}%MAP% //Arcane Orb		
-ItemDisplay[imma]: {%WHITE%Map + %GOLD%Orb %WHITE%+ %BLUE%Jewel %NL%%TAN%Note%WHITE%: Imbue White Map to %BLUE%Magic%WHITE%:}%MAP% //Arcane Orb		
 //ItemDisplay[scou]: %NAME% %ORANGE%*{%BLUE%M%WHITE%a%YELLOW%p %WHITE%+ %GOLD%Orb %WHITE%+ %ORANGE%Hel Rune%NL%%TAN%Note%WHITE%: Imbue %BLUE%Magic%WHITE%/%YELLOW%Rare %WHITE%Map to White:}%MAP% //Orb of Destruction
 ItemDisplay[scou]: {%BLUE%M%WHITE%a%YELLOW%p %WHITE%+ %GOLD%Orb %WHITE%+ %ORANGE%Hel Rune%NL%%TAN%Note%WHITE%: Imbue %BLUE%Magic%WHITE%/%YELLOW%Rare %WHITE%Map to White:}%MAP% //Orb of Destruction
 ItemDisplay[upmp]: %NAME% %ORANGE%*{%WHITE%3x%BLUE%M%WHITE%a%YELLOW%p %TAN%(%WHITE%Tier:%ORANGE%x%TAN%) %WHITE%+ %GOLD%Orb %WHITE%= Map %TAN%(%WHITE%Tier:%ORANGE%x%WHITE%+1%TAN%)%NL%Note%WHITE%: Upgrade Maps for higher Tier:}%MAP% //Cartographers Orb
@@ -164,7 +163,7 @@ ItemDisplay[scrb]: %BORDER-62%          %GREEN%#### %NAME%{%WHITE%This Item + T3
 
 ItemDisplay[lbox]: %BORDER-62%     %GREEN%### %RED%%NAME% %GREEN%###     {%WHITE%2H Wep = 4 Max%NL%1H Wep = 2 max%NL%Helm, Chest, Shield = 2 Max%NL%%TAN%Note%WHITE%: Use it to %TAN%Socket %WHITE%an Item}%MAP% //Larzuk's Box
 ItemDisplay[lpp]: %BORDER-62%     %PURPLE%*** %RED%%NAME% %PURPLE%***     {%WHITE%2H Wep = 4 Max%NL%1H Wep = 2 max%NL%Helm, Chest, Shield = 2 Max%NL%%TAN%Note%WHITE%: Use it to %TAN%Socket %YELLOW%RARE %WHITE%and %ORANGE%CRAFTED %WHITE%ONLY}%MAP% //Larzuk's Puzzlepiece
-ItemDisplay[wss]: %BORDER-62%     %GREEN%###   %PURPLE%Orb of Corruption x%QTY%  %GREEN%###     %MAP% //Worldstone Shard	
+ItemDisplay[wss]: %BORDER-62%     %GREEN%###   %PURPLE%Worldstone Shard x%QTY%  %GREEN%###     %MAP% //Worldstone Shard	
 
 //PD2 Dclone Items
 ItemDisplay[dcma]: %BORDER-62%%GREEN%####    %RED%Vision of Terror    %GREEN%####{%RED%Dclone Portal}%MAP% //Vision of Terror
@@ -500,7 +499,6 @@ ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (am1 OR am6) CLVL>85]: //Hide Stag
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (am2 OR am7) CLVL>85]: //Hide Reflex Bow, Ceremonial Bow
 
 ItemDisplay[NMAG (am1 OR am2 OR am6 OR am7 OR amb OR amc) TABSK0<3 CLVL>60]: //Hide non-magic Ama bows that arent +3 bow skills
-ItemDisplay[NMAG (am1 OR am2 OR am6 OR am7 OR amb OR amc) TABSK0>2]: %NAME% %GREEN%+3 Bow%CONTINUE%//Show +3 bow skills in name
 ItemDisplay[MAG !ID (am1 OR am2 OR am6 OR am7) CLVL>60]: //Hide normal and exception magic Ama bows after 60
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Amazon Spears - Hide All Amazon Spears
