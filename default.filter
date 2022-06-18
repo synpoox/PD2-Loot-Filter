@@ -1541,7 +1541,6 @@ ItemDisplay[SET !ID lbb]: %BORDER-62%%GREEN%Vidala's Bow%MAP-84%
 ItemDisplay[UNI !ID !(cm1 OR cm2 OR cm3)]: %BORDER-62%%NAME%%MAP-0E%
 ItemDisplay[SET !ID]: %BORDER-62%%NAME%%MAP-84%
 
-
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
 //║                                      ▬▬▬▬▬ Charms ▬▬▬▬▬                                       ║
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
@@ -1908,7 +1907,8 @@ ItemDisplay[CL4 RARE]: %YELLOW%NecHead%CONTINUE%
 ItemDisplay[WP12 NMAG]: %GRAY%Wand%CONTINUE%
 ItemDisplay[WP12 RARE]: %YELLOW%Wand%CONTINUE%
 ItemDisplay[WP12 MAG]: %BLUE%Wand%CONTINUE%
-ItemDisplay[(CL4 OR WP12) MAG]: %BLUE%%NAME%%CONTINUE%
+ItemDisplay[CL4 MAG]: %BLUE%NecHead%CONTINUE%
+ItemDisplay[(SK94>2 OR SK75>2 OR SK85>2) AND (SK79>0 OR SK91>0) WAND NECROMANCER]: %RED%#### %GREEN%%NAME% %RED%[%WHITE%%SOCKETS%%RED%] %ORANGE%[Unending Will Base] %RED%####  //Unending Will base, +3 Fire/Clay/Blood with +1 Mastery/Lower Res
 ItemDisplay[(CL4 OR WP12) SK92>2]: %NAME% %ORANGE%[+3 PsnNova]%CONTINUE%
 ItemDisplay[(CL4 OR WP12) SK84>2]: %NAME% %ORANGE%[+3 BSpear]%CONTINUE%
 ItemDisplay[(CL4 OR WP12) SK67>2]: %NAME% %ORANGE%[+3 Teeth]%CONTINUE%
