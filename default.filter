@@ -346,7 +346,7 @@ ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) gma CLVL>85]: //Hide Great Maul
 
 ItemDisplay[(MAG OR RARE) !ID !ETH (fla OR 7gm OR 7m7 OR 9gm OR 9m9) CLVL>85]: //Hide magic or rare unid non-eth Flail (fla), Thunder Maul (7gm), Ogre Maul (7m7), Martel de Fer (9gm), War Club (9m9) after 85
 ItemDisplay[MAG !ID fla CLVL>60]: //Hide magic unid flail altogether after 60
-ItemDisplay[NMAG fla !SOCK=4]: //Hide non-magic flails that are not 4 socket
+ItemDisplay[NMAG fla SOCK<4]: //Hide non-magic flails that are not at least 4 sockets
 ItemDisplay[NMAG !(SOCK=0 OR SOCK>3) (fla OR 7gm OR 7m7 OR 9gm OR 9m9) CLVL>80]: //Hide non-magic maces that are not 0 or 4+ sockets after 80
 ItemDisplay[NMAG !ETH (7gm OR 7m7 OR 9gm OR 9m9) CLVL>85]: //Hide non-magic non-eth Thunder Maul (7gm), Ogre Maul (7m7), Martel de Fer (9gm), War Club (9m9) after 85
 ItemDisplay[NMAG (clb OR spc) CLVL>80]: //Hide non-magic clubs and spiked clubs since they cant get 3 sockets for plague after 80
@@ -370,10 +370,11 @@ ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (gsd OR 9gd) CLVL>85]: //Hide Grea
 
 ItemDisplay[(MAG OR RARE) !ID !ETH WP3 CLVL>85]: //Hide magic or rare unid non-eth swords after 85
 ItemDisplay[MAG !ID (crs OR bsd) CLVL>60]: //Hide magic unid Crystal (crs) and Broad Sword (bsd) after 60
-ItemDisplay[NMAG !ETH WP3 !7cr CLVL>85]: //Hide non-magic non-eth swords except Phase Blade after 85
+ItemDisplay[NMAG !ETH WP3 !7cr !crs CLVL>85]: //Hide non-magic non-eth swords except Phase Blade after 85
 ItemDisplay[NMAG 7cr !(SOCK=3 OR SOCK=5) CLVL>85]: //Hide non-magic phase blade not 3 or 5 socket after 85
-ItemDisplay[NMAG WP3 (NORM OR EXC) !9cr CLVL>85]: //Hide non-magic swords normal+exceptional except Dimensional Blade (9cr) after 85
-ItemDisplay[NMAG WP3 (SOCK=1 OR SOCK=2) CLVL>40]: //Hide all 1 and 2 socket swords after 40
+ItemDisplay[NMAG WP3 (NORM OR EXC) !9cr !crs CLVL>85]: //Hide non-magic swords normal+exceptional except Dimensional Blade (9cr) and Crystal (crs) after 85
+ItemDisplay[NMAG (crs OR bsd) !(SOCK=4 OR SOCK=5) CLVL>85]: //Hide non-magic crystal and broad swords that are not 4 or 5 sockets after 85
+ItemDisplay[NMAG WP3 SOCK<4 !72h CLVL>40]: //Hide all less than 4 socket non-magic swords after 40 except legend sword
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Daggers - Hide All Daggers Except Throwing Knives
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) WP4 !WP5 CLVL>80]: 
