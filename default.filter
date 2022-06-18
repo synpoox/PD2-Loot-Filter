@@ -403,9 +403,9 @@ ItemDisplay[NMAG (tkf OR 9tk OR 7tk OR tax OR 9ta OR 7ta OR bkf OR 9bk OR 7bk OR
 //ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (glv OR 9gl OR 7gl) CLVL>85]: //Hide Glaive, Spiculum, and Ghost Glaive
 //ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (tsp OR 9ts OR 7ts) CLVL>85]: //Hide Throwing Spear, Harpoon, and Winged Harpoon
 
+ItemDisplay[(MAG OR RARE) !ID !ETH (jav OR 9ja OR 7ja OR pil OR 9pi OR 7pi OR ssp OR 9s9 OR 7s7 OR glv OR 9gl OR 7gl OR tsp OR 9ts OR 7ts) CLVL>]: //Hide magic or rare unid non-eth Javelins after 70
 ItemDisplay[(MAG OR RARE) !ID (jav OR 9ja OR pil OR 9pi OR ssp OR 9s9 OR glv OR 9gl OR tsp OR 9ts) CLVL>85]: //Hide magic or rare unid normal and exceptional Javelins after 85
-ItemDisplay[(MAG OR RARE) !ID !ETH (jav OR 9ja OR 7ja OR pil OR 9pi OR 7pi OR ssp OR 9s9 OR 7s7 OR glv OR 9gl OR 7gl OR tsp OR 9ts OR 7ts) CLVL>85]: //Hide magic or rare unid non-eth Javelins after 85
-ItemDisplay[NMAG !ETH (jav OR 9ja OR 7ja OR pil OR 9pi OR 7pi OR ssp OR 9s9 OR 7s7 OR glv OR 9gl OR 7gl OR tsp OR 9ts OR 7ts) CLVL>60]: //Hide non-magic non-eth javelins after 80
+ItemDisplay[NMAG !ETH (jav OR 9ja OR 7ja OR pil OR 9pi OR 7pi OR ssp OR 9s9 OR 7s7 OR glv OR 9gl OR 7gl OR tsp OR 9ts OR 7ts) CLVL>70]: //Hide non-magic non-eth javelins after 70
 ItemDisplay[NMAG (jav OR 9ja OR 7ja OR pil OR 9pi OR 7pi OR ssp OR 9s9 OR 7s7 OR glv OR 9gl OR 7gl OR tsp OR 9ts OR 7ts) CLVL>80]: //Hide non-magic javelins after 80
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Spears - Hide all Spears except Mancatcher (7br) and War Pike (7p7)
