@@ -392,7 +392,7 @@ ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) WP4 !WP5 CLVL>80]:
 //ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (bal OR 9b8 OR 7b8) CLVL>85]: //Hide Balanced Axe, Hurlbat, and Winged Axe
 //ItemDisplay[NMAG WP5 CLVL>85]: //Hide NMAG Throwing Weapons
 
-ItemDisplay[(MAG OR RARE) !ID !ETH (tkf OR 9tk OR 7tk OR tax OR 9ta OR 7ta OR bkf OR 9bk OR 7bk OR bal OR 9b8 OR 7b8) CLVL>85]: //Hide magic or rare unid non-eth Throwing Weapons after 85
+ItemDisplay[(MAG OR RARE) !ID !ETH (tkf OR 9tk OR 7tk OR tax OR 9ta OR 7ta OR bkf OR 9bk OR 7bk OR bal OR 9b8 OR 7b8) CLVL>90]: //Hide magic or rare unid non-eth Throwing Weapons after 90
 ItemDisplay[NMAG (tkf OR 9tk OR 7tk OR tax OR 9ta OR 7ta OR bkf OR 9bk OR 7bk OR bal OR 9b8 OR 7b8) CLVL>80]: //Hide non-magic throwing weapons after 80
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Javelins - Show all Javelins for crafting
@@ -1819,6 +1819,10 @@ ItemDisplay[NMAG CL3 ELT !INF ETH !RW (SOCK=0 OR SOCK=4) AR>100]: %DOT-D6%%RED%#
 ItemDisplay[NMAG SOCK>2 (7cr OR 7fb OR 7gs OR 72h OR 7gd) ETH]: %RED%#### %NAME% %RED%[%WHITE%%SOCKETS%%RED%] %RED%#### //Eth Phase(7cr),ColossusSw(7fb),BalrogBl(7gs),Legend(72h),ColossusBlade(7gd)
 ItemDisplay[NMAG (SOCK=0 OR SOCK>2) (7cr OR 7fb OR 7gs OR 72h OR 7gd) !ETH CLVL<90]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%] //Eth Phase(7cr),ColossusSw(7fb),BalrogBl(7gs),Legend(72h),ColossusBlade(7gd)
 
+//Amazon Jav Skills
+ItemDisplay[CL7 TABSK2=1]: %NAME% %ORANGE%[+1 Jav]%CONTINUE%
+ItemDisplay[CL7 TABSK2=2]: %NAME% %ORANGE%[+2 Jav]%CONTINUE%
+ItemDisplay[CL7 TABSK2=3]: %NAME% %ORANGE%[+3 Jav]%CONTINUE%
 
 //Assassin/Plague Claw Bases
 ItemDisplay[MAG TABSK48=3 SIN]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%] %ORANGE%[+3 Trap]%MAP-7F%%CONTINUE%
@@ -1901,7 +1905,6 @@ ItemDisplay[(CL6 OR WP11) SK383>2]: %NAME% %ORANGE%[+3 Lesser Hydra]%CONTINUE%
 ItemDisplay[(CL6 OR WP11) TABSK8>2]: %NAME% %ORANGE%[+3 Fire Skills]%CONTINUE%
 ItemDisplay[(CL6 OR WP11) TABSK9>2]: %NAME% %ORANGE%[+3 Lightning Skills]%CONTINUE%
 ItemDisplay[(CL6 OR WP11) TABSK10>2]: %NAME% %ORANGE%[+3 Cold Skills]%CONTINUE%
-
 
 
 //Necromancer Wands Necromancer Shields
