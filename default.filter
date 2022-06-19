@@ -115,13 +115,13 @@ ItemDisplay[rid]: %BORDER-68%%WHITE%*%BLUE%*%PURPLE%*%BLACK%*     %GOLD%%NAME%  
 ItemDisplay[(hp1 OR mp1) CLVL>15]: //Ignore Lesser Healing/Mana Potions (Level 6+)
 ItemDisplay[hp1]: %GREEN%!%RED%Min HP
 ItemDisplay[mp1]: %GREEN%!%BLUE%Min Mana
-ItemDisplay[(hp2 OR mp2) CLVL>25]: //Ignore Light Healing/Mana Potions (Level 18+)
+ItemDisplay[(hp2 OR mp2) CLVL>35]: //Ignore Light Healing/Mana Potions (Level 35+)
 ItemDisplay[hp2]: %GREEN%!%RED%Lite HP
 ItemDisplay[mp2]: %GREEN%!%BLUE%Lite Mana
-ItemDisplay[(hp3 OR mp3) CLVL>30]: //Ignore Healing/Mana Potions (Level 24+)
+ItemDisplay[(hp3 OR mp3) CLVL>60]: //Ignore Healing/Mana Potions (Level 60+)
 ItemDisplay[hp3]: %GREEN%!%RED%Reg HP
 ItemDisplay[mp3]: %GREEN%!%BLUE%Reg Mana
-ItemDisplay[(hp4 OR mp4) CLVL>44]: //Ignore Greater Healing/Mana Potions (Level 45+)
+ItemDisplay[(hp4 OR mp4) CLVL>80]: //Ignore Greater Healing/Mana Potions (Level 80+)
 ItemDisplay[hp4]: %GREEN%!%RED%Grt HP
 ItemDisplay[mp4]: %GREEN%!%BLUE%Grt Mana
 //ItemDisplay[hp5 CLVL>95]: //Ignore Super Healing Potions (Level 90+)
@@ -1184,7 +1184,7 @@ ItemDisplay[8sw UNI !ID]: %BORDER-62%%GOLD%Magewrath%MAP-0E%
 ItemDisplay[8lw UNI !ID]: %BORDER-62%%GOLD%Goldstrike Arch%MAP-0E%
 
 //Elite Unique Bows
-ItemDisplay[6l7 UNI !ID]: %BORDER-62%%GOLD%Eaglehorn%MAP-0E%
+ItemDisplay[6l7 UNI !ID]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %GOLD%Eaglehorn  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
 ItemDisplay[6sw UNI !ID]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %GOLD%Widowmaker  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
 ItemDisplay[6lw UNI !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Windforce  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 
