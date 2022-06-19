@@ -403,7 +403,7 @@ ItemDisplay[NMAG (tkf OR 9tk OR 7tk OR tax OR 9ta OR 7ta OR bkf OR 9bk OR 7bk OR
 //ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (glv OR 9gl OR 7gl) CLVL>85]: //Hide Glaive, Spiculum, and Ghost Glaive
 //ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (tsp OR 9ts OR 7ts) CLVL>85]: //Hide Throwing Spear, Harpoon, and Winged Harpoon
 
-ItemDisplay[(MAG OR RARE) !ID !ETH (jav OR 9ja OR 7ja OR pil OR 9pi OR 7pi OR ssp OR 9s9 OR 7s7 OR glv OR 9gl OR 7gl OR tsp OR 9ts OR 7ts) CLVL>]: //Hide magic or rare unid non-eth Javelins after 70
+ItemDisplay[(MAG OR RARE) !ID !ETH (jav OR 9ja OR 7ja OR pil OR 9pi OR 7pi OR ssp OR 9s9 OR 7s7 OR glv OR 9gl OR 7gl OR tsp OR 9ts OR 7ts) CLVL>70]: //Hide magic or rare unid non-eth Javelins after 70
 ItemDisplay[(MAG OR RARE) !ID (jav OR 9ja OR pil OR 9pi OR ssp OR 9s9 OR glv OR 9gl OR tsp OR 9ts) CLVL>85]: //Hide magic or rare unid normal and exceptional Javelins after 85
 ItemDisplay[NMAG !ETH (jav OR 9ja OR 7ja OR pil OR 9pi OR 7pi OR ssp OR 9s9 OR 7s7 OR glv OR 9gl OR 7gl OR tsp OR 9ts OR 7ts) CLVL>70]: //Hide non-magic non-eth javelins after 70
 ItemDisplay[NMAG (jav OR 9ja OR 7ja OR pil OR 9pi OR 7pi OR ssp OR 9s9 OR 7s7 OR glv OR 9gl OR 7gl OR tsp OR 9ts OR 7ts) CLVL>80]: //Hide non-magic javelins after 80
@@ -494,7 +494,8 @@ ItemDisplay[NMAG ETH WP12 CLVL>85]: //Hide Eth Wands
 //ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (wsp OR 9ws OR 7ws) CLVL>85]: //Hide War Scepter, Divine Scepter, and Caduceus
 
 ItemDisplay[(MAG OR RARE) !ID WP13 CLVL>85]: //Hide magic or rare unid scepters after 85
-ItemDisplay[NMAG (SOCK=1 OR SOCK=2) WP13 CLVL>30]: 
+ItemDisplay[NMAG SOCK=2 WP13 CLVL>85]: 
+//ItemDisplay[NMAG SOCK=1 OR SOCK=2) WP13 CLVL>30]: 
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Amazon Bows - Hide All Amazon Bows Except Matriarchal Bow (amb) and Grand Matron Bow (amc)
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (am1 OR am6) CLVL>85]: //Hide Stag Bow, Ashwood Bow
@@ -555,8 +556,8 @@ ItemDisplay[(NMAG OR (MAG AND !ID)) (scl OR xcl) CLVL>90]: //Hide Scale Mail, Ti
 ItemDisplay[(NMAG OR (MAG AND !ID)) (plt OR xlt) CLVL>90]: //Hide Plate Mail, Templar Coat
 ItemDisplay[(NMAG OR (MAG AND !ID)) (ful OR xul) CLVL>90]: //Hide Full Plate, Chaos Armor
 
-ItemDisplay[RARE !ID EQ2 CLVL>90]: //Hide rare unid Body Armors after 90
-ItemDisplay[MAG !ID EQ2 CLVL>80]: //Hide Magical unid Body Armors after 80
+ItemDisplay[(MAG OR RARE) !ID EQ2 CLVL>90]: //Hide magic or rare unid Body Armors after 90
+//ItemDisplay[MAG !ID EQ2 CLVL>80]: //Hide Magical unid Body Armors after 80
 ItemDisplay[NMAG EQ2 SOCK<3 CLVL>85]: //Hide low socket nmag armors
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Helms - 
@@ -920,21 +921,22 @@ ItemDisplay[umc UNI !ID !ETH]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GO
 //ItemDisplay[EQ5 UNI !ID vbt CLVL>79]:
 
 //Normal Unique Boots
-ItemDisplay[lbt UNI !ID !ETH]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Hotspur  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
-ItemDisplay[vbt UNI !ID !ETH]: %BORDER-62%%GOLD%Gorefoot%MAP-0E%
-ItemDisplay[mbt UNI !ID !ETH]: %BORDER-62%%GOLD%Treads of Cthon%MAP-0E%
-ItemDisplay[tbt UNI !ID !ETH]: %BORDER-62%%GOLD%Goblin Toe%MAP-0E%
-ItemDisplay[hbt UNI !ID !ETH]: %BORDER-62%%GOLD%Tearhaunch%MAP-0E%
+ItemDisplay[lbt UNI !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Hotspur  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
+ItemDisplay[vbt UNI !ID]: %BORDER-62%%GOLD%Gorefoot%MAP-0E%
+ItemDisplay[mbt UNI !ID]: %BORDER-62%%GOLD%Treads of Cthon%MAP-0E%
+ItemDisplay[tbt UNI !ID]: %BORDER-62%%GOLD%Goblin Toe%MAP-0E%
+ItemDisplay[hbt UNI !ID]: %BORDER-62%%GOLD%Tearhaunch%MAP-0E%
 
 //Exceptional Unique Boots
-ItemDisplay[xlb UNI !ID !ETH]: %BORDER-62%%GOLD%Infernostride%MAP-0E%
-ItemDisplay[xvb UNI !ID !ETH]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Waterwalk  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
-ItemDisplay[xmb UNI !ID !ETH]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %GOLD%Silkweave  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
-ItemDisplay[xtb UNI !ID !ETH]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%War Traveler  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
-ItemDisplay[xhb UNI !ID !ETH]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Gore Rider  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
+ItemDisplay[xlb UNI !ID]: %BORDER-62%%GOLD%Infernostride%MAP-0E%
+ItemDisplay[xvb UNI !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Waterwalk  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
+ItemDisplay[xmb UNI !ID]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %GOLD%Silkweave  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
+ItemDisplay[xtb UNI !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%War Traveler  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
+ItemDisplay[xhb UNI !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Gore Rider  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 
 //Elite Unique Boots
 ItemDisplay[utb UNI !ID]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %GOLD%Itherael's Path  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
+ItemDisplay[uvb UNI !ID] ETH]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %RED%ETH %GOLD%Sandstorm Trek  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 ItemDisplay[uvb UNI !ID]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %GOLD%Sandstorm Trek  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
 ItemDisplay[umb UNI !ID]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %GOLD%Marrowwalk  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
 ItemDisplay[uhb UNI !ID]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %GOLD%Shadow Dancer  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
