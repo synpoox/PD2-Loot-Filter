@@ -108,8 +108,8 @@ ItemDisplay[isc]: %GREEN%!%GRAY%ID
 ItemDisplay[tbk]: %GREEN%!%GRAY%TP Book
 ItemDisplay[ibk]: %GREEN%!%GRAY%ID Book
 ItemDisplay[rtp]: %BORDER-68%%WHITE%*%BLUE%*%PURPLE%*%BLACK%*     %GOLD%%NAME%     %BLACK%*%PURPLE%*%BLUE%*%WHITE%* //Infinite Tome of Town Portal
-ItemDisplay[rid]: %BORDER-68%%WHITE%*%BLUE%*%PURPLE%*%BLACK%*     %GOLD%%NAME%     %BLACK%*%PURPLE%*%BLUE%*%WHITE%* // Tome of Identify
-
+ItemDisplay[rid]: %BORDER-68%%WHITE%*%BLUE%*%PURPLE%*%BLACK%*     %GOLD%%NAME%     %BLACK%*%PURPLE%*%BLUE%*%WHITE%* // Infinite Tome of Identify
+ItemDisplay[rkey]: %BORDER-68%%WHITE%*%BLUE%*%PURPLE%*%BLACK%*     %GOLD%%NAME%     %BLACK%*%PURPLE%*%BLUE%*%WHITE%* // Infinite use Key
 
 //║                      ▬▬▬▬▬ Healing, Mana, and Rejuvination Potions ▬▬▬▬▬                      ║
 ItemDisplay[(hp1 OR mp1) CLVL>15]: //Ignore Lesser Healing/Mana Potions (Level 6+)
