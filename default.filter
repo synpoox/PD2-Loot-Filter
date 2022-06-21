@@ -45,7 +45,6 @@ ItemDisplay[mss]: %NAME%%MAP% //Mephisto's Soulstone Act III
 ItemDisplay[hfh]: %NAME%%MAP% //Hellforge Hammer Act IV
 ItemDisplay[ice]: %NAME%%MAP% //Malah's Potion Act V
 ItemDisplay[tr2]: %NAME%%MAP% //Scroll of Resistance Act V
-
 //║                                    ▬▬▬▬▬ Gold Drops ▬▬▬▬▬                                     ║
 ItemDisplay[GOLD<100 CLVL<20]:
 ItemDisplay[GOLD<500 (CLVL>19 AND CLVL<=69)]:
@@ -1613,6 +1612,7 @@ ItemDisplay[cm3 (RES>7 AND LIFE>0)]: %PURPLE%ALL %WHITE%Res %RED%Life %BLUE%Gran
 ItemDisplay[cm3 (RES>7 AND FRW>0)]: %PURPLE%ALL %WHITE%Res %ORANGE%frw %BLUE%Grand Charm 
 ItemDisplay[cm3 (RES>7 AND FHR>0)]: %PURPLE%ALL %WHITE%Res %ORANGE%FHR %BLUE%Grand Charm 
 ItemDisplay[cm3 RES>9]: %PURPLE%ALL %WHITE%Res %BLUE%Grand Charm 
+ItemDisplay[cm3 LIFE>40]: %RED%Life %BLUE%Grand Charm 
 ItemDisplay[cm2 (MAXDMG>3 AND LIFE>0)]: %TAN%Max Dmg %RED%Life %BLUE%Large Charm 
 ItemDisplay[cm2 (MAXDMG>3 AND DEX>0)]: %TAN%Max Dmg %GREEN%dex %BLUE%Large Charm 
 ItemDisplay[cm2 (MAXDMG>3 AND STR>0)]: %TAN%Max Dmg %DARK_GREEN%str %BLUE%Large Charm 
@@ -1624,6 +1624,12 @@ ItemDisplay[cm2 !UNI (RES>4 AND FHR>0)]: %PURPLE%ALL %WHITE%Res %ORANGE%FHR %BLU
 ItemDisplay[cm2 !UNI ((RES>4 AND LIFE>0) OR (RES>0 AND LIFE>29))]: %PURPLE%ALL %WHITE%Res %RED%Life %BLUE%Large Charm 
 ItemDisplay[cm2 !UNI RES>6]: %PURPLE%ALL %WHITE%Res %BLUE%Large Charm 
 ItemDisplay[cm2 LIFE>33]: %RED%Life %BLUE%Large Charm 
+ItemDisplay[cm2 STAT329>2]: %RED%Fire DMG %BLUE%Large Charm 
+ItemDisplay[cm2 STAT330>2]: %YELLOW%Lite DMG %BLUE%Large Charm 
+ItemDisplay[cm2 STAT331>2]: %BLUE%Cold DMG %BLUE%Large Charm 
+ItemDisplay[cm2 STAT332>2]: %GREEN%Psn DMG %BLUE%Large Charm 
+ItemDisplay[cm1 (MANA>12 AND LIFE>15)]: %RED%Life%TAN%+%PURPLE%Mana %BLUE%Small Charm %ORANGE%[GG]
+ItemDisplay[cm1 (MANA>12 AND LIFE>11)]: %RED%Life%TAN%+%PURPLE%Mana %BLUE%Small Charm
 ItemDisplay[cm1 ((MAXDMG>1 AND LIFE>0) OR (MAXDMG>0 AND LIFE>9))]: %TAN%Max Dmg %RED%Life %BLUE%Small Charm 
 ItemDisplay[cm1 (MAXDMG>1 AND DEX>0)]: %TAN%Max Dmg %GREEN%dex %BLUE%Small Charm 
 ItemDisplay[cm1 (MAXDMG>1 AND STR>0)]: %TAN%Max Dmg %DARK_GREEN%str %BLUE%Small Charm 
@@ -1656,7 +1662,9 @@ ItemDisplay[cm1 !UNI LRES>9]: %YELLOW%Light %WHITE%Res %BLUE%Small Charm
 ItemDisplay[cm1 !UNI CRES>9]: %BLUE%Cold %WHITE%Res %BLUE%Small Charm 
 ItemDisplay[cm1 !UNI PRES>9]: %GREEN%Psn %WHITE%Res %BLUE%Small Charm 
 ItemDisplay[cm1 MFIND>6]: %GREEN%MF %BLUE%Small Charm 
-ItemDisplay[cm1 LIFE>16]: %RED%Life %BLUE%Small Charm  
+ItemDisplay[cm1 LIFE>16]: %RED%Life %BLUE%Small Charm 
+ItemDisplay[cm1 MANA>12]: %PURPLE%Mana %BLUE%Small Charm  
+
 
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
 //║                              ▬▬▬▬▬ Rerollable Small Charms ▬▬▬▬▬                              ║
@@ -1716,6 +1724,7 @@ ItemDisplay[MAG !ETH EQ4 TABSK1>2 IAS>19]: %NAME% %GOLD%[%GREEN%+3 Passive\Magic
 ItemDisplay[MAG !ETH EQ4 TABSK2>2 IAS>19]: %NAME% %GOLD%[%GREEN%+3 Javelin\Spear%GOLD%]
 ItemDisplay[MAG !ETH amf TABSK2>5 IAS>39]: %NAME% %GOLD%[%GREEN%Keep%GOLD%]
 ItemDisplay[RARE !ETH CL7 WP5 (TABSK2>4 OR (TABSK2>2 AND CLSK0>1)) IAS>39]: %NAME% %GOLD%[%GREEN%Keep%GOLD%]
+
 
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
 //║                             ▬▬▬▬▬ Identified Crafting Bases ▬▬▬▬▬                             ║
@@ -1872,7 +1881,9 @@ ItemDisplay[CL5 SK279>2]: %NAME% %ORANGE%[+3 ShadMast]%CONTINUE%
 
 //Plague/Sorceress Orb/Staff
 ItemDisplay[(CL6 OR WP11) NMAG]: %GRAY%%NAME%%CONTINUE%
-ItemDisplay[(CL6 OR WP11) MAG]: %BLUE%%NAME%%CONTINUE%
+ItemDisplay[CL6 MAG]: %BLUE%%NAME%%CONTINUE%
+ItemDisplay[WP11 MAG]: %BLUE%Staff%CONTINUE%
+ItemDisplay[(CL6 OR WP11) CHSK54>0]: %RED%#### %BLUE%Staff %GREEN%[Tele Charges] %RED%#### 
 ItemDisplay[(CL6 OR WP11) SK56>2 SK61>2]: %RED%#### %GREEN%%NAME% %RED%[%WHITE%%SOCKETS%%RED%] %ORANGE%[Meteor\FMast+3] %RED%#### 
 ItemDisplay[(CL6 OR WP11) SK47>2 SK61>2]: %RED%#### %GREEN%%NAME% %RED%[%WHITE%%SOCKETS%%RED%] %ORANGE%[Fireball\FMast+3] %RED%#### 
 ItemDisplay[(CL6 OR WP11) SK64>2 SK45>2]: %RED%#### %GREEN%%NAME% %RED%[%WHITE%%SOCKETS%%RED%] %ORANGE%[Forb\IceBlast+3] %RED%#### 
@@ -1880,7 +1891,7 @@ ItemDisplay[(CL6 OR WP11) SK36>2]: %NAME% %ORANGE%[+3 Fire Bolt]%CONTINUE%
 ItemDisplay[(CL6 OR WP11) SK37>2]: %NAME% %ORANGE%[+3 Warmth]%CONTINUE%
 ItemDisplay[(CL6 OR WP11) SK38>2]: %NAME% %ORANGE%[+3 Charged Bolt]%CONTINUE%
 ItemDisplay[(CL6 OR WP11) SK39>2]: %NAME% %ORANGE%[+3 Ice Bolt]%CONTINUE%
-ItemDisplay[(CL6 OR WP11) SK40>2]: %NAME% %ORANGE%[+3 Cold Enchant]%CONTINUE%
+ItemDisplay[(CL6 OR WP11) SK40>2]: %NAME% %ORANGE%[+3 C.Chant]%CONTINUE%
 ItemDisplay[(CL6 OR WP11) SK41>2]: %NAME% %ORANGE%[+3 Inferno]%CONTINUE%
 ItemDisplay[(CL6 OR WP11) SK42>2]: %NAME% %ORANGE%[+3 Static]%CONTINUE%
 ItemDisplay[(CL6 OR WP11) SK43>2]: %NAME% %ORANGE%[+3 TK]%CONTINUE%
@@ -1892,7 +1903,7 @@ ItemDisplay[(CL6 OR WP11) SK48>2]: %NAME% %ORANGE%[+3 Nova]%CONTINUE%
 ItemDisplay[(CL6 OR WP11) SK49>2]: %NAME% %ORANGE%[+3 Lightning]%CONTINUE%
 ItemDisplay[(CL6 OR WP11) SK50>2]: %NAME% %ORANGE%[+3 Shiver]%CONTINUE%
 ItemDisplay[(CL6 OR WP11) SK51>2]: %NAME% %ORANGE%[+3 FireWall]%CONTINUE%
-ItemDisplay[(CL6 OR WP11) SK52>2]: %NAME% %ORANGE%[+3 Enchant Fire]%CONTINUE%
+ItemDisplay[(CL6 OR WP11) SK52>2]: %NAME% %ORANGE%[+3 F.Chant]%CONTINUE%
 ItemDisplay[(CL6 OR WP11) SK53>2]: %NAME% %ORANGE%[+3 ChLightning]%CONTINUE%
 ItemDisplay[(CL6 OR WP11) SK54>2]: %NAME% %ORANGE%[+3 Tele]%CONTINUE%
 ItemDisplay[(CL6 OR WP11) SK55>2]: %NAME% %ORANGE%[+3 Glacial]%CONTINUE%
@@ -1914,6 +1925,7 @@ ItemDisplay[(CL6 OR WP11) TABSK9>2]: %NAME% %ORANGE%[+3 Lightning Skills]%CONTIN
 ItemDisplay[(CL6 OR WP11) TABSK10>2]: %NAME% %ORANGE%[+3 Cold Skills]%CONTINUE%
 
 
+
 //Necromancer Wands Necromancer Shields
 ItemDisplay[CL4 NMAG]: %GRAY%NecHead%CONTINUE%
 ItemDisplay[CL4 RARE]: %YELLOW%NecHead%CONTINUE%
@@ -1921,6 +1933,10 @@ ItemDisplay[WP12 NMAG]: %GRAY%Wand%CONTINUE%
 ItemDisplay[WP12 RARE]: %YELLOW%Wand%CONTINUE%
 ItemDisplay[WP12 MAG]: %BLUE%Wand%CONTINUE%
 ItemDisplay[CL4 MAG]: %BLUE%NecHead%CONTINUE%
+
+ItemDisplay[WP12 MAG (SUFFIX=578 OR SUFFIX=579)]: %RED%#### %BLUE%Wand %GREEN%[LifeTap Charges] %RED%####
+ItemDisplay[WP12 MAG (SUFFIX=594 OR SUFFIX=595)]: %RED%#### %BLUE%Wand %GREEN%[LowerRes Charges] %RED%#### 
+
 ItemDisplay[(SK94>2 OR SK75>2 OR SK85>2) AND (SK79>0 OR SK91>0) WAND NECROMANCER]: %RED%#### %GREEN%%NAME% %RED%[%WHITE%%SOCKETS%%RED%] %ORANGE%[Unending Will Base] %RED%####  //Unending Will base, +3 Fire/Clay/Blood with +1 Mastery/Lower Res
 ItemDisplay[(CL4 OR WP12) SK92>2]: %NAME% %ORANGE%[+3 PsnNova]%CONTINUE%
 ItemDisplay[(CL4 OR WP12) SK84>2]: %NAME% %ORANGE%[+3 BSpear]%CONTINUE%
@@ -2084,10 +2100,6 @@ ItemDisplay[EQ4 (TABSK0>2 OR TABSK2>2 OR TABSK50>2) AND IAS>19]: %NAME%%RED%### 
 ItemDisplay[WP13 ((TABSK24>2 AND SK101>1) OR (TABSK24>1 AND SK101>2) OR (CLSK3>1 AND SK101>2))]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%]%RED%###   %GREEN%Holy Bolt Scepter%RED%   ###{%RED%###   %GREEN%Holy Bolt Scepter%RED%   ###%NL%%TAN%Note%WHITE%: Notice me, That's me:}
 ItemDisplay[WP13 ((TABSK24>2 AND SK121>1) OR (TABSK24>1 AND SK121>2) OR (CLSK3>1 AND SK121>2))]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%]%RED%###   %GREEN%FoH Scepter%RED%   ###{%RED%###   %GREEN%FoH Scepter%RED%   ###%NL%%TAN%Note%WHITE%: Notice me, That's me:}
 ItemDisplay[WP13 ((TABSK25>2 AND SK118>1) OR (TABSK25>1 AND SK118>2) OR (CLSK3>1 AND SK118>2))]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%]%RED%###   %GREEN%Holy Shock Scepter%RED%   ###{%RED%###   %GREEN%Holy Shock Scepter%RED%   ###%TAN%Note%WHITE%: Notice me, That's me:}
-ItemDisplay[STAFF CHSK54>0]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%]%RED%###   %GREEN%Teleport Charges%RED%   ###{%RED%###   %GREEN%Teleport Charges%RED%   ###%NL%%TAN%Note%WHITE%: Notice me, That's me:}
-ItemDisplay[WAND CHSK91>0]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%]%RED%###   %GREEN%Lower Resist Charges%RED%   ###{%RED%###   %GREEN%Lower Resist Charges%RED%   ###%NL%%TAN%Note%WHITE%: Notice me, That's me:}
-ItemDisplay[WAND CHSK82>0]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%]%RED%###   %GREEN%Life Tap Charges%RED%   ###{%RED%###   %GREEN%Life Tap Charges%RED%   ###%NL%%TAN%Note%WHITE%: Notice me, That's me:}
-
 
 //Superior Bases with ED
 //Armors
