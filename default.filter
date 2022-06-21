@@ -76,13 +76,13 @@ ItemDisplay[glb]: %ORANGE%[%BLUE%F.Sapphire%ORANGE%] //Flawless Sapphire
 ItemDisplay[gly]: %ORANGE%[%YELLOW%F.Topaz%ORANGE%] //Flawless Topaz
 ItemDisplay[skl]: %ORANGE%[%GRAY%F.Skull%ORANGE%] //Flawless Skull
 
-ItemDisplay[gpvs OR gpv]: %BORDER-62%%ORANGE%[%PURPLE%P.Amethyst%ORANGE%] //Perfect Gems
-ItemDisplay[gpws OR gpw]: %BORDER-62%%ORANGE%[%WHITE%P.Diamond%ORANGE%]
-ItemDisplay[gpgs OR gpg]: %BORDER-62%%ORANGE%[%GREEN%P.Emerald%ORANGE%]
-ItemDisplay[gprs OR gpr]: %BORDER-62%%ORANGE%[%RED%P.Ruby%ORANGE%]
-ItemDisplay[gpbs OR gpb]: %BORDER-62%%ORANGE%[%BLUE%P.Sapphire%ORANGE%]
-ItemDisplay[gpys OR gpy]: %BORDER-62%%ORANGE%[%YELLOW%P.Topaz%ORANGE%]
-ItemDisplay[skzs OR skz]: %BORDER-62%%ORANGE%[%GRAY%P.Skull%ORANGE%]
+ItemDisplay[gpvs OR gpv]: %BORDER-62%%ORANGE%[%PURPLE%P.Amethyst @%ORANGE%] //Perfect Gems
+ItemDisplay[gpws OR gpw]: %BORDER-62%%ORANGE%[%WHITE%P.Diamond @%ORANGE%]
+ItemDisplay[gpgs OR gpg]: %BORDER-62%%ORANGE%[%GREEN%P.Emerald @%ORANGE%]
+ItemDisplay[gprs OR gpr]: %BORDER-62%%ORANGE%[%RED%P.Ruby @%ORANGE%]
+ItemDisplay[gpbs OR gpb]: %BORDER-62%%ORANGE%[%BLUE%P.Sapphire @%ORANGE%]
+ItemDisplay[gpys OR gpy]: %BORDER-62%%ORANGE%[%YELLOW%P.Topaz @%ORANGE%]
+ItemDisplay[skzs OR skz]: %BORDER-62%%ORANGE%[%GRAY%P.Skull @%ORANGE%]
 
 //║                           ▬▬▬▬▬ Rules for Ignoring Misc Items ▬▬▬▬▬                           ║
 ItemDisplay[yps CLVL>70]: //Ignore all Antidote Potions
@@ -502,8 +502,9 @@ ItemDisplay[NMAG SOCK=2 WP13 CLVL>85]:
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (am1 OR am6) CLVL>85]: //Hide Stag Bow, Ashwood Bow
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (am2 OR am7) CLVL>85]: //Hide Reflex Bow, Ceremonial Bow
 
-ItemDisplay[NMAG (am1 OR am2 OR am6 OR am7 OR amb OR amc) TABSK0<3 CLVL>60]: //Hide non-magic Ama bows that arent +3 bow skills
-ItemDisplay[MAG !ID (am1 OR am2 OR am6 OR am7) CLVL>60]: //Hide normal and exception magic Ama bows after 60
+ItemDisplay[NMAG (am1 OR am2 OR am6 OR am7 OR amb OR amc) TABSK0<2 CLVL>60]: //Hide non-magic Ama bows that are less than +2 bow skills after 60
+ItemDisplay[NMAG (am1 OR am2 OR am6 OR am7 OR amb OR amc) TABSK0<3 CLVL>70]: //Hide non-magic Ama bows that are less than +3 bow skills after 70
+ItemDisplay[MAG !ID (am1 OR am2 OR am6 OR am7) CLVL>70]: //Hide normal and exception magic Ama bows after 70
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Amazon Spears - Hide All Amazon Spears
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (am3 OR am8 OR amd) CLVL>85]: //Hide Maiden Spear, Ceremonial Spear, and Matriarchal Spear
@@ -1825,6 +1826,11 @@ ItemDisplay[CL7 TABSK2=1]: %NAME% %ORANGE%[+1 Jav]%CONTINUE%
 ItemDisplay[CL7 TABSK2=2]: %NAME% %ORANGE%[+2 Jav]%CONTINUE%
 ItemDisplay[CL7 TABSK2=3]: %NAME% %ORANGE%[+3 Jav]%CONTINUE%
 
+//Amazon Bow Skills
+ItemDisplay[(CL7 OR WP9) TABSK0=1]: %NAME% %ORANGE%[+1 Bow]%CONTINUE%
+ItemDisplay[(CL7 OR WP9) TABSK0=2]: %NAME% %ORANGE%[+2 Bow]%CONTINUE%
+ItemDisplay[(CL7 OR WP9) TABSK0=3]: %NAME% %ORANGE%[+3 Bow]%CONTINUE%
+
 //Assassin/Plague Claw Bases
 ItemDisplay[MAG TABSK48=3 SIN]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%] %ORANGE%[+3 Trap]%MAP-7F%%CONTINUE%
 ItemDisplay[CL5 SK262>2 SK272>2]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%] %ORANGE%[+3 WoF\WoI]%MAP-7F%%CONTINUE%
@@ -2232,7 +2238,7 @@ ItemDisplay[(ush OR xsh) !INF !ETH NMAG !RW SOCK=3]: %NAME% %RED%[%WHITE%%SOCKET
 ItemDisplay[uit !INF NMAG !RW SOCK=4]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%GRAY%Exile, Phoenix, Spirit%NL%%TAN%Note%WHITE%: Possible RuneWords:}
 //Weapons
 //Bows/Crossbows
-ItemDisplay[(am1 OR amc OR amb) NMAG !RW TABSK0>2 SOCK=4]: %DOT-D6%%GRAY%[%ORANGE%+3 bow%GRAY%] %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%GRAY%Ice, Passion, Phoenix, Wrath%NL%Faith, Fortitude, Hand of Justice,%NL%%TAN%Note%WHITE%: Possible RuneWords: %GRAY%Brand,}
+ItemDisplay[WP9 NMAG !RW TABSK0>2 SOCK=4]: %DOT-D6%%NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%GRAY%Ice, Passion, Phoenix, Wrath%NL%Faith, Fortitude, Hand of Justice,%NL%%TAN%Note%WHITE%: Possible RuneWords: %GRAY%Brand,}
 ItemDisplay[6cb NMAG !RW SOCK=3]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%GRAY%Edge, Melody, Plague, Venom%NL%%TAN%Note%WHITE%: Possible RuneWords:}
 ItemDisplay[(6cb OR 8rx OR 6rx) NMAG !RW SOCK=4]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%GRAY%Ice, Passion, Phoenix, Wrath%NL%Faith, Fortitude, Hand of Justice,%NL%%TAN%Note%WHITE%: Possible RuneWords: %GRAY%Brand,}
 //Axes
