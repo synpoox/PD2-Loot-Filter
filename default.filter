@@ -937,7 +937,7 @@ ItemDisplay[xhb UNI !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Go
 
 //Elite Unique Boots
 ItemDisplay[utb UNI !ID]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %GOLD%Itherael's Path  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
-ItemDisplay[uvb UNI !ID] ETH]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %RED%ETH %GOLD%Sandstorm Trek  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
+ItemDisplay[uvb UNI !ID ETH]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %RED%ETH %GOLD%Sandstorm Trek  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 ItemDisplay[uvb UNI !ID]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %GOLD%Sandstorm Trek  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
 ItemDisplay[umb UNI !ID]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %GOLD%Marrowwalk  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
 ItemDisplay[uhb UNI !ID]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %GOLD%Shadow Dancer  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
