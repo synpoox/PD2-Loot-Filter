@@ -2232,7 +2232,7 @@ ItemDisplay[(ush OR xsh) !INF !ETH NMAG !RW SOCK=3]: %NAME% %RED%[%WHITE%%SOCKET
 ItemDisplay[uit !INF NMAG !RW SOCK=4]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%GRAY%Exile, Phoenix, Spirit%NL%%TAN%Note%WHITE%: Possible RuneWords:}
 //Weapons
 //Bows/Crossbows
-ItemDisplay[(amc OR amb) NMAG !RW TABSK0>2 SOCK=4]: %DOT-D6%%GRAY%[%ORANGE%+3 bow%GRAY%] %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%GRAY%Ice, Passion, Phoenix, Wrath%NL%Faith, Fortitude, Hand of Justice,%NL%%TAN%Note%WHITE%: Possible RuneWords: %GRAY%Brand,}
+ItemDisplay[(am1 OR amc OR amb) NMAG !RW TABSK0>2 SOCK=4]: %DOT-D6%%GRAY%[%ORANGE%+3 bow%GRAY%] %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%GRAY%Ice, Passion, Phoenix, Wrath%NL%Faith, Fortitude, Hand of Justice,%NL%%TAN%Note%WHITE%: Possible RuneWords: %GRAY%Brand,}
 ItemDisplay[6cb NMAG !RW SOCK=3]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%GRAY%Edge, Melody, Plague, Venom%NL%%TAN%Note%WHITE%: Possible RuneWords:}
 ItemDisplay[(6cb OR 8rx OR 6rx) NMAG !RW SOCK=4]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%GRAY%Ice, Passion, Phoenix, Wrath%NL%Faith, Fortitude, Hand of Justice,%NL%%TAN%Note%WHITE%: Possible RuneWords: %GRAY%Brand,}
 //Axes
@@ -2265,7 +2265,7 @@ ItemDisplay[7gd ETH NMAG !RW SOCK=6]: %DOT-D6%%NAME% %RED%[%WHITE%%SOCKETS%%RED%
 ItemDisplay[fla NMAG !RW !INF SOCK=4]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%GRAY%Oath, Passion, Phoenix, Voice of Reason%NL%Hand of Justice, Heart of the Oak,%NL%%TAN%Note%WHITE%: Possible RuneWords: %GRAY%Fortitude,}
 ItemDisplay[fla NMAG !RW !INF SOCK=5]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%GRAY%Call to Arms, Eternity, Honor%NL%%TAN%Note%WHITE%: Possible RuneWords:}
 //Staves
-ItemDisplay[(cst OR bst OR 8cs OR 8bs OR 6cs OR 6bs OR wst OR 8ws OR 6ws) SK58>2 NMAG !RW SOCK=4]: %DOT-D6%%GRAY%[%ORANGE%+3 es%GRAY%] %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%GRAY%Insight, Memory, Passion, Phoenix%NL%Hand of Justice, Heart of the Oak,%NL%%TAN%Note%WHITE%: Possible RuneWords: %GRAY%Fortitude,}
+ItemDisplay[(cst OR bst OR 8cs OR 8bs OR 6cs OR 6bs OR wst OR 8ws OR 6ws) SK58>2 NMAG !RW SOCK=4]: %DOT-D6%%NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%GRAY%Insight, Memory, Passion, Phoenix%NL%Hand of Justice, Heart of the Oak,%NL%%TAN%Note%WHITE%: Possible RuneWords: %GRAY%Fortitude,}
 //Polearms/Spears/Amazon Spears
 ItemDisplay[(7wc OR 7pa OR 7s8 OR 7vo OR 7h7 OR 7tr OR 7br OR 7st OR 7p7) ETH NMAG !RW SOCK=4]: %DOT-D6%%NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%GRAY%Passion, Phoenix, Pride, Rift%NL%Hand of Justice, Infinity, Insight,%NL%%TAN%Note%WHITE%: Possible RuneWords: %GRAY%Fortitude,}
 ItemDisplay[(7wc OR 7pa OR 7s8 OR 7vo OR 7h7 OR 7tr OR 7br OR 7st OR 7p7) ETH NMAG !RW SOCK=5]: %DOT-D6%%NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%GRAY%Eternity, Honor, Obedience%NL%Call to Arms, Destruction, Doom,%NL%%TAN%Note%WHITE%: Possible RuneWords:}
