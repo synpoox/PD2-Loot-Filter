@@ -54,9 +54,9 @@ ItemDisplay[GOLD>0]: %NAME%
 
 //║                     ▬▬▬▬▬ [Optional] Rules for Ignoring Misc Items ▬▬▬▬▬                      ║
 ItemDisplay[key]: //Hide keys. You can still buy them.
-ItemDisplay[gcv OR gcw OR gcg OR gcr OR gcb OR gcy OR skc CLVL>19]: //Ignore Chipped Gems
-ItemDisplay[gfv OR gfw OR gfg OR gfr OR gfb OR gfy OR skf CLVL>29]: //Ignore Flawed Gems
-ItemDisplay[gsv OR gsw OR gsg OR gsr OR gsb OR gsy OR sku CLVL>39]: //Ignore Regular Gems
+ItemDisplay[(gcv OR gcw OR gcg OR gcr OR gcb OR gcy OR skc) CLVL>19]: //Ignore Chipped Gems
+ItemDisplay[(gfv OR gfw OR gfg OR gfr OR gfb OR gfy OR skf) CLVL>29]: //Ignore Flawed Gems
+ItemDisplay[(gsv OR gsw OR gsg OR gsr OR gsb OR gsy OR sku) CLVL>39]: //Ignore Regular Gems
 //ItemDisplay[glg OR glb OR gly OR glr]: //Ignore All Flawless Except for Amethyst, Diamond, and Skull
 
 ItemDisplay[gzvs]: %ORANGE%[%PURPLE%F.Amethyst%ORANGE%] //Flawless Amethyst
@@ -2162,7 +2162,7 @@ ItemDisplay[fla NMAG !INF !SUP SOCK=0]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%WHI
 ItemDisplay[(cst OR bst OR 8cs OR 8bs OR 6cs OR 6bs) SK58>2 !INF !SUP SOCK=0 NMAG]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
 ItemDisplay[(wst OR 8ws OR 6ws) SK58>2 !INF !SUP SOCK=0 NMAG]: %DOT-D6%%NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
 //Faith/Bows
-ItemDisplay[(amc OR amb) TABSK0>2 !INF !SUP SOCK=0 NMAG]: %DOT-D6%%GRAY%[%ORANGE%+3 bow%GRAY%] %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
+ItemDisplay[(amc OR amb) TABSK0>2 !INF !SUP SOCK=0 NMAG]: %DOT-D6%%NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
 ItemDisplay[(6cb OR 8rx OR 6rx) !INF !SUP SOCK=0 NMAG CLVL<91]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
 //Infi/Insi/Pride and Obedience/Doom
 ItemDisplay[(7vo OR 7tr) ETH !INF !SUP SOCK=0 NMAG]: %DOT-D6%%NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
