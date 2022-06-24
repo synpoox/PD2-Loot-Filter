@@ -46,8 +46,8 @@ ItemDisplay[hfh]: %NAME%%MAP% //Hellforge Hammer Act IV
 ItemDisplay[ice]: %NAME%%MAP% //Malah's Potion Act V
 ItemDisplay[tr2]: %NAME%%MAP% //Scroll of Resistance Act V
 //║                                    ▬▬▬▬▬ Gold Drops ▬▬▬▬▬                                     ║
-ItemDisplay[GOLD<100 CLVL<20]:
-ItemDisplay[GOLD<500 (CLVL>19 AND CLVL<=69)]:
+ItemDisplay[GOLD<50]:
+ItemDisplay[GOLD<500 CLVL>17]:
 ItemDisplay[GOLD<2000 CLVL>79]:
 ItemDisplay[GOLD>0]: %NAME%
 //ItemDisplay[GOLD>0]: //Hide all small gold piles since it auto picks up (this is not true any more starting season 5)
@@ -75,13 +75,13 @@ ItemDisplay[glb]: %ORANGE%[%BLUE%F.Sapphire%ORANGE%] //Flawless Sapphire
 ItemDisplay[gly]: %ORANGE%[%YELLOW%F.Topaz%ORANGE%] //Flawless Topaz
 ItemDisplay[skl]: %ORANGE%[%GRAY%F.Skull%ORANGE%] //Flawless Skull
 
-ItemDisplay[gpvs OR gpv]: %BORDER-62%%ORANGE%[%PURPLE%P.Amethyst @%ORANGE%] //Perfect Gems
-ItemDisplay[gpws OR gpw]: %BORDER-62%%ORANGE%[%WHITE%P.Diamond @%ORANGE%]
-ItemDisplay[gpgs OR gpg]: %BORDER-62%%ORANGE%[%GREEN%P.Emerald @%ORANGE%]
-ItemDisplay[gprs OR gpr]: %BORDER-62%%ORANGE%[%RED%P.Ruby @%ORANGE%]
-ItemDisplay[gpbs OR gpb]: %BORDER-62%%ORANGE%[%BLUE%P.Sapphire @%ORANGE%]
-ItemDisplay[gpys OR gpy]: %BORDER-62%%ORANGE%[%YELLOW%P.Topaz @%ORANGE%]
-ItemDisplay[skzs OR skz]: %BORDER-62%%ORANGE%[%GRAY%P.Skull @%ORANGE%]
+ItemDisplay[gpvs OR gpv]: %BORDER-62%%ORANGE%[[%PURPLE%P.Amethyst @%ORANGE%]] //Perfect Gems
+ItemDisplay[gpws OR gpw]: %BORDER-62%%ORANGE%[[%WHITE%P.Diamond @%ORANGE%]]
+ItemDisplay[gpgs OR gpg]: %BORDER-62%%ORANGE%[[%GREEN%P.Emerald @%ORANGE%]]
+ItemDisplay[gprs OR gpr]: %BORDER-62%%ORANGE%[[%RED%P.Ruby @%ORANGE%]]
+ItemDisplay[gpbs OR gpb]: %BORDER-62%%ORANGE%[[%BLUE%P.Sapphire @%ORANGE%]]
+ItemDisplay[gpys OR gpy]: %BORDER-62%%ORANGE%[[%YELLOW%P.Topaz @%ORANGE%]]
+ItemDisplay[skzs OR skz]: %BORDER-62%%ORANGE%[[%GRAY%P.Skull @%ORANGE%]]
 
 //║                           ▬▬▬▬▬ Rules for Ignoring Misc Items ▬▬▬▬▬                           ║
 ItemDisplay[yps CLVL>70]: //Ignore all Antidote Potions
