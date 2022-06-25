@@ -96,7 +96,7 @@ ItemDisplay[(aqv OR cqv) NMAG CLVL>6]:
 //║                                       ▬▬▬▬▬ Runes ▬▬▬▬▬                                       ║
 ItemDisplay[RUNE<10]: %BORDER-62%%GREEN%%RUNENAME% Rune %GRAY%(%RUNENUM%)
 ItemDisplay[RUNE<20]: %BORDER-62%%GREEN%%RUNENAME% Rune %GRAY%(%RUNENUM%)
-ItemDisplay[(RUNE>19 AND RUNE<26)]: %BORDER-62%%RED%#%WHITE%#%BLUE%#  %GREEN%%RUNENAME% RUNE %GRAY%(%RUNENUM%)  %BLUE%#%WHITE%#%RED%#%CONTINUE%
+ItemDisplay[(RUNE>19 AND RUNE<26)]: %BORDER-62%     %RED%#%WHITE%#%BLUE%#  %GREEN%%RUNENAME% RUNE %GRAY%(%RUNENUM%)  %BLUE%#%WHITE%#%RED%#     %CONTINUE%
 ItemDisplay[RUNE>25]: %BORDER-62%          %RED%###%WHITE%###%BLUE%###  %GREEN%%RUNENAME% RUNE %GRAY%(%RUNENUM%)  %BLUE%###%WHITE%###%RED%###          %CONTINUE%
 
 
@@ -374,7 +374,7 @@ ItemDisplay[NMAG !ETH WP3 !7cr !crs CLVL>85]: //Hide non-magic non-eth swords ex
 ItemDisplay[NMAG 7cr !(SOCK=3 OR SOCK=5) CLVL>85]: //Hide non-magic phase blade not 3 or 5 socket after 85
 ItemDisplay[NMAG WP3 (NORM OR EXC) !9cr !crs CLVL>85]: //Hide non-magic swords normal+exceptional except Dimensional Blade (9cr) and Crystal (crs) after 85
 ItemDisplay[NMAG (crs OR bsd) !(SOCK=4 OR SOCK=5) CLVL>85]: //Hide non-magic crystal and broad swords that are not 4 or 5 sockets after 85
-ItemDisplay[NMAG WP3 SOCK<4 !72h CLVL>40]: //Hide all less than 4 socket non-magic swords after 40 except legend sword
+ItemDisplay[NMAG WP3 SOCK<4 !72h CLVL>60]: //Hide all less than 4 socket non-magic swords after 40 except legend sword
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Daggers - Hide All Daggers Except Throwing Knives
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) WP4 !WP5 CLVL>80]: 
