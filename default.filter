@@ -439,7 +439,7 @@ ItemDisplay[NMAG !ETH (spr OR 9sr OR 7sr OR tri OR 9tr OR 7tr OR brn OR 9br OR 7
 ItemDisplay[(MAG OR RARE) !ID !ETH (WP8 OR 7s8 OR 7wc OR 7pa OR 7h7) CLVL>85]: //Hide magic or rare unid non-eth Polearms after 85
 ItemDisplay[NMAG !(SOCK=0 OR SOCK=4) (WP8 OR 7s8 OR 7wc OR 7pa OR 7h7) CLVL>80]: //Hide non-magic polearms that are not 0 or 4 socket after 80
 ItemDisplay[NMAG !ETH WP8 (NORM OR EXC) CLVL>80]: //Hide non-magic non-eth normal and exceptional Polearms after 80
-ItemDisplay[NMAG !(SOCK=0 OR SOCK=4) NORM CLVL>60]: //Hide non-magic NORMAL polearms that are not 0 or 4 socket after 60
+ItemDisplay[NMAG WP8 !(SOCK=0 OR SOCK=4 OR SOCK=5) NORM CLVL>60]: //Hide non-magic NORMAL polearms that are not 0, 4, or 5 socket after 60
 ItemDisplay[NMAG WP8 (NORM OR EXC) CLVL>85]: //Hide remaining (eth) non-magic normal and exceptional Polearms after 85
 ItemDisplay[NMAG !ETH (WP8 OR 7s8 OR 7wc OR 7pa OR 7h7) CLVL>92]: //Hide non-magic non-eth elite polearms after 92
 //─────────────────────────────────────────────────────────────────────────────────────────────────
@@ -617,6 +617,7 @@ ItemDisplay[((MAG OR RARE) AND !ID) NORM CL3 CLVL>60]: //Hide magical or rare no
 ItemDisplay[((MAG OR RARE) AND !ID) EXC CL3 CLVL>90]: //Hide magical or rare exceptional quality pally shields after 90
 ItemDisplay[NMAG NORM CL3 CLVL>80]: //Hide non-magic normal quality pally shields after 80
 ItemDisplay[NMAG EXC CL3 CLVL>90]: //Hide non-magic exceptional quality pally shields after 90
+ItemDisplay[NMAG CL3 (SOCK=1 or SOCK=2) CLVL>90]: //Hide 1-2 socket pally shields after 90
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Gloves
 ItemDisplay[EQ4 NMAG CLVL>30]: //Hide All nonmagical Gloves
@@ -1928,7 +1929,7 @@ ItemDisplay[(CL6 OR WP11) TABSK10>2]: %NAME% %ORANGE%[+3 Cold Skills]%CONTINUE%
 
 //Necromancer Wands Necromancer Shields
 ItemDisplay[CL4 NMAG]: %GRAY%NecHead%CONTINUE%
-ItemDisplay[CL4 RARE]: %YELLOW%NecHead%CONTINUE%
+ItemDisplay[CL4 RARE !ID]: %YELLOW%NecHead%CONTINUE%
 ItemDisplay[WP12 NMAG]: %GRAY%Wand%CONTINUE%
 ItemDisplay[WP12 RARE]: %YELLOW%Wand%CONTINUE%
 ItemDisplay[WP12 MAG]: %BLUE%Wand%CONTINUE%
@@ -2179,10 +2180,6 @@ ItemDisplay[(7wa OR 7gd OR 7p7) ETH !INF !SUP SOCK=0 NMAG]: %DOT-D6%%NAME% %RED%
 ItemDisplay[(72h OR 7gs) ETH !INF !SUP SOCK=0 NMAG]: %DOT-D6%%NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
 //Chaos
 ItemDisplay[(7ar OR 7tw OR 7qr OR 9tw) SK275>0 ETH !INF !SUP SOCK=0 NMAG]: %DOT-D6%%GRAY%[%ORANGE%chaos%GRAY%] %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
-//Plague
-//ItemDisplay[(clw OR btl OR skr OR 9ar OR 9lw OR 9tw OR 9qr OR 7ar OR 7wb OR 7lw OR 7tw OR 7qr) SK262>2 !INF !SUP SOCK=0 NMAG]: %DOT-D6%%GRAY%[%ORANGE%+3 wof%GRAY%] %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
-ItemDisplay[(SCEPTER !(scp OR 9sc OR 7sc)) SK101>2 !INF !SUP SOCK=0 NMAG]: %DOT-D6%%GRAY%[%ORANGE%+3 hbo%GRAY%] %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
-ItemDisplay[(SCEPTER !(scp OR 9sc OR 7sc)) SK121>2 !INF !SUP SOCK=0 NMAG]: %DOT-D6%%GRAY%[%ORANGE%+3 foh%GRAY%] %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
 //ItemDisplay[(SCEPTER !(scp OR 9sc OR 7sc)) SK118>2 !INF !SUP SOCK=0 NMAG]: %DOT-D6%%GRAY%[%ORANGE%+3 hsh%GRAY%] %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
 //Amazon Spears
 ItemDisplay[(amd OR ame) TABSK2>2 !ETH !INF !SUP SOCK=0 NMAG]: %DOT-D6%%NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
