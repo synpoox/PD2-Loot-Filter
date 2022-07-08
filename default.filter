@@ -1849,7 +1849,7 @@ ItemDisplay[(CL7 OR WP9) TABSK0=3]: %NAME% %ORANGE%[+3 Bow]%CONTINUE%
 ItemDisplay[MAG TABSK48=3 SIN]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%] %ORANGE%[+3 Trap]%MAP-7F%%CONTINUE%
 ItemDisplay[CL5 SK262>2 SK272>2]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%] %ORANGE%[+3 WoF\WoI]%MAP-7F%%CONTINUE%
 ItemDisplay[CL5 SK262>2]: %NAME% %ORANGE%[+3 WoF]%MAP-7F%%CONTINUE%
-ItemDisplay[CL5 SK271>2 SK276>2]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%] %ORANGE%[+3 ChainLS\DS]%MAP-7F%%CONTINUE%
+ItemDisplay[CL5 SK271>2 SK276>2]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%] %ORANGE%[+3 ChainLS\DS]%MAP-7F%
 ItemDisplay[CL5 SK271>2]: %NAME% %ORANGE%[+3 ChainLS]%MAP-7F%%CONTINUE%
 //ItemDisplay[CL5 SK277>2 SK278>0]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%] %ORANGE%[+3 BS\Venom]%MAP-7F%%CONTINUE%
 ItemDisplay[CL5 SK273>2]: %NAME% %ORANGE%[+3 MB]%CONTINUE%
@@ -2092,10 +2092,10 @@ ItemDisplay[(WP2 OR CL1) SK248>2]: %NAME% %ORANGE%[+3 Fury]%CONTINUE%
 ItemDisplay[(WP2 OR CL1) SK370>0]: %NAME% %ORANGE%[+Gust]%CONTINUE%
 
 //Berserker Axe and Ettin Axe
-ItemDisplay[(7wa OR 72a) ETH !INF !SUP SOCK=0 NMAG]: %BORDER-68%%RED%##%WHITE%##%BLUE%##     %GREEN%%NAME% %RED%[%WHITE%%SOCKETS%%RED%]     %BLUE%##%WHITE%##%RED%##
-ItemDisplay[(7wa OR 72a) ETH !INF SUP SOCK=0 NMAG]: %BORDER-68%%RED%##%WHITE%##%BLUE%##     %GREEN%%NAME% %RED%[%WHITE%%SOCKETS%%RED%]     %BLUE%##%WHITE%##%RED%##
-ItemDisplay[(7wa OR 72a) ETH !INF SOCK=5 NMAG !RW]: %BORDER-68%%RED%##%WHITE%##%BLUE%##     %GREEN%%NAME% %RED%[%WHITE%%SOCKETS%%RED%]     %BLUE%##%WHITE%##%RED%##
-ItemDisplay[(7wa OR 72a) ETH !INF SOCK=6 NMAG !RW]: %BORDER-68%%RED%##%WHITE%##%BLUE%##     %GREEN%%NAME% %RED%[%WHITE%%SOCKETS%%RED%]     %BLUE%##%WHITE%##%RED%##
+ItemDisplay[7wa ETH !INF !SUP SOCK=0 NMAG]: %BORDER-68%%RED%##%WHITE%##%BLUE%##     %GREEN%%NAME% %RED%[%WHITE%%SOCKETS%%RED%]     %BLUE%##%WHITE%##%RED%##
+ItemDisplay[7wa ETH !INF SUP SOCK=0 NMAG]: %BORDER-68%%RED%##%WHITE%##%BLUE%##     %GREEN%%NAME% %RED%[%WHITE%%SOCKETS%%RED%]     %BLUE%##%WHITE%##%RED%##
+ItemDisplay[7wa ETH !INF SOCK=5 NMAG !RW]: %BORDER-68%%RED%##%WHITE%##%BLUE%##     %GREEN%%NAME% %RED%[%WHITE%%SOCKETS%%RED%]     %BLUE%##%WHITE%##%RED%##
+ItemDisplay[7wa ETH !INF SOCK=6 NMAG !RW]: %RED%##%WHITE%##%BLUE%##     %GREEN%%NAME% %RED%[%WHITE%%SOCKETS%%RED%]     %BLUE%##%WHITE%##%RED%##
 
 
 //Shop Hunting
@@ -2108,27 +2108,27 @@ ItemDisplay[WP13 ((TABSK25>2 AND SK118>1) OR (TABSK25>1 AND SK118>2) OR (CLSK3>1
 
 //Superior Bases with ED
 //Armors
-ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=5]: %GRAY%[%BLUE%5% ED%GRAY%] %NAME%%CONTINUE%
+ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp OR EQ2) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=5]: %GRAY%[%BLUE%5% ED%GRAY%] %NAME%%CONTINUE%
 ItemDisplay[((EQ2 ELT !SOCK=1) OR ((uit OR (CL3 ELT RES>29)) (SOCK=0 OR SOCK=4))) ETH !INF SUP NMAG ED=5]: %GRAY%[%BLUE%5% ED%GRAY%] %NAME%%CONTINUE%
-ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=6]: %GRAY%[%BLUE%6% ED%GRAY%] %NAME%%CONTINUE%
+ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp OR EQ2) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=6]: %GRAY%[%BLUE%6% ED%GRAY%] %NAME%%CONTINUE%
 ItemDisplay[((EQ2 ELT !SOCK=1) OR ((uit OR (CL3 ELT RES>29)) (SOCK=0 OR SOCK=4))) ETH !INF SUP NMAG ED=6]: %GRAY%[%BLUE%6% ED%GRAY%] %NAME%%CONTINUE%
-ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=7]: %GRAY%[%BLUE%7% ED%GRAY%] %NAME%%CONTINUE%
+ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp OR EQ2) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=7]: %GRAY%[%BLUE%7% ED%GRAY%] %NAME%%CONTINUE%
 ItemDisplay[((EQ2 ELT !SOCK=1) OR ((uit OR (CL3 ELT RES>29)) (SOCK=0 OR SOCK=4))) ETH !INF SUP NMAG ED=7]: %GRAY%[%BLUE%7% ED%GRAY%] %NAME%%CONTINUE%
-ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=8]: %GRAY%[%BLUE%8% ED%GRAY%] %NAME%%CONTINUE%
+ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp OR EQ2) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=8]: %GRAY%[%BLUE%8% ED%GRAY%] %NAME%%CONTINUE%
 ItemDisplay[((EQ2 ELT !SOCK=1) OR ((uit OR (CL3 ELT RES>29)) (SOCK=0 OR SOCK=4))) ETH !INF SUP NMAG ED=8]: %GRAY%[%BLUE%8% ED%GRAY%] %NAME%%CONTINUE%
-ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=9]: %GRAY%[%BLUE%9% ED%GRAY%] %NAME%%CONTINUE%
+ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp OR EQ2) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=9]: %GRAY%[%BLUE%9% ED%GRAY%] %NAME%%CONTINUE%
 ItemDisplay[((EQ2 ELT !SOCK=1) OR ((uit OR (CL3 ELT RES>29)) (SOCK=0 OR SOCK=4))) ETH !INF SUP NMAG ED=9]: %GRAY%[%BLUE%9% ED%GRAY%] %NAME%%CONTINUE%
-ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=10]: %GRAY%[%BLUE%10% ED%GRAY%] %NAME%%CONTINUE%
+ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp OR EQ2) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=10]: %GRAY%[%BLUE%10% ED%GRAY%] %NAME%%CONTINUE%
 ItemDisplay[((EQ2 ELT !SOCK=1) OR ((uit OR (CL3 ELT RES>29)) (SOCK=0 OR SOCK=4))) ETH !INF SUP NMAG ED=10]: %GRAY%[%BLUE%10% ED%GRAY%] %NAME%%CONTINUE%
-ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=11]: %GRAY%[%BLUE%11% ED%GRAY%] %NAME%%CONTINUE%
+ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp OR EQ2) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=11]: %GRAY%[%BLUE%11% ED%GRAY%] %NAME%%CONTINUE%
 ItemDisplay[((EQ2 ELT !SOCK=1) OR ((uit OR (CL3 ELT RES>29)) (SOCK=0 OR SOCK=4))) ETH !INF SUP NMAG ED=11]: %GRAY%[%BLUE%11% ED%GRAY%] %NAME%%CONTINUE%
-ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=12]: %GRAY%[%BLUE%12% ED%GRAY%] %NAME%%CONTINUE%
+ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp OR EQ2) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=12]: %GRAY%[%BLUE%12% ED%GRAY%] %NAME%%CONTINUE%
 ItemDisplay[((EQ2 ELT !SOCK=1) OR ((uit OR (CL3 ELT RES>29)) (SOCK=0 OR SOCK=4))) ETH !INF SUP NMAG ED=12]: %GRAY%[%BLUE%12% ED%GRAY%] %NAME%%CONTINUE%
-ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=13]: %GRAY%[%BLUE%13% ED%GRAY%] %NAME%%CONTINUE%
+ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp OR EQ2) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=13]: %GRAY%[%BLUE%13% ED%GRAY%] %NAME%%CONTINUE%
 ItemDisplay[((EQ2 ELT !SOCK=1) OR ((uit OR (CL3 ELT RES>29)) (SOCK=0 OR SOCK=4))) ETH !INF SUP NMAG ED=13]: %GRAY%[%BLUE%13% ED%GRAY%] %NAME%%CONTINUE%
-ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=14]: %GRAY%[%BLUE%14% ED%GRAY%] %NAME%%CONTINUE%
+ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp OR EQ2) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=14]: %GRAY%[%BLUE%14% ED%GRAY%] %NAME%%CONTINUE%
 ItemDisplay[((EQ2 ELT !SOCK=1) OR ((uit OR (CL3 ELT RES>29)) (SOCK=0 OR SOCK=4))) ETH !INF SUP NMAG ED=14]: %GRAY%[%BLUE%14% ED%GRAY%] %NAME%%CONTINUE%
-ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=15]: %GRAY%[%BLUE%15% ED%GRAY%] %NAME%%CONTINUE%
+ItemDisplay[((xtp !SOCK=1) OR ((uui OR uea OR ula OR utu OR urs OR utp OR EQ2) (SOCK=0 OR SOCK>2)) OR (uit (SOCK=0 OR SOCK=4)) OR (((ush OR xsh) OR (CL3 (EXC OR ELT) RES>29)) (SOCK=0 OR SOCK>1)) OR ((ci3 OR uh9) (SOCK=0 OR SOCK=3))) !ETH !INF SUP NMAG ED=15]: %GRAY%[%BLUE%15% ED%GRAY%] %NAME%%CONTINUE%
 ItemDisplay[((EQ2 ELT !SOCK=1) OR ((uit OR (CL3 ELT RES>29)) (SOCK=0 OR SOCK=4))) ETH !INF SUP NMAG ED=15]: %GRAY%[%BLUE%15% ED%GRAY%] %NAME%%CONTINUE%
 //Weapons
 ItemDisplay[(((6cb OR 8rx OR 6rx OR 7wa OR 7cr) SOCK=0) OR (((amd OR ame) TABSK2>2) OR ((amc OR amb) TABSK0>2) SOCK=4) OR (7wa SOCK>3) OR (7cr SOCK>2)) !ETH !INF SUP NMAG ED=5]: %GRAY%[%RED%5% ED%GRAY%] %NAME%%CONTINUE%
