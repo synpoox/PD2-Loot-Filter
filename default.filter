@@ -156,6 +156,7 @@ ItemDisplay[jewf]: %BLUE%%NAME%{%WHITE%Magic Jewel Stack used for %ORANGE%Crafti
 ItemDisplay[imra]: %NAME% %ORANGE%*{%WHITE%Map + %GOLD%Orb %WHITE%+ %BLUE%Jewel %WHITE%+ %ORANGE%Rune>9%NL%%TAN%Note%WHITE%: Imbue White Map to %YELLOW%Rare%WHITE%}%MAP% //Zakarum Orb
 ItemDisplay[rera]: %NAME% %ORANGE%*{%YELLOW%Map %WHITE%+ %GOLD%Orb %WHITE%+ Perf Gem + %ORANGE%Rune>9%NL%%TAN%Note%WHITE%: Reroll %YELLOW%Rare %WHITE%Map:}%MAP% //Horadrim Orb
 ItemDisplay[upma]: %NAME% %ORANGE%*{%BLUE%Map %WHITE%+ %GOLD%Orb %WHITE%+ Perf %GRAY%PSkull %WHITE%+ %ORANGE%Rune>9%NL%%TAN%Note%WHITE%: Imbue %BLUE%Magic %WHITE%Map to %YELLOW%Rare%WHITE%:} //Angelic Orb
+ItemDisplay[imma CLVL>94]: //Hide Arcane Orb after 94
 ItemDisplay[imma]: %NAME% %ORANGE%*{%WHITE%Map + %GOLD%Orb %WHITE%+ %BLUE%Jewel %NL%%TAN%Note%WHITE%: Imbue White Map to %BLUE%Magic%WHITE%:}%MAP% //Arcane Orb		
 //ItemDisplay[scou]: %NAME% %ORANGE%*{%BLUE%M%WHITE%a%YELLOW%p %WHITE%+ %GOLD%Orb %WHITE%+ %ORANGE%Hel Rune%NL%%TAN%Note%WHITE%: Imbue %BLUE%Magic%WHITE%/%YELLOW%Rare %WHITE%Map to White:}%MAP% //Orb of Destruction
 ItemDisplay[scou]: {%BLUE%M%WHITE%a%YELLOW%p %WHITE%+ %GOLD%Orb %WHITE%+ %ORANGE%Hel Rune%NL%%TAN%Note%WHITE%: Imbue %BLUE%Magic%WHITE%/%YELLOW%Rare %WHITE%Map to White:}%MAP% //Orb of Destruction
@@ -300,7 +301,7 @@ ItemDisplay[RW ED=13]: %GRAY%[%BLUE%13%%GRAY%] %NAME%%CONTINUE%
 ItemDisplay[RW ED=14]: %GRAY%[%BLUE%14%%GRAY%] %NAME%%CONTINUE%
 ItemDisplay[RW ED=15]: %GRAY%[%BLUE%15%%GRAY%] %NAME%%CONTINUE%
 ItemDisplay[RW !ETH]: %WHITE%%NAME% %RED%[%WHITE%%SOCKETS%%RED%]
-ItemDisplay[RW ETH]: %GRAY%E.%NAME% %RED%[%WHITE%%SOCKETS%%RED%]
+ItemDisplay[RW ETH]: %RED%Eth %NAME% %RED%[%WHITE%%SOCKETS%%RED%]
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 //║                   ▬▬▬▬▬ [Optional] Rules for Ignoring Specific Items ▬▬▬▬▬                    ║
 //─────────────────────────────────────────────────────────────────────────────────────────────────
@@ -1137,7 +1138,7 @@ ItemDisplay[9p9 UNI !ID]: %BORDER-62%%GOLD%Spire of Honor%MAP-0E%
 //Elite Unique Spears
 ItemDisplay[7sr UNI !ID]: %BORDER-62%%GOLD%Arioc's Needle%MAP-0E%
 ItemDisplay[7br UNI !ID]: %BORDER-62%%GOLD%Viperfork%MAP-0E%
-ItemDisplay[7p7 UNI ETH !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Steel Pillar  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
+ItemDisplay[7p7 UNI ETH !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %RED%ETH %GOLD%Steel Pillar  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 ItemDisplay[7p7 UNI !ID]: %BORDER-62%%GOLD%Steel Pillar%MAP-0E%
 
 //WP8 - Polearms
@@ -1161,7 +1162,8 @@ ItemDisplay[9wc UNI !ID]: %BORDER-62%%GOLD%Grim's Burning Dead%MAP-0E%
 
 //Elite Unique Polearms
 ItemDisplay[7o7 UNI !ID]: %BORDER-62%%GOLD%Bonehew%MAP-0E%
-ItemDisplay[7s8 UNI !ID ETH]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Reaper's Toll  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
+ItemDisplay[7s8 UNI !ID ETH]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %RED%ETH %GOLD%Reaper's Toll  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
+ItemDisplay[7s8 UNI !ID]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %GOLD%Reaper's Toll  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
 ItemDisplay[7pa UNI !ID ETH]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %RED%ETH %GOLD%Tomb Reaver  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
 ItemDisplay[7pa UNI !ID]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %GOLD%Tomb Reaver  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
 ItemDisplay[7wc UNI !ID]: %BORDER-62%%GOLD%Stormspire%MAP-0E%
@@ -2262,9 +2264,9 @@ ItemDisplay[(7m7 OR 7gm) !INF ETH NMAG !RW SOCK=5]: %DOT-D6%%NAME% %RED%[%WHITE%
 ItemDisplay[7gm !INF ETH NMAG !RW SOCK=6]: %DOT-D6%%NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%GRAY%of the Dying, Last Wish, Silence%NL%%TAN%Note%WHITE%: Possible RuneWords: %GRAY%Breath}
 //Scepters
 ItemDisplay[(wsp OR 9ws OR 7ws) !INF !ETH NMAG !RW SOCK=4]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%GRAY%Passion, Phoenix, Rift%NL%Holy Thunder, Hand of Justice,%NL%%TAN%Note%WHITE%: Possible RuneWords: %GRAY%Fortitude,}
-//ItemDisplay[(SCEPTER !(scp OR 9sc OR 7sc)) !INF !ETH NMAG !RW SK101>2 SOCK=3]: %DOT-D6%%GRAY%[%ORANGE%+3 hbo%GRAY%] %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%GRAY%Malice, Plague, Venom, Wind%NL%Fury, King's Grace, Lawbringer,%NL%%TAN%Note%WHITE%: Possible RuneWords:}
-ItemDisplay[(SCEPTER !(scp OR 9sc OR 7sc)) !INF !ETH NMAG !RW SK121>2 SOCK=3]: %DOT-D6%%GRAY%[%ORANGE%+3 foh%GRAY%] %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%GRAY%Malice, Plague, Venom, Wind%NL%Fury, King's Grace, Lawbringer,%NL%%TAN%Note%WHITE%: Possible RuneWords:}
-ItemDisplay[(SCEPTER !(scp OR 9sc OR 7sc)) !INF !ETH NMAG !RW SK118>2 SOCK=3]: %DOT-D6%%GRAY%[%ORANGE%+3 hsh%GRAY%] %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%GRAY%Malice, Plague, Venom, Wind%NL%Fury, King's Grace, Lawbringer,%NL%%TAN%Note%WHITE%: Possible RuneWords:}
+ItemDisplay[(SCEPTER !(scp OR 9sc OR 7sc)) !INF !ETH NMAG !RW SK101>2 SOCK=3]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%GRAY%Malice, Plague, Venom, Wind%NL%Fury, King's Grace, Lawbringer,%NL%%TAN%Note%WHITE%: Possible RuneWords:}
+ItemDisplay[(SCEPTER !(scp OR 9sc OR 7sc)) !INF !ETH NMAG !RW SK121>2 SOCK=3]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%GRAY%Malice, Plague, Venom, Wind%NL%Fury, King's Grace, Lawbringer,%NL%%TAN%Note%WHITE%: Possible RuneWords:}
+ItemDisplay[(SCEPTER !(scp OR 9sc OR 7sc)) !INF !ETH NMAG !RW SK118>2 SOCK=3]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%GRAY%Malice, Plague, Venom, Wind%NL%Fury, King's Grace, Lawbringer,%NL%%TAN%Note%WHITE%: Possible RuneWords:}
 //Swords
 ItemDisplay[crs NMAG SOCK=0 (ILVL>25 AND ILVL<41) CLVL<80]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%] %TAN%[%DARK_GREEN%Larzuk 4soc%TAN%]
 ItemDisplay[(bsd OR lsd) NMAG SOCK=0 ILVL>25 CLVL<80]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%] %TAN%[%DARK_GREEN%Larzuk 4soc%TAN%]
