@@ -7,7 +7,7 @@
 //║║                                     ║║
 //╬╬╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╬╬
 
-//The latest version of this filter can be found at: https://github.com/GorOps/PD2-Loot-Filter/blob/main/default.filter
+//The latest version of this filter can be found at: https://github.com/RetroCro/PD2-Loot-Filter/blob/main/default.filter
 
 //About: 	This my attempt at a Ladder Reset to End Game mapping loot filter. 
 //Features: 	This filter shows the identified names of set and unique items. It will get stricter as you level with most worthless items being hidden after 90.
