@@ -622,7 +622,7 @@ ItemDisplay[((MAG OR RARE) AND !ID) NORM CL3 CLVL>60]: //Hide magical or rare no
 ItemDisplay[((MAG OR RARE) AND !ID) EXC CL3 CLVL>90]: //Hide magical or rare exceptional quality pally shields after 90
 ItemDisplay[NMAG NORM CL3 CLVL>80]: //Hide non-magic normal quality pally shields after 80
 ItemDisplay[NMAG EXC CL3 CLVL>90]: //Hide non-magic exceptional quality pally shields after 90
-ItemDisplay[NMAG CL3 (SOCK=1 or SOCK=2) CLVL>90]: //Hide 1-2 socket pally shields after 90
+ItemDisplay[NMAG CL3 (SOCK=1 OR SOCK=2) CLVL>90]: //Hide 1-2 socket pally shields after 90
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Gloves
 ItemDisplay[EQ4 NMAG CLVL>30]: //Hide All nonmagical Gloves
