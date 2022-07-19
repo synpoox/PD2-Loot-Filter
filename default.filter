@@ -1105,7 +1105,7 @@ ItemDisplay[9ta UNI !ID]: %BORDER-62%%GOLD%The Scalper%MAP-0E%
 //Elite Unique Throwing Weapons
 ItemDisplay[7bk UNI !ID]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %GOLD%Warshrike  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
 ItemDisplay[7ta UNI !ID]: %BORDER-62%%GOLD%Gimmershred%MAP-0E%
-ItemDisplay[7b8 UNI !ID ETH]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Lacerator  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
+ItemDisplay[7b8 UNI !ID ETH]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %RED%ETH %GOLD%Lacerator  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 ItemDisplay[7b8 UNI !ID]: %BORDER-62%%GOLD%Lacerator%MAP-0E%
 
 
@@ -1113,7 +1113,7 @@ ItemDisplay[7b8 UNI !ID]: %BORDER-62%%GOLD%Lacerator%MAP-0E%
 //ItemDisplay[UNI !ID (7s7 OR 7gl OR 7ts) CLVL>79]:
 
 //Elite Unique Javelins
-ItemDisplay[7s7 UNI !ID ETH]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Demon's Arch  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
+ItemDisplay[7s7 UNI !ID ETH]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %RED%ETH %GOLD%Demon's Arch  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 ItemDisplay[7gl UNI !ID ETH]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %RED%ETH %GOLD%Wraith Flight  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 ItemDisplay[7gl UNI !ID]: %BORDER-62%%GOLD%Wraith Flight%MAP-0E%
 ItemDisplay[7ts UNI !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Gargoyle's Bite  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
