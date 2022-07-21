@@ -564,7 +564,9 @@ ItemDisplay[(NMAG OR (MAG AND !ID)) (ful OR xul) CLVL>90]: //Hide Full Plate, Ch
 
 ItemDisplay[(MAG OR RARE) !ID EQ2 CLVL>90]: //Hide magic or rare unid Body Armors after 90
 //ItemDisplay[MAG !ID EQ2 CLVL>80]: //Hide Magical unid Body Armors after 80
-ItemDisplay[NMAG EQ2 SOCK<3 CLVL>85]: //Hide low socket nmag armors
+ItemDisplay[NMAG EQ2 SOCK<3 !SUP CLVL>85]: //Hide low socket nmag armors
+ItemDisplay[NMAG EQ2 (SOCK=1 OR SOCK=2) SUP CLVL>85]: //Hide low socket nmag armors
+
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Helms - 
 ItemDisplay[(NMAG OR (MAG AND !ID)) (cap OR xap OR uap) CLVL>90]: //Hide Cap, War Hat, and Shako
@@ -2216,7 +2218,7 @@ ItemDisplay[(72h OR 7gs) ETH SOCK=0 SUP NMAG]: %DOT-D6%%NAME%
 //Chaos
 ItemDisplay[(7ar OR 7tw OR 7qr OR 9tw) SK275>0 ETH SOCK=0 SUP NMAG]: %DOT-D6%%GRAY%[%ORANGE%chaos%GRAY%] %NAME%
 //Armors
-ItemDisplay[(xtp OR utp OR uui OR uea OR ula OR utu OR urs) SOCK=0 SUP NMAG]: //0 Socket Mage, Archon, Dusk, Wyrmhide, Scarab, Wire Fleece - hidden
+//ItemDisplay[(xtp OR utp OR uui OR uea OR ula OR utu OR urs) SOCK=0 SUP NMAG]: //0 Socket Mage, Archon, Dusk, Wyrmhide, Scarab, Wire Fleece - hidden
 ItemDisplay[EQ2 ELT ETH SOCK=0 SUP NMAG]: %NAME%
 //Helmets
 ItemDisplay[(ci3 OR uh9) SOCK=0 !ETH SUP NMAG]: %NAME%
