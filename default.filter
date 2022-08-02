@@ -103,7 +103,7 @@ ItemDisplay[RUNE>25]: %BORDER-62%          %RED%###%WHITE%###%BLUE%###  %GREEN%%
 //║                     ▬▬▬▬▬ Town Portal and ID Scrolls/Tomes and Keys ▬▬▬▬▬                     ║
 //Utilites
 ItemDisplay[tsc CLVL>94]: 
-//ItemDisplay[isc CLVL>94]: 
+ItemDisplay[isc CLVL>94]: 
 ItemDisplay[tsc]: %GREEN%!%GRAY%TP
 ItemDisplay[isc]: %GREEN%!%GRAY%ID
 ItemDisplay[tbk]: %GREEN%!%GRAY%TP Book
@@ -440,6 +440,7 @@ ItemDisplay[NMAG !ETH (spr OR 9sr OR 7sr OR tri OR 9tr OR 7tr OR brn OR 9br OR 7
 //ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (hal OR 9h9) CLVL>85]: //Hide Halberd, Bec-de-Corbin
 //ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (wsc OR 9wc) CLVL>85]: //Hide War Scythe, Grim Scythe
 
+ItemDisplay[(MAG OR RARE) !ID ETH (WP8 OR 7s8 OR 7wc OR 7pa OR 7h7) CLVL>94]: //Hide magic or rare unid eth Polearms after 94
 ItemDisplay[(MAG OR RARE) !ID !ETH (WP8 OR 7s8 OR 7wc OR 7pa OR 7h7) CLVL>85]: //Hide magic or rare unid non-eth Polearms after 85
 ItemDisplay[(MAG OR RARE) !ID (bar OR vou OR scy OR pax OR hal OR wsc OR 9b7 OR 9vo OR 9s8 OR 9pa OR 9h9 OR 9wc) CLVL>85]: //Hide magic or rare unid normal and exceptional polearms after 85
 ItemDisplay[NMAG !(SOCK=0 OR SOCK=4) (WP8 OR 7s8 OR 7wc OR 7pa OR 7h7) CLVL>80]: //Hide non-magic polearms that are not 0 or 4 socket after 80
@@ -472,7 +473,7 @@ ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (rxb OR 8rx) CLVL>85]: //Hide Repe
 ItemDisplay[RARE !ID WP10 CLVL>85]: //Hide rare unid crossbows after 85
 ItemDisplay[MAG !ID WP10 CLVL>80]: //Hide magical unid crossbows after 80
 ItemDisplay[NMAG WP10 !6rx CLVL>10]: //Hide non-magic crossbows not including demon crossbow after level 10
-ItemDisplay[NMAG !SOCK=4 WP10 CLVL>85]: //Hide non-magic non 4 socket crossbows after 85
+ItemDisplay[NMAG !(SOCK=4 OR SOCK=5) WP10 CLVL>85]: //Hide non-magic non 4 socket crossbows after 85
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Staves - Hide all Staves except Archon Staves (6ws), Elder Staff (6cs)
 //ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (sst OR 8ss OR 6ss) CLVL>85]: //Hide Short Staff, Jo Staff, and Walking Stick
@@ -486,6 +487,8 @@ ItemDisplay[NMAG !SOCK=4 WP10 CLVL>85]: //Hide non-magic non 4 socket crossbows 
 //ItemDisplay[MAG !ID (6ws OR 6cs) CLVL>85]: 
 //ItemDisplay[NMAG 6ws !SOCK=4]: 
 //ItemDisplay[NMAG !ETH 6cs]: 
+ItemDisplay[RARE !ID WP11 CLVL>90]: 
+ItemDisplay[MAG !ID WP11 CLVL>90]: 
 ItemDisplay[NMAG WP11 !(SOCK=0 OR SOCK=4) CLVL>60]: 
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Wands - Hide All Wands That Can Not Have 2 Sockets
@@ -509,6 +512,7 @@ ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (am2 OR am7) CLVL>85]: //Hide Refl
 ItemDisplay[NMAG (am1 OR am2 OR am6 OR am7 OR amb OR amc) TABSK0<2 CLVL>60]: //Hide non-magic Ama bows that are less than +2 bow skills after 60
 ItemDisplay[NMAG (am1 OR am2 OR am6 OR am7 OR amb OR amc) TABSK0<3 CLVL>70]: //Hide non-magic Ama bows that are less than +3 bow skills after 70
 ItemDisplay[MAG !ID (am1 OR am2 OR am6 OR am7) CLVL>70]: //Hide normal and exception magic Ama bows after 70
+ItemDisplay[MAG !ID (amb OR amc) CLVL>94]: //Hide magic Matriarchal Bow (amb) and Grand Matron Bow (amc) after 94
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Amazon Spears - Hide All Amazon Spears
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (am3 OR am8 OR amd) CLVL>85]: //Hide Maiden Spear, Ceremonial Spear, and Matriarchal Spear
@@ -537,8 +541,9 @@ ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (xrg OR urg) CLVL>90]: //Hide Scut
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (gts OR xts OR uts) CLVL>90]: //Hide Gothic Shield, Ancient Shield, and Ward [Medium]
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (tow OR xow OR uow) CLVL>90]: //Hide Tower Shield, Pavise, and Aegis [Heavy]
 
-ItemDisplay[MAG !ID ETH EQ3 CLVL>5]: //Hide Eth Magical Shields
-ItemDisplay[MAG !ID (kit OR lrg) CLVL>50]: //Hide Magic kite Shield (kit), and Large Shield (lrg)
+ItemDisplay[MAG !ID ETH EQ3 !CL4 CLVL>5]: //Hide Eth Magical Shields
+ItemDisplay[MAG !ID (kit OR lrg) CLVL>50]: //Hide Magic kite Shield (kit), and Large Shield (lrg) after 50
+ItemDisplay[MAG !ID uit CLVL>90]: //Hide Magic Monarch (uit) after 90
 //ItemDisplay[MAG !ID (uit OR kit OR lrg) CLVL>5]: //Hide Eth Monarch, Kite Shield (kit), and Large Shield (lrg)
 ItemDisplay[RARE !ID (uit OR kit OR lrg) CLVL>85]: //Hide Rare Monarch, Kite Shield (kit), and Large Shield (lrg)
 ItemDisplay[NMAG (SOCK=1 OR SOCK=2) (uit OR kit OR lrg) CLVL>85]: //Hide less than 3 socket Monarch, Kite Shield (kit), and Large Shield (lrg)
@@ -611,6 +616,7 @@ ItemDisplay[NMAG CL1 CLVL>85]: //Hide non-magic druid pelts after 85
 ItemDisplay[(MAG OR RARE) CL4 !ID ETH CLVL>60]: //Hide unid magic or rare eth nec heads after 60
 ItemDisplay[(MAG OR RARE) CL4 !ID CLVL>85]: //Hide unid magic or rare nec heads after 85
 ItemDisplay[NMAG CL4 ETH CLVL>30]: //Hide non-magic eth nec heads after 30
+ItemDisplay[NMAG CL4 CLVL>94]: //Hide non-magic nec heads after 94
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Paladin Shields - 
 // Hide All Pally Shields except Elites: Sacred Targe (pab), Vortex Shield (paf), Sacred Rondache (pac), Kurast Shield (pad), and Zakarum Shield (pae)
@@ -660,8 +666,8 @@ ItemDisplay[CLVL<80 NMAG SOCK=0 !ETH !INF !SUP (9h9 OR 9wc OR 9br OR 8rx) ILVL>4
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
 
 // Craftable Amulets
-ItemDisplay[MAG !ID amu]: %ORANGE%%NAME% %WHITE%[%GRAY%Lv.%ILVL%%WHITE%]
-ItemDisplay[MAG !ID rin]: %ORANGE%%NAME% %WHITE%[%GRAY%Lv.%ILVL%%WHITE%]
+//ItemDisplay[MAG !ID amu]: %ORANGE%%NAME% %WHITE%[%GRAY%Lv.%ILVL%%WHITE%]
+//ItemDisplay[MAG !ID rin]: %ORANGE%%NAME% %WHITE%[%GRAY%Lv.%ILVL%%WHITE%]
 
 //ItemDisplay[MAG !ID amu ILVL<85]: //Hide any
 
@@ -672,7 +678,7 @@ ItemDisplay[MAG !ID rin]: %ORANGE%%NAME% %WHITE%[%GRAY%Lv.%ILVL%%WHITE%]
 //║                           ▬▬▬▬▬ Immediately Ignored Equipment ▬▬▬▬▬                           ║
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
 ItemDisplay[MAG !ID (aqv OR cqv) CLVL>5]: //Ignore Unidentified Magic Arrows/Bolts (Level 6+)
-ItemDisplay[RARE !ID cqv CLVL>5]: //Ignore Unidentified Rare Bolts (Level 6+)
+ItemDisplay[RARE !ID cqv CLVL>85]: //Ignore Unidentified Rare Bolts after 85
 ItemDisplay[NMAG (aqv OR cqv) CLVL>5]: //Ignore Non-Magical Arrows/Bolts (Level 6+)
 
 //ItemDisplay[MAG !ID (WEAPON OR ARMOR) !(!ETH AND WP5) CLVL>11]: //Ignore Unidentified Magic Equipment Except Non-Ethereal Magic Throwing Weapons (Level 12+)
@@ -1073,7 +1079,8 @@ ItemDisplay[7ls UNI !ID]: %BORDER-62%%GOLD%Frostwind%MAP-0E%
 ItemDisplay[7gs UNI !ID]: %BORDER-62%%GOLD%Flamebellow%MAP-0E%
 ItemDisplay[7b7 UNI !ID ETH]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %RED%ETH %GOLD%Doombringer  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 ItemDisplay[7b7 UNI !ID]: %BORDER-62%%GOLD%Doombringer%MAP-0E%
-ItemDisplay[7gd UNI !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%The Grandfather  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
+ItemDisplay[7gd UNI !ID ETH]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %RED%ETH %GOLD%The Grandfather  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
+ItemDisplay[7gd UNI !ID]: %BORDER-62%      %RED%##%WHITE%##%BLUE%##  %GOLD%The Grandfather  %BLUE%##%WHITE%###%RED%##      %MAP-0E%
 ItemDisplay[7bs UNI !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Hadriel's Hand  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 ItemDisplay[7fb UNI !ID ETH]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %RED%ETH %GOLD%Odium %RED%(New S5)  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 ItemDisplay[7fb UNI !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Odium %RED%(New S5)  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
@@ -1740,6 +1747,7 @@ ItemDisplay[RARE !ETH CL7 WP5 (TABSK2>4 OR (TABSK2>2 AND CLSK0>1)) IAS>39]: %NAM
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
 // Craftable Amulets
 //─────────────────────────────────────────────────────────────────────────────────────────────────
+ItemDisplay[MAG amu !ID CLVL>94]: //Hide magic amulets after 94 just gamble them if you want to craft
 ItemDisplay[MAG amu (ILVL=82 OR ILVL=83) CLVL>97]: %NAME% %ORANGE%[C] %WHITE%[%GRAY%Lv.%ILVL%%WHITE%]
 ItemDisplay[MAG amu (ILVL=84 OR ILVL=85) CLVL>95]: %NAME% %ORANGE%[C] %WHITE%[%GRAY%Lv.%ILVL%%WHITE%]
 ItemDisplay[MAG amu (ILVL=86 OR ILVL=87) CLVL>93]: %NAME% %ORANGE%[C] %WHITE%[%GRAY%Lv.%ILVL%%WHITE%]
@@ -1750,6 +1758,7 @@ ItemDisplay[MAG amu (ILVL=94 OR ILVL=95) CLVL>85]: %NAME% %ORANGE%[C] %WHITE%[%G
 ItemDisplay[MAG amu (ILVL=96 OR ILVL=97) CLVL>83]: %NAME% %ORANGE%[C] %GRAY%(Lv.%ILVL%%GRAY%)
 ItemDisplay[MAG amu ILVL>97 CLVL>81]: %NAME% %ORANGE%[C] %WHITE%[%GRAY%Lv.%ILVL%%WHITE%]
 
+ItemDisplay[MAG rin !ID CLVL>94]: //Hide magic rings after 94 just gamble them if you want to craft
 ItemDisplay[MAG rin]: %NAME% %WHITE%[%GRAY%Lv.%ILVL%%WHITE%]
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
 //║                       ▬▬▬▬▬ [Optional] Identified Crafting Bases ▬▬▬▬▬                        ║
@@ -2018,7 +2027,7 @@ ItemDisplay[CL2 SK136>2]: %NAME% %ORANGE%[+3 Spear Mast]%CONTINUE%
 //Paladin Scepters
 ItemDisplay[NMAG (wsp OR 9ws OR 7ws) (SOCK=0 OR SOCK>2) SK121>2]: %RED%#### %DARK_GREEN%%NAME% %ORANGE%[+3 FoH] %RED%[%WHITE%%SOCKETS%%RED%] %RED%####  //Pally Scepters with +3 
 ItemDisplay[NMAG (wsp OR 9ws OR 7ws) (SOCK=0 OR SOCK>2) SK112>2]: %RED%#### %DARK_GREEN%%NAME% %ORANGE%[+3 Blessed Hammer] %RED%[%WHITE%%SOCKETS%%RED%] %RED%#### 
-ItemDisplay[NMAG (wsp OR 9ws OR 7ws) (SOCK=0 OR SOCK>2) SK113>2]: %RED%#### %DARK_GREEN%%NAME% %ORANGE%[+3 Conc] %RED%[%WHITE%%SOCKETS%%RED%] %RED%#### 
+//ItemDisplay[NMAG (wsp OR 9ws OR 7ws) (SOCK=0 OR SOCK>2) SK113>2]: %RED%#### %DARK_GREEN%%NAME% %ORANGE%[+3 Conc] %RED%[%WHITE%%SOCKETS%%RED%] %RED%#### 
 ItemDisplay[NMAG (wsp OR 9ws OR 7ws) (SOCK=0 OR SOCK>2) SK123>2]: %RED%#### %DARK_GREEN%%NAME% %ORANGE%[+3 Conviction] %RED%[%WHITE%%SOCKETS%%RED%] %RED%#### 
 ItemDisplay[NMAG (wsp OR 9ws OR 7ws) (SOCK=0 OR SOCK>2) TABSK25>2]: %RED%#### %DARK_GREEN%%NAME% %ORANGE%[+3 Offensive] %RED%[%WHITE%%SOCKETS%%RED%] %RED%#### 
 //ItemDisplay[NMAG (wsp OR 9ws OR 7ws) (SOCK=0 OR SOCK>2) SK117>0]: %DOT-D6%%RED%#### %DARK_GREEN%%NAME% %ORANGE%[Holy Shield] %RED%[%WHITE%%SOCKETS%%RED%] %RED%#### 
