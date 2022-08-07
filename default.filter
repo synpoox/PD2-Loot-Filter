@@ -428,7 +428,8 @@ ItemDisplay[NMAG !SOCK=4 (9sr OR 9tr OR 9br OR 9st OR 9p9) CLVL>85]: //Hide non-
 ItemDisplay[NMAG (spr OR tri OR brn OR spt OR pik) CLVL>70]: //Hide non-magic normal Spears after 70
 ItemDisplay[NMAG (9sr OR 9tr OR 9br OR 9st OR 9p9) CLVL>85]: //Hide non-magic exceptional Spears after 85
 
-ItemDisplay[NMAG SOCK<4 (spr OR 9sr OR 7sr OR tri OR 9tr OR 7tr OR brn OR 9br OR 7br OR spt OR 9st OR 7st OR pik OR 9p9 OR 7p7) CLVL>85]: //Hide Spears under 4 sockets after 85
+ItemDisplay[NMAG !SUP !(SOCK=0 OR SOCK>4) (spr OR 9sr OR 7sr OR tri OR 9tr OR 7tr OR brn OR 9br OR 7br OR spt OR 9st OR 7st OR pik OR 9p9 OR 7p7) CLVL>85]: //Hide Spears under 4 sockets after 85
+ItemDisplay[NMAG !(SOCK=0 OR SOCK>4) (spr OR 9sr OR 7sr OR tri OR 9tr OR 7tr OR brn OR 9br OR 7br OR spt OR 9st OR 7st OR pik OR 9p9 OR 7p7) CLVL>85]: //Hide Spears under 4 sockets after 85
 ItemDisplay[NMAG !ETH (spr OR 9sr OR 7sr OR tri OR 9tr OR 7tr OR brn OR 9br OR 7br OR spt OR 9st OR 7st OR pik OR 9p9 OR 7p7) CLVL>90]: //Hide non-eth Spears after 90
 
 //─────────────────────────────────────────────────────────────────────────────────────────────────
