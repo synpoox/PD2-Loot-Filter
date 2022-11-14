@@ -1,4 +1,4 @@
-# RetroCro's PD2 Loot Filter
+# RetroCro's PD2 Loot Filter (Updated for Season 6)
 
 **About:** 		This my attempt at a Ladder Reset to End Game mapping loot filter. 
 
