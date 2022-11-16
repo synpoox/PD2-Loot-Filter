@@ -176,7 +176,8 @@ ItemDisplay[scrb]: %BORDER-62%       %GREEN%#### %NAME%{%WHITE%This Item + T3 Ma
 
 ItemDisplay[lbox]: %BORDER-62%     %GREEN%### %RED%%NAME% %GREEN%###     {%WHITE%2H Wep = 4 Max%NL%1H Wep = 2 max%NL%Helm, Chest, Shield = 2 Max%NL%%TAN%Note%WHITE%: Use it to %TAN%Socket %WHITE%an Item}%MAP% //Larzuk's Box
 ItemDisplay[lpp]: %BORDER-62%     %PURPLE%*** %RED%%NAME% %PURPLE%***     {%WHITE%2H Wep = 4 Max%NL%1H Wep = 2 max%NL%Helm, Chest, Shield = 2 Max%NL%%TAN%Note%WHITE%: Use it to %TAN%Socket %YELLOW%RARE %WHITE%and %ORANGE%CRAFTED %WHITE%ONLY}%MAP% //Larzuk's Puzzlepiece
-ItemDisplay[wss]: %BORDER-62%     %GREEN%###   %PURPLE%Worldstone Shard x%QTY%  %GREEN%###     %MAP% //Worldstone Shard	
+ItemDisplay[wss QTY>1]: %BORDER-62%     %GREEN%###   %PURPLE%Worldstone Shard x%QTY%   %GREEN%###     %MAP% //Worldstone Shard Stacked
+ItemDisplay[wss]: %BORDER-62%     %GREEN%###   %PURPLE%Worldstone Shard   %GREEN%###     %MAP% //Worldstone Shard	
 
 //PD2 Dclone Items
 ItemDisplay[dcma]: %BORDER-62%%GREEN%####    %RED%Vision of Terror    %GREEN%####{%RED%Dclone Portal}%MAP% //Vision of Terror
