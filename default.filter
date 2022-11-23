@@ -67,7 +67,7 @@ ItemDisplay[glbs QTY>1]: %ORANGE%[%BLUE%F.Sapphire x%QTY%%ORANGE%] //Flawless Sa
 ItemDisplay[glys QTY>1]: %ORANGE%[%YELLOW%F.Topaz x%QTY%%ORANGE%] //Flawless Topaz
 ItemDisplay[skls QTY>1]: %ORANGE%[%GRAY%F.Skull x%QTY%%ORANGE%] //Flawless Skull
 
-ItemDisplay[gzv OR gzvs]: %ORANGE%[%PURPLE%F.Amethyst%ORANGE%] //Flawless Gems
+ItemDisplay[gzv OR gzvs]: %ORANGE%[%PURPLE%F.Amethyst%ORANGE%] //Flawless Unstacked Gems
 ItemDisplay[glw OR glws]: %ORANGE%[%WHITE%F.Diamond%ORANGE%]
 ItemDisplay[glg OR glgs]: %ORANGE%[%GREEN%F.Emerald%ORANGE%]
 ItemDisplay[glr OR glrs]: %ORANGE%[%RED%F.Ruby%ORANGE%]
@@ -396,6 +396,7 @@ ItemDisplay[NMAG 7cr !(SOCK=3 OR SOCK=5) CLVL>85]: //Hide non-magic phase blade 
 ItemDisplay[NMAG WP3 (NORM OR EXC) !9cr !crs CLVL>90]: //Hide non-magic swords normal+exceptional except Dimensional Blade (9cr) and Crystal (crs) after 90
 ItemDisplay[NMAG (crs OR bsd) !(SOCK=4 OR SOCK=5) CLVL>85]: //Hide non-magic crystal and broad swords that are not 4 or 5 sockets after 85
 ItemDisplay[NMAG WP3 SOCK<4 !72h CLVL>60]: //Hide all less than 4 socket non-magic swords after 40 except legend sword
+ItemDisplay[NMAG 72h !SOCK=3 CLVL>90]: //Hide non eth non 3 socket legend swords after 90
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Daggers - Hide All Daggers Except Throwing Knives
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) WP4 !WP5 CLVL>80]: 
@@ -480,7 +481,7 @@ ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (lwb OR 8lw) CLVL>85]: //Hide Long
 
 ItemDisplay[RARE !ID (cbw OR hbw) CLVL>80]: //Hide Rare and magical Composite (cbw), Hunter (hbw) after 80
 ItemDisplay[MAG !ID WP9 !CL7 CLVL>80]: //Hide magic unid non-Ama bows 
-ItemDisplay[NMAG SOCK<4 (6lw OR 6l7 OR 6lb OR 6cb OR 6sw OR amb OR amc) CLVL>85]: //Hide non-magic elite bows less than 4 socket including Amazon only bows after 85
+ItemDisplay[NMAG SOCK<4 (6lw OR 6l7 OR 6lb OR 6cb OR 6sw OR amb OR amc) CLVL>90]: //Hide non-magic elite bows less than 4 socket including Amazon only bows after 90
 ItemDisplay[NMAG SOCK<3 (cbw OR hbw) CLVL>85]: //Hide non-magic less than 3 socket Composite (cbw) and Hunter (hbw) bows
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Crossbows - Hide All Crossbows except Demon Crossbow (6rx)
@@ -604,7 +605,7 @@ ItemDisplay[(NMAG OR (MAG AND !ID)) (bhm OR xh9 OR uh9) CLVL>90]: //Hide Bone He
 
 ItemDisplay[(MAG OR RARE) !ID EQ1 !(CL2 OR CL1 OR ci0 OR ci1 OR ci2 OR ci3) ILVL>5 ETH CLVL>60]: //Hide magic or rare unid Eth Helms after 60
 ItemDisplay[(MAG OR RARE) !ID EQ1 !(CL2 OR CL1 OR ci0 OR ci1 OR ci2 OR ci3) ILVL>5 CLVL>85]: //Hide magic or rare unid Helms after 85
-ItemDisplay[NMAG EQ1 !(CL2 OR CL1 OR ci0 OR ci1 OR ci2 OR ci3) SOCK<3 CLVL>90]: //Hide less than 3 socket nmag helms
+ItemDisplay[NMAG EQ1 !(CL2 OR CL1 OR ci0 OR ci1 OR ci2 OR ci3) SOCK<3 CLVL>85]: //Hide less than 3 socket nmag helms
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Circlets - Show All Circlet (ci0), Coronet (ci1), Tiara (ci2), Diadem (ci3)
 ItemDisplay[(MAG OR RARE) !ID ETH EQ7 CLVL>85]: //Hide all ETH Circlets
@@ -1130,7 +1131,7 @@ ItemDisplay[9ta UNI !ID]: %BORDER-62%%GOLD%The Scalper%MAP-0E%
 ItemDisplay[7bk UNI !ID]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %GOLD%Warshrike  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
 ItemDisplay[7ta UNI !ID]: %BORDER-62%%GOLD%Gimmershred%MAP-0E%
 ItemDisplay[7b8 UNI !ID ETH]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %RED%ETH %GOLD%Lacerator  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
-ItemDisplay[7b8 UNI !ID]: %BORDER-62%%GOLD%Lacerator%MAP-0E%
+ItemDisplay[7b8 UNI !ID]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %GOLD%Lacerator  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
 
 
 //WP6 - Javelins
@@ -1837,7 +1838,8 @@ ItemDisplay[NMAG (SOCK=0 OR SOCK=4) (7s8 OR 7wc OR 7br)]: %NAME% %RED%[%WHITE%%S
 ItemDisplay[NMAG SOCK=4 ETH 7pa]: %RED%#### %GREEN%ETH Cryptic Axe %RED%[%WHITE%%SOCKETS%%RED%] %RED%####
 ItemDisplay[NMAG SOCK=4 ETH 7h7]: %RED%#### %GREEN%ETH Great Poleaxe %RED%[%WHITE%%SOCKETS%%RED%] %RED%####
 ItemDisplay[NMAG CLVL<90 SOCK=4 (7pa OR 7h7)]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%]
-ItemDisplay[NMAG (SOCK=0 OR SOCK=4) ETH (7pa OR 7h7)]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%]
+ItemDisplay[NMAG SOCK=4 ETH (7pa OR 7h7)]: %NAME% %RED%[%WHITE%%SOCKETS%%RED
+ItemDisplay[NMAG SOCK=0 ETH (7pa OR 7h7)]: %NAME%
 
 ItemDisplay[NMAG CLVL<90 (crs OR bsd) SOCK=4]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%] //4os Crystal/Broad
 ItemDisplay[NMAG CLVL<80 (lrg OR kit) SOCK=3]: %GREEN%Ancients Pledge Base %RED%[%WHITE%%SOCKETS%%RED%] //3os Ancients Pledge Base
@@ -2299,12 +2301,12 @@ ItemDisplay[fla NMAG !INF !SUP SOCK=0]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%WHI
 ItemDisplay[(cst OR bst OR 8cs OR 8bs OR 6cs OR 6bs) SK58>2 !INF !SUP SOCK=0 NMAG]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
 ItemDisplay[(wst OR 8ws OR 6ws) SK58>2 !INF !SUP SOCK=0 NMAG]: %DOT-D6%%NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
 //Faith/Bows
-ItemDisplay[(amc OR amb OR am1) TABSK0>2 !INF !SUP SOCK=0 NMAG]: %DOT-D6%%NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
+ItemDisplay[(amc OR amb OR am1) TABSK0>2 !INF !SUP SOCK=0 NMAG]: %DOT-D6%%NAME%{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
 ItemDisplay[(6cb OR 8rx OR 6rx) !INF !SUP SOCK=0 NMAG CLVL<91]: %NAME%{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
 //Infi/Insi/Pride and Obedience/Doom
 ItemDisplay[(7wc OR 7pa OR 7s8 OR 7h7 OR 7br OR 7st) ETH !INF !SUP SOCK=0 NMAG]: %NAME%{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
 //Grief/Beast/Passion
-ItemDisplay[7wa !ETH !INF !SUP SOCK=0 NMAG]: %DOT-D6%%NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
+ItemDisplay[7wa !ETH !INF !SUP SOCK=0 NMAG]: %NAME%{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
 ItemDisplay[(7m7 OR 7gm OR 7ga OR 7gi OR 7bt OR 7ba) ETH !INF !SUP SOCK=0 NMAG]: %NAME%{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
 //Death/Oath
 ItemDisplay[7fb ETH !INF !SUP SOCK=0 NMAG]: %DOT-D6%%NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
@@ -2312,7 +2314,7 @@ ItemDisplay[(7wa OR 7gd) ETH !INF !SUP SOCK=0 NMAG]: %DOT-D6%%NAME% %RED%[%WHITE
 //Breath of the Dying/Last Wish
 ItemDisplay[(7wa OR 7gd OR 7p7) ETH !INF !SUP SOCK=0 NMAG]: %DOT-D6%%NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
 //Lawbringer
-ItemDisplay[(72h OR 7gs) ETH !INF !SUP SOCK=0 NMAG]: %DOT-D6%%NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
+ItemDisplay[(72h OR 7gs) ETH !INF !SUP SOCK=0 NMAG]: %NAME%{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
 //Chaos
 ItemDisplay[(7ar OR 7tw OR 7qr OR 9tw) SK275>0 ETH !INF !SUP SOCK=0 NMAG]: %DOT-D6%%GRAY%[%ORANGE%chaos%GRAY%] %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
 //ItemDisplay[(SCEPTER !(scp OR 9sc OR 7sc)) SK118>2 !INF !SUP SOCK=0 NMAG]: %DOT-D6%%GRAY%[%ORANGE%+3 hsh%GRAY%] %NAME% %RED%[%WHITE%%SOCKETS%%RED%]{%WHITE%This Item + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %PURPLE%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
