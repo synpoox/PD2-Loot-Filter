@@ -868,11 +868,13 @@ ItemDisplay[aar UNI !ID]: %BORDER-62%%GOLD%Silks of the Victor%MAP-0E%
 
 //Exceptional Unique Armor
 ItemDisplay[xui UNI !ID]: %BORDER-62%%GOLD%The Spirit Shroud%MAP-0E%
+ItemDisplay[xea UNI !ID ETH]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %RED%ETH %GOLD%Skin of the Vipermagi  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
 ItemDisplay[xea UNI !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Skin of the Vipermagi  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 ItemDisplay[xla UNI !ID]: %BORDER-62%%GOLD%Skin of the Flayed One%MAP-0E%
 ItemDisplay[xtu UNI !ID]: %BORDER-62%%GOLD%Iron Pelt%MAP-0E%
 ItemDisplay[xcl UNI !ID]: %BORDER-62%%GOLD%Crow Caw%MAP-0E%
 ItemDisplay[xng UNI !ID]: %BORDER-62%%GOLD%Spirit Forge%MAP-0E%
+ItemDisplay[xrs UNI !ID ETH]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %RED%ETH %GOLD%Duriel's Shell  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 ItemDisplay[xrs UNI !ID]: %BORDER-62%%GOLD%Duriel's Shell%MAP-0E%
 ItemDisplay[xhn UNI !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Shaftstop  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 ItemDisplay[xpl UNI !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Skullder's Ire  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
