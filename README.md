@@ -7,34 +7,40 @@
 **[Download](https://github.com/GorOps/PD2-Loot-Filter/archive/refs/heads/main.zip)**
 
 ## Runes:
-![Runes:](https://i.imgur.com/H8RDPWY.png)
+![Runes:](https://i.imgur.com/qSSr7oq.png)
 
 ## Gems:
-![Gems:](https://i.imgur.com/9fpzMkZ.png)
+![Gems:](https://i.imgur.com/fRn6wSp.png)
 
 ## Potions:
-![Potions:](https://i.imgur.com/iX76Q2L.png)
+![Potions:](https://i.imgur.com/PH4SC5a.png)
 
-## Essences, Reset Token, Keys, Organs:
-![Essences, Reset Token, Keys, Organs:](https://i.imgur.com/xqMykJG.png)
+## Essences, Reset Token:
+![Essences, Reset Token:](https://i.imgur.com/C0lWPfz.png)
 
-## Map Orbs, Scarabs, Larzuk Puzzle Items, Dclone:
-![Map Orbs, Scarabs, Larzuk Puzzle Items, Dclone:](https://i.imgur.com/Lk9LoYf.png)
+## Keys, Organs:
+![Keys, Organs:](https://i.imgur.com/RbYDstN.png)
 
-## Worlstone Shard, Rathma Items, Uber Ancients, Eth and Mirror Items:
-![Worlstone Shard, Rathma Items, Uber Ancients, Eth and Mirror Items:](https://i.imgur.com/tJ1d1ET.png)
+## Ubers and Diablo Clone:
+![Ubers and Diablo Clone:](https://i.imgur.com/44vGcpl.png)
+
+## Rathma, Uber Ancients, Worldstone Shards, Vial, Mirror:
+![Rathma, Uber Ancients, Worldstone Shards, Vial, Mirror:](https://i.imgur.com/c9CVmAt.png)
+
+## Map Orbs and Larzuk Items:
+![Map Orbs and Larzuk Items:](https://i.imgur.com/IiLun52.png)
 
 ## Maps:
-![Maps:](https://i.imgur.com/Y4INbXM.png)
+![Maps:](https://i.imgur.com/HTdJHPX.png)
 
 ## Rare Accessories, Charms:
-![Rare Accessories, Charms:](https://i.imgur.com/bErHIXa.png)
+![Rare Accessories, Charms:](https://i.imgur.com/zY4F8Wn.png)
 
 ## Uniques and Sets:
-![Uniques and Sets:](https://i.imgur.com/5WQZaLu.png)
+![Uniques and Sets:](https://i.imgur.com/W2zgl6X.png)
 
 ## Bases:
-![Bases:](https://i.imgur.com/GXEur7m.png)
+![Bases:](https://i.imgur.com/uneGbpK.png)
 
 ## Notifications:
 ![Notifications:](https://i.imgur.com/f7pQvGQ.png)
