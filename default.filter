@@ -67,6 +67,30 @@ ItemDisplay[(gcv OR gcw OR gcg OR gcr OR gcb OR gcy OR skc) CLVL>19]: //Ignore C
 ItemDisplay[(gfv OR gfw OR gfg OR gfr OR gfb OR gfy OR skf) CLVL>29]: //Ignore Flawed Gems
 ItemDisplay[(gsv OR gsw OR gsg OR gsr OR gsb OR gsy OR sku) CLVL>39]: //Ignore Regular Gems
 
+ItemDisplay[gcv]: %ORANGE%[%PURPLE%Chipped Amethyst%ORANGE%] //Chipped Gems
+ItemDisplay[gcw]: %ORANGE%[%WHITE%Chipped Diamond%ORANGE%]
+ItemDisplay[gcg]: %ORANGE%[%GREEN%Chipped Emerald%ORANGE%]
+ItemDisplay[gcr]: %ORANGE%[%RED%Chipped Ruby%ORANGE%]
+ItemDisplay[gcb]: %ORANGE%[%BLUE%Chipped Sapphire%ORANGE%]
+ItemDisplay[gcy]: %ORANGE%[%YELLOW%Chipped Topaz%ORANGE%]
+ItemDisplay[skc]: %ORANGE%[%GRAY%Chipped Skull%ORANGE%]
+
+ItemDisplay[gfv]: %ORANGE%[%PURPLE%Flawed Amethyst%ORANGE%] //Flawed Gems
+ItemDisplay[gfw]: %ORANGE%[%WHITE%Flawed Diamond%ORANGE%]
+ItemDisplay[gfg]: %ORANGE%[%GREEN%Flawed Emerald%ORANGE%]
+ItemDisplay[gfr]: %ORANGE%[%RED%Flawed Ruby%ORANGE%]
+ItemDisplay[gfb]: %ORANGE%[%BLUE%Flawed Sapphire%ORANGE%]
+ItemDisplay[gfy]: %ORANGE%[%YELLOW%Flawed Topaz%ORANGE%]
+ItemDisplay[skf]: %ORANGE%[%GRAY%Flawed Skull%ORANGE%]
+
+ItemDisplay[gsv]: %ORANGE%[%PURPLE%Amethyst%ORANGE%] //Regular Gems
+ItemDisplay[gsw]: %ORANGE%[%WHITE%Diamond%ORANGE%]
+ItemDisplay[gsg]: %ORANGE%[%GREEN%Emerald%ORANGE%]
+ItemDisplay[gsr]: %ORANGE%[%RED%Ruby%ORANGE%]
+ItemDisplay[gsb]: %ORANGE%[%BLUE%Sapphire%ORANGE%]
+ItemDisplay[gsy]: %ORANGE%[%YELLOW%Topaz%ORANGE%]
+ItemDisplay[sku]: %ORANGE%[%GRAY%Skull%ORANGE%]
+
 ItemDisplay[gzvs QTY>1]: %ORANGE%[%PURPLE%F.Amethyst x%QTY%%ORANGE%] //Flawless Stacked Gems
 ItemDisplay[glws QTY>1]: %ORANGE%[%WHITE%F.Diamond x%QTY%%ORANGE%] //Flawless Diamond
 ItemDisplay[glgs QTY>1]: %ORANGE%[%GREEN%F.Emerald x%QTY%%ORANGE%] //Flawless Emerald
@@ -160,7 +184,7 @@ ItemDisplay[pk1]: %RED%#%WHITE%#%BLUE%# %TAN%Terror %GRAY%[Countess] %BLUE%#%WHI
 ItemDisplay[pk2]: %RED%#%WHITE%#%BLUE%# %TAN%Hate %GRAY%[Summoner] %BLUE%#%WHITE%#%RED%#%MAP%
 ItemDisplay[pk3]: %RED%#%WHITE%#%BLUE%# %TAN%Destruction %GRAY%[Nih] %BLUE%#%WHITE%#%RED%#%MAP%
 
-ItemDisplay[toa]: %RED%#%WHITE%#%BLUE%# %TAN%RESET %BLUE%#%WHITE%#%RED%#%MAP% //Token of Absolution
+ItemDisplay[toa]: %ORANGE%[%TEAL%RESET TOKEN%Orange%]%MAP% //Token of Absolution
 ItemDisplay[tes]: %RED%## %TAN%%NAME% %PURPLE%[Andy\Dury] %RED%##%MAP% //Twisted Essence
 ItemDisplay[ceh]: %RED%## %TAN%%NAME% %PURPLE%[Meph] %RED%##%MAP% //Charged Essence
 ItemDisplay[bet]: %RED%## %TAN%%NAME% %PURPLE%[Diablo] %RED%##%MAP% //Burning Essence
@@ -213,10 +237,10 @@ ItemDisplay[rtmo]: %BORDER-0A%%WHITE%*%BLUE%*%PURPLE%*     %ORANGE%%NAME%     %P
 ItemDisplay[rtmv]: %BORDER-0A%%WHITE%*%BLUE%*%PURPLE%*     %ORANGE%%NAME%     %PURPLE%*%BLUE%*%WHITE%*{%ORANGE%Uber Rathma %GRAY%awaits...%NL%%NL%%WHITE%The %RED%Blood Fountain %WHITE%of Harrogath%NL%A singular attempt:}
 ItemDisplay[rtma]: %BORDER-0A%%WHITE%*%BLUE%*%PURPLE%*     %ORANGE%%NAME%     %PURPLE%*%BLUE%*%WHITE%*{%ORANGE%Uber Rathma %GRAY%awaits...%NL%%NL%%WHITE%The %RED%Blood Fountain %WHITE%of Harrogath%NL%A singular attempt:}
 ItemDisplay[rtmf]: %BORDER-0A%%WHITE%*%BLUE%*%PURPLE%*     %ORANGE%%NAME%     %PURPLE%*%BLUE%*%WHITE%*{%ORANGE%Uber Rathma %GRAY%awaits...%NL%%NL%%WHITE%The %RED%Blood Fountain %WHITE%of Harrogath%NL%A singular attempt:} //Ancient Bone Fragment
-ItemDisplay[cwss]: %BORDER-62%      %GREEN%###   %PURPLE%Tainted Orb of Corruption x%QTY%  %GREEN%###      %MAP% //Tainted Worldstone Shard
+ItemDisplay[cwss]: %BORDER-62%      %GREEN%###   %PURPLE%Tainted Worldstone Shard x%QTY%  %GREEN%###      %MAP% //Tainted Worldstone Shard
 
 //PD2 Uber Ancients
-ItemDisplay[uba]: %BORDER-0A%%GREEN%###    %ORANGE%%NAME%    %GREEN%###{%ORANGE%Opens Uber Ancients} //Relic of the Ancients
+ItemDisplay[uba]: %BORDER-0A%%WHITE%*%BLUE%*%PURPLE%*     %ORANGE%%NAME%     %PURPLE%*%BLUE%*%WHITE%*{%ORANGE%Opens Uber Ancients} //Relic of the Ancients
 ItemDisplay[ubaa]: %BORDER-0A%%WHITE%*%BLUE%*%PURPLE%*     %GREEN%Sigil of Madawc %RED%[T1]     %PURPLE%*%BLUE%*%WHITE%*{%ORANGE%Combine with other Sigils to create Relic of the Ancients} //Sigil of Madawc from T1 Maps
 ItemDisplay[ubab]: %BORDER-0A%%WHITE%*%BLUE%*%PURPLE%*     %GREEN%Sigil of Talic %RED%[T2]     %PURPLE%*%BLUE%*%WHITE%*{%ORANGE%Combine with other Sigils to create Relic of the Ancients} //Sigil of Talic from T2 Maps
 ItemDisplay[ubac]: %BORDER-0A%%WHITE%*%BLUE%*%PURPLE%*     %GREEN%Sigil of Korlic %RED%[T3]     %PURPLE%*%BLUE%*%WHITE%*{%ORANGE%Combine with other Sigils to create Relic of the Ancients} //Sigil of Korlic from T3 Maps
@@ -228,9 +252,9 @@ ItemDisplay[llmr]: %BORDER-62%%RED%##     %GREEN%Lilith's Mirror     %RED%##{%RE
 //-----------------------------MAPS - THIS SECTION TAKEN FROM DAVE AND MARK OF HIMFILTER-----------------------------
 // Map Tier Tags
 ItemDisplay[MAPTIER=1]: %GREEN%* [T1] %CONTINUE%
-ItemDisplay[MAPTIER=2]: %YELLOW%* [T2] %CONTINUE%
-ItemDisplay[MAPTIER=3]: %ORANGE%* [T3] %CONTINUE%
-ItemDisplay[MAPTIER=4]: %RED%* [T4] %CONTINUE%
+ItemDisplay[MAPTIER=2]: %ORANGE%* [T2] %CONTINUE%
+ItemDisplay[MAPTIER=3]: %RED%* [T3] %CONTINUE%
+ItemDisplay[MAPTIER=4]: %PURPLE%* [T4] %CONTINUE%
 ItemDisplay[(t51 OR t52)]: %GOLD%* %CONTINUE%
 ItemDisplay[(t61 OR t62)]: %PURPLE%* [PvP] %CONTINUE%
 
@@ -1958,9 +1982,6 @@ ItemDisplay[NMAG ETH (SOCK=0 OR SOCK>3) 7gm]: %RED%#### %GREEN%ETH Thunder Maul 
 ItemDisplay[NMAG (SOCK=0 OR SOCK=4) ETH 7s8]: %RED%#### %GREEN%ETH Thresher %RED%[%WHITE%%SOCKETS%%RED%] %RED%####%MAP-7F%
 ItemDisplay[NMAG (SOCK=0 OR SOCK=4) ETH 7wc]: %RED%#### %GREEN%ETH Giant Thresher %RED%[%WHITE%%SOCKETS%%RED%] %RED%####%MAP-7F%
 ItemDisplay[NMAG (SOCK=0 OR SOCK=4) ETH 7br]: %RED%#### %GREEN%ETH Mancatcher %RED%[%WHITE%%SOCKETS%%RED%] %RED%####%MAP-7F%
-ItemDisplay[NMAG SOCK=4 (7s8 OR 7wc OR 7br) CLVL<93]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%]
-ItemDisplay[NMAG SOCK=0 (7s8 OR 7wc OR 7br) CLVL<93]: %NAME%
-ItemDisplay[NMAG (SOCK=0 OR SOCK=4) (7s8 OR 7wc OR 7br)]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%]
 //ItemDisplay[NMAG (SOCK=0 OR SOCK=4) (7s8 OR 7wc OR 7br) CLVL>92]: 
 
 // Polearms - Cryptic Axe (7pa), and Great Poleaxe (7h7) for characters under 90
@@ -2369,21 +2390,21 @@ ItemDisplay[WP13 ((TABSK24>2 AND SK121>1) OR (TABSK24>1 AND SK121>2) OR (CLSK3>1
 ItemDisplay[WP13 ((TABSK25>2 AND SK118>1) OR (TABSK25>1 AND SK118>2) OR (CLSK3>1 AND SK118>2))]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%]%RED%###   %GREEN%Holy Shock Scepter%RED%   ###{%RED%###   %GREEN%Holy Shock Scepter%RED%   ###%TAN%Note%WHITE%: Notice me, That's me:}
 
 //Superior Bases with ED
-ItemDisplay[!INF !RW !(clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp OR CL4 OR CL5 OR CL6 OR WP11 OR WP12 OR WP13) SUP NMAG ED=1]: %GRAY%[%BLUE%1% ED%GRAY%] %NAME%%CONTINUE%
-ItemDisplay[!INF !RW !(clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp OR CL4 OR CL5 OR CL6 OR WP11 OR WP12 OR WP13) SUP NMAG ED=2]: %GRAY%[%BLUE%2% ED%GRAY%] %NAME%%CONTINUE%
-ItemDisplay[!INF !RW !(clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp OR CL4 OR CL5 OR CL6 OR WP11 OR WP12 OR WP13) SUP NMAG ED=3]: %GRAY%[%BLUE%3% ED%GRAY%] %NAME%%CONTINUE%
-ItemDisplay[!INF !RW !(clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp OR CL4 OR CL5 OR CL6 OR WP11 OR WP12 OR WP13) SUP NMAG ED=4]: %GRAY%[%BLUE%4% ED%GRAY%] %NAME%%CONTINUE%
-ItemDisplay[!INF !RW !(clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp OR CL4 OR CL5 OR CL6 OR WP11 OR WP12 OR WP13) SUP NMAG ED=5]: %GRAY%[%BLUE%5% ED%GRAY%] %NAME%%CONTINUE%
-ItemDisplay[!INF !RW !(clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp OR CL4 OR CL5 OR CL6 OR WP11 OR WP12 OR WP13) SUP NMAG ED=6]: %GRAY%[%BLUE%6% ED%GRAY%] %NAME%%CONTINUE%
-ItemDisplay[!INF !RW !(clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp OR CL4 OR CL5 OR CL6 OR WP11 OR WP12 OR WP13) SUP NMAG ED=7]: %GRAY%[%BLUE%7% ED%GRAY%] %NAME%%CONTINUE%
-ItemDisplay[!INF !RW !(clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp OR CL4 OR CL5 OR CL6 OR WP11 OR WP12 OR WP13) SUP NMAG ED=8]: %GRAY%[%BLUE%8% ED%GRAY%] %NAME%%CONTINUE%
-ItemDisplay[!INF !RW !(clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp OR CL4 OR CL5 OR CL6 OR WP11 OR WP12 OR WP13) SUP NMAG ED=9]: %GRAY%[%BLUE%9% ED%GRAY%] %NAME%%CONTINUE%
-ItemDisplay[!INF !RW !(clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp OR CL4 OR CL5 OR CL6 OR WP11 OR WP12 OR WP13) SUP NMAG ED=10]: %GRAY%[%BLUE%10% ED%GRAY%] %NAME%%CONTINUE%
-ItemDisplay[!INF !RW !(clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp OR CL4 OR CL5 OR CL6 OR WP11 OR WP12 OR WP13) SUP NMAG ED=11]: %GRAY%[%BLUE%11% ED%GRAY%] %NAME%%CONTINUE%
-ItemDisplay[!INF !RW !(clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp OR CL4 OR CL5 OR CL6 OR WP11 OR WP12 OR WP13) SUP NMAG ED=12]: %GRAY%[%BLUE%12% ED%GRAY%] %NAME%%CONTINUE%
-ItemDisplay[!INF !RW !(clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp OR CL4 OR CL5 OR CL6 OR WP11 OR WP12 OR WP13) SUP NMAG ED=13]: %GRAY%[%BLUE%13% ED%GRAY%] %NAME%%CONTINUE%
-ItemDisplay[!INF !RW !(clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp OR CL4 OR CL5 OR CL6 OR WP11 OR WP12 OR WP13) SUP NMAG ED=14]: %GRAY%[%BLUE%14% ED%GRAY%] %NAME%%CONTINUE%
-ItemDisplay[!INF !RW !(clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp OR CL4 OR CL5 OR CL6 OR WP11 OR WP12 OR WP13) SUP NMAG ED=15]: %GRAY%[%BLUE%15% ED%GRAY%] %NAME%%CONTINUE%
+ItemDisplay[!INF !RW !(clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp OR CL4 OR CL5 OR CL6 OR WP11 OR WP12 OR WP13) SUP NMAG (EDEF=1 OR EDAM=1)]: %GRAY%[%BLUE%1% ED%GRAY%] %NAME%%CONTINUE%
+ItemDisplay[!INF !RW !(clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp OR CL4 OR CL5 OR CL6 OR WP11 OR WP12 OR WP13) SUP NMAG (EDEF=2 OR EDAM=2)]: %GRAY%[%BLUE%2% ED%GRAY%] %NAME%%CONTINUE%
+ItemDisplay[!INF !RW !(clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp OR CL4 OR CL5 OR CL6 OR WP11 OR WP12 OR WP13) SUP NMAG (EDEF=3 OR EDAM=3)]: %GRAY%[%BLUE%3% ED%GRAY%] %NAME%%CONTINUE%
+ItemDisplay[!INF !RW !(clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp OR CL4 OR CL5 OR CL6 OR WP11 OR WP12 OR WP13) SUP NMAG (EDEF=4 OR EDAM=4)]: %GRAY%[%BLUE%4% ED%GRAY%] %NAME%%CONTINUE%
+ItemDisplay[!INF !RW !(clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp OR CL4 OR CL5 OR CL6 OR WP11 OR WP12 OR WP13) SUP NMAG (EDEF=5 OR EDAM=5)]: %GRAY%[%BLUE%5% ED%GRAY%] %NAME%%CONTINUE%
+ItemDisplay[!INF !RW !(clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp OR CL4 OR CL5 OR CL6 OR WP11 OR WP12 OR WP13) SUP NMAG (EDEF=6 OR EDAM=6)]: %GRAY%[%BLUE%6% ED%GRAY%] %NAME%%CONTINUE%
+ItemDisplay[!INF !RW !(clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp OR CL4 OR CL5 OR CL6 OR WP11 OR WP12 OR WP13) SUP NMAG (EDEF=7 OR EDAM=7)]: %GRAY%[%BLUE%7% ED%GRAY%] %NAME%%CONTINUE%
+ItemDisplay[!INF !RW !(clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp OR CL4 OR CL5 OR CL6 OR WP11 OR WP12 OR WP13) SUP NMAG (EDEF=8 OR EDAM=8)]: %GRAY%[%BLUE%8% ED%GRAY%] %NAME%%CONTINUE%
+ItemDisplay[!INF !RW !(clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp OR CL4 OR CL5 OR CL6 OR WP11 OR WP12 OR WP13) SUP NMAG (EDEF=9 OR EDAM=9)]: %GRAY%[%BLUE%9% ED%GRAY%] %NAME%%CONTINUE%
+ItemDisplay[!INF !RW !(clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp OR CL4 OR CL5 OR CL6 OR WP11 OR WP12 OR WP13) SUP NMAG (EDEF=10 OR EDAM=10)]: %GRAY%[%BLUE%10% ED%GRAY%] %NAME%%CONTINUE%
+ItemDisplay[!INF !RW !(clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp OR CL4 OR CL5 OR CL6 OR WP11 OR WP12 OR WP13) SUP NMAG (EDEF=11 OR EDAM=11)]: %GRAY%[%BLUE%11% ED%GRAY%] %NAME%%CONTINUE%
+ItemDisplay[!INF !RW !(clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp OR CL4 OR CL5 OR CL6 OR WP11 OR WP12 OR WP13) SUP NMAG (EDEF=12 OR EDAM=12)]: %GRAY%[%BLUE%12% ED%GRAY%] %NAME%%CONTINUE%
+ItemDisplay[!INF !RW !(clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp OR CL4 OR CL5 OR CL6 OR WP11 OR WP12 OR WP13) SUP NMAG (EDEF=13 OR EDAM=13)]: %GRAY%[%BLUE%13% ED%GRAY%] %NAME%%CONTINUE%
+ItemDisplay[!INF !RW !(clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp OR CL4 OR CL5 OR CL6 OR WP11 OR WP12 OR WP13) SUP NMAG (EDEF=14 OR EDAM=14)]: %GRAY%[%BLUE%14% ED%GRAY%] %NAME%%CONTINUE%
+ItemDisplay[!INF !RW !(clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp OR CL4 OR CL5 OR CL6 OR WP11 OR WP12 OR WP13) SUP NMAG (EDEF=15 OR EDAM=15)]: %GRAY%[%BLUE%15% ED%GRAY%] %NAME%%CONTINUE%
 
 //RW Bases with socketing recipes
 //Spirit Swords
