@@ -6,7 +6,7 @@
 //║║         Discord: RetroCro#7154      ║║
 //║║                                     ║║
 //╬╬╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╬╬
-// Version 7.02
+// Version 7.03
 
 //The latest version of this filter can be found at: https://raw.githubusercontent.com/RetroCro/PD2-Loot-Filter/main/default.filter
 
@@ -2138,36 +2138,127 @@ ItemDisplay[WP12 MAG (SUFFIX=578 OR SUFFIX=579)]: %RED%#### %BLUE%Wand %GREEN%[L
 ItemDisplay[WP12 MAG (SUFFIX=594 OR SUFFIX=595)]: %RED%#### %BLUE%Wand %GREEN%[LowerRes Charges] %RED%#### 
 
 ItemDisplay[(SK94>2 OR SK75>2 OR SK85>2) AND (SK79>0 OR SK91>0) WAND NECROMANCER]: %RED%#### %GREEN%%NAME% %RED%[%WHITE%%SOCKETS%%RED%] %ORANGE%[Unending Will Base] %RED%####  //Unending Will base, +3 Fire/Clay/Blood with +1 Mastery/Lower Res
+
+ItemDisplay[(CL4 OR WP12) SK92=1 CLVL<70]: %NAME% %ORANGE%[+1 PsnNova]%CONTINUE%
+ItemDisplay[(CL4 OR WP12) SK92=2 CLVL<70]: %NAME% %ORANGE%[+2 PsnNova]%CONTINUE%
 ItemDisplay[(CL4 OR WP12) SK92>2]: %NAME% %ORANGE%[+3 PsnNova]%CONTINUE%
+
+ItemDisplay[(CL4 OR WP12) SK84=1 CLVL<70]: %NAME% %ORANGE%[+1 BSpear]%CONTINUE%
+ItemDisplay[(CL4 OR WP12) SK84=2 CLVL<70]: %NAME% %ORANGE%[+2 BSpear]%CONTINUE%
 ItemDisplay[(CL4 OR WP12) SK84>2]: %NAME% %ORANGE%[+3 BSpear]%CONTINUE%
+
+ItemDisplay[(CL4 OR WP12) SK67=1 CLVL<70]: %NAME% %ORANGE%[+1 Teeth]%CONTINUE%
+ItemDisplay[(CL4 OR WP12) SK67=2 CLVL<70]: %NAME% %ORANGE%[+2 Teeth]%CONTINUE%
 ItemDisplay[(CL4 OR WP12) SK67>2]: %NAME% %ORANGE%[+3 Teeth]%CONTINUE%
+
+ItemDisplay[(CL4 OR WP12) SK70=1 CLVL<70]: %NAME% %ORANGE%[+1 SkelWarrior]%CONTINUE%
+ItemDisplay[(CL4 OR WP12) SK70=2 CLVL<70]: %NAME% %ORANGE%[+2 SkelWarrior]%CONTINUE%
 ItemDisplay[(CL4 OR WP12) SK70>2]: %NAME% %ORANGE%[+3 SkelWarrior]%CONTINUE%
+
+ItemDisplay[(CL4 OR WP12) SK89=1 CLVL<70]: %NAME% %ORANGE%[+1 SkelArch]%CONTINUE%
+ItemDisplay[(CL4 OR WP12) SK89=2 CLVL<70]: %NAME% %ORANGE%[+2 SkelArch]%CONTINUE%
 ItemDisplay[(CL4 OR WP12) SK89>2]: %NAME% %ORANGE%[+3 SkelArch]%CONTINUE%
+
+ItemDisplay[(CL4 OR WP12) SK91=1 CLVL<70]: %NAME% %ORANGE%[+1 LowRes]%CONTINUE%
+ItemDisplay[(CL4 OR WP12) SK91=2 CLVL<70]: %NAME% %ORANGE%[+2 LowRes]%CONTINUE%
 ItemDisplay[(CL4 OR WP12) SK91>2]: %NAME% %ORANGE%[+3 LowRes]%CONTINUE%
+
+ItemDisplay[(CL4 OR WP12) SK66=1 CLVL<70]: %NAME% %ORANGE%[+1 Amp]%CONTINUE%
+ItemDisplay[(CL4 OR WP12) SK66=2 CLVL<70]: %NAME% %ORANGE%[+2 Amp]%CONTINUE%
 ItemDisplay[(CL4 OR WP12) SK66>2]: %NAME% %ORANGE%[+3 Amp]%CONTINUE%
+
+ItemDisplay[(CL4 OR WP12) SK68=1 CLVL<70]: %NAME% %ORANGE%[+1 BoneArm]%CONTINUE%
+ItemDisplay[(CL4 OR WP12) SK68=2 CLVL<70]: %NAME% %ORANGE%[+2 BoneArm]%CONTINUE%
 ItemDisplay[(CL4 OR WP12) SK68>2]: %NAME% %ORANGE%[+3 BoneArm]%CONTINUE%
+
+ItemDisplay[(CL4 OR WP12) SK69=1 CLVL<70]: %NAME% %ORANGE%[+1 SkelMast]%CONTINUE%
+ItemDisplay[(CL4 OR WP12) SK69=2 CLVL<70]: %NAME% %ORANGE%[+2 SkelMast]%CONTINUE%
 ItemDisplay[(CL4 OR WP12) SK69>2]: %NAME% %ORANGE%[+3 SkelMast]%CONTINUE%
+
+ItemDisplay[(CL4 OR WP12) SK71=1 CLVL<70]: %NAME% %ORANGE%[+1 DimVis]%CONTINUE%
+ItemDisplay[(CL4 OR WP12) SK71=2 CLVL<70]: %NAME% %ORANGE%[+2 DimVis]%CONTINUE%
 ItemDisplay[(CL4 OR WP12) SK71>2]: %NAME% %ORANGE%[+3 DimVis]%CONTINUE%
+
+ItemDisplay[(CL4 OR WP12) SK72=1 CLVL<70]: %NAME% %ORANGE%[+1 Weak]%CONTINUE%
+ItemDisplay[(CL4 OR WP12) SK72=2 CLVL<70]: %NAME% %ORANGE%[+2 Weak]%CONTINUE%
 ItemDisplay[(CL4 OR WP12) SK72>2]: %NAME% %ORANGE%[+3 Weak]%CONTINUE%
-ItemDisplay[(CL4 OR WP12) SK73>2]: %NAME% %ORANGE%[+3 PsnDag]%CONTINUE%
+
+ItemDisplay[(CL4 OR WP12) SK73=1 CLVL<70]: %NAME% %ORANGE%[+1 PsnStrike]%CONTINUE%
+ItemDisplay[(CL4 OR WP12) SK73=2 CLVL<70]: %NAME% %ORANGE%[+2 PsnStrike]%CONTINUE%
+ItemDisplay[(CL4 OR WP12) SK73>2]: %NAME% %ORANGE%[+3 PsnStrike]%CONTINUE%
+
+ItemDisplay[(CL4 OR WP12) SK74=1 CLVL<70]: %NAME% %ORANGE%[+1 CorpseExp]%CONTINUE%
+ItemDisplay[(CL4 OR WP12) SK74=2 CLVL<70]: %NAME% %ORANGE%[+2 CorpseExp]%CONTINUE%
 ItemDisplay[(CL4 OR WP12) SK74>2]: %NAME% %ORANGE%[+3 CorpseExp]%CONTINUE%
+
+ItemDisplay[(CL4 OR WP12) SK75=1 CLVL<70]: %NAME% %ORANGE%[+1 ClayG]%CONTINUE%
+ItemDisplay[(CL4 OR WP12) SK75=2 CLVL<70]: %NAME% %ORANGE%[+2 ClayG]%CONTINUE%
 ItemDisplay[(CL4 OR WP12) SK75>2]: %NAME% %ORANGE%[+3 ClayG]%CONTINUE%
+
+ItemDisplay[(CL4 OR WP12) SK76=1 CLVL<70]: %NAME% %ORANGE%[+1 IronMaid]%CONTINUE%
+ItemDisplay[(CL4 OR WP12) SK76=2 CLVL<70]: %NAME% %ORANGE%[+2 IronMaid]%CONTINUE%
 ItemDisplay[(CL4 OR WP12) SK76>2]: %NAME% %ORANGE%[+3 IronMaid]%CONTINUE%
+
+ItemDisplay[(CL4 OR WP12) SK77=1 CLVL<70]: %NAME% %ORANGE%[+1 Terror]%CONTINUE%
+ItemDisplay[(CL4 OR WP12) SK77=2 CLVL<70]: %NAME% %ORANGE%[+2 Terror]%CONTINUE%
 ItemDisplay[(CL4 OR WP12) SK77>2]: %NAME% %ORANGE%[+3 Terror]%CONTINUE%
+
+ItemDisplay[(CL4 OR WP12) SK78=1 CLVL<70]: %NAME% %ORANGE%[+1 Bone Wall]%CONTINUE%
+ItemDisplay[(CL4 OR WP12) SK78=2 CLVL<70]: %NAME% %ORANGE%[+2 Bone Wall]%CONTINUE%
 ItemDisplay[(CL4 OR WP12) SK78>2]: %NAME% %ORANGE%[+3 Bone Wall]%CONTINUE%
+
+ItemDisplay[(CL4 OR WP12) SK79=1 CLVL<70]: %NAME% %ORANGE%[+1 GolemMast]%CONTINUE%
+ItemDisplay[(CL4 OR WP12) SK79=2 CLVL<70]: %NAME% %ORANGE%[+2 GolemMast]%CONTINUE%
 ItemDisplay[(CL4 OR WP12) SK79>2]: %NAME% %ORANGE%[+3 GolemMast]%CONTINUE%
+
+ItemDisplay[(CL4 OR WP12) SK80=1 CLVL<70]: %NAME% %ORANGE%[+1 SkelMage]%CONTINUE%
+ItemDisplay[(CL4 OR WP12) SK80=2 CLVL<70]: %NAME% %ORANGE%[+2 SkelMage]%CONTINUE%
 ItemDisplay[(CL4 OR WP12) SK80>2]: %NAME% %ORANGE%[+3 SkelMage]%CONTINUE%
+
+ItemDisplay[(CL4 OR WP12) SK81=1 CLVL<70]: %NAME% %ORANGE%[+1 Confuse]%CONTINUE%
+ItemDisplay[(CL4 OR WP12) SK81=2 CLVL<70]: %NAME% %ORANGE%[+2 Confuse]%CONTINUE%
 ItemDisplay[(CL4 OR WP12) SK81>2]: %NAME% %ORANGE%[+3 Confuse]%CONTINUE%
+
+ItemDisplay[(CL4 OR WP12) SK82=1 CLVL<70]: %NAME% %ORANGE%[+1 Life Tap]%CONTINUE%
+ItemDisplay[(CL4 OR WP12) SK82=2 CLVL<70]: %NAME% %ORANGE%[+2 Life Tap]%CONTINUE%
 ItemDisplay[(CL4 OR WP12) SK82>2]: %NAME% %ORANGE%[+3 Life Tap]%CONTINUE%
+
+ItemDisplay[(CL4 OR WP12) SK83=1 CLVL<70]: %NAME% %ORANGE%[+1 Desecrate]%CONTINUE%
+ItemDisplay[(CL4 OR WP12) SK83=2 CLVL<70]: %NAME% %ORANGE%[+2 Desecrate]%CONTINUE%
 ItemDisplay[(CL4 OR WP12) SK83>2]: %NAME% %ORANGE%[+3 Desecrate]%CONTINUE%
+
+ItemDisplay[(CL4 OR WP12) SK85=1 CLVL<70]: %NAME% %ORANGE%[+1 Blood Golem]%CONTINUE%
+ItemDisplay[(CL4 OR WP12) SK85=2 CLVL<70]: %NAME% %ORANGE%[+2 Blood Golem]%CONTINUE%
 ItemDisplay[(CL4 OR WP12) SK85>2]: %NAME% %ORANGE%[+3 Blood Golem]%CONTINUE%
+
+ItemDisplay[(CL4 OR WP12) SK86=1 CLVL<70]: %NAME% %ORANGE%[+1 Attract]%CONTINUE%
+ItemDisplay[(CL4 OR WP12) SK86=2 CLVL<70]: %NAME% %ORANGE%[+2 Attract]%CONTINUE%
 ItemDisplay[(CL4 OR WP12) SK86>2]: %NAME% %ORANGE%[+3 Attract]%CONTINUE%
+
+ItemDisplay[(CL4 OR WP12) SK87=1 CLVL<70]: %NAME% %ORANGE%[+1 Decrep]%CONTINUE%
+ItemDisplay[(CL4 OR WP12) SK87=2 CLVL<70]: %NAME% %ORANGE%[+2 Decrep]%CONTINUE%
 ItemDisplay[(CL4 OR WP12) SK87>2]: %NAME% %ORANGE%[+3 Decrep]%CONTINUE%
+
+ItemDisplay[(CL4 OR WP12) SK88=1 CLVL<70]: %NAME% %ORANGE%[+1 BonePris]%CONTINUE%
+ItemDisplay[(CL4 OR WP12) SK88=2 CLVL<70]: %NAME% %ORANGE%[+2 BonePris]%CONTINUE%
 ItemDisplay[(CL4 OR WP12) SK88>2]: %NAME% %ORANGE%[+3 BonePris]%CONTINUE%
+
+ItemDisplay[(CL4 OR WP12) SK90=1 CLVL<70]: %NAME% %ORANGE%[+1 IronG]%CONTINUE%
+ItemDisplay[(CL4 OR WP12) SK90=2 CLVL<70]: %NAME% %ORANGE%[+2 IronG]%CONTINUE%
 ItemDisplay[(CL4 OR WP12) SK90>2]: %NAME% %ORANGE%[+3 IronG]%CONTINUE%
+
+ItemDisplay[(CL4 OR WP12) SK93>2 CLVL<70]: %NAME% %ORANGE%[+1 Bone Spirit]%CONTINUE%
+ItemDisplay[(CL4 OR WP12) SK93>2 CLVL<70]: %NAME% %ORANGE%[+2 Bone Spirit]%CONTINUE%
 ItemDisplay[(CL4 OR WP12) SK93>2]: %NAME% %ORANGE%[+3 Bone Spirit]%CONTINUE%
+
+ItemDisplay[(CL4 OR WP12) SK94=1 CLVL<70]: %NAME% %ORANGE%[+1 FireG]%CONTINUE%
+ItemDisplay[(CL4 OR WP12) SK94=2 CLVL<70]: %NAME% %ORANGE%[+2 FireG]%CONTINUE%
 ItemDisplay[(CL4 OR WP12) SK94>2]: %NAME% %ORANGE%[+3 FireG]%CONTINUE%
+
+ItemDisplay[(CL4 OR WP12) SK95=1 CLVL<70]: %NAME% %ORANGE%[+1 Revive]%CONTINUE%
+ItemDisplay[(CL4 OR WP12) SK95=2 CLVL<70]: %NAME% %ORANGE%[+2 Revive]%CONTINUE%
 ItemDisplay[(CL4 OR WP12) SK95>2]: %NAME% %ORANGE%[+3 Revive]%CONTINUE%
+
 ItemDisplay[(CL4 OR WP12) TABSK16>2]: %NAME% %ORANGE%[+3 Curses]%CONTINUE%
 ItemDisplay[(CL4 OR WP12) TABSK17>2]: %NAME% %ORANGE%[+3 PnB]%CONTINUE%
 ItemDisplay[(CL4 OR WP12) TABSK18>2]: %NAME% %ORANGE%[+3 Summoning]%CONTINUE%
