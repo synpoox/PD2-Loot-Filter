@@ -184,7 +184,7 @@ ItemDisplay[pk1]: %RED%#%WHITE%#%BLUE%# %TAN%Terror %GRAY%[Countess] %BLUE%#%WHI
 ItemDisplay[pk2]: %RED%#%WHITE%#%BLUE%# %TAN%Hate %GRAY%[Summoner] %BLUE%#%WHITE%#%RED%#%MAP%
 ItemDisplay[pk3]: %RED%#%WHITE%#%BLUE%# %TAN%Destruction %GRAY%[Nih] %BLUE%#%WHITE%#%RED%#%MAP%
 
-ItemDisplay[toa]: %ORANGE%[%TEAL%RESET TOKEN%Orange%]%MAP% //Token of Absolution
+ItemDisplay[toa]: %ORANGE%[%TEAL%RESET TOKEN%ORANGE%]%MAP% //Token of Absolution
 ItemDisplay[tes]: %RED%## %TAN%%NAME% %PURPLE%[Andy\Dury] %RED%##%MAP% //Twisted Essence
 ItemDisplay[ceh]: %RED%## %TAN%%NAME% %PURPLE%[Meph] %RED%##%MAP% //Charged Essence
 ItemDisplay[bet]: %RED%## %TAN%%NAME% %PURPLE%[Diablo] %RED%##%MAP% //Burning Essence
