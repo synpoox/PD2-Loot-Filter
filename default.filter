@@ -34,8 +34,9 @@ ItemDisplay[bks]: %NAME% //Scroll of Inifuss Act I
 ItemDisplay[bkd]: %NAME%%MAP% //Key to the Cairn Stones Act I
 ItemDisplay[leg]: %NAME%%MAP% //Wirts Leg
 ItemDisplay[hdm]: %NAME%%MAP% //Horadric Malus Act I
-ItemDisplay[ass]: %NAME%%MAP% //Book of Skill Act II
-ItemDisplay[tr1]: %NAME% //Horadric Scroll Act II
+ItemDisplay[ass]: %NAME%%MAP% //Book of Skill Act II since it has no use
+ItemDisplay[tr1]: //Hide Horadric Scroll Act II
+//ItemDisplay[tr1]: %NAME% //Horadric Scroll Act II
 ItemDisplay[box]: %NAME%%MAP% //Horadric Cube Act II
 ItemDisplay[msf]: %NAME%%MAP% //Staff of Kings Act II
 ItemDisplay[vip]: %NAME%%MAP% //Viper Amulet Act II
