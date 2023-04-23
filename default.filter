@@ -6,7 +6,7 @@
 //║║         Discord: RetroCro#7154      ║║
 //║║                                     ║║
 //╬╬╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╬╬
-// Version 7.01
+// Version 7.02
 
 //The latest version of this filter can be found at: https://raw.githubusercontent.com/RetroCro/PD2-Loot-Filter/main/default.filter
 
@@ -521,7 +521,7 @@ ItemDisplay[(MAG OR RARE) !ID (crs OR bsd) CLVL>85]: //Hide magic or rare unid c
 ItemDisplay[(MAG OR RARE) !ID !ETH WP3 CLVL>85]: //Hide magic or rare unid non-eth swords after 85
 ItemDisplay[MAG !ID (crs OR bsd) CLVL>60]: //Hide magic unid Crystal (crs) and Broad Sword (bsd) after 60
 ItemDisplay[NMAG !ETH WP3 !7cr !crs CLVL>90]: //Hide non-magic non-eth swords except Phase Blade after 90
-ItemDisplay[NMAG 7cr !(SOCK=3 OR SOCK=5) CLVL>85]: //Hide non-magic phase blade not 3 or 5 socket after 85
+ItemDisplay[NMAG 7cr !(SOCK=3 OR SOCK=4 OR SOCK=5) CLVL>85]: //Hide non-magic phase blade not 3, 4, or 5 socket after 85
 ItemDisplay[NMAG WP3 (NORM OR EXC) !9cr !crs CLVL>90]: //Hide non-magic swords normal+exceptional except Dimensional Blade (9cr) and Crystal (crs) after 90
 ItemDisplay[NMAG (crs OR bsd) !(SOCK=4 OR SOCK=5) CLVL>85]: //Hide non-magic crystal and broad swords that are not 4 or 5 sockets after 85
 ItemDisplay[NMAG WP3 SOCK<4 !72h CLVL>60]: //Hide all less than 4 socket non-magic swords after 40 except legend sword
@@ -575,8 +575,11 @@ ItemDisplay[NMAG !SOCK=4 (9sr OR 9tr OR 9br OR 9st OR 9p9) CLVL>85]: //Hide non-
 ItemDisplay[NMAG (spr OR tri OR brn OR spt OR pik) CLVL>70]: //Hide non-magic normal Spears after 70
 ItemDisplay[NMAG (9sr OR 9tr OR 9br OR 9st OR 9p9) CLVL>85]: //Hide non-magic exceptional Spears after 85
 
-ItemDisplay[NMAG !SUP !(SOCK=0 OR SOCK>3) (spr OR 9sr OR 7sr OR tri OR 9tr OR 7tr OR brn OR 9br OR 7br OR spt OR 9st OR 7st OR pik OR 9p9 OR 7p7) CLVL>90]: //Hide non-superior Spears under 4 sockets after 90
-ItemDisplay[NMAG !(SOCK=0 OR SOCK>3) (spr OR 9sr OR 7sr OR tri OR 9tr OR 7tr OR brn OR 9br OR 7br OR spt OR 9st OR 7st OR pik OR 9p9 OR 7p7) CLVL>85]: //Hide Spears under 4 sockets after 85
+ItemDisplay[NMAG !SUP !(SOCK=0 OR SOCK>2) 7br CLVL>90]: //Hide non-superior Mancatcher under 3 sockets after 90
+ItemDisplay[NMAG !(SOCK=0 OR SOCK>2) 7br CLVL>85]: //Hide Mancatcher under 3 sockets after 85
+
+ItemDisplay[NMAG !SUP !(SOCK=0 OR SOCK>3) (spr OR 9sr OR 7sr OR tri OR 9tr OR 7tr OR brn OR 9br OR spt OR 9st OR 7st OR pik OR 9p9 OR 7p7) CLVL>90]: //Hide non-superior Spears under 4 sockets after 90
+ItemDisplay[NMAG !(SOCK=0 OR SOCK>3) (spr OR 9sr OR 7sr OR tri OR 9tr OR 7tr OR brn OR 9br OR spt OR 9st OR 7st OR pik OR 9p9 OR 7p7) CLVL>85]: //Hide Spears under 4 sockets after 85
 ItemDisplay[NMAG !ETH (spr OR 9sr OR 7sr OR tri OR 9tr OR 7tr OR brn OR 9br OR 7br OR spt OR 9st OR 7st OR pik OR 9p9 OR 7p7) CLVL>90]: //Hide non-eth Spears after 90
 
 //─────────────────────────────────────────────────────────────────────────────────────────────────
