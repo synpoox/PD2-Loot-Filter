@@ -6,7 +6,7 @@
 //║║         Discord: RetroCro#7154      ║║
 //║║                                     ║║
 //╬╬╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╬╬
-// Version 7.03
+// Version 7.04
 
 //The latest version of this filter can be found at: https://raw.githubusercontent.com/RetroCro/PD2-Loot-Filter/main/default.filter
 
@@ -1444,7 +1444,7 @@ ItemDisplay[drd UNI !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Sp
 ItemDisplay[drf UNI !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Ursa's Nightmare %RED%(New S5)  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 
 //CL2 - BARBARIAN ITEMS
-ItemDisplay[ba6 UNI !ID]: %BORDER-62%%GOLD%Reziarfg's Eye %RED%(New S3)%MAP-0E%
+ItemDisplay[ba6 UNI !ID]: %BORDER-62%%GOLD%Cyclopean Roar %RED%(New S3)%MAP-0E%
 ItemDisplay[baa UNI !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Arreat's Face  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 ItemDisplay[bac UNI !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Wolfhowl  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 ItemDisplay[bad UNI !ID]: %BORDER-62%%GOLD%Demonhorn's Edge%MAP-0E%
