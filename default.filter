@@ -6,7 +6,7 @@
 //║║         Discord: RetroCro#7154      ║║
 //║║                                     ║║
 //╬╬╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╬╬
-// Version 7.04
+// Version 7.05
 
 //The latest version of this filter can be found at: https://raw.githubusercontent.com/RetroCro/PD2-Loot-Filter/main/default.filter
 
@@ -534,6 +534,8 @@ ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) WP4 !WP5 CLVL>80]:
 //ItemDisplay[(dir OR 9di OR 7di) (NMAG OR (RARE !ID))]: //Hide Dirk, Rondel, and Mithral Point
 //ItemDisplay[(kri OR 9kr OR 7kr) (NMAG OR (RARE !ID))]: //Hide Kris, Cinquedeas, and Fanged Knife
 //ItemDisplay[(bld OR 9bl OR 7bl) (NMAG OR (RARE !ID))]: //Hide Blade, Stilleto, and Legend Spike
+
+ItemDisplay[NMAG WP4 !WP5 (SOCK=1 OR SOCK=2) CLVL>30]: //Hide non-magic daggers that are 1-2 sockets 30
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Throwing Weapons - Show all Throwing for crafting
 //ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) WP5 !WP6]: //Hide All Throwing Weapons Except Javelins
@@ -662,6 +664,7 @@ ItemDisplay[NMAG SOCK=2 WP13 CLVL>85]:
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) am6 CLVL>85]: //Hide Ashwood Bow
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (am2 OR am7) CLVL>85]: //Hide Reflex Bow, Ceremonial Bow
 
+ItemDisplay[NMAG (am1 OR am2 OR am6 OR am7 OR amb OR amc) (SOCK=1 OR SOCK=2) CLVL>30]: //Hide non-magic Ama bows that are 1-2 sockets 30
 ItemDisplay[NMAG (am1 OR am2 OR am6 OR am7 OR amb OR amc) TABSK0<2 CLVL>60]: //Hide non-magic Ama bows that are less than +2 bow skills after 60
 ItemDisplay[NMAG (am1 OR am2 OR am6 OR am7 OR amb OR amc) TABSK0<3 CLVL>70]: //Hide non-magic Ama bows that are less than +3 bow skills after 70
 ItemDisplay[MAG !ID (am1 OR am2 OR am6 OR am7) CLVL>70]: //Hide normal and exception magic Ama bows after 70
@@ -2104,7 +2107,7 @@ ItemDisplay[(CL6 OR WP11) SK49>2]: %NAME% %ORANGE%[+3 Lightning]%CONTINUE%
 ItemDisplay[(CL6 OR WP11) SK50>2]: %NAME% %ORANGE%[+3 Shiver]%CONTINUE%
 ItemDisplay[(CL6 OR WP11) SK51>2]: %NAME% %ORANGE%[+3 FireWall]%CONTINUE%
 ItemDisplay[(CL6 OR WP11) SK52>2]: %NAME% %ORANGE%[+3 F.Chant]%CONTINUE%
-ItemDisplay[(CL6 OR WP11) SK53>2]: %NAME% %ORANGE%[+3 ChLightning]%CONTINUE%
+ItemDisplay[(CL6 OR WP11) SK53>2]: %NAME% %ORANGE%[+3 ChainLite]%CONTINUE%
 ItemDisplay[(CL6 OR WP11) SK54>2]: %NAME% %ORANGE%[+3 Tele]%CONTINUE%
 ItemDisplay[(CL6 OR WP11) SK55>2]: %NAME% %ORANGE%[+3 Glacial]%CONTINUE%
 ItemDisplay[(CL6 OR WP11) SK56>2]: %NAME% %ORANGE%[+3 Meteor]%CONTINUE%
