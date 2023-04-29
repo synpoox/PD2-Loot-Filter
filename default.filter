@@ -6,7 +6,7 @@
 //║║         Discord: RetroCro#7154      ║║
 //║║                                     ║║
 //╬╬╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╬╬
-// Version 7.05
+// Version 7.06
 
 //The latest version of this filter can be found at: https://raw.githubusercontent.com/RetroCro/PD2-Loot-Filter/main/default.filter
 
@@ -56,9 +56,9 @@ ItemDisplay[hfh]: %NAME%%MAP% //Hellforge Hammer Act IV
 ItemDisplay[ice]: %NAME%%MAP% //Malah's Potion Act V
 ItemDisplay[tr2]: %NAME%%MAP% //Scroll of Resistance Act V
 //║                                    ▬▬▬▬▬ Gold Drops ▬▬▬▬▬                                     ║
-ItemDisplay[GOLD<50]:
-ItemDisplay[GOLD<500 CLVL>17]:
-ItemDisplay[GOLD<2000 CLVL>79]:
+ItemDisplay[GOLD<1000]:
+ItemDisplay[GOLD<5000 CLVL>17]:
+ItemDisplay[GOLD<10000 CLVL>79]:
 ItemDisplay[GOLD>0]: %NAME%
 //ItemDisplay[GOLD>0]: //Hide all small gold piles since it auto picks up (this is not true any more starting season 5)
 
@@ -1750,7 +1750,7 @@ ItemDisplay[cm3 (RES>7 AND LIFE>0)]: %PURPLE%ALL Res %RED%Life %GRAY%Grand Charm
 ItemDisplay[cm3 (RES>7 AND FRW>0)]: %PURPLE%ALL Res %ORANGE%frw %GRAY%Grand Charm
 ItemDisplay[cm3 (RES>7 AND FHR>0)]: %PURPLE%ALL Res %ORANGE%FHR %GRAY%Grand Charm
 ItemDisplay[cm3 RES>9]: %PURPLE%ALL %WHITE%Res %GRAY%Grand Charm
-ItemDisplay[cm3 LIFE>39]: %NAME% %RED%Life%CONTINUE%
+ItemDisplay[cm3 LIFE>34]: %NAME% %RED%Life%CONTINUE%
 ItemDisplay[cm3 MANA>49]: %NAME% %BLUE%Mana%CONTINUE%
 
 
