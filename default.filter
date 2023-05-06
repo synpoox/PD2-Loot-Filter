@@ -6,7 +6,7 @@
 //║║         Discord: RetroCro#7154      ║║
 //║║                                     ║║
 //╬╬╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╬╬
-// Version 7.06
+// Version 7.07
 
 //The latest version of this filter can be found at: https://raw.githubusercontent.com/RetroCro/PD2-Loot-Filter/main/default.filter
 
@@ -197,14 +197,14 @@ ItemDisplay[mbr]: %RED%#%WHITE%#%BLUE%# %TAN%Mephisto's Brain %BLUE%#%WHITE%#%RE
 
 // Other Special Items
 ItemDisplay[ear]: //Hide Ears
-ItemDisplay[std]: %NAME% //Standard of Heroes
+ItemDisplay[std]: %NAME% x%QTY% //Standard of Heroes
 
 //PD2 Items
 ItemDisplay[fort]: %GOLD%%NAME%{%WHITE%Map + %GOLD%Orb %WHITE%For Melee Chars}%MAP% //Orb of Fortification
 ItemDisplay[imra]: %ORANGE%* %NAME% %ORANGE%*{%WHITE%Map + %GOLD%Orb %WHITE%+ %BLUE%Jewel %WHITE%+ %ORANGE%Rune>9%NL%%TAN%Note%WHITE%: Imbue White Map to %YELLOW%Rare%WHITE%}%MAP% //Zakarum Orb
 ItemDisplay[rera]: %ORANGE%* %NAME% %ORANGE%*{%YELLOW%Map %WHITE%+ %GOLD%Orb %WHITE%+ Perf Gem + %ORANGE%Rune>9%NL%%TAN%Note%WHITE%: Reroll %YELLOW%Rare %WHITE%Map:}%MAP% //Horadrim Orb
 ItemDisplay[upma]: %ORANGE%* %NAME% %ORANGE%*{%BLUE%Map %WHITE%+ %GOLD%Orb %WHITE%+ Perf %GRAY%PSkull %WHITE%+ %ORANGE%Rune>9%NL%%TAN%Note%WHITE%: Imbue %BLUE%Magic %WHITE%Map to %YELLOW%Rare%WHITE%:} //Angelic Orb
-//ItemDisplay[imma CLVL>94]: //Hide Arcane Orb after 94
+ItemDisplay[imma CLVL>94]: //Hide Arcane Orb after 94
 ItemDisplay[imma]: %ORANGE%* %NAME% %ORANGE%*{%WHITE%Map + %GOLD%Orb %WHITE%+ %BLUE%Jewel %NL%%TAN%Note%WHITE%: Imbue White Map to %BLUE%Magic%WHITE%:}%MAP% //Arcane Orb		
 //ItemDisplay[scou]: %NAME% %ORANGE%*{%BLUE%M%WHITE%a%YELLOW%p %WHITE%+ %GOLD%Orb %WHITE%+ %ORANGE%Hel Rune%NL%%TAN%Note%WHITE%: Imbue %BLUE%Magic%WHITE%/%YELLOW%Rare %WHITE%Map to White:}%MAP% //Orb of Destruction
 ItemDisplay[scou]: %NAME% %ORANGE%* {%WHITE%Map + %GOLD%Orb%NL%%TAN%Note%WHITE%: Imbue %BLUE%Magic%WHITE%/%YELLOW%Rare %WHITE%Map to White:}%MAP% //Orb of Destruction
@@ -256,7 +256,7 @@ ItemDisplay[MAPTIER=1]: %GREEN%* [T1] %CONTINUE%
 ItemDisplay[MAPTIER=2]: %ORANGE%* [T2] %CONTINUE%
 ItemDisplay[MAPTIER=3]: %RED%* [T3] %CONTINUE%
 ItemDisplay[MAPTIER=4]: %PURPLE%* [T4] %CONTINUE%
-ItemDisplay[(t51 OR t52)]: %GOLD%* %CONTINUE%
+ItemDisplay[(t51 OR t52)]: %GOLD%* [T3] %CONTINUE%
 ItemDisplay[(t61 OR t62)]: %PURPLE%* [PvP] %CONTINUE%
 
 // Map Color Fixing
@@ -344,7 +344,7 @@ ItemDisplay[t43]: %NAME%Sanctuary of Sin Map%WHITE%%CONTINUE%{%NAME%}
 //ItemDisplay[t48]: %NAME%T4-8 Map%WHITE%%CONTINUE%{%NAME%}
 //ItemDisplay[t49]: %NAME%T4-9 Map%WHITE%%CONTINUE%{%NAME%}
 
-// Maps [T5] Unique
+// Maps [T3] Unique (New Season 7)
 ItemDisplay[t51]: %NAME%Zhar's Sanctum%WHITE%%CONTINUE%{%NAME%}
 ItemDisplay[t52]: %NAME%Stygian Caverns%WHITE%%CONTINUE%{%NAME%}
 //ItemDisplay[t53]: %NAME%T5-3 Map%WHITE%%CONTINUE%{%NAME%}
@@ -521,8 +521,9 @@ ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (gsd OR 9gd) CLVL>85]: //Hide Grea
 ItemDisplay[(MAG OR RARE) !ID (crs OR bsd) CLVL>85]: //Hide magic or rare unid crystal and broad sword after 85
 ItemDisplay[(MAG OR RARE) !ID !ETH WP3 CLVL>85]: //Hide magic or rare unid non-eth swords after 85
 ItemDisplay[MAG !ID (crs OR bsd) CLVL>60]: //Hide magic unid Crystal (crs) and Broad Sword (bsd) after 60
+ItemDisplay[NMAG WP3 (SOCK=1 OR SOCK=2) CLVL>30]: //Hide non-magic Swords that are 1-2 sockets 30
 ItemDisplay[NMAG !ETH WP3 !7cr !crs CLVL>90]: //Hide non-magic non-eth swords except Phase Blade after 90
-ItemDisplay[NMAG 7cr !(SOCK=3 OR SOCK=4 OR SOCK=5) CLVL>85]: //Hide non-magic phase blade not 3, 4, or 5 socket after 85
+ItemDisplay[NMAG (7cr OR 72h) !(SOCK=3 OR SOCK=4 OR SOCK=5) CLVL>85]: //Hide non-magic phase blade and legend sword not 3, 4, or 5 socket after 85
 ItemDisplay[NMAG WP3 (NORM OR EXC) !9cr !crs CLVL>90]: //Hide non-magic swords normal+exceptional except Dimensional Blade (9cr) and Crystal (crs) after 90
 ItemDisplay[NMAG (crs OR bsd) !(SOCK=4 OR SOCK=5) CLVL>85]: //Hide non-magic crystal and broad swords that are not 4 or 5 sockets after 85
 ItemDisplay[NMAG WP3 SOCK<4 !72h CLVL>60]: //Hide all less than 4 socket non-magic swords after 40 except legend sword
@@ -597,6 +598,7 @@ ItemDisplay[NMAG !ETH (spr OR 9sr OR 7sr OR tri OR 9tr OR 7tr OR brn OR 9br OR 7
 ItemDisplay[(MAG OR RARE) !ID ETH (WP8 OR 7s8 OR 7wc OR 7pa OR 7h7) CLVL>94]: //Hide magic or rare unid eth Polearms after 94
 ItemDisplay[(MAG OR RARE) !ID !ETH (WP8 OR 7s8 OR 7wc OR 7pa OR 7h7) CLVL>85]: //Hide magic or rare unid non-eth Polearms after 85
 ItemDisplay[(MAG OR RARE) !ID (bar OR vou OR scy OR pax OR hal OR wsc OR 9b7 OR 9vo OR 9s8 OR 9pa OR 9h9 OR 9wc) CLVL>85]: //Hide magic or rare unid normal and exceptional polearms after 85
+ItemDisplay[NMAG WP8 (SOCK=1 OR SOCK=2) CLVL>30]: //Hide non-magic polearms that are 1-2 sockets 30
 ItemDisplay[NMAG !(SOCK=0 OR SOCK=4) (WP8 OR 7s8 OR 7wc OR 7pa OR 7h7) CLVL>80]: //Hide non-magic polearms that are not 0 or 4 socket after 80
 ItemDisplay[NMAG !ETH WP8 (NORM OR EXC) CLVL>80]: //Hide non-magic non-eth normal and exceptional Polearms after 80
 ItemDisplay[NMAG !ETH WP8 ELT CLVL>90]: //Hide non-magic non-eth elite Polearms after 90
@@ -644,7 +646,7 @@ ItemDisplay[NMAG !(SOCK=4 OR SOCK=5) WP10 CLVL>85]: //Hide non-magic non 4 socke
 //ItemDisplay[NMAG !ETH 6cs]: 
 ItemDisplay[RARE !ID WP11 CLVL>90]: 
 ItemDisplay[MAG !ID WP11 CLVL>90]: 
-ItemDisplay[NMAG WP11 !(SOCK=0 OR SOCK=4) CLVL>60]: 
+ItemDisplay[NMAG WP11 !(SOCK=0 OR SOCK=4 OR SOCK=5) CLVL>60]: 
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Wands - Hide All Wands That Can Not Have 2 Sockets
 ItemDisplay[(NMAG OR ((MAG OR RARE) AND !ID)) (wnd OR ywn OR 9wn) CLVL>85]:
@@ -1696,7 +1698,7 @@ ItemDisplay[SET !ID mpi]: %BORDER-62%%GREEN%Tancred's Pick%MAP-84%
 ItemDisplay[SET !ID ulg]: %BORDER-62%      %RED%##%WHITE%##%BLUE%##  %GREEN%Laying of Hands Gloves  %BLUE%##%WHITE%##%RED%##      %MAP-84%
 ItemDisplay[SET !ID uui]: %BORDER-62%%GREEN%The Disciple Armor%MAP-84%
 ItemDisplay[SET !ID xlb]: %BORDER-62%%GREEN%The Disciple Boots%MAP-84%
-ItemDisplay[SET !ID umc]: %BORDER-62%%GREEN%The Disciple Belt%MAP-84%
+ItemDisplay[SET !ID umc]: %BORDER-62%%GREEN%Credendum Belt%MAP-84%
 
 //Trang-Oul's Avatar (Necro)
 ItemDisplay[SET !ID uh9]: %BORDER-62%      %RED%##%WHITE%##%BLUE%##  %GREEN%Trang-Oul's Helm  %BLUE%##%WHITE%##%RED%##      %MAP-84%
@@ -1817,6 +1819,7 @@ ItemDisplay[cm2 STAT329>2]: %NAME% %RED%Fire DMG%CONTINUE%
 ItemDisplay[cm2 STAT330>2]: %NAME% %YELLOW%Lite DMG%CONTINUE%
 ItemDisplay[cm2 STAT331>2]: %NAME% %BLUE%Cold DMG%CONTINUE%
 ItemDisplay[cm2 STAT332>2]: %NAME% %GREEN%Psn DMG%CONTINUE%
+ItemDisplay[cm2 STR=5]: %NAME% %RED%STR%CONTINUE%
 
 //Good Charms - Small Charms
 ItemDisplay[cm1 !UNI]: %GRAY%SC%CONTINUE%
@@ -2346,6 +2349,10 @@ ItemDisplay[WP13 SK378>2]: %NAME% %ORANGE%[+3 Joust]%CONTINUE%
 //Druid Clubs/Maces and Helms
 ItemDisplay[CL1 NMAG]: %GRAY%DruHelm%CONTINUE%
 ItemDisplay[CL1 MAG]: %BLUE%DruHelm%CONTINUE%
+
+ItemDisplay[NMAG (clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp)]: %GRAY%Club%CONTINUE%
+ItemDisplay[RARE (clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp)]: %YELLOW%Club%CONTINUE%
+ItemDisplay[MAG (clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp)]: %BLUE%Club%CONTINUE%
 
 ItemDisplay[WP2 SK370>0 SK231>0 SK243>0]: %NAME% %ORANGE%[GustCarrionShockwave]%CONTINUE%
 
