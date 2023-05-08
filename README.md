@@ -4,7 +4,7 @@
 
 **Features:** 	This filter shows the identified names of set and unique items. This filter will get stricter as you level. It notifies for important drops and draws minimap icons. 
 
-**[Download](https://github.com/GorOps/PD2-Loot-Filter/archive/refs/heads/main.zip)**
+**[Download](https://github.com/RetroCro/PD2-Loot-Filter/archive/refs/heads/main.zip)**
 
 ## Runes:
 ![Runes:](https://i.imgur.com/qSSr7oq.png)
