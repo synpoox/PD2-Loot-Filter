@@ -6,7 +6,7 @@
 //║║         Discord: RetroCro#7154      ║║
 //║║                                     ║║
 //╬╬╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╬╬
-// Version 7.07
+// Version 7.08
 
 //The latest version of this filter can be found at: https://raw.githubusercontent.com/RetroCro/PD2-Loot-Filter/main/default.filter
 
@@ -28,8 +28,12 @@
 //-----------------------------------------------------------------------------------
 // Filter Levels (0 = No Filter)
 ItemDisplayFilterName[]: Base
-ItemDisplayFilterName[]: No TP/ID Scrolls
+ItemDisplayFilterName[]: No TP/ID Scrolls //Filter Level 2
+ItemDisplayFilterName[]: No TP/ID, Life/Mana Pots, Flawless Gems //Filter Level 3
 
+//-----------------------------------------------------------------------------------
+// QUEST ITEMS
+//-----------------------------------------------------------------------------------
 ItemDisplay[bks]: %NAME% //Scroll of Inifuss Act I
 ItemDisplay[bkd]: %NAME%%MAP% //Key to the Cairn Stones Act I
 ItemDisplay[leg]: %NAME%%MAP% //Wirts Leg
@@ -92,6 +96,14 @@ ItemDisplay[gsb]: %ORANGE%[%BLUE%Sapphire%ORANGE%]
 ItemDisplay[gsy]: %ORANGE%[%YELLOW%Topaz%ORANGE%]
 ItemDisplay[sku]: %ORANGE%[%GRAY%Skull%ORANGE%]
 
+ItemDisplay[(gzv OR gzvs) FILTLVL=3]: //Hide Flawless Gems filter level 3
+ItemDisplay[(glw OR glws) FILTLVL=3]: 
+ItemDisplay[(glg OR glgs) FILTLVL=3]: 
+ItemDisplay[(glr OR glrs) FILTLVL=3]: 
+ItemDisplay[(glb OR glbs) FILTLVL=3]: 
+ItemDisplay[(gly OR glys) FILTLVL=3]: 
+ItemDisplay[(skl OR skls) FILTLVL=3]: 
+
 ItemDisplay[gzvs QTY>1]: %ORANGE%[%PURPLE%F.Amethyst x%QTY%%ORANGE%] //Flawless Stacked Gems
 ItemDisplay[glws QTY>1]: %ORANGE%[%WHITE%F.Diamond x%QTY%%ORANGE%] //Flawless Diamond
 ItemDisplay[glgs QTY>1]: %ORANGE%[%GREEN%F.Emerald x%QTY%%ORANGE%] //Flawless Emerald
@@ -100,13 +112,13 @@ ItemDisplay[glbs QTY>1]: %ORANGE%[%BLUE%F.Sapphire x%QTY%%ORANGE%] //Flawless Sa
 ItemDisplay[glys QTY>1]: %ORANGE%[%YELLOW%F.Topaz x%QTY%%ORANGE%] //Flawless Topaz
 ItemDisplay[skls QTY>1]: %ORANGE%[%GRAY%F.Skull x%QTY%%ORANGE%] //Flawless Skull
 
-ItemDisplay[gzv OR gzvs]: %ORANGE%[%PURPLE%F.Amethyst%ORANGE%] //Flawless Unstacked Gems
-ItemDisplay[glw OR glws]: %ORANGE%[%WHITE%F.Diamond%ORANGE%]
-ItemDisplay[glg OR glgs]: %ORANGE%[%GREEN%F.Emerald%ORANGE%]
-ItemDisplay[glr OR glrs]: %ORANGE%[%RED%F.Ruby%ORANGE%]
-ItemDisplay[glb OR glbs]: %ORANGE%[%BLUE%F.Sapphire%ORANGE%]
-ItemDisplay[gly OR glys]: %ORANGE%[%YELLOW%F.Topaz%ORANGE%]
-ItemDisplay[skl OR skls]: %ORANGE%[%GRAY%F.Skull%ORANGE%]
+ItemDisplay[(gzv OR gzvs)]: %ORANGE%[%PURPLE%F.Amethyst%ORANGE%] //Flawless Unstacked Gems
+ItemDisplay[(glw OR glws)]: %ORANGE%[%WHITE%F.Diamond%ORANGE%]
+ItemDisplay[(glg OR glgs)]: %ORANGE%[%GREEN%F.Emerald%ORANGE%]
+ItemDisplay[(glr OR glrs)]: %ORANGE%[%RED%F.Ruby%ORANGE%]
+ItemDisplay[(glb OR glbs)]: %ORANGE%[%BLUE%F.Sapphire%ORANGE%]
+ItemDisplay[(gly OR glys)]: %ORANGE%[%YELLOW%F.Topaz%ORANGE%]
+ItemDisplay[(skl OR skls)]: %ORANGE%[%GRAY%F.Skull%ORANGE%]
 
 ItemDisplay[gpvs QTY>1]: %BORDER-62%%ORANGE%[[%PURPLE%@ Amethyst x%QTY%%ORANGE%]] //Perfect Stacked Gems
 ItemDisplay[gpws QTY>1]: %BORDER-62%%ORANGE%[[%WHITE%@ Diamond x%QTY%%ORANGE%]]
@@ -147,8 +159,8 @@ ItemDisplay[RUNE>25]: %BORDER-62%          %RED%###%WHITE%###%BLUE%###  %RUNENAM
 
 //║                     ▬▬▬▬▬ Town Portal and ID Scrolls/Tomes and Keys ▬▬▬▬▬                     ║
 //Utilites
-ItemDisplay[tsc FILTLVL=2]:
-ItemDisplay[isc FILTLVL=2]:
+ItemDisplay[tsc (FILTLVL=2 OR FILTLVL=3)]:
+ItemDisplay[isc (FILTLVL=2 OR FILTLVL=3)]:
 ItemDisplay[tsc]: %GREEN%!%GRAY%TP
 ItemDisplay[isc]: %GREEN%!%GRAY%ID
 ItemDisplay[tbk]: %GREEN%!%GRAY%TP Book
@@ -171,6 +183,8 @@ ItemDisplay[(hp4 OR mp4) CLVL>80]: //Ignore Greater Healing/Mana Potions (Level 
 ItemDisplay[hp4]: %GREEN%!%RED%Grt HP
 ItemDisplay[mp4]: %GREEN%!%BLUE%Grt Mana
 //ItemDisplay[hp5 CLVL>95]: //Ignore Super Healing Potions (Level 90+)
+
+ItemDisplay[(hp5 OR mp5) FILTLVL=3]:
 ItemDisplay[hp5]: %GREEN%!%RED%HP
 ItemDisplay[mp5]: %GREEN%!%BLUE%MP
 ItemDisplay[rvl]: %BLACK%   %GREEN%!%PURPLE%7%  %BLACK%
@@ -705,6 +719,7 @@ ItemDisplay[MAG !ID (uit OR uow) CLVL>90]: //Hide Magic Monarch (uit) after 90
 //ItemDisplay[MAG !ID (uit OR kit OR lrg) CLVL>5]: //Hide Eth Monarch, Kite Shield (kit), and Large Shield (lrg)
 ItemDisplay[RARE !ID (uit OR kit OR lrg OR uow) CLVL>85]: //Hide Rare Monarch, Kite Shield (kit), Large Shield (lrg), and Aegis
 ItemDisplay[NMAG (SOCK=1 OR SOCK=2) (uit OR kit OR lrg OR uow) CLVL>85]: //Hide less than 3 socket Monarch, Kite Shield (kit), Large Shield (lrg), and Aegis (uow)
+ItemDisplay[NMAG (kit OR lrg) CLVL>90]: //Hide Kite Shield (kit), Large Shield after 90
 ItemDisplay[NMAG EQ3 !SUP !(CL3 OR CL4) SOCK<3 CLVL>90]: //Hide less than 3 socket shields non pal non nec
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 // Body Armor - Hide All except Mage Plate (xtp) and Elite Armors
@@ -1100,13 +1115,18 @@ ItemDisplay[hbt UNI !ID]: %BORDER-62%%GOLD%Tearhaunch%MAP-0E%
 
 //Exceptional Unique Boots
 ItemDisplay[xlb UNI !ID]: %BORDER-62%%GOLD%Infernostride%MAP-0E%
+
+ItemDisplay[xvb UNI !ID ETH]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %RED%ETH %GOLD%Waterwalk  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 ItemDisplay[xvb UNI !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Waterwalk  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 ItemDisplay[xmb UNI !ID]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %GOLD%Silkweave  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
+ItemDisplay[xtb UNI !ID ETH]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %RED%ETH %GOLD%War Traveler  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 ItemDisplay[xtb UNI !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%War Traveler  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
+ItemDisplay[xhb UNI !ID ETH]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %RED%ETH %GOLD%Gore Rider  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 ItemDisplay[xhb UNI !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Gore Rider  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 
+
 //Elite Unique Boots
-ItemDisplay[utb UNI !ID]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %GOLD%Itherael's Path  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
+ItemDisplay[utb UNI !ID]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %GOLD%Itherael's Path  %BLUE%#%WHITE%#%RED%#      %MAP-0E% //Dclone Item
 ItemDisplay[uvb UNI !ID ETH]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %RED%ETH %GOLD%Sandstorm Trek  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 ItemDisplay[uvb UNI !ID]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %GOLD%Sandstorm Trek  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
 ItemDisplay[umb UNI !ID]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %GOLD%Marrowwalk  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
@@ -1791,9 +1811,9 @@ ItemDisplay[ID cm3 ((TABSK0>0 OR TABSK1>0 OR TABSK2>0 OR TABSK8>0 OR TABSK9>0 OR
 
 ItemDisplay[ID cm3 ((TABSK0>0 OR TABSK1>0 OR TABSK2>0 OR TABSK8>0 OR TABSK9>0 OR TABSK10>0 OR TABSK16>0 OR TABSK17>0 OR TABSK18>0 OR TABSK24>0 OR TABSK25>0 OR TABSK26>0 OR TABSK32>0 OR TABSK33>0 OR TABSK34>0 OR TABSK40>0 OR TABSK41>0 OR TABSK42>0 OR TABSK48>0 OR TABSK49>0 OR TABSK50>0) AND STAT96>6)]: %NAME% %RED%+Frw
 
-ItemDisplay[ID cm3 ((TABSK0>0 OR TABSK1>0 OR TABSK2>0 OR TABSK8>0 OR TABSK9>0 OR TABSK10>0 OR TABSK16>0 OR TABSK17>0 OR TABSK18>0 OR TABSK24>0 OR TABSK25>0 OR TABSK26>0 OR TABSK32>0 OR TABSK33>0 OR TABSK34>0 OR TABSK40>0 OR TABSK41>0 OR TABSK42>0 OR TABSK48>0 OR TABSK49>0 OR TABSK50>0) AND STAT0>5)]: %NAME% %RED%+6Str
+ItemDisplay[ID cm3 ((TABSK0>0 OR TABSK1>0 OR TABSK2>0 OR TABSK8>0 OR TABSK9>0 OR TABSK10>0 OR TABSK16>0 OR TABSK17>0 OR TABSK18>0 OR TABSK24>0 OR TABSK25>0 OR TABSK26>0 OR TABSK32>0 OR TABSK33>0 OR TABSK34>0 OR TABSK40>0 OR TABSK41>0 OR TABSK42>0 OR TABSK48>0 OR TABSK49>0 OR TABSK50>0) AND STAT0>4)]: %NAME% %RED%+Str
 
-ItemDisplay[ID cm3 ((TABSK0>0 OR TABSK1>0 OR TABSK2>0 OR TABSK8>0 OR TABSK9>0 OR TABSK10>0 OR TABSK16>0 OR TABSK17>0 OR TABSK18>0 OR TABSK24>0 OR TABSK25>0 OR TABSK26>0 OR TABSK32>0 OR TABSK33>0 OR TABSK34>0 OR TABSK40>0 OR TABSK41>0 OR TABSK42>0 OR TABSK48>0 OR TABSK49>0 OR TABSK50>0) AND STAT2>5)]: %NAME% %RED%+6Dex
+ItemDisplay[ID cm3 ((TABSK0>0 OR TABSK1>0 OR TABSK2>0 OR TABSK8>0 OR TABSK9>0 OR TABSK10>0 OR TABSK16>0 OR TABSK17>0 OR TABSK18>0 OR TABSK24>0 OR TABSK25>0 OR TABSK26>0 OR TABSK32>0 OR TABSK33>0 OR TABSK34>0 OR TABSK40>0 OR TABSK41>0 OR TABSK42>0 OR TABSK48>0 OR TABSK49>0 OR TABSK50>0) AND STAT2>4)]: %NAME% %RED%+Dex
 
 ItemDisplay[ID cm3 ((TABSK0>0 OR TABSK1>0 OR TABSK2>0 OR TABSK8>0 OR TABSK9>0 OR TABSK10>0 OR TABSK16>0 OR TABSK17>0 OR TABSK18>0 OR TABSK24>0 OR TABSK25>0 OR TABSK26>0 OR TABSK32>0 OR TABSK33>0 OR TABSK34>0 OR TABSK40>0 OR TABSK41>0 OR TABSK42>0 OR TABSK48>0 OR TABSK49>0 OR TABSK50>0) AND GFIND>0)]: %NAME% %RED%+Gold Find
 
