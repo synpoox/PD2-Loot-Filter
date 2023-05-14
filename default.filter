@@ -6,7 +6,7 @@
 //║║         Discord: RetroCro#7154      ║║
 //║║                                     ║║
 //╬╬╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╬╬
-// Version 7.08
+// Version 7.09
 
 //The latest version of this filter can be found at: https://raw.githubusercontent.com/RetroCro/PD2-Loot-Filter/main/default.filter
 
@@ -2185,9 +2185,9 @@ ItemDisplay[(CL4 OR WP12) SK89=1 CLVL<70]: %NAME% %ORANGE%[+1 SkelArch]%CONTINUE
 ItemDisplay[(CL4 OR WP12) SK89=2 CLVL<70]: %NAME% %ORANGE%[+2 SkelArch]%CONTINUE%
 ItemDisplay[(CL4 OR WP12) SK89>2]: %NAME% %ORANGE%[+3 SkelArch]%CONTINUE%
 
-ItemDisplay[(CL4 OR WP12) SK91=1 CLVL<70]: %NAME% %ORANGE%[+1 LowRes]%CONTINUE%
-ItemDisplay[(CL4 OR WP12) SK91=2 CLVL<70]: %NAME% %ORANGE%[+2 LowRes]%CONTINUE%
-ItemDisplay[(CL4 OR WP12) SK91>2]: %NAME% %ORANGE%[+3 LowRes]%CONTINUE%
+ItemDisplay[(CL4 OR WP12) SK91=1 CLVL<70]: %NAME% %ORANGE%[+1 LR]%CONTINUE%
+ItemDisplay[(CL4 OR WP12) SK91=2]: %NAME% %ORANGE%[+2 LR]%CONTINUE%
+ItemDisplay[(CL4 OR WP12) SK91>2]: %NAME% %ORANGE%[+3 LR]%CONTINUE%
 
 ItemDisplay[(CL4 OR WP12) SK66=1 CLVL<70]: %NAME% %ORANGE%[+1 Amp]%CONTINUE%
 ItemDisplay[(CL4 OR WP12) SK66=2 CLVL<70]: %NAME% %ORANGE%[+2 Amp]%CONTINUE%
