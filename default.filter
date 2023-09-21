@@ -6,7 +6,7 @@
 //║║         Discord: RetroCro#7154      ║║
 //║║                                     ║║
 //╬╬╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╬╬
-// Version 8.00
+// Version 8.01
 
 //The latest version of this filter can be found at: https://raw.githubusercontent.com/RetroCro/PD2-Loot-Filter/main/default.filter
 
@@ -18,7 +18,7 @@
 //Credits:	SPAMRAT - For the Base Loot Filter and for being the most helpful and active support rep in the PoD #lootfilter discord
 //		Kryszard - Used his notes and runeword bases, and misc stuff
 //		Mack (mackanmusic#4536 / twitch.tv/mackanmusic) - Lots of loot filter talk and inspiration came from this guy!
-//		Wolfie - Loot Filter God.
+//		Wolfie - Pioneer of PD2 loot filtration!
 //		Mark and Dave of HiimFilter https://github.com/Maaaaaarrk/HiimFilter-PD2-Filter
 
 //Greets:	SCplebs Crew and everyone chasing 99. See you at the top!
@@ -153,7 +153,6 @@ ItemDisplay[(tpls OR tplm OR tpll) CLVL>24]: //Hide S8 Throwing Potions - Charge
 
 // Hide White Arrows / Bolts
 ItemDisplay[(aqv OR cqv) NMAG CLVL>6]:
-
 
 //║                                       ▬▬▬▬▬ Runes ▬▬▬▬▬                                       ║
 ItemDisplay[RUNE<20 QTY>1]: %BORDER-62%%RUNENAME% Rune %GRAY%(%RUNENUM%) x%QTY%
@@ -551,7 +550,7 @@ ItemDisplay[NMAG !ETH WP3 !7cr !crs CLVL>90]: //Hide non-magic non-eth swords ex
 ItemDisplay[NMAG (7cr OR 72h) !(SOCK=3 OR SOCK=4 OR SOCK=5) CLVL>85]: //Hide non-magic phase blade and legend sword not 3, 4, or 5 socket after 85
 ItemDisplay[NMAG WP3 (NORM OR EXC) !9cr !crs CLVL>90]: //Hide non-magic swords normal+exceptional except Dimensional Blade (9cr) and Crystal (crs) after 90
 //ItemDisplay[NMAG (crs OR bsd) !(SOCK=4 OR SOCK=5) CLVL>85]: //Hide non-magic crystal and broad swords that are not 4 or 5 sockets after 85
-ItemDisplay[NMAG WP3 SOCK<4 !(72h OR crs OR bsd) CLVL>60]: //Hide all less than 4 socket non-magic swords after 40 except legend sword
+ItemDisplay[NMAG WP3 SOCK<4 !(72h OR crs OR bsd) CLVL>60]: //Hide all less than 4 socket non-magic swords after 60 except legend sword
 ItemDisplay[NMAG SOCK<4 (crs OR bsd) CLVL>85]: ///Hide non-magic crystal and broad swords that are not 4+ or 5 sockets after 85
 ItemDisplay[NMAG 72h !SOCK=3 CLVL>90]: //Hide non eth non 3 socket legend swords after 90
 //─────────────────────────────────────────────────────────────────────────────────────────────────
@@ -625,7 +624,7 @@ ItemDisplay[(MAG OR RARE) !ID ETH (WP8 OR 7s8 OR 7wc OR 7pa OR 7h7) CLVL>94]: //
 ItemDisplay[(MAG OR RARE) !ID !ETH (WP8 OR 7s8 OR 7wc OR 7pa OR 7h7) CLVL>85]: //Hide magic or rare unid non-eth Polearms after 85
 ItemDisplay[(MAG OR RARE) !ID (bar OR vou OR scy OR pax OR hal OR wsc OR 9b7 OR 9vo OR 9s8 OR 9pa OR 9h9 OR 9wc) CLVL>85]: //Hide magic or rare unid normal and exceptional polearms after 85
 ItemDisplay[NMAG WP8 (SOCK=1 OR SOCK=2) CLVL>30]: //Hide non-magic polearms that are 1-2 sockets 30
-ItemDisplay[NMAG !(SOCK=0 OR SOCK=4) (WP8 OR 7s8 OR 7wc OR 7pa OR 7h7) CLVL>80]: //Hide non-magic polearms that are not 0 or 4 socket after 80
+ItemDisplay[NMAG !(SOCK=0 OR SOCK=4 OR SOCK=5) (WP8 OR 7s8 OR 7wc OR 7pa OR 7h7) CLVL>80]: //Hide non-magic polearms that are not 0 or 4 socket after 80
 ItemDisplay[NMAG !ETH WP8 (NORM OR EXC) CLVL>80]: //Hide non-magic non-eth normal and exceptional Polearms after 80
 ItemDisplay[NMAG !ETH WP8 ELT CLVL>90]: //Hide non-magic non-eth elite Polearms after 90
 ItemDisplay[NMAG WP8 !(SOCK=0 OR SOCK=4 OR SOCK=5) NORM CLVL>60]: //Hide non-magic NORMAL polearms that are not 0, 4, or 5 socket after 60
@@ -2021,52 +2020,41 @@ ItemDisplay[NMAG ETH (SOCK=0 OR SOCK>3) 7gm]: %RED%#### %GREEN%ETH Thunder Maul 
 //ItemDisplay[ETH (SOCK=0 OR SOCK=2) 6cs]: %RED%#### %GREEN%ETH Elder Staff %RED%[%WHITE%%SOCKETS%%RED%] %RED%#### //0 or 2 socket Eth Elder Staff (Wind)
 
 // Polearms - Thresher (7s8), Giant Thresher (7wc), Mancatcher (7br)
-ItemDisplay[NMAG (SOCK=0 OR SOCK=4) ETH 7s8]: %RED%#### %GREEN%ETH Thresher %RED%[%WHITE%%SOCKETS%%RED%] %RED%####%MAP-7F%
-ItemDisplay[NMAG (SOCK=0 OR SOCK=4) ETH 7wc]: %RED%#### %GREEN%ETH Giant Thresher %RED%[%WHITE%%SOCKETS%%RED%] %RED%####%MAP-7F%
-ItemDisplay[NMAG (SOCK=0 OR SOCK=4) ETH 7br]: %RED%#### %GREEN%ETH Mancatcher %RED%[%WHITE%%SOCKETS%%RED%] %RED%####%MAP-7F%
-//ItemDisplay[NMAG (SOCK=0 OR SOCK=4) (7s8 OR 7wc OR 7br) CLVL>92]: 
+ItemDisplay[NMAG SOCK=0 (7s8 OR 7wc OR 7br) CLVL>93]: //Hide 0 socket Thresher, GT, Mancatcher after 93
+ItemDisplay[NMAG SOCK=0 ETH 7s8]: %RED%#### %GREEN%ETH Thresher %RED%####%MAP-7F%
+ItemDisplay[NMAG SOCK=0 ETH 7wc]: %RED%#### %GREEN%ETH Giant Thresher %RED%####%MAP-7F%
+ItemDisplay[NMAG SOCK=0 ETH 7br]: %RED%#### %GREEN%ETH Mancatcher %RED%####%MAP-7F%
+ItemDisplay[NMAG SOCK=4 ETH 7s8]: %RED%#### %GREEN%ETH Thresher %RED%[%WHITE%%SOCKETS%%RED%] %RED%####%MAP-7F%
+ItemDisplay[NMAG SOCK=4 ETH 7wc]: %RED%#### %GREEN%ETH Giant Thresher %RED%[%WHITE%%SOCKETS%%RED%] %RED%####%MAP-7F%
+ItemDisplay[NMAG SOCK=4 ETH 7br]: %RED%#### %GREEN%ETH Mancatcher %RED%[%WHITE%%SOCKETS%%RED%] %RED%####%MAP-7F%
 
 // Polearms - Cryptic Axe (7pa), and Great Poleaxe (7h7) for characters under 90
+ItemDisplay[NMAG SOCK=0 (7pa OR 7h7) CLVL>93]: //Hide 0 socket Cryptic Axe, Great Poleaxe after 93
+ItemDisplay[NMAG SOCK=0 ETH 7pa]: %RED%#### %GREEN%ETH Cryptic Axe %RED%####
+ItemDisplay[NMAG SOCK=0 ETH 7h7]: %RED%#### %GREEN%ETH Great Poleaxe %RED%####
 ItemDisplay[NMAG SOCK=4 ETH 7pa]: %RED%#### %GREEN%ETH Cryptic Axe %RED%[%WHITE%%SOCKETS%%RED%] %RED%####
 ItemDisplay[NMAG SOCK=4 ETH 7h7]: %RED%#### %GREEN%ETH Great Poleaxe %RED%[%WHITE%%SOCKETS%%RED%] %RED%####
-ItemDisplay[NMAG CLVL<90 SOCK=4 (7pa OR 7h7)]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%]
-ItemDisplay[NMAG SOCK=4 ETH (7pa OR 7h7)]: %NAME% %RED%[%WHITE%%SOCKETS%%RED
-ItemDisplay[NMAG SOCK=0 ETH (7pa OR 7h7)]: %NAME%
 
-ItemDisplay[NMAG CLVL<90 (crs OR bsd) SOCK=4]: %GREEN%Spirit Base Sword %RED%[%WHITE%%SOCKETS%%RED%] //4os Crystal/Broad
+ItemDisplay[NMAG CLVL<90 (crs OR bsd) SOCK=4]: %GREEN%Spirit Sword Base %RED%[%WHITE%%SOCKETS%%RED%] //4os Crystal/Broad
+ItemDisplay[NMAG CLVL>89 (crs OR bsd) SOCK=4]: //hide spirit sword base after 89
+
 ItemDisplay[NMAG CLVL<80 (lrg OR kit) SOCK=3]: %GREEN%Ancients Pledge Base %RED%[%WHITE%%SOCKETS%%RED%] //3os Ancients Pledge Base
 ItemDisplay[NMAG CLVL>79 (lrg OR kit) SOCK=3]: //Hide 3os Ancients Pledge Base at higher levels
 
-//ItemDisplay[NMAG 2ax SOCK=5]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%] //Double Axe 5os for Beast
-
-//ItemDisplay[NMAG uit (SOCK=0 OR SOCK=4) !ETH]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%] //Monarch
-
-//Show Elite and Mage Plate Body Armors
-//ItemDisplay[NMAG SOCK>2 (uui OR uea OR ula OR utu OR ung OR ucl OR urs OR uhn OR upl OR utp OR uld OR uld OR ult OR uth OR uul OR uar OR xtp)]: %RED%#### %ORANGE%%NAME% %RED%[%WHITE%%SOCKETS%%RED%] %RED%####
-//ItemDisplay[NMAG SOCK<3 (uui OR uea OR ula OR utu OR ung OR ucl OR urs OR uhn OR upl OR utp OR uld OR uld OR ult OR uth OR uul OR uar OR xtp)]:
-
-//ItemDisplay[NMAG (SOCK=3 OR SOCK=4) aar]: %RED%#### %DARK_GREEN%%NAME% %RED%[%WHITE%%SOCKETS%%RED%] %RED%#### //3-4os Ancient Armor
-
 //Paladin Shields - Show the good bases with 25 res or more. Call out ones with 30 res.
 ItemDisplay[NMAG pab ETH RES=30]: %RED%#### %GRAY%ETH %GREEN%Sacred Targe 30 %RED%[%WHITE%%SOCKETS%%RED%] %RED%####%DOT-D6% //Show all Sacred Targe with 25+ res
-ItemDisplay[NMAG pab ETH RES>24]: %RED%#### %GRAY%ETH %GREEN%Sacred Targe %DOT-D6%%RED%[%WHITE%%SOCKETS%%RED%] %RED%#### //Show all Sacred Targe with 25+ res
+ItemDisplay[NMAG pab ETH RES>24]: %RED%## %GRAY%ETH %GREEN%Sacred Targe %DOT-D6%%RED%[%WHITE%%SOCKETS%%RED%] %RED%## //Show all Sacred Targe with 25+ res
 ItemDisplay[NMAG pab RES=30]: %RED%#### %GREEN%Sacred Targe 30 %RED%[%WHITE%%SOCKETS%%RED%] %RED%####%DOT-D6% //Show all Sacred Targe with 25+ res
-ItemDisplay[NMAG pab RES>24]: %RED%#### %GREEN%Sacred Targe %RED%[%WHITE%%SOCKETS%%RED%] %RED%#### //Show all Sacred Targe with 25+ res
+ItemDisplay[NMAG pab RES>24]: %RED%## %GREEN%Sacred Targe %RED%[%WHITE%%SOCKETS%%RED%] %RED%## //Show all Sacred Targe with 25+ res
 ItemDisplay[NMAG paf ETH RES=30]: %RED%#### %GRAY%ETH %GREEN%Vortex Shield 30 %RED%[%WHITE%%SOCKETS%%RED%] %RED%####%DOT-D6% //Show all Vortex Shields with 25+ res
-ItemDisplay[NMAG paf ETH RES>24]: %RED%#### %GRAY%ETH %GREEN%Vortex Shield %DOT-D6%%RED%[%WHITE%%SOCKETS%%RED%] %RED%#### //Show all Vortex Shields with 25+ res
+ItemDisplay[NMAG paf ETH RES>24]: %RED%## %GRAY%ETH %GREEN%Vortex Shield %DOT-D6%%RED%[%WHITE%%SOCKETS%%RED%] %RED%## //Show all Vortex Shields with 25+ res
 ItemDisplay[NMAG paf RES=30]: %RED%#### %GREEN%Vortex Shield 30 %RED%[%WHITE%%SOCKETS%%RED%] %RED%####%DOT-D6% //Show all Vortex Shields with 25+ res
-ItemDisplay[NMAG paf RES>24]: %RED%#### %GREEN%Vortex Shield %RED%[%WHITE%%SOCKETS%%RED%] %RED%#### //Show all Vortex Shields with 25+ res
+ItemDisplay[NMAG paf RES>24]: %RED%## %GREEN%Vortex Shield %RED%[%WHITE%%SOCKETS%%RED%] %RED%## //Show all Vortex Shields with 25+ res
 ItemDisplay[NMAG pac ETH RES=30]: %RED%#### %GRAY%ETH %GREEN%Sacred Rondache 30 %RED%[%WHITE%%SOCKETS%%RED%] %RED%####%DOT-D6% //Show all Sacred Rondache with 25+ res
-ItemDisplay[NMAG pac ETH RES>24]: %RED%#### %GRAY%ETH %GREEN%Sacred Rondache %RED%[%WHITE%%SOCKETS%%RED%] %RED%####  //Show all Sacred Rondache with 25+ res
+ItemDisplay[NMAG pac ETH RES>24]: %RED%## %GRAY%ETH %GREEN%Sacred Rondache %RED%[%WHITE%%SOCKETS%%RED%] %RED%##  //Show all Sacred Rondache with 25+ res
 ItemDisplay[NMAG pac RES=30]: %RED%#### %GREEN%Sacred Rondache 30 %RED%[%WHITE%%SOCKETS%%RED%] %RED%####%DOT-D6% //Show all Sacred Rondache with 25+ res
-ItemDisplay[NMAG pac RES>24]: %RED%#### %GREEN%Sacred Rondache %RED%[%WHITE%%SOCKETS%%RED%] %RED%#### //Show all Sacred Rondache with 25+ res
+ItemDisplay[NMAG pac RES>24]: %RED%## %GREEN%Sacred Rondache %RED%[%WHITE%%SOCKETS%%RED%] %RED%## //Show all Sacred Rondache with 25+ res
 ItemDisplay[NMAG CL3 ELT !INF ETH !RW (SOCK=0 OR SOCK=4) AR>100]: %DOT-D6%%RED%#### %GRAY%[%RED%ED%GRAY%] %NAME% %RED%[%WHITE%%SOCKETS%%RED%] %RED%#### 
-
-
-//ItemDisplay[NMAG SOCK>2 (7cr OR 7fb OR 7gs OR 72h OR 7gd) ETH]: %RED%#### %NAME% %RED%[%WHITE%%SOCKETS%%RED%] %RED%#### //Eth Phase(7cr),ColossusSw(7fb),BalrogBl(7gs),Legend(72h),ColossusBlade(7gd)
-//ItemDisplay[NMAG SOCK>2 (7cr OR 7fb OR 7gs OR 72h OR 7gd) !ETH CLVL<90]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%] //Eth Phase(7cr),ColossusSw(7fb),BalrogBl(7gs),Legend(72h),ColossusBlade(7gd)
-ItemDisplay[NMAG SOCK=0 (7cr OR 7fb OR 7gs OR 72h OR 7gd) !ETH CLVL<90]: %NAME% //Eth Phase(7cr),ColossusSw(7fb),BalrogBl(7gs),Legend(72h),ColossusBlade(7gd)
-
 
 //Amazon Jav Skills
 ItemDisplay[CL7 TABSK2=1]: %NAME% %ORANGE%[+1 Jav]%CONTINUE%
@@ -2080,42 +2068,127 @@ ItemDisplay[(CL7 OR WP9) TABSK0=3]: %NAME% %ORANGE%[+3 Bow]%CONTINUE%
 
 //Assassin/Plague Claw Bases
 ItemDisplay[MAG TABSK48=3 SIN]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%] %ORANGE%[+3 Trap]%MAP-7F%%CONTINUE%
-//ItemDisplay[CL5 SK262>2 SK272>2]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%] %ORANGE%[+3 WoF\WoI]%MAP-7F%%CONTINUE%
-ItemDisplay[CL5 SK262>2]: %NAME% %ORANGE%[+3 WoF]%MAP-7F%%CONTINUE%
 ItemDisplay[CL5 SK271>2 SK276>2]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%] %ORANGE%[+3 ChainLS\DS]%MAP-7F%
+
+ItemDisplay[CL5 SK262=1 CLVL<70]: %NAME% %ORANGE%[+1 WoF]%MAP-7F%%CONTINUE%
+ItemDisplay[CL5 SK262=2 CLVL<70]: %NAME% %ORANGE%[+2 WoF]%MAP-7F%%CONTINUE%
+ItemDisplay[CL5 SK262>2]: %NAME% %ORANGE%[+3 WoF]%MAP-7F%%CONTINUE%
+
+ItemDisplay[CL5 SK271=1 CLVL<70]: %NAME% %ORANGE%[+1 ChainLS]%MAP-7F%%CONTINUE%
+ItemDisplay[CL5 SK271=2 CLVL<70]: %NAME% %ORANGE%[+2 ChainLS]%MAP-7F%%CONTINUE%
 ItemDisplay[CL5 SK271>2]: %NAME% %ORANGE%[+3 ChainLS]%MAP-7F%%CONTINUE%
-//ItemDisplay[CL5 SK277>2 SK278>0]: %NAME% %RED%[%WHITE%%SOCKETS%%RED%] %ORANGE%[+3 BS\Venom]%MAP-7F%%CONTINUE%
+
+ItemDisplay[CL5 SK273=1 CLVL<70]: %NAME% %ORANGE%[+1 MB]%CONTINUE%
+ItemDisplay[CL5 SK273=2 CLVL<70]: %NAME% %ORANGE%[+2 MB]%CONTINUE%
 ItemDisplay[CL5 SK273>2]: %NAME% %ORANGE%[+3 MB]%CONTINUE%
+
+ItemDisplay[CL5 SK278=1 CLVL<70]: %NAME% %ORANGE%[+1 Venom]%CONTINUE%
+ItemDisplay[CL5 SK278=2 CLVL<70]: %NAME% %ORANGE%[+2 Venom]%CONTINUE%
 ItemDisplay[CL5 SK278>2]: %NAME% %ORANGE%[+3 Venom]%CONTINUE%
+
+ItemDisplay[CL5 SK265=1 CLVL<70]: %NAME% %ORANGE%[+1 Cobra]%CONTINUE%
+ItemDisplay[CL5 SK265=2 CLVL<70]: %NAME% %ORANGE%[+2 Cobra]%CONTINUE%
 ItemDisplay[CL5 SK265>2]: %NAME% %ORANGE%[+3 Cobra]%CONTINUE%
+
+ItemDisplay[CL5 SK280=1 CLVL<70]: %NAME% %ORANGE%[+1 Phoenix]%CONTINUE%
+ItemDisplay[CL5 SK280=2 CLVL<70]: %NAME% %ORANGE%[+2 Phoenix]%CONTINUE%
 ItemDisplay[CL5 SK280>2]: %NAME% %ORANGE%[+3 Phoenix]%CONTINUE%
-ItemDisplay[CL5 SK366>2]: %NAME% %ORANGE%[+3 LightSent]%CONTINUE%
 
+ItemDisplay[CL5 SK366=1 CLVL<70]: %NAME% %ORANGE%[+1 LiteSent]%CONTINUE%
+ItemDisplay[CL5 SK366=2 CLVL<70]: %NAME% %ORANGE%[+2 LiteSent]%CONTINUE%
+ItemDisplay[CL5 SK366>2]: %NAME% %ORANGE%[+3 LiteSent]%CONTINUE%
 
+ItemDisplay[CL5 SK251=1 CLVL<70]: %NAME% %ORANGE%[+1 FBlast]%CONTINUE%
+ItemDisplay[CL5 SK251=2 CLVL<70]: %NAME% %ORANGE%[+2 FBlast]%CONTINUE%
 ItemDisplay[CL5 SK251>2]: %NAME% %ORANGE%[+3 FBlast]%CONTINUE%
-ItemDisplay[CL5 SK252>2]: %NAME% %ORANGE%[+3 ClawMast]%CONTINUE%
-ItemDisplay[CL5 SK253>2]: %NAME% %ORANGE%[+3 PsyHammer]%CONTINUE%
-ItemDisplay[CL5 SK254>2]: %NAME% %ORANGE%[+3 TigerStr]%CONTINUE%
-ItemDisplay[CL5 SK255>2]: %NAME% %ORANGE%[+3 DragTalon]%CONTINUE%
-ItemDisplay[CL5 SK256>2]: %NAME% %ORANGE%[+3 ShkWeb]%CONTINUE%
-ItemDisplay[CL5 SK257>2]: %NAME% %ORANGE%[+3 BldSent]%CONTINUE%
-ItemDisplay[CL5 SK266>2]: %NAME% %ORANGE%[+3 BladeF]%CONTINUE%
-ItemDisplay[CL5 SK259>2]: %NAME% %ORANGE%[+3 FistFire]%CONTINUE%
-ItemDisplay[CL5 SK260>2]: %NAME% %ORANGE%[+3 DragClaw]%CONTINUE%
-ItemDisplay[CL5 SK261>2]: %NAME% %ORANGE%[+3 ChrgBolt]%CONTINUE%
-ItemDisplay[CL5 SK263>2]: %NAME% %ORANGE%[+3 WPBlock]%CONTINUE%
-ItemDisplay[CL5 SK264>2]: %NAME% %ORANGE%[+3 CloakShdw]%CONTINUE%
-ItemDisplay[CL5 SK267>2]: %NAME% %ORANGE%[+3 Fade]%CONTINUE%
-ItemDisplay[CL5 SK268>2]: %NAME% %ORANGE%[+3 ShadWarr]%CONTINUE%
-ItemDisplay[CL5 SK269>2]: %NAME% %ORANGE%[+3 Thunder]%CONTINUE%
-ItemDisplay[CL5 SK270>2]: %NAME% %ORANGE%[+3 DragTail]%CONTINUE%
-ItemDisplay[CL5 SK272>2]: %NAME% %ORANGE%[+3 WakeInfrn]%CONTINUE%
-ItemDisplay[CL5 SK274>2]: %NAME% %ORANGE%[+3 BldIce]%CONTINUE%
-ItemDisplay[CL5 SK275>2]: %NAME% %ORANGE%[+3 DragFlight]%CONTINUE%
-ItemDisplay[CL5 SK276>2]: %NAME% %ORANGE%[+3 DSentry]%CONTINUE%
-ItemDisplay[CL5 SK277>2]: %NAME% %ORANGE%[+3 BldShld]%CONTINUE%
-ItemDisplay[CL5 SK279>2]: %NAME% %ORANGE%[+3 ShadMast]%CONTINUE%
 
+ItemDisplay[CL5 SK252=1 CLVL<70]: %NAME% %ORANGE%[+1 ClawMast]%CONTINUE%
+ItemDisplay[CL5 SK252=2 CLVL<70]: %NAME% %ORANGE%[+2 ClawMast]%CONTINUE%
+ItemDisplay[CL5 SK252>2]: %NAME% %ORANGE%[+3 ClawMast]%CONTINUE%
+
+ItemDisplay[CL5 SK253=1 CLVL<70]: %NAME% %ORANGE%[+1 PsyHammer]%CONTINUE%
+ItemDisplay[CL5 SK253=2 CLVL<70]: %NAME% %ORANGE%[+2 PsyHammer]%CONTINUE%
+ItemDisplay[CL5 SK253>2]: %NAME% %ORANGE%[+3 PsyHammer]%CONTINUE%
+
+ItemDisplay[CL5 SK254=1 CLVL<70]: %NAME% %ORANGE%[+1 TigerStr]%CONTINUE%
+ItemDisplay[CL5 SK254=2 CLVL<70]: %NAME% %ORANGE%[+2 TigerStr]%CONTINUE%
+ItemDisplay[CL5 SK254>2]: %NAME% %ORANGE%[+3 TigerStr]%CONTINUE%
+
+ItemDisplay[CL5 SK255=1 CLVL<70]: %NAME% %ORANGE%[+1 DragTalon]%CONTINUE%
+ItemDisplay[CL5 SK255=2 CLVL<70]: %NAME% %ORANGE%[+2 DragTalon]%CONTINUE%
+ItemDisplay[CL5 SK255>2]: %NAME% %ORANGE%[+3 DragTalon]%CONTINUE%
+
+ItemDisplay[CL5 SK256=1 CLVL<70]: %NAME% %ORANGE%[+1 ShkWeb]%CONTINUE%
+ItemDisplay[CL5 SK256=2 CLVL<70]: %NAME% %ORANGE%[+2 ShkWeb]%CONTINUE%
+ItemDisplay[CL5 SK256>2]: %NAME% %ORANGE%[+3 ShkWeb]%CONTINUE%
+
+ItemDisplay[CL5 SK257=1 CLVL<70]: %NAME% %ORANGE%[+1 BldSent]%CONTINUE%
+ItemDisplay[CL5 SK257=2 CLVL<70]: %NAME% %ORANGE%[+2 BldSent]%CONTINUE%
+ItemDisplay[CL5 SK257>2]: %NAME% %ORANGE%[+3 BldSent]%CONTINUE%
+
+ItemDisplay[CL5 SK266=1 CLVL<70]: %NAME% %ORANGE%[+1 BladeF]%CONTINUE%
+ItemDisplay[CL5 SK266=2 CLVL<70]: %NAME% %ORANGE%[+2 BladeF]%CONTINUE%
+ItemDisplay[CL5 SK266>2]: %NAME% %ORANGE%[+3 BladeF]%CONTINUE%
+
+ItemDisplay[CL5 SK259=1 CLVL<70]: %NAME% %ORANGE%[+1 FistFire]%CONTINUE%
+ItemDisplay[CL5 SK259=2 CLVL<70]: %NAME% %ORANGE%[+2 FistFire]%CONTINUE%
+ItemDisplay[CL5 SK259>2]: %NAME% %ORANGE%[+3 FistFire]%CONTINUE%
+
+ItemDisplay[CL5 SK260=1 CLVL<70]: %NAME% %ORANGE%[+1 DragClaw]%CONTINUE%
+ItemDisplay[CL5 SK260=2 CLVL<70]: %NAME% %ORANGE%[+2 DragClaw]%CONTINUE%
+ItemDisplay[CL5 SK260>2]: %NAME% %ORANGE%[+3 DragClaw]%CONTINUE%
+
+ItemDisplay[CL5 SK261=1 CLVL<70]: %NAME% %ORANGE%[+1 ChrgBolt]%CONTINUE%
+ItemDisplay[CL5 SK261=2 CLVL<70]: %NAME% %ORANGE%[+2 ChrgBolt]%CONTINUE%
+ItemDisplay[CL5 SK261>2]: %NAME% %ORANGE%[+3 ChrgBolt]%CONTINUE%
+
+ItemDisplay[CL5 SK263=1 CLVL<70]: %NAME% %ORANGE%[+1 WPBlock]%CONTINUE%
+ItemDisplay[CL5 SK263=2 CLVL<70]: %NAME% %ORANGE%[+2 WPBlock]%CONTINUE%
+ItemDisplay[CL5 SK263>2]: %NAME% %ORANGE%[+3 WPBlock]%CONTINUE%
+
+ItemDisplay[CL5 SK264=1 CLVL<70]: %NAME% %ORANGE%[+1 CloakShdw]%CONTINUE%
+ItemDisplay[CL5 SK264=2 CLVL<70]: %NAME% %ORANGE%[+2 CloakShdw]%CONTINUE%
+ItemDisplay[CL5 SK264>2]: %NAME% %ORANGE%[+3 CloakShdw]%CONTINUE%
+
+ItemDisplay[CL5 SK267=1 CLVL<70]: %NAME% %ORANGE%[+1 Fade]%CONTINUE%
+ItemDisplay[CL5 SK267=2 CLVL<70]: %NAME% %ORANGE%[+2 Fade]%CONTINUE%
+ItemDisplay[CL5 SK267>2]: %NAME% %ORANGE%[+3 Fade]%CONTINUE%
+
+ItemDisplay[CL5 SK268=1 CLVL<70]: %NAME% %ORANGE%[+1 ShadWarr]%CONTINUE%
+ItemDisplay[CL5 SK268=2 CLVL<70]: %NAME% %ORANGE%[+2 ShadWarr]%CONTINUE%
+ItemDisplay[CL5 SK268>2]: %NAME% %ORANGE%[+3 ShadWarr]%CONTINUE%
+
+ItemDisplay[CL5 SK269=1 CLVL<70]: %NAME% %ORANGE%[+1 Thunder]%CONTINUE%
+ItemDisplay[CL5 SK269=2 CLVL<70]: %NAME% %ORANGE%[+2 Thunder]%CONTINUE%
+ItemDisplay[CL5 SK269>2]: %NAME% %ORANGE%[+3 Thunder]%CONTINUE%
+
+ItemDisplay[CL5 SK270=1 CLVL<70]: %NAME% %ORANGE%[+1 DragTail]%CONTINUE%
+ItemDisplay[CL5 SK270=2 CLVL<70]: %NAME% %ORANGE%[+2 DragTail]%CONTINUE%
+ItemDisplay[CL5 SK270>2]: %NAME% %ORANGE%[+3 DragTail]%CONTINUE%
+
+ItemDisplay[CL5 SK272=1 CLVL<70]: %NAME% %ORANGE%[+1 WakeInfrn]%CONTINUE%
+ItemDisplay[CL5 SK272=2 CLVL<70]: %NAME% %ORANGE%[+2 WakeInfrn]%CONTINUE%
+ItemDisplay[CL5 SK272>2]: %NAME% %ORANGE%[+3 WakeInfrn]%CONTINUE%
+
+ItemDisplay[CL5 SK274=1 CLVL<70]: %NAME% %ORANGE%[+1 BldIce]%CONTINUE%
+ItemDisplay[CL5 SK274=2 CLVL<70]: %NAME% %ORANGE%[+2 BldIce]%CONTINUE%
+ItemDisplay[CL5 SK274>2]: %NAME% %ORANGE%[+3 BldIce]%CONTINUE%
+
+ItemDisplay[CL5 SK275=1 CLVL<70]: %NAME% %ORANGE%[+1 DragFlight]%CONTINUE%
+ItemDisplay[CL5 SK275=2 CLVL<70]: %NAME% %ORANGE%[+2 DragFlight]%CONTINUE%
+ItemDisplay[CL5 SK275>2]: %NAME% %ORANGE%[+3 DragFlight]%CONTINUE%
+
+ItemDisplay[CL5 SK276=1 CLVL<70]: %NAME% %ORANGE%[+1 DSentry]%CONTINUE%
+ItemDisplay[CL5 SK276=2 CLVL<70]: %NAME% %ORANGE%[+2 DSentry]%CONTINUE%
+ItemDisplay[CL5 SK276>2]: %NAME% %ORANGE%[+3 DSentry]%CONTINUE%
+
+ItemDisplay[CL5 SK277=1 CLVL<70]: %NAME% %ORANGE%[+1 BldShld]%CONTINUE%
+ItemDisplay[CL5 SK277=2 CLVL<70]: %NAME% %ORANGE%[+2 BldShld]%CONTINUE%
+ItemDisplay[CL5 SK277>2]: %NAME% %ORANGE%[+3 BldShld]%CONTINUE%
+
+ItemDisplay[CL5 SK279=1 CLVL<70]: %NAME% %ORANGE%[+1 ShadMast]%CONTINUE%
+ItemDisplay[CL5 SK279=2 CLVL<70]: %NAME% %ORANGE%[+2 ShadMast]%CONTINUE%
+ItemDisplay[CL5 SK279>2]: %NAME% %ORANGE%[+3 ShadMast]%CONTINUE%
 
 //Plague/Sorceress Orb/Staff
 ItemDisplay[(CL6 OR WP11) NMAG]: %GRAY%%NAME%%CONTINUE%
