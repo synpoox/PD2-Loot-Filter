@@ -6,7 +6,7 @@
 //║║         Discord: RetroCro#7154      ║║
 //║║                                     ║║
 //╬╬╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╬╬
-// Version 8.02
+// Version 8.03
 
 //The latest version of this filter can be found at: https://raw.githubusercontent.com/RetroCro/PD2-Loot-Filter/main/default.filter
 
@@ -280,7 +280,7 @@ ItemDisplay[MAPTIER=1]: %GREEN%* [T1] %CONTINUE%
 ItemDisplay[MAPTIER=2]: %ORANGE%* [T2] %CONTINUE%
 ItemDisplay[MAPTIER=3]: %RED%* [T3] %CONTINUE%
 ItemDisplay[MAPTIER=4]: %PURPLE%* [T4] %CONTINUE%
-ItemDisplay[(t51 OR t52 OR t53)]: %GOLD%* [T3] %CONTINUE%
+ItemDisplay[(t51 OR t52 OR t53)]: %GOLD%* [T5] %CONTINUE%
 ItemDisplay[(t61 OR t62)]: %PURPLE%* [PvP] %CONTINUE%
 
 // Map Color Fixing
@@ -323,6 +323,11 @@ ItemDisplay[t3a]: %NAME%{%NL%%RED%F 75% %YELLOW%L 145% %BLUE% C 75%%NL%%GRAY%Ph 
 ItemDisplay[t41]: %NAME%{%NL%%RED%F 180% %YELLOW%L 180% %BLUE% C 180%%NL%%GRAY%Ph 180% %ORANGE%M 180% %GREEN%P 180%%NL%%NAME%}%CONTINUE% // Cathedral of L S6 res updated patch1
 ItemDisplay[t42]: %NAME%{%NL%%RED%F 180% %YELLOW%L 180% %BLUE% C 180%%NL%%GRAY%Ph 180% %ORANGE%M 180% %GREEN%P 180%%NL%%NAME%}%CONTINUE% // Plains of Torment S6 res updated patch1
 ItemDisplay[t43]: %NAME%{%NL%%RED%F 180% %YELLOW%L 180% %BLUE% C 180%%NL%%GRAY%Ph 180% %ORANGE%M 180% %GREEN%P 180%%NL%%NAME%}%CONTINUE% // Sanctuary of Sin S6 res updated patch1
+
+// Uniue map Immunes
+ItemDisplay[t51]: %NAME%{%NL%%RED%Fire 85% %YELLOW%Light 85% %BLUE% Cold 85%%NL%%GRAY%Phys 65% %ORANGE%Magic 40% %GREEN%Psn 95%%NL%%NAME%}%CONTINUE% // zhar s7
+ItemDisplay[t52]: %NAME%{%NL%%RED%Fire 65% %YELLOW%Light 60% %BLUE% Cold 65%%NL%%GRAY%Phys 50% %ORANGE%Magic 50% %GREEN%Psn 75%%NL%%NAME%}%CONTINUE% // hellcaves S7
+ItemDisplay[t53]: %NAME%{%NL%%RED%Fire 70% %YELLOW%Light 75% %BLUE% Cold 65%%NL%%GRAY%Phys 60% %ORANGE%Magic 80% %GREEN%Psn 80%%NL%%NAME%}%CONTINUE% // Fallen Gardens S8
 
 // Maps [T1]
 ItemDisplay[t22]: %NAME%Torajan Jungle Map%WHITE%%CONTINUE%{%NAME%}
@@ -368,7 +373,7 @@ ItemDisplay[t43]: %NAME%Sanctuary of Sin Map%WHITE%%CONTINUE%{%NAME%}
 //ItemDisplay[t48]: %NAME%T4-8 Map%WHITE%%CONTINUE%{%NAME%}
 //ItemDisplay[t49]: %NAME%T4-9 Map%WHITE%%CONTINUE%{%NAME%}
 
-// Maps [T3] Unique (New Season 7)
+// Maps [T5] Unique (New Season 7 and 8)
 ItemDisplay[t51]: %NAME%Zhar's Sanctum%WHITE%%CONTINUE%{%NAME%}
 ItemDisplay[t52]: %NAME%Stygian Caverns%WHITE%%CONTINUE%{%NAME%}
 ItemDisplay[t53]: %NAME%Fallen Gardens%WHITE%%CONTINUE%{%NAME%}
@@ -442,7 +447,6 @@ ItemDisplay[MAPTIER=3 ((STAT372>100 AND STAT374>0) OR (STAT372>100 AND STAT375>6
 ItemDisplay[(MAPTIER=2 OR MAPTIER=1) ((STAT372>150 AND STAT374>0) OR (STAT372>70 AND STAT375>69) OR (STAT372>109 AND STAT375>39) OR (STAT372>119 AND STAT375>29) OR (STAT372>139 AND STAT375>19) OR (STAT372>159 AND STAT375>9) OR (STAT372>149 AND STAT373>19) OR (STAT372>174 AND STAT373>9) OR (STAT372>194)) STAT360>0]: %GOLD% [G]%NAME%%CONTINUE%{%NAME%%GOLD%> > > Good Map Rolls < < <}
 // Good Maps Pre SLAM 
 ItemDisplay[(MAPTIER=2 OR MAPTIER=1) ((STAT372>150 AND STAT374>0) OR (STAT372>70 AND STAT375>69) OR (STAT372>109 AND STAT375>39) OR (STAT372>119 AND STAT375>29) OR (STAT372>139 AND STAT375>19) OR (STAT372>159 AND STAT375>9) OR (STAT372>149 AND STAT373>19) OR (STAT372>174 AND STAT373>9) OR (STAT372>194)) STAT360=0]: %GOLD% [GOOD ROLLS]%NAME%%CONTINUE%{%NL%%RED%> > > SLAM THIS MAP < < <%NL%%NAME%%GOLD%> > > Good Map Rolls < < <}
-
 
 // Tell the User to convert map to rare
 ItemDisplay[MAG (MAPTIER=1 OR MAPTIER=2 OR MAPTIER=3 OR MAPTIER=4)]: %NAME%%CONTINUE%{%NL%%BLUE%This Map %WHITE%+ %GOLD%Orb of Destruction%NL%%PURPLE%Convert to Plain Map%NL%%NAME%}
