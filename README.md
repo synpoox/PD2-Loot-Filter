@@ -1,4 +1,4 @@
-# RetroCro's PD2 Loot Filter (Updated for Season 8 Depravity)
+# RetroCro's PD2 Loot Filter (Updated for Season 9 Anarchy)
 
 **About:** 		This my attempt at a Ladder Reset to End Game mapping loot filter. 
 
