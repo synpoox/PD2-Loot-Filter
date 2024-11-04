@@ -31,7 +31,7 @@ ItemDisplayFilterName[]: Base
 ItemDisplayFilterName[]: No TP/ID Scrolls //Filter Level 2
 ItemDisplayFilterName[]: No Life/Mana Pots //Filter Level 3
 ItemDisplayFilterName[]: STRICT1 Hide Low Uniq/Sets //Filter Level 4
-ItemDisplayFilterName[]: STRICT2 Hide Magic Crafts //Filter Level 5
+ItemDisplayFilterName[]: STRICT2 Hide Magic, LCs, Flawless //Filter Level 5
 ItemDisplayFilterName[]: STRICT3 Hide Non-SUP Bases //Filter Level 6
 ItemDisplayFilterName[]: STRICT4 Hide Flawless Gems //Filter Level 7
 //-----------------------------------------------------------------------------------
@@ -99,13 +99,13 @@ ItemDisplay[gsb]: %ORANGE%[%BLUE%Sapphire%ORANGE%]
 ItemDisplay[gsy]: %ORANGE%[%YELLOW%Topaz%ORANGE%]
 ItemDisplay[sku]: %ORANGE%[%GRAY%Skull%ORANGE%]
 
-ItemDisplay[(gzv OR gzvs) FILTLVL=7]: //Hide Flawless Gems filter level 5
-ItemDisplay[(glw OR glws) FILTLVL=7]: 
-ItemDisplay[(glg OR glgs) FILTLVL=7]: 
-ItemDisplay[(glr OR glrs) FILTLVL=7]: 
-ItemDisplay[(glb OR glbs) FILTLVL=7]: 
-ItemDisplay[(gly OR glys) FILTLVL=7]: 
-ItemDisplay[(skl OR skls) FILTLVL=7]: 
+ItemDisplay[(gzv OR gzvs) FILTLVL>4]: //Hide Flawless Gems filter level 5
+ItemDisplay[(glw OR glws) FILTLVL>4]: 
+ItemDisplay[(glg OR glgs) FILTLVL>4]: 
+ItemDisplay[(glr OR glrs) FILTLVL>4]: 
+ItemDisplay[(glb OR glbs) FILTLVL>4]: 
+ItemDisplay[(gly OR glys) FILTLVL>4]: 
+ItemDisplay[(skl OR skls) FILTLVL>4]: 
 
 ItemDisplay[gzvs QTY>1]: %ORANGE%[%PURPLE%F.Amethyst x%QTY%%ORANGE%] //Flawless Stacked Gems
 ItemDisplay[glws QTY>1]: %ORANGE%[%WHITE%F.Diamond x%QTY%%ORANGE%] //Flawless Diamond
@@ -158,8 +158,8 @@ ItemDisplay[cqv (FILTLVL=4 OR FILTLVL=5 OR FILTLVL=6 OR FILTLVL=7)]: //Hide all 
 
 
 //║                                       ▬▬▬▬▬ Runes ▬▬▬▬▬                                       ║
-ItemDisplay[RUNE<20 QTY>1]: %DOT-A3%%RUNENAME% Rune %GRAY%(%RUNENUM%) x%QTY%
-ItemDisplay[RUNE<20]: %DOT-A3%%RUNENAME% Rune %GRAY%(%RUNENUM%)
+ItemDisplay[RUNE<20 QTY>1]: %RUNENAME% Rune %GRAY%(%RUNENUM%) x%QTY%
+ItemDisplay[RUNE<20]: %RUNENAME% Rune %GRAY%(%RUNENUM%)
 ItemDisplay[RUNE=20]: %BORDER-62%     %RED%#%WHITE%#%BLUE%#  %GREEN%LEM RUNE %BLUE%#%WHITE%#%RED%#     %RED%x%QTY%  {%GRAY%(Rune #%RUNENUM%)}%MAP-62%
 ItemDisplay[RUNE=21]: %BORDER-62%     %RED%#%WHITE%#%BLUE%#  %GREEN%PUL RUNE %BLUE%#%WHITE%#%RED%#     %RED%x%QTY%  {%GRAY%(Rune #%RUNENUM%)}%MAP-62%
 ItemDisplay[RUNE=22]: %BORDER-62%     %RED%#%WHITE%#%BLUE%#  %GREEN%UM RUNE %BLUE%#%WHITE%#%RED%#     %RED%x%QTY%  {%GRAY%(Rune #%RUNENUM%)}%MAP-62%
@@ -288,6 +288,12 @@ ItemDisplay[crfv]:%GRAY%Vampiric %GOLD%Craft Infusion{Amulet [5-10]% CurseDurRed
 ItemDisplay[crfu]:%YELLOW%Bountiful %GOLD%Craft Infusion{Amulet +[10-20] Vit [20-30]% MF +[1-3]L.Radius%CL%Ring +[5-10] Vit [10-20]% MF +[1-3]L.Radius%CL%Belt +[25-50]% EDef [20-30]% MF +[1-3]L.Radius%CL%Gloves +[25-50]% EDef [15-25]% MF +[1-3]L.Radius%CL%Boots +[25-50]% EDef [15-25]% MF +[1-3]L.Radius%CL%Helm +[25-50]% EDef [20-30]% MF +[1-3]L.Radius%CL%Chest +[25-50]% EDef [20-30]% MF +[1-3]L.Radius%CL%Shield [10-20]% Block [20-30]% MF +[1-3]L.Radius%CL%Weapon +[50-80]% EDmg [20-30]% MF +[1-3]L.Radius%CL%%YELLOW%Bountiful Craft Infusion %WHITE%+ %BLUE%Item %WHITE%= %ORANGE%Craft}
 // crfp (Brilliant craft)
 ItemDisplay[crfp]:%WHITE%Brilliant %GOLD%Craft Infusion{Amulet +[5-10]% AllRes +[100-150]DefVMissle +[4-8] All Stat%CL%Ring +[3-5] AllRes +[50-100]DefVMissle Half Freeze%CL%Belt +[5-10]% IAS [5-50]% EDef Half Freeze%CL%Gloves +[5-10]% IAS [10-20]% AR [25-50]% EDef%CL%Boots 10% MS +[100-150]DefVMissle Half Freeze%CL%Helm +[5-10]% IAS [25-50]% EDef Half Freeze%CL%Chest +[5-10]% AllRes +[25-50]% EDef [10-20]% Block%CL%Shield +[5-10]% AllRes [10-20]% Block Half Freeze%CL%Weapon [20-40]% EDmg +20% IAS +[50-100] AR%CL%%WHITE%Brilliant Craft Infusion %WHITE%+ %BLUE%Item %WHITE%= %ORANGE%Craft}
+
+//PD2 Lucion Items
+ItemDisplay[luca]: %BORDER-62%%GREEN%####    %RED%Shadow of Hatred    %GREEN%####{%RED%Lucion Portal}%MAP% //Vision of Terror
+ItemDisplay[lucb]: %BORDER-62%%RED%##     %GREEN%%NAME%     %RED%##%MAP% //Black Soulstone
+ItemDisplay[lucc]: %BORDER-62%%RED%##     %GREEN%%NAME%     %RED%##%MAP% //Black Soulstone
+ItemDisplay[lucd]: %BORDER-62%%RED%##     %GREEN%%NAME%     %RED%##%MAP% //Black Soulstone
 
 //PD2 Dclone Items
 ItemDisplay[dcma]: %BORDER-62%%GREEN%####    %RED%Vision of Terror    %GREEN%####{%RED%Dclone Portal}%MAP% //Vision of Terror
@@ -649,8 +655,8 @@ ItemDisplay[t14]: %NAME%Sanatorium Map%CONTINUE%{%NAME%}
 ItemDisplay[t34]: %NAME%Ancestral Trial Map%CONTINUE%{%NAME%}
 ItemDisplay[t36]: %NAME%Fall of Caldeum Map%CONTINUE%{%NAME%}
 ItemDisplay[t26]: %NAME%Shadows of Westmarch Map%CONTINUE%{%NAME%}
-ItemDisplay[t27]: %NAME%T2-7 Map%CONTINUE%{%NAME%}
-ItemDisplay[t28]: %NAME%T2-8 Map%CONTINUE%{%NAME%}
+ItemDisplay[t27]: %NAME%Demon Road Map%CONTINUE%{%NAME%}
+ItemDisplay[t28]: %NAME%Skovos Stronghold Map%CONTINUE%{%NAME%}
 ItemDisplay[t29]: %NAME%T2-9 Map%CONTINUE%{%NAME%}
 
 // Maps [T3]
@@ -719,7 +725,7 @@ ItemDisplay[MAPTIER>0]:  %CL%%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[(t12 OR t13 OR t31 OR t41 OR t42 OR t43 OR STAT438>0)]: %NAME%%CONTINUE%{%PURPLE%WARNING: Contains Cursing Mobs %CL%%NAME%}
 
 // Map Contains SOULS
-ItemDisplay[(t14 OR t33 OR t3a OR STAT470>0)]: %YELLOW% [SOULS]%NAME%%CONTINUE%{%PURPLE%WARNING: Contains Souls %CL%%NAME%}
+ItemDisplay[(t14 OR t3a OR STAT470>0)]: %YELLOW% [SOULS]%NAME%%CONTINUE%{%PURPLE%WARNING: Contains Souls %CL%%NAME%}
 
 
 // Map Contains Projectile Pierce
@@ -809,7 +815,7 @@ ItemDisplay[RW ETH]: %RED%Eth %NAME% %RED%[%WHITE%%SOCKETS%%RED%]
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 //║                   ▬▬▬▬▬ [Optional] Rules for Ignoring Specific Items ▬▬▬▬▬                    ║
 //─────────────────────────────────────────────────────────────────────────────────────────────────
-//ItemDisplay[MAG !ID cm2]: //Ignore unidentified magic large charms.
+ItemDisplay[MAG !ID cm2 FILTLVL>4]: //Ignore unidentified magic large charms.
 ItemDisplay[MAG !ID rin CLVL>79]: //Ignore unidentified magic rings at level 80+.
 //ItemDisplay[MAG !ID jew ILVL<66]: //Ignore unidentified magic jewels unless they have an item level high enough for ED +40%.
 
@@ -1892,7 +1898,7 @@ ItemDisplay[amf UNI !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Th
 ItemDisplay[amb UNI !ID]: %BORDER-62%%GOLD%Blood Raven's Charge%MAP-0E%
 
 //UNIQUE and SET Rings Amulets Jewels Charms
-ItemDisplay[UNI !ID rin]: %BORDER-62%%RED%###%WHITE%###%BLUE%###  %GOLD%Stone of Jordan  %BLUE%###%WHITE%###%RED%###%MAP-0E%
+ItemDisplay[UNI !ID rin]: %BORDER-62%%RED%###%WHITE%###%BLUE%###  %GOLD%Unique Ring  %BLUE%###%WHITE%###%RED%###%MAP-0E%
 ItemDisplay[UNI !ID amu]: %BORDER-62%%RED%###%WHITE%###%BLUE%###  %GOLD%Unique Amulet  %BLUE%###%WHITE%###%RED%###%MAP-0E%
 ItemDisplay[UNI !ID jew]: %BORDER-50%%RED%##%ORANGE%##%YELLOW%##%GREEN%##%BLUE%##%PURPLE%## %GOLD%FACET %PURPLE%##%BLUE%##%GREEN%##%YELLOW%##%ORANGE%##%RED%##%MAP-0E%
 ItemDisplay[UNI !ID cm3]: %BORDER-62%%RED%#### %GOLD%Gheeds Charm %RED%####%MAP-0E%

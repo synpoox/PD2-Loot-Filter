@@ -1,10 +1,7 @@
-# RetroCro's PD2 Loot Filter (Updated for Season 9 Anarchy)
+# RetroCro's PD2 Loot Filter
 
-**About:** 		This my attempt at a Ladder Reset to End Game mapping loot filter. 
-
-**Features:** 	This filter shows the identified names of set and unique items. This filter will get stricter as you level. It notifies for important drops and draws minimap icons. 
-
-**[Download](https://github.com/RetroCro/PD2-Loot-Filter/archive/refs/heads/main.zip)**
+**About:** Modified and updated for Season 10 Desecration by Synpoo.  
+**Features:** This filter shows the identified names of set and unique items. This filter will get stricter as you level. It notifies for important drops and draws minimap icons. 
 
 ## Runes:
 ![Runes:](https://i.imgur.com/qSSr7oq.png)
