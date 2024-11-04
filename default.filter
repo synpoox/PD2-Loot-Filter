@@ -8,9 +8,9 @@
 //╬╬╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╬╬
 // Version 10.0.0
 
-//The latest version of this filter can be found at: https://raw.githubusercontent.com/RetroCro/PD2-Loot-Filter/main/default.filter
+//The latest version of this filter can be found at: https://raw.githubusercontent.com/synpoox/PD2-Loot-Filter/main/default.filter
 
-//About: 	This my attempt at a Ladder Reset to End Game mapping loot filter. 
+//About: 	Modified and updated for Season 10 Desecration by Synpoo.
 //Features: 	This filter shows the identified names of set and unique items. It will get stricter as you level with most worthless items being hidden after 90.
 //Warning: 	It's not perfect and it has some stuff specifically catered to me. If you don't like something you should know how to make your own changes!
 //Reference: 	https://projectdiablo2.miraheze.org/wiki/Item_Filtering#Filter_Codes
