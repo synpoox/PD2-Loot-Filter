@@ -1349,7 +1349,7 @@ ItemDisplay[ci2 UNI !ID]: %BORDER-62%%GOLD%Kira's Guardian%MAP-0E%
 //EQ2 - Body Armor
 ItemDisplay[EQ2 UNI !ID !(xea OR xrs OR xhn OR xpl OR xld OR xlt OR xth OR ELT) (FILTLVL=4 OR FILTLVL=5 OR FILTLVL=6 OR FILTLVL=7)]: //Hide low/bad uniques filter level 4/5
 
-//Normal Armors
+//Normal Unique Armors
 ItemDisplay[qui UNI !ID]: %BORDER-62%%GOLD%Greyform%MAP-0E%
 ItemDisplay[lea UNI !ID]: %BORDER-62%%GOLD%Blinkbat's Form%MAP-0E%
 ItemDisplay[hla UNI !ID]: %BORDER-62%%GOLD%The Centurion%MAP-0E%
@@ -1385,7 +1385,7 @@ ItemDisplay[xth UNI !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%At
 ItemDisplay[xul UNI !ID]: %BORDER-62%%GOLD%Black Hades%MAP-0E%
 ItemDisplay[xar UNI !ID]: %BORDER-62%%GOLD%Corpsemourn%MAP-0E%
 
-//Elite Body Armor
+//Elite Unique Armor
 ItemDisplay[uhn UNI !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Cage of the Unsullied %RED%(New S4)  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 ItemDisplay[uth UNI !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Dark Abyss  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 ItemDisplay[uui UNI !ID !ETH]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Ormus' Robes  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
@@ -1396,6 +1396,7 @@ ItemDisplay[uul UNI !ID]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %GOLD%Steel Ca
 ItemDisplay[uar UNI !ID !ETH]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Templar's or Tyrael's Might  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 ItemDisplay[utp UNI !ID ETH]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %RED%ETH %GOLD%Purgatory %RED%(New S5)  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 ItemDisplay[utp UNI !ID]: %BORDER-62%%RED%###%WHITE%###%BLUE%###  %GOLD%Purgatory %RED%(New S5)  %BLUE%###%WHITE%###%RED%###%MAP-0E%
+ItemDisplay[ung UNI !ID]: %BORDER-62%%RED%###%WHITE%###%BLUE%###  %GOLD%Wraithskin %RED%(New S10)  %BLUE%###%WHITE%###%RED%###%MAP-0E%
 
 //EQ3 - Shields
 ItemDisplay[UNI !ID (buc OR sml OR lrg OR kit OR spk OR tow OR bsh OR gts OR xuc OR xml OR xrg OR xit OR xpk) (FILTLVL=4 OR FILTLVL=5 OR FILTLVL=6 OR FILTLVL=7)]:
@@ -1427,6 +1428,7 @@ ItemDisplay[upk UNI !ID]: %BORDER-62%%GOLD%Spike Thorn%MAP-0E%
 ItemDisplay[uow UNI !ID !ETH]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Medusa's Gaze  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 ItemDisplay[ush UNI !ID !ETH]: %BORDER-62%      %RED%#%WHITE%#%BLUE%#  %GOLD%Head Hunter's Glory  %BLUE%#%WHITE%#%RED%#      %MAP-0E%
 ItemDisplay[uts UNI !ID !ETH]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Spirit Ward  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
+ItemDisplay[urg UNI !ID]: %BORDER-62%%GOLD%Twilight's Reflection %RED%(New S10)%MAP-0E%
 
 //EQ4 - Gloves
 ItemDisplay[EQ4 UNI !ID !(vgl OR mgl OR tgl OR xvg OR xmg OR ELT) (FILTLVL=4 OR FILTLVL=5 OR FILTLVL=6 OR FILTLVL=7)]:
@@ -1450,6 +1452,7 @@ ItemDisplay[uvg UNI !ID !ETH]: %BORDER-62%%GOLD%Dracul's Grasp%MAP-0E%
 ItemDisplay[umg UNI !ID !ETH]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Soul Drainer  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 ItemDisplay[uhg UNI !ID !ETH]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Steelrend  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 ItemDisplay[utg UNI !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Occultist %RED%(New S5)  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
+ItemDisplay[ulg UNI !ID]: %BORDER-62%%GOLD%Titan's Grip %RED%(New S10)%MAP-0E%
 
 //EQ6 BELTS
 ItemDisplay[UNI !ID (lbl OR vbl OR mbl OR tbl OR hbl OR zmb) (FILTLVL=4 OR FILTLVL=5 OR FILTLVL=6 OR FILTLVL=7)]:
@@ -1652,6 +1655,7 @@ ItemDisplay[9bl UNI !ID]: %BORDER-62%%GOLD%Stormspike%MAP-0E%
 ItemDisplay[7dg UNI !ID]: %BORDER-62%%GOLD%Wizardspike%MAP-0E%
 ItemDisplay[7kr UNI !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Fleshripper  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 ItemDisplay[7bl UNI !ID]: %BORDER-62%%GOLD%Ghostflame%MAP-0E%
+ItemDisplay[7di UNI !ID]: %BORDER-62%%GOLD%Shatterblade %RED%(New S10)%MAP-0E%
 
 //WP5 - Throwing Weapons
 ItemDisplay[UNI !ID (9tk OR 9ta) (FILTLVL=4 OR FILTLVL=5 OR FILTLVL=6 OR FILTLVL=7)]:
@@ -1845,6 +1849,7 @@ ItemDisplay[drb UNI !ID]: %BORDER-62%%GOLD%Cerebus' Bite%MAP-0E%
 ItemDisplay[dre UNI !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Ravenlore  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 ItemDisplay[drd UNI !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Spirit Keeper  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 ItemDisplay[drf UNI !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Ursa's Nightmare %RED%(New S5)  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
+ItemDisplay[drc UNI !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Denmother %RED%(New S10)  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 
 //CL2 - BARBARIAN ITEMS
 ItemDisplay[ba6 UNI !ID]: %BORDER-62%%GOLD%Cyclopean Roar %RED%(New S3)%MAP-0E%
@@ -1896,6 +1901,7 @@ ItemDisplay[ama UNI !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Ti
 ItemDisplay[amf UNI !ID ETH]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %RED%ETH %GOLD%Thunderstroke  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 ItemDisplay[amf UNI !ID]: %BORDER-62%      %RED%###%WHITE%###%BLUE%###  %GOLD%Thunderstroke  %BLUE%###%WHITE%###%RED%###      %MAP-0E%
 ItemDisplay[amb UNI !ID]: %BORDER-62%%GOLD%Blood Raven's Charge%MAP-0E%
+ItemDisplay[amc UNI !ID]: %BORDER-62%%GOLD%Ebonbane %RED%(New S10)%MAP-0E%
 
 //UNIQUE and SET Rings Amulets Jewels Charms
 ItemDisplay[UNI !ID rin]: %BORDER-62%%RED%###%WHITE%###%BLUE%###  %GOLD%Unique Ring  %BLUE%###%WHITE%###%RED%###%MAP-0E%
